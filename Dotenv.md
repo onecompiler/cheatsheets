@@ -1,11 +1,11 @@
 ---
 title: Dotenv (Javascript Library)
-description: This module is used to loads environment variables from .env file to process.env and we can access those variables through config file.
+description: This module is used to loads environment variables from .env file to process.env and user can access the variables through config file.
 created: 2019-10-09
-updated: 2019-10-09
+updated: 2019-10-10
 ---
 
-This module is used to loads environment variables from .env file to process.env and we can access those variables through config file.
+This module is used to load environment variables from .env file to process.env and user can access the variables through config file.
 
 ## Install
 
@@ -21,7 +21,7 @@ $ yarn install
 ``` javascript
 require(.env).config
 ```
-To use this .env file we need to create a .env file in the root directory of the project. Now we can add environment specific variables in the form of key = value.
+To use this .env file we need to create a .env file in the root directory of the project. Now user can add environment specific variables in the form of key = value.
 
 ```javascript
 //.env file
@@ -33,27 +33,22 @@ ABS_REDIS_CLUSTER=false
 ABS_REDIS_PORT=6379
 ```
 
-Now we can access these values using **process.env**.
+Now user can access these values using **process.env**.
 
 ```javascript
-const redisHosts = process.env.ABS_REDIS_HOSTS
-const redisPassword = process.env.ABS_REDIS_PASSWORD
+NODE_ENV=development
+SEC_KEY=12345
+port=8000
 ```
 We can use config file to define all environment variables at one place so that if there is any changes made .env file we can easily change at one place with out changes in multiple places in the code.
 
 ``` javascript
 
 require("dotenv").config()
-export const authorization = "Bearer 4b9926b8-7b21-332d-a688-b490cfe3e67c"
-export const currentTenantCredentials = apiCredentials
-export const analyticsBaseUrl = process.env.ANALYTICS_GATEWAYURL || "https://127.0.0.1"
-export const gatewayBaseUrl = process.env.GATEWAYURL || "https://127.0.0.1:8243"
-export const current = process.env.DEVELOPMENT || ""
-export const internalCoreUrl = process.env.INTERNAL_CORE_URL || "http://127.1.1.1:5000"
-export const internalDSUrl = process.env.INTERNAL_DS_URL || "http://127.0.1.1:8080"
-export const url = process.env.URL
-export const absBuildType = process.env.BUILD_TYPE || "Dev"
 
+export const environment = process.env.NODE_ENV || "development"
+export const key = process.env.SEC_KEY 
+export const port = process.env.port || 8000
 ```
 
 we can use this confilg files in our project by importing it in the file.
@@ -61,7 +56,7 @@ we can use this confilg files in our project by importing it in the file.
 ```javascript
 //.js file
 
-import { authorization } from "../config"
+import { environment, key, port } from "../config"
 
 ```
 
