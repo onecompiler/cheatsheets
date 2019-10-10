@@ -1,6 +1,6 @@
 ---
 title: Dotenv (Javascript Library)
-description: This module is used to loads environment variables from .env file to process.env and user can access the variables through config file.
+description: This module is used to load environment variables from .env file to process.env and user can access the variables through config file.
 created: 2019-10-09
 updated: 2019-10-10
 ---
