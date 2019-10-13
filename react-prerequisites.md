@@ -5,9 +5,10 @@ created: 2018-11-07
 updated: 2018-11-07
 ---
 
-## Terminology 
+## Pre-requisites to learn React
 
-* SSR, CSR 
+### Good to know
+* Server Side Rendering (SSR), Client Side Rendering(CSR )
 * JSX
 * Transpiling (Babel)
 * PWA (Progressive Web App)
@@ -97,12 +98,12 @@ console.log('0:', functions[0](), '1:', functions[1]());
 
 ```javascript
 let square = function(inp){
-	return inp ** 3
+	return inp ** 2
 }
 
 ```
 ```javascript
-let square = inp => inp ** 3
+let square = inp => inp ** 2
 ```
 
 example
@@ -111,7 +112,7 @@ const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 const squaresOfEvenNumbers = numbers
 .filter(ele => ele % 2 == 0)
-.map(ele => ele ** 2);
+.map(ele => ele ** 2)
 .reduce((acc, ele) => acc + ele);
 
 console.log(squaresOfEvenNumbers);
