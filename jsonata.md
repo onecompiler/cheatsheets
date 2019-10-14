@@ -7,7 +7,7 @@ updated: 2019-10-14
 
 Jsonata is a Javascript library which is used to querying and transforming JSON data
 
-##Installation
+## Installation
 
 ``` sh
 1. Using NPM
@@ -15,8 +15,9 @@ Jsonata is a Javascript library which is used to querying and transforming JSON 
 $ npm install jsonata
 ```
 
+## Sample Usage
 ``` javascript
-const jsonata = require('jsonata')
+const jsonata = require('jsonata');
 
 var empdetails = {
     "employeeDetails": {
@@ -53,20 +54,20 @@ var empdetails = {
   }
 
 var employeeNames = jsonata("employeeDetails.details.name");  
-console.log(employees.evaluate(empdetails));  //prints [Sasi, Varun, Krishna, Sravani]
+console.log(employees.evaluate(empdetails));  //=>  [Sasi, Varun, Krishna, Sravani]
 
 var numberOfEmployees = jsonata("employeeDetails.$count(details)");  
-console.log(numberOfEmployees.evaluate(empdetails));   // prints 4
+console.log(numberOfEmployees.evaluate(empdetails));   //=> 4
 
 var totalSalaryPerMonth = jsonata("employeeDetails.($sum((details.salary)))/12");
-console.log(totalSalaryPerMonth.evaluate(empdetails));  // prints 150000
+console.log(totalSalaryPerMonth.evaluate(empdetails));  //=> 150000
 
 
 var roles = jsonata("employeeDetails.details.role");
-console.log(roles.evaluate(empdetails));   // prints [Software Engineer, Android Developer, Devops, Devops]
+console.log(roles.evaluate(empdetails));   //=> [Software Engineer, Android Developer, Devops, Devops]
 
 var employees = jsonata("employeeDetails.details{name:{"role": role, "Salary": salary}}")
-console.log(empoyees.evaluate(empDetails));  /*{
+console.log(empoyees.evaluate(empDetails));  /* => {
   "Sasi": {
     "role": "Software Engineer",
     "Salary": 500000
@@ -83,8 +84,8 @@ console.log(empoyees.evaluate(empDetails));  /*{
     "role": "Devops",
     "Salary": 300000
   }
-}*/
+} */
 
 
 ```
-We can write these kind of expressions using jsonata and also querying and extracting values.
+We can write these kind of expressions using jsonata and also query the data.
