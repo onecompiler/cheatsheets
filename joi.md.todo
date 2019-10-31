@@ -1,0 +1,8 @@
+---
+title: joi (Javascript Library)
+description: Joi is a javascript library which is used to validate Javascript objects.
+created: 2019-10-19
+updated: 2019-10-19
+---
+
+Joi is a javascript library which is used to validate Javascript objects. It is used to validate incoming objects coming to the server before storing object to the database.
