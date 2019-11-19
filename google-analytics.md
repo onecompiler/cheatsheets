@@ -1,8 +1,8 @@
 ---
 title: Google Analytics
 description: Google Analytics lets you measure your end user interactions on your websites and mobile apps. Google Analytics records all interactions and provides meaningful insights.
-created: 2018-10-25
-updated: 2018-10-25
+created: 2019-10-25
+updated: 2019-10-25
 ---
 
 Google Analytics lets you measure your end user interactions on your websites and mobile apps. Google Analytics records all interactions and provides meaningful insights.
