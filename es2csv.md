@@ -32,7 +32,7 @@ es2csv -a username:password -u http://onecompiler:9001/cars/ -q 'company: volksw
 
 | Arguments | Description  | Default Value | Example Command |
 |--------|--------|--------|--------|
-|-u, --url| Elasticsearch host url | http://localhost:9200 | es2csv -u http://onecompiler:9001/cars/ -q 'company: volkswagen' -o cars.csv |
+|-u, --url| Elasticsearch host url | `http://localhost:9200` | es2csv -u `http://onecompiler:9001/cars/` -q 'company: volkswagen' -o cars.csv |
 |-i, --index-prefixes|Index name prefix| logstash-* | es2csv -i cars -q 'company: volkswagen' -o cars.csv|
 |-t, --tags|Query tags, can add more than 1 tag| | es2csv -t dev -q 'company: volkswagen' -o cars.csv|
 |-d, --delimiter|Provide delimiter to be used in csv file| , | es2csv -d ':' -q 'company: volkswagen' -o cars.csv|
