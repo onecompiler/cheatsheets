@@ -24,3 +24,17 @@ fetch(`[url]`, { method: 'POST', body: formData})
         .then(res => res.text())
         .then(text => console.log(text))
 ```
+
+## post application/json
+
+```javascript
+await fetch(`[url]`, {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify([dataObject])
+    }).then(res => res.json())
+      .then(json => console.log(json))
+```
