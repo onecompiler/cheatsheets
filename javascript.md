@@ -302,6 +302,27 @@ let promise = new Promise(function(resolve, reject){
     //code
 }); 
 ```
+
+## Async-Await
+### Syntax
+```javascript
+async function functioname(parameters){
+	//code
+}
+```
+
+### Example
+
+```javascript
+async getTodos(userObj){
+	const res = await fetch([url]);
+	const data = await res.json()    
+	return data;
+}
+
+let data = await getTodos({fn: "foo"});
+```
+
 ## Error Handling
 
 ```javascript
