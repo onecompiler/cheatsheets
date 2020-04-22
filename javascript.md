@@ -227,8 +227,8 @@ console.log(sum(10,20,30));
 |substring(start,end|let sub-str=str.substring(starting position,ending position);|
 |substr(start,length)|let sub-str=str.substr(starting position,length);|
 |replace()|let x=str.replace("string to replace","replacement string")|
-|concat()|let str3=str1.concat(" ",str2);|
-|trim()|let str1= str.trim();|
+|concat()| let str3=str1.concat(" ",str2);| 
+|trim()|let str1= str.trim();| 
 |charAt()|let c=str.charAt(position);|
 |charCodeAt()|let c=str.charCodAt(position);|
 |split()|let array=str.split("");|
