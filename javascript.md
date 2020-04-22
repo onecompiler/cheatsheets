@@ -1,8 +1,8 @@
 ---
 title: Javascript 
 description: Javascript cheatsheet contains useful code syntax with examples which is handy while coding.
-created: 2020-04-23
-updated: 2020-04-23
+created: 2020-04-22
+updated: 2020-04-22
 ---
 
 ## Data Types
@@ -221,7 +221,7 @@ console.log(sum(10,20,30));
 ### String Methods
 
 |Method Name| Usage|
-|----|----|----|
+|----|----|
 |search()|let sindex=str.search("sub-string");| 
 |slice(start,end)|let sub-str=str.slice(starting position,ending position);|
 |substring(start,end|let sub-str=str.substring(starting position,ending position);|
