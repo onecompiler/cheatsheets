@@ -226,8 +226,6 @@ console.log(sum(10,20,30));
 |slice(start,end)|let sub-str=str.slice(starting position,ending position);|
 |substring(start,end|let sub-str=str.substring(starting position,ending position);|
 |substr(start,length)|let sub-str=str.substr(starting position,length);|
-|replace()|let x=str.replace("string to replace","replacement string")|
-|concat()| let str3=str1.concat(" ",str2);| 
 |trim()|let str1= str.trim();| 
 |charAt()|let c=str.charAt(position);|
 |charCodeAt()|let c=str.charCodAt(position);|
@@ -237,6 +235,8 @@ console.log(sum(10,20,30));
 |lastIndexOf()|let index=str.lastIndexOf("sub-string");|
 |toUpperCase()|let str1=str.toUpperCase();|
 |toLowerCase()|let str1=str.toLowerCase();|
+|replace()|let x=str.replace("string to replace","replacement string")|
+|concat()| let str3=str1.concat(" ",str2);| 
 
 ### Number related Methods
 
