@@ -12,13 +12,13 @@ updated: 2020-04-25
 * gets(str) -- reads a line from input stream into a variable
 ### Sample C program
 
-    ```c
-    #include <stdio.h>    
-    int main(){    
-    printf("Hello World!!");    
-    return 0;   
-    }  
-    ```
+```c
+#include <stdio.h>    
+int main(){    
+printf("Hello World!!");    
+return 0;   
+}  
+```
 * `#include` is a keyword which is used to include the library file `<stdio.h>`. 
 * `<stdio.h>` library file is used to read the data from terminal and to display the data on terminal. It has several in-built functions like printf(), scanf() etc.
 * `main()` function is the entry point of any C program.
