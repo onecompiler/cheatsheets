@@ -206,7 +206,7 @@ Loop { While | Until } conditional-expression
 
 ## Functions
 
-Functions return a value when they are called.
+Functions consists of a set of statements which perform a sepcific functionality and they return a value when they are called.
 
 ```vb
 [accessModifiers] Function functionName [(parameterList)] As returnType
@@ -214,7 +214,7 @@ Functions return a value when they are called.
 End Function
 ```
 
-## 2. Sub-Procedures
+## Sub-Procedures
 
 Sub-procedures are similar to functions but they don't return any value.
 
