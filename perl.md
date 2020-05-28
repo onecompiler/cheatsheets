@@ -1,5 +1,5 @@
 ---
-title: Perl Cheatsheet 
+title: Perl 
 description: Perl Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-05-02
 updated: 2020-05-02
