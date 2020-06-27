@@ -1,5 +1,5 @@
 ---
-title: C Programming language 
+title: C Programming language
 description: C Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-04-25
 updated: 2020-04-25

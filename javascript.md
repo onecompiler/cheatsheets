@@ -1,5 +1,5 @@
 ---
-title: Javascript 
+title: Javascript
 description: Javascript cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-04-22
 updated: 2020-04-22
@@ -349,5 +349,3 @@ throw "Error message";    // throw error text to user
 |g|	Performs a global match and finds all|
 |i|	Performs case-insensitive matching|
 |m|	Performs multiline matching|
-
-

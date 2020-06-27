@@ -1,5 +1,5 @@
 ---
-title: TCL Cheatsheet 
+title: TCL
 description: Quick reference to TCL cheat sheet which contains useful syntax and is very handy while coding. 
 created: 2020-06-26
 updated: 2020-06-26

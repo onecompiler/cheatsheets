@@ -1,5 +1,5 @@
 ---
-title: Ruby  
+title: Ruby 
 description: Ruby cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-06-08
 updated: 2020-06-08
@@ -163,4 +163,3 @@ def sum(x , y)
 end
 sum(10,20) # passing parameters to method sum
 ```
-

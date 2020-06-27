@@ -162,5 +162,3 @@ defmodule modulename do
     end
 end
 ```
-
-

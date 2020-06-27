@@ -1,5 +1,5 @@
 ---
-title: F# Cheatsheet 
+title: F#
 description: F# Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-06-27
 updated: 2020-06-27

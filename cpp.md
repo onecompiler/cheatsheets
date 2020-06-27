@@ -262,4 +262,3 @@ typedef data-type name;
 ```c
 typedef unsigned int distance;  // typedef of int 
 ```
-

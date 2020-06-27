@@ -1,5 +1,5 @@
 ---
-title: C# Cheatsheet 
+title: C#
 description: C# cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-05-19
 updated: 2020-05-19

@@ -1,5 +1,5 @@
 ---
-title: Perl 
+title: Perl
 description: Perl Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-05-02
 updated: 2020-05-02
@@ -327,5 +327,3 @@ close(FH);
 |-S| checks if the file is a socket.|
 |-b| checks if the file is a block special file.|
 |-c| checks if the file is a character special file.|
-
-

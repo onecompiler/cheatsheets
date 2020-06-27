@@ -1,5 +1,5 @@
 ---
-title: HTML  
+title: HTML 
 description: HTML Cheat Sheet gives you a quick reference of basic HTML tags, codes and attributes and is very handy while coding. 
 created: 2020-06-17
 updated: 2020-06-17
