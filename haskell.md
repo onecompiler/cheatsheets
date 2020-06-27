@@ -1,5 +1,5 @@
 ---
-title: Haskell Cheatsheet 
+title: Haskell 
 description: Quick reference to Haskell cheat sheet which will increase your productivity as it contains useful syntax and is very handy while coding. 
 created: 2020-06-25
 updated: 2020-06-25

@@ -1,5 +1,5 @@
 ---
-title: Elixir Cheatsheet 
+title: Elixir
 description: Elixir programming language cheatsheet contains useful code syntax which is handy while coding.
 created: 2020-06-28
 updated: 2020-06-28
@@ -26,7 +26,7 @@ variable-name = value
 | Atom| :true | Atoms are constant values whose name is same as their value|
 | Boolean | : false, :true| Either true or false, usually declared as atoms|
 | Strings| "Hello"| Strings are enclosed in double quotes(" ") and multi line strings are enclosed in triple double quotes(""" """)|
-| Lists| ['a', 10, :true]| Lists are used to store different types of values and are represented in square brackets []|
+| Lists| \['a', 10, :true\]| Lists are used to store different types of values and are represented in square brackets []|
 | Tuples| {'apple', 100, :false} | Similar to Lists and are represented in curly brackets {}. Tuples are good for accessing the values and lists are good for insertion and deletion of values|
 
 ## Reserved keywords

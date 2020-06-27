@@ -1,5 +1,5 @@
 ---
-title: Groovy Cheatsheet 
+title: Groovy
 description: Groovy cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-05-05
 updated: 2020-05-05

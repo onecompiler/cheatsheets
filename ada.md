@@ -1,5 +1,5 @@
 ---
-title: Ada Cheatsheet 
+title: Ada
 description: Ada Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-06-24
 updated: 2020-06-24
