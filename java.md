@@ -66,13 +66,13 @@ Two groups of data types
 
 ### Examples
 ```java
-int x = 99999; 
-short x = 999; 
-long x = 99999999999L;
-byte x = 99;
-double x = 99.99d;
-boolean isAvailable = true;
-char division = 'A';
+int a = 99999; 
+short b = 999; 
+long c = 99999999999L;
+byte d = 99;
+double e = 99.99d;
+boolean f = true;
+char g = 'A';
 ```
 ### 2. Non-Primitive data types
 
