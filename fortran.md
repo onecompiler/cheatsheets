@@ -15,7 +15,7 @@ program hello
 end program hello
 ```
 * **program** : All Fortran programs start with the keyword `program` followed by program name
-* **character :: name*30** : declaring a character variable named name
+* **character :: name** : declaring a character variable named name
 * **read** : to read the data from console
 * **print** : to display the data to console
 * **end program** : All Fortran programs end with the keyword `end program` followed by program name
