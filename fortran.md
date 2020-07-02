@@ -1,8 +1,8 @@
 ---
 title: Fortran
 description: Fortran cheatsheet contains useful code syntax with examples which is really handy while coding.
-created: 2020-06-28
-updated: 2020-06-28
+created: 2020-06-29
+updated: 2020-06-29
 ---
 
 ## Sample program
