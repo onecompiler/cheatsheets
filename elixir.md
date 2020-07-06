@@ -53,27 +53,27 @@ variable-name = value
 
 ```elixir
 if condition do
-   #Code 
+  #Code 
 end
 ```
 ### 2. If-Else
 
 ```elixir
 if condition do
-   #Code 
+  #Code 
 else
-    #code
+  #code
 end
 ```
 ### 3. Case
 
 ```elixir
 case value do
-    value-1 -> #code if value matches value-1
-	value-2 -> #code if value matches value-2
-	value-3 -> #code if value matches value-3
-	...
-	_ -> #code if value does not match any of the above and is similar to default in switch
+  value-1 -> #code if value matches value-1
+  value-2 -> #code if value matches value-2
+  value-3 -> #code if value matches value-3
+  ...
+  _ -> #code if value does not match any of the above and is similar to default in switch
 end
 ```
 
@@ -82,7 +82,7 @@ end
 
 ```elixir
 unless condition do
-   #Code 
+  #Code 
 end
 ```
 
@@ -90,28 +90,27 @@ end
 
 ```elixir
 unless condition do
-   #Code if condition fails
+  #Code if condition fails
 else
-    #Code if condition satisfies
+  #Code if condition satisfies
 end
 ```
 ### 3. Cond
 
 ```elixir
 cond do
-   condition-1 -> #code if condition is true
-   condition-2 -> #code if condition is true
-   ...
-   true -> #code if none of the above are true
+  condition-1 -> #code if condition is true
+  condition-2 -> #code if condition is true
+  ...
+  true -> #code if none of the above are true
 end
 ```
-
 
 ## List
 
 List is a collection of data of the same or different types and are stored in memory as linked lists.
 
-```javascript
+```elixir
 ["foo", 123, true]
 ```
 
@@ -130,7 +129,7 @@ List is a collection of data of the same or different types and are stored in me
 
 Tuples are collection of data of the same or different types and are stored contiguously in memory.
 
-```c
+```elixir
 tuple = {:foo, :bar}
 Tuple.append(tuple, :john) // appends an item to tuple
 ```
@@ -139,8 +138,8 @@ Tuple.append(tuple, :john) // appends an item to tuple
 
 Map is a collection of key-value pairs.
 
-```c
-map = %{:1 => :one, 2 => :two, 3 => :three, 4 => :four, 5 => :five}
+```elixir
+map = %{1 => :one, 2 => :two, 3 => :three, 4 => :four, 5 => :five}
 ```
 
 ## Functions
@@ -156,9 +155,9 @@ Anonymous functions are functions with no name and they use  `fn..end` construct
 Assign names to functions so that they can be called easily. Always named functions are defined in modules.
 
 ```elixir
-defmodule modulename do
-    def function_name(parameter1, parameter2) do
-        #code 
-    end
+defmodule ModuleName do
+  def function_name(parameter1, parameter2) do
+    #code 
+  end
 end
 ```
