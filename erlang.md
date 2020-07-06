@@ -59,7 +59,7 @@ true ->
 end.
 ```
 
-### 2. Case:
+### 2. Case
 
 ```erlang
 case value of
