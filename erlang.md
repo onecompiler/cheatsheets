@@ -7,7 +7,7 @@ updated: 2020-07-02
 
 ## Sample program
 
-```erlang
+```c
 -module(helloworld).
 -export([start/0]).
 start() ->
@@ -23,7 +23,7 @@ start() ->
 ## Variables
 Variables syntax is as follows
 
-```erlang
+```c
 variable-name = value
 ```
 ## Data types
@@ -50,7 +50,7 @@ variable-name = value
 
 ### 1. If-Else
 
-```erlang
+```c
 if
 condition ->
    true-statement;
@@ -61,7 +61,7 @@ end.
 
 ### 2. Case
 
-```erlang
+```c
 case value of
    value1 -> statement1;
    value2 -> statement2;
@@ -74,11 +74,11 @@ As Erlang is a functional programming language, there are no direct constructs f
 ## Function
 
 ### Defining a function
-```erlang
+```c
 FunctionName(Pattern1… PatternN) ->
 %code
 ```
 ### Calling a function
-```erlang
+```c
 FunctionName(Pattern1… PatternN)
 ```
