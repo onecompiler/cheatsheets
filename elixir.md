@@ -131,7 +131,7 @@ Tuples are collection of data of the same or different types and are stored cont
 
 ```elixir
 tuple = {:foo, :bar}
-Tuple.append(tuple, :john) // appends an item to tuple
+Tuple.append(tuple, :john) # appends an item to tuple
 ```
 
 ## Maps
