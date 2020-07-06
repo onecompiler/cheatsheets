@@ -30,8 +30,8 @@ variable-name = value
 | Tuples| {'apple', 100, :false} | Similar to Lists and are represented in curly brackets {}. Tuples are good for accessing the values and lists are good for insertion and deletion of values|
 
 ## Reserved keywords
-|||||
-|----|----|----|----|
+||||||
+|----|----|----|----|----|
 |after| and| catch | do | inbits | 
 |inlist | nil | else | end |not|
 |or| false | fn | in| rescue |
