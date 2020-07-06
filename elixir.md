@@ -33,10 +33,9 @@ variable-name = value
 
 |||||||
 |----|----|----|----|----|----|
-|after| and| catch | do | inbits | \_\_DIR__| 
-|inlist | nil | else | end |not|\_\_CALLER__ |
-|or| false | fn | in| rescue |  \_\_ENV__ | 
-| true |  when| xor |\_\_MODULE__  |  \_\_FILE__ ||
+| after | and | catch | do | inbits | true |
+| inlist | nil | else | end | not |  when| 
+| or| false | fn | in | rescue |   xor |
 
 
 ## Operators
