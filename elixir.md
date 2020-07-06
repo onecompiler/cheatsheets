@@ -29,14 +29,12 @@ variable-name = value
 | Lists| \['a', 10, :true\]| Lists are used to store different types of values and are represented in square brackets []|
 | Tuples| {'apple', 100, :false} | Similar to Lists and are represented in curly brackets {}. Tuples are good for accessing the values and lists are good for insertion and deletion of values|
 
-## Reserved keywords
-||||||
-|----|----|----|----|----|
-|after| and| catch | do | inbits | 
-|inlist | nil | else | end |not|
-|or| false | fn | in| rescue |
-| true |  when| xor |\_\_MODULE__  |  \_\_FILE__ |
-| \_\_DIR__|  \_\_ENV__ | \_\_CALLER__ |
+|**** | **** |Reserved|Keywords| **** | ****|
+|----|----|----|----|----|----|
+|after| and| catch | do | inbits | \_\_DIR__| 
+|inlist | nil | else | end |not|\_\_CALLER__ |
+|or| false | fn | in| rescue |  \_\_ENV__ | 
+| true |  when| xor |\_\_MODULE__  |  \_\_FILE__ ||
 
 
 ## Operators
