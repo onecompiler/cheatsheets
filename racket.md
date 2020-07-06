@@ -13,9 +13,9 @@ updated: 2020-07-03
 ```
 * **`#lang`** : to define the language you are using
 * **`print`** : To display the output in the console
-* **`;`** : To comment a single line|
-* **`;;`** : To mark important comments|
-* **`#;`** : To comment the following s-expression|
+* **`;`** : To comment a single line
+* **`;;`** : To mark important comments
+* **`#;`** : To comment the following s-expression
 
 ## Data types
 
@@ -27,7 +27,8 @@ updated: 2020-07-03
 
 ## Variables
 
-Both let and define can be used
+Both let and define can be used to define variables.
+
 ```racket
 (let ([id value-expression] ...) body ...+)
 
@@ -41,8 +42,7 @@ define id expression
 ### Example
 
 ```racket
-> (let ([x 10]) x)
-10
+(let ([x 10]) x)
 ```
 
 ## Lists
