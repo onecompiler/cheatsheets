@@ -2,10 +2,12 @@
 title: OneCompiler APIs
 description: OneCompiler APIs to integrate the Editor also the APIs to run the code
 created: 2021-09-08
-updated: 2021-09-08
+updated: 2021-09-21
 ---
 
 # Embedding Editor 
+OneCompiler's Editor can be embedded into 3rd party websites as an iFrame. 
+Following are the different options available to embed the editor
 
 ## Embedding default editor
 
@@ -41,6 +43,14 @@ updated: 2021-09-08
  ></iframe>
 ```
 
+## More options vis query parameters 
+
+| Query Parameter  | Description |
+| ----------- | ----------- |
+| `availableLanguages=true`| To limit the languages in the Language selection popup|
+| `hideLanguageSelection=true`   | To hide the language selection button|
+| `hideNew=true` |To hide the 'New' button |
+
 ## Capturing the code into parent website 
 Add the `codeChangeEvent=true` query param
 ```html
@@ -70,7 +80,7 @@ https://editor-demo.w3spaces.com/
 
 ## API to run the code 
 Users can integrate the API from their backend servers and execute the code programatically. 
-Following is the cURL to call the `/run` API to execure code
+Following is the cURL to call the `/run` API to execute code
 
 ```sh
 curl --location --request POST 'https://onecompiler.com/api/v1/run?access_token=your_access_token' \
@@ -87,8 +97,3 @@ curl --location --request POST 'https://onecompiler.com/api/v1/run?access_token=
 }'
 ```
 Note: Replace the `your_access_token` with your account's access token. Reach out to support@onecompiler.com to get your acces token
-
-
-
-
-
