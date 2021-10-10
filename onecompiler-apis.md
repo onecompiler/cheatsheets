@@ -50,6 +50,8 @@ Following are the different options available to embed the editor
 | `availableLanguages=true`| To limit the languages in the Language selection popup|
 | `hideLanguageSelection=true`   | To hide the language selection button|
 | `hideNew=true` |To hide the 'New' button |
+| `hideStdin=true` |To hide the STDIN section |
+| `hideResult=true` |To hide the Result section including STDIN |
 
 ## Capturing the code into parent website 
 Add the `codeChangeEvent=true` query param
