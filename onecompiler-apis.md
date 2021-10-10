@@ -43,7 +43,7 @@ Following are the different options available to embed the editor
  ></iframe>
 ```
 
-## More options vis query parameters 
+## More options via query parameters 
 
 | Query Parameter  | Description |
 | ----------- | ----------- |
