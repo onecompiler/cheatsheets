@@ -52,6 +52,7 @@ Following are the different options available to embed the editor
 | `hideNew=true` |To hide the 'New' button |
 | `hideStdin=true` |To hide the STDIN section |
 | `hideResult=true` |To hide the Result section including STDIN |
+| `hideTitle=true` |To hide the Title/Code ID|
 
 ## Capturing the code into parent website 
 Add the `codeChangeEvent=true` query param
