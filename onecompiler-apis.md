@@ -2,7 +2,7 @@
 title: OneCompiler APIs
 description: OneCompiler APIs to integrate the Editor also the APIs to run the code
 created: 2021-09-08
-updated: 2021-09-21
+updated: 2021-10-12
 ---
 
 # Embedding Editor 
@@ -53,6 +53,7 @@ Following are the different options available to embed the editor
 | `hideStdin=true` |To hide the STDIN section |
 | `hideResult=true` |To hide the Result section including STDIN |
 | `hideTitle=true` |To hide the Title/Code ID|
+| `listenToEvents=true`| Editor will keep listening for events like code change/ run from parent website|
 
 ## Capturing the code into parent website 
 Add the `codeChangeEvent=true` query param
@@ -77,6 +78,35 @@ In the parent website catch the `onmessage` events. Following is the sample code
         };
 </script>
 ```
+
+## Changing the Editor code programatically 
+The parent websites can send the code to the Editor with follwong event 
+
+```javascript
+var iFrame = document.getElementById('oc-editor'); // add an ID for the <iframe tag
+ iFrame.contentWindow.postMessage({
+     eventType: 'populateCode',
+     language: 'python',
+     files: [
+      {
+        "name": "HelloWorld.py",
+        "content": "your code...."
+      }
+  ]
+ }, "*");
+```
+Note: Make sure you have enabled `listenToEvents` flag via query parameter
+## Run code in editor programatically 
+The parent websites can trigger the Run code button programatically, using the following code 
+
+```javascript
+var iFrame = document.getElementById('oc-editor');
+iFrame.contentWindow.postMessage({
+    eventType: 'triggerRun'
+}, "*");
+```
+
+Note: Make sure you have enabled `listenToEvents` flag via query parameter
 
 ## Demo
 https://editor-demo.w3spaces.com/
