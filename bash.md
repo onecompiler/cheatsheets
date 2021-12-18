@@ -5,6 +5,14 @@ created: 2021-12-19
 updated: 2021-12-19
 ---
 
+## Sample program
+
+```bash
+#!/usr/bin/env bash
+
+echo "Hello from Bash!"
+```
+
 ## Common I/O commands
 
 ```bash
