@@ -13,6 +13,14 @@ updated: 2021-12-19
 echo "Hello from Bash!"
 ```
 
+## Comments
+
+Declare a comment:
+
+```bash
+# my comment
+```
+
 ## I/O commands
 
 Print a string with trailing `\n`:
