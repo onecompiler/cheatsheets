@@ -13,38 +13,58 @@ updated: 2021-12-19
 echo "Hello from Bash!"
 ```
 
-## Common I/O commands
+## I/O commands
+
+Print a string with trailing `\n`:
 
 ```bash
-echo "Hello from Bash!" # Print string with trailing \n
-printf "%s\n" "Hello from Bash!" # Print string with trailing \n
+echo "Hello from Bash!"
+# or
+printf "%s\n" "Hello from Bash!"
 ```
 
+Read a string to a variable:
+
 ```bash
-read my_variable # Read string to a variable
+read my_variable
 ```
+
+- [Echo Command in Linux with Examples](https://linuxize.com/post/echo-command-in-linux-with-examples/)
+- [Bash printf Command](https://linuxize.com/post/bash-printf-command/)
 
 ## Variables
 
 ### Defining and erasing
 
-```bash
-declare my_variable="Hello from Bash!" # Declare a global variable
-local my_variable="Hello from Bash!" # Declare a local variable
-```
+Declare a global/local variable:
 
 ```bash
-unset my_variable # Unset a variable
+declare my_variable="Hello from Bash!"
+local my_variable="Hello from Bash!"
+```
+
+Remove a variable:
+
+```bash
+unset my_variable
 ```
 
 ### Incrementing and decrementing
 
+Increment/decrement a variable:
+
 ```bash
-((my_variable++)) # Increment a variable
-((my_variable--)) # Decrement a variable
+((my_variable++))
+((my_variable--))
 ```
 
+- [How to Increment and Decrement Variable in Bash (Counter)](https://linuxize.com/post/bash-increment-decrement-variable/)
+
 ## Arithmetic
+
+### Integer manipulations
+
+Calculate a number sum:
 
 ```bash
 $((1 + 2))
@@ -59,15 +79,54 @@ $((1 + 2))
 | `%`                 | Modulo         |
 | `**`                | Exponentiation |
 
+### Float manipulations
+
+Calculate a number sum:
+
+```bash
+awk 'BEGIN { print 1.0 + 2.0 }'
+```
+
+| Operator            | Performs       |
+| ---                 | ---            |
+| `+`                 | Addition       |
+| `-`                 | Subtraction    |
+| `*`                 | Multiplication |
+| `/`                 | Division       |
+| `%`                 | Modulo         |
+| `**`                | Exponentiation |
+
+- [Awk Command in Linux with Examples](https://linuxize.com/post/awk-command/)
+
 ## String manipulation
 
-```bash
-grep --quiet 'Bash' <<< 'Hello from Bash!'
-```
+Match a string against a regular expresion:
 
 ```bash
-sed 's/Bash/bash/' <<< 'Hello from Bash!'
+[[ 'Hello from Bash!' =~ 'Bash' ]]
 ```
+
+Remove a shortest/longest matching pattern from beggining:
+
+```bash
+my_variable=${my_variable#*=}
+my_variable=${my_variable##*=}
+```
+
+Remove a shortest/longest matching pattern from ending:
+
+```bash
+my_variable=${my_variable%*=}
+my_variable=${my_variable%%*=}
+```
+
+Remove a matching pattern from everywhere:
+
+```bash
+my_variable=${my_variable//Bash/bash}
+```
+
+> Extended regular expressions described.
 
 | Pattern             | Matches                   |
 | ---                 | ---                       |
@@ -80,14 +139,9 @@ sed 's/Bash/bash/' <<< 'Hello from Bash!'
 | `[xy]`              | `x` or y char             |
 | `[^xy]`             | not `x` or y char         |
 
-| Class               | Description         |
-| ---                 | ---                 |
-| `\w`                | Word character      |
-| `\d`                | Digit character     |
-| `\W`                | Not word character  |
-| `\D`                | Not digit character |
-
 ## Conditionals
+
+Compare two variables:
 
 ```bash
 if [[ $my_variable -lt $another_variable ]]; then
@@ -113,7 +167,11 @@ fi
 | `-w`                | File or directory exists and [w]ritable   |
 | `-x`                | File or directory exists and e[x]ecutable |
 
+- [Bash if..else Statement](https://linuxize.com/post/bash-if-else-statement/)
+
 ## Loops
+
+Iterate over a number range:
 
 ```bash
 for i in {1,10}; do
@@ -121,7 +179,11 @@ for i in {1,10}; do
 done
 ```
 
+- [Bash For Loop](https://linuxize.com/post/bash-for-loop/)
+
 ## Command substitution
+
+Replace a command invocation with it's stdout output:
 
 ```bash
 declare my_variable=$(expr $my_variable + 1)
@@ -131,12 +193,18 @@ declare my_variable=$(expr $my_variable + 1)
 
 ### Defining and erasing
 
+Declare a function:
+
 ```bash
 my_function() {
   ···
 }
 ```
 
+Remove a function:
+
 ```bash
 unset my_function
 ```
+
+- [Bash Functions](https://linuxize.com/post/bash-functions/)
