@@ -145,9 +145,10 @@ my_variable=${my_variable%*=}
 my_variable=${my_variable%%*=}
 ```
 
-Remove a matching pattern from everywhere:
+Replace a first/all matching pattern:
 
 ```bash
+my_variable=${my_variable/Bash/bash}
 my_variable=${my_variable//Bash/bash}
 ```
 
