@@ -57,6 +57,16 @@ Remove the variable:
 unset my_variable
 ```
 
+### Slicing
+
+Slice the variable:
+
+```bash
+echo ${my_variable:1:10}
+echo ${my_variable:2}
+echo ${my_variable:0:-2}
+```
+
 ## Arithmetic
 
 ### Incrementing and decrementing
@@ -75,7 +85,7 @@ Increment/decrement the variable:
 Calculate the number sum:
 
 ```bash
-$((1 + 2))
+echo $((1 + 2))
 ```
 
 | Operator            | Performs       |
@@ -134,22 +144,22 @@ Match the string against a regular expresion:
 Remove the shortest/longest matching pattern from beggining:
 
 ```bash
-my_variable=${my_variable#*=}
-my_variable=${my_variable##*=}
+echo ${my_variable#*=}
+echo ${my_variable##*=}
 ```
 
 Remove the shortest/longest matching pattern from ending:
 
 ```bash
-my_variable=${my_variable%*=}
-my_variable=${my_variable%%*=}
+echo ${my_variable%*=}
+echo ${my_variable%%*=}
 ```
 
 Replace the first/all matching pattern:
 
 ```bash
-my_variable=${my_variable/Bash/bash}
-my_variable=${my_variable//Bash/bash}
+echo ${my_variable/Bash/bash}
+echo ${my_variable//Bash/bash}
 ```
 
 ## Conditionals
@@ -231,7 +241,7 @@ my_command | another_command
 Replace the command invocation with it's stdout output:
 
 ```bash
-$(expr $my_variable + 1)
+echo $(expr $my_variable + 1)
 ```
 
 ### Process substitution
@@ -239,7 +249,7 @@ $(expr $my_variable + 1)
 Replace the command invocation with a temporary file name with a command stdout output:
 
 ```bash
-<(expr $my_variable + 1)
+echo <(expr $my_variable + 1)
 ```
 
 ## Functions
