@@ -194,7 +194,7 @@ done
 Replace a command invocation with it's stdout output:
 
 ```bash
-declare my_variable=$(expr $my_variable + 1)
+$(expr $my_variable + 1)
 ```
 
 ## Process substitution
