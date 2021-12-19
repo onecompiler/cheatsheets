@@ -153,7 +153,7 @@ else
 fi
 ```
 
-| Operator            | Meaning                                   |
+| Integer operator    | Meaning                                   |
 | ---                 | ---                                       |
 | `-lt`               | [L]ess [t]han                             |
 | `-eq`               | [Eq]ual                                   |
@@ -161,6 +161,14 @@ fi
 | `-le`               | [L]ess than or [e]qual to                 |
 | `-ge`               | [G]reater than or [e]qual to              |
 | `-ne`               | [N]ot [E]qual                             |
+
+| String operator     | Meaning                                   |
+| ---                 | ---                                       |
+| `==`                | [Eq]ual                                   |
+| `!=`                | [N]ot [E]qual                             |
+
+| File operator       | Meaning                                   |
+| ---                 | ---                                       |
 | `-f`                | [F]ile exists                             |
 | `-d`                | [D]irectory exists                        |
 | `-r`                | File or directory exists and [r]eadable   |
