@@ -15,7 +15,7 @@ echo "Hello from Bash!"
 
 ## Comments
 
-Declare a comment:
+Declare the comment:
 
 ```bash
 # my comment
@@ -23,7 +23,7 @@ Declare a comment:
 
 ## I/O commands
 
-Print a string with trailing `\n`:
+Print the string with a trailing `\n`:
 
 ```bash
 echo "Hello from Bash!"
@@ -31,7 +31,7 @@ echo "Hello from Bash!"
 printf "%s\n" "Hello from Bash!"
 ```
 
-Read a string to a variable:
+Read the string to a variable:
 
 ```bash
 read my_variable
@@ -44,14 +44,14 @@ read my_variable
 
 ### Defining and erasing
 
-Declare a global/local variable:
+Declare the global/local variable:
 
 ```bash
 declare my_variable="Hello from Bash!"
 local my_variable="Hello from Bash!"
 ```
 
-Remove a variable:
+Remove the variable:
 
 ```bash
 unset my_variable
@@ -61,7 +61,7 @@ unset my_variable
 
 ### Incrementing and decrementing
 
-Increment/decrement a variable:
+Increment/decrement the variable:
 
 ```bash
 ((my_variable++))
@@ -72,7 +72,7 @@ Increment/decrement a variable:
 
 ### Integer manipulations
 
-Calculate a number sum:
+Calculate the number sum:
 
 ```bash
 $((1 + 2))
@@ -89,7 +89,7 @@ $((1 + 2))
 
 ### Float manipulations
 
-Calculate a number sum:
+Calculate the number sum:
 
 ```bash
 awk 'BEGIN { print 1.0 + 2.0 }'
@@ -110,7 +110,7 @@ awk 'BEGIN { print 1.0 + 2.0 }'
 
 ### Matching
 
-Match a string against a regular expresion:
+Match the string against a regular expresion:
 
 ```bash
 [[ 'Hello from Bash!' =~ 'Bash' ]]
@@ -131,21 +131,21 @@ Match a string against a regular expresion:
 
 ### Modifying
 
-Remove a shortest/longest matching pattern from beggining:
+Remove the shortest/longest matching pattern from beggining:
 
 ```bash
 my_variable=${my_variable#*=}
 my_variable=${my_variable##*=}
 ```
 
-Remove a shortest/longest matching pattern from ending:
+Remove the shortest/longest matching pattern from ending:
 
 ```bash
 my_variable=${my_variable%*=}
 my_variable=${my_variable%%*=}
 ```
 
-Replace a first/all matching pattern:
+Replace the first/all matching pattern:
 
 ```bash
 my_variable=${my_variable/Bash/bash}
@@ -192,7 +192,7 @@ fi
 
 ## Loops
 
-Iterate over a number range:
+Iterate over the number range:
 
 ```bash
 for i in {1,10}; do
@@ -206,13 +206,13 @@ done
 
 ### Files
 
-Write a string with trailing `\n` to a file:
+Write the string with a trailing `\n` to a file:
 
 ```bash
 echo "Hello from Bash!" > my_file
 ```
 
-Write (append) a string with trailing `\n` to a file:
+Write (append) the string with a trailing `\n` to a file:
 
 ```bash
 echo "Hello from Bash!" >> my_file
@@ -220,7 +220,7 @@ echo "Hello from Bash!" >> my_file
 
 ### Piping
 
-Pass first command stdout output as an input to second command:
+Pass the first command stdout output as an input to a second command:
 
 ```bash
 my_command | another_command 
@@ -228,7 +228,7 @@ my_command | another_command
 
 ### Command substitution
 
-Replace a command invocation with it's stdout output:
+Replace the command invocation with it's stdout output:
 
 ```bash
 $(expr $my_variable + 1)
@@ -236,7 +236,7 @@ $(expr $my_variable + 1)
 
 ### Process substitution
 
-Replace a command invocation with a temporary file name with a command stdout output:
+Replace the command invocation with a temporary file name with a command stdout output:
 
 ```bash
 <(expr $my_variable + 1)
@@ -246,7 +246,7 @@ Replace a command invocation with a temporary file name with a command stdout ou
 
 ### Defining and erasing
 
-Declare a function:
+Declare the function:
 
 ```bash
 my_function() {
@@ -254,7 +254,7 @@ my_function() {
 }
 ```
 
-Remove a function:
+Remove the function:
 
 ```bash
 unset my_function
