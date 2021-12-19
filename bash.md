@@ -10,7 +10,7 @@ updated: 2021-12-19
 ```bash
 #!/usr/bin/env bash
 
-echo "Hello from Bash!"
+echo 'Hello from Bash!'
 ```
 
 ## Comments
@@ -26,9 +26,9 @@ Declare the comment:
 Print the string with a trailing `\n`:
 
 ```bash
-echo "Hello from Bash!"
+echo 'Hello from Bash!'
 # or
-printf "%s\n" "Hello from Bash!"
+printf '%s\n' 'Hello from Bash!'
 ```
 
 Read the string to a variable:
@@ -47,8 +47,8 @@ read my_variable
 Declare the global/local variable:
 
 ```bash
-declare my_variable="Hello from Bash!"
-local my_variable="Hello from Bash!"
+declare my_variable='Hello from Bash!'
+local my_variable='Hello from Bash!'
 ```
 
 Remove the variable:
@@ -219,13 +219,13 @@ done
 Write the string with a trailing `\n` to a file:
 
 ```bash
-echo "Hello from Bash!" > my_file
+echo 'Hello from Bash!' > my_file
 ```
 
 Write (append) the string with a trailing `\n` to a file:
 
 ```bash
-echo "Hello from Bash!" >> my_file
+echo 'Hello from Bash!' >> my_file
 ```
 
 ### Piping
