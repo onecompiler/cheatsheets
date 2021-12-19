@@ -49,6 +49,8 @@ Remove a variable:
 unset my_variable
 ```
 
+## Arithmetic
+
 ### Incrementing and decrementing
 
 Increment/decrement a variable:
@@ -59,8 +61,6 @@ Increment/decrement a variable:
 ```
 
 - [How to Increment and Decrement Variable in Bash (Counter)](https://linuxize.com/post/bash-increment-decrement-variable/)
-
-## Arithmetic
 
 ### Integer manipulations
 
@@ -100,11 +100,28 @@ awk 'BEGIN { print 1.0 + 2.0 }'
 
 ## String manipulation
 
+### Matching
+
 Match a string against a regular expresion:
 
 ```bash
 [[ 'Hello from Bash!' =~ 'Bash' ]]
 ```
+
+> Extended regular expressions described.
+
+| Pattern             | Matches                   |
+| ---                 | ---                       |
+| `x?`                | Zero or one `x` chars     |
+| `x*`                | Any count `x` chars       |
+| `x+`                | One or more  `x` chars    |
+| `x{n}`              | n times `x` chars         |
+| `x{n,m}`            | n to m times `x` chars    |
+| `x{n,}`             | n or more times `x` chars |
+| `[xy]`              | `x` or y char             |
+| `[^xy]`             | not `x` or y char         |
+
+### Modifying
 
 Remove a shortest/longest matching pattern from beggining:
 
@@ -125,19 +142,6 @@ Remove a matching pattern from everywhere:
 ```bash
 my_variable=${my_variable//Bash/bash}
 ```
-
-> Extended regular expressions described.
-
-| Pattern             | Matches                   |
-| ---                 | ---                       |
-| `x?`                | Zero or one `x` chars     |
-| `x*`                | Any count `x` chars       |
-| `x+`                | One or more  `x` chars    |
-| `x{n}`              | n times `x` chars         |
-| `x{n,m}`            | n to m times `x` chars    |
-| `x{n,}`             | n or more times `x` chars |
-| `[xy]`              | `x` or y char             |
-| `[^xy]`             | not `x` or y char         |
 
 ## Conditionals
 
