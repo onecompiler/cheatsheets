@@ -193,7 +193,31 @@ done
 
 - [Bash For Loop](https://linuxize.com/post/bash-for-loop/)
 
-## Command substitution
+## Process communication
+
+### Files
+
+Write a string with trailing `\n` to a file:
+
+```bash
+echo "Hello from Bash!" > my_file
+```
+
+Write (append) a string with trailing `\n` to a file:
+
+```bash
+echo "Hello from Bash!" >> my_file
+```
+
+### Piping
+
+Pass first command stdout output as an input to second command:
+
+```bash
+my_command | another_command 
+```
+
+### Command substitution
 
 Replace a command invocation with it's stdout output:
 
@@ -201,7 +225,7 @@ Replace a command invocation with it's stdout output:
 $(expr $my_variable + 1)
 ```
 
-## Process substitution
+### Process substitution
 
 Replace a command invocation with a temporary file name with a command stdout output:
 
