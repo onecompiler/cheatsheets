@@ -197,6 +197,14 @@ Replace a command invocation with it's stdout output:
 declare my_variable=$(expr $my_variable + 1)
 ```
 
+## Process substitution
+
+Replace a command invocation with a temporary file name with a command stdout output:
+
+```bash
+<(expr $my_variable + 1)
+```
+
 ## Functions
 
 ### Defining and erasing
