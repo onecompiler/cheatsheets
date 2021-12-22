@@ -45,7 +45,7 @@ namespace HelloWorld
 | float     | used to store fractional numbers                          | 6 to 7 decimal digits                                   | 4 bytes               |
 | double    | used to store fractional numbers                          | 15 decimal digits                                       | 8 bytes               |
 | char      | used to store a single character enclosed in single quote | one character                                           | 2 bytes               |
-| bool      | Boolean data type|Stores either true or false             | 1 bit                                                   |                       |
+| bool      | Boolean data type                                         |Stores either true or false                              | 1 bit                 |
 | String    | Stores a sequence of characters enclosed in double quotes | Sequence of Characters                                  | 2 bytes per character |
 
 ## Variables
