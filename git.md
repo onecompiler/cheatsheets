@@ -61,11 +61,11 @@ git diff branch2...branch1          # Shows diff of what is in branch1 that is n
 ## Update
 
 ```sh
-git remote -v         # to view see the actual URLs for each alias
-git remote add [aliasName] [url]       # to create a new connection record to a remote repository with a local alias
-git remote rm [aliasName]                       # Removes aliasName
+git remote -v                      # to view see the actual URLs for each alias
+git remote add [aliasName] [url]   # to create a new connection record to a remote repository with a local alias
+git remote rm [aliasName]          # Removes aliasName
 git fetch [alias]                  # to download contents from a remote repository
 git push [remote] [branch]         # to upload local repository content to a remote repository
-git push [remote] --force          # to forcefully upload your local repository content to remote, Use this command only when you are very sure
+git push [remote] --force          # to forcefully upload your local repository content to remote, Use only when you are very sure
 git pull                           # to update the local version of a repository from a remote
 ```
