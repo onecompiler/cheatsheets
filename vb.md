@@ -24,7 +24,7 @@ End Module
 ## Data types
 
 | Data type | Description | Range | Memory Size|
-|----|----|----|----|----|
+|----|----|----|----|
 |byte|	used to store unsigned integer|	0 to 255| 1 byte|
 |sbyte|	used to store signed integer|	-128 to 127| 1 byte|
 |ushort| used to store unsigned integers|	0 to 65,535 | 2 bytes|
