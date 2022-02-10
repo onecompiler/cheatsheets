@@ -6,7 +6,7 @@ updated: 2019-08-16
 color: #636e72
 ---
 
-| Device Model | Native Resolution(Pixels) | Points | Screean Size(Inches) | 
+| Device Model | Native Resolution(Pixels) | Points | Screean Size(Inches) |
 |--------|--------|--------|--------|
 |iPhone Xs Max|1242 x 2688|414 x 896|6.5"|
 |iPhone Xr Max|828 x 1792|414 × 896|6.1"|

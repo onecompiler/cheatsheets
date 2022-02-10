@@ -6,10 +6,10 @@ updated: 2019-08-19
 color: #f4de50
 ---
 
-| Version | Year | Features added | 
+| Version | Year | Features added |
 |--------|--------|--------|
-|JDK Beta|1995||
-|JDK 1.0|January 1996||
+|JDK Beta|1995| |
+|JDK 1.0|January 1996| |
 |JDK 1.1|February 1997	|AWT, JDBC, RMI, JIT|
 |J2SE 1.2|December 1998|Swing, Collections|
 |J2SE 1.3|May 2000|Hotspot JVM, JNDI, JPDA|
