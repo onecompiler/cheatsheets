@@ -64,8 +64,8 @@ int length = msg3.length // gives length of the string
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %, ++, --|
-| comparision Operator| < , > , <= , >=, != , ==| 
-| Bitwise Operator| & , ^ , \|, ~, <<,>>| 
+| comparision Operator| < , > , <= , >=, != , ==|
+| Bitwise Operator| & , ^ , \|, ~, <<,>>|
 | Logical Operator| && , \|\|, ! |
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, \|= |
 | Misc Operator| sizeof(), &, *, ? : |

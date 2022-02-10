@@ -28,7 +28,7 @@ end program hello
 |Integer | To store integer variables|integer :: x|
 |Real | To store float values | real :: x|
 |Complex | To store complex numbers| complex :: x,y|
-|Logical | To store boolean values True or false| logical :: x=.True. , logical :: x = .FALSE.| 
+|Logical | To store boolean values True or false| logical :: x=.True. , logical :: x = .FALSE.|
 |Character| To store characters and strings | character :: x|
 
 ## Variables
@@ -67,7 +67,7 @@ data type :: variable_name
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , **|
-| Relational Operator| < , > , <= , >=, /= , ==|  
+| Relational Operator| < , > , <= , >=, /= , ==|
 | Logical Operator| .and. , .or. , .not. , .eqv. , .neqv.|
 
 ## Arrays

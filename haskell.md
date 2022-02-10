@@ -50,7 +50,7 @@ main = do
 | Comparision Operators| == , /= , > , >= , < , <= |
 | Bitwise Operators| & , ^ , \| , ^ , ~ , << , >> , >>>|
 | Function Operators| \, ., \||
-| List Operators | \[...,...\], ++, :, !!, .. , \\, <-|  
+| List Operators | \[...,...\], ++, :, !!, .. , \\, <-|
 | Monad Operators| :, ->, ::, =>, (), >>, >>=, >@>,(..)|
 | Pattern Operators | _, ~, !, @|
 
@@ -101,7 +101,7 @@ Some of the common list operations
 |List Operations| Description|
 |----|----|
 |list1+list2| to append two lists list1+list2|
-| list1!!n | to return element n from list1| 
+| list1!!n | to return element n from list1|
 | head/last list1| to retrieve the first/last element of the list1|
 | sum list1| to get the sum of all list elements present in list1|
 | prod list1| to get the product of all list elements  present in list1|

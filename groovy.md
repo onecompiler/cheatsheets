@@ -69,8 +69,8 @@ variable-name = value; // no type definition is required
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operators|+ , - , * , / , %|
-| comparision Operators| < , > , <= , >=, != , ==| 
-| Bitwise Operators| & , ^ , \|| 
+| comparision Operators| < , > , <= , >=, != , ==|
+| Bitwise Operators| & , ^ , \||
 | Logical Operators| && , \|\|, ! |
 | Assignment Operators|= , += , -= , *= , /= , %=|
 

@@ -42,7 +42,7 @@ variable-name = value
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , rem, div|
-| Relational Operator| < , > , <= , >=, /= , ==| 
+| Relational Operator| < , > , <= , >=, /= , ==|
 | Logical Operator| and, or, not, xor |
 | Bitwise Operator | band, bor, bnot, bxor|
 

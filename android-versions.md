@@ -6,7 +6,7 @@ updated: 2019-08-19
 color: #f4de50
 ---
 
-| Version | Year | Version Name (s) | Features added | 
+| Version | Year | Version Name (s) | Features added |
 |--------|--------|--------|--------|
 |1.0|September 23, 2008|Astroid||
 |1.1|February 9, 2009|Petit Four|Longer in-call screen timeout, Ability to save attachments in messages, marquee in system layouts|

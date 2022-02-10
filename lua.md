@@ -54,7 +54,7 @@ local x = 30
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %, -|
-| comparision Operator| < , > , <= , >=, ~=, ==| 
+| comparision Operator| < , > , <= , >=, ~=, ==|
 | Logical Operator| and , or, not |
 | Misc Operator | .. , # |
 

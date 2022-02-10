@@ -24,7 +24,7 @@ print_string "Hello world!"
 
 ## Data types
 
-| Classification | Data-types | 
+| Classification | Data-types |
 |----|----|
 | Basic data types| int, float, bool, char, string, unit.|
 | Sophisticated data types| tuples, arrays, lists, sets, hash tables, queues, stacks, data streams.|

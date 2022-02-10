@@ -39,8 +39,8 @@ In Perl, there is no need to explicitly declare variables to reserve memory spac
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %, **|
-| comparision Operator| < , > , <= , >=, != , ==| 
-| Bitwise Operator| & , ^ , \|, ~, <<, >>| 
+| comparision Operator| < , > , <= , >=, != , ==|
+| Bitwise Operator| & , ^ , \|, ~, <<, >>|
 | Logical Operator| && , \|\|, ! |
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, \|= |
 | Quote Operator| q{ }, qq{ }, qx{ } |

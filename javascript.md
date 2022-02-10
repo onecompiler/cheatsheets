@@ -23,7 +23,7 @@ Javascript is a dynamically typed language and hence though there are data types
 
 |Keyword|Description|Scope|
 |----|----|----|
-|var| Var is used to declare variables(old way of declaring variables)| Function or global scope| 
+|var| Var is used to declare variables(old way of declaring variables)| Function or global scope|
 |let| let is also used to declare variables(new way)|Global or block Scope|
 |const|const is used to declare const values. Once the value is assigned it can not be modified|Global or block Scope|
 
@@ -222,21 +222,21 @@ console.log(sum(10,20,30));
 
 |Method Name| Usage|
 |----|----|
-|search()|let sindex=str.search("sub-string");| 
+|search()|let sindex=str.search("sub-string");|
 |slice(start,end)|let sub-str=str.slice(starting position,ending position);|
 |substring(start,end|let sub-str=str.substring(starting position,ending position);|
 |substr(start,length)|let sub-str=str.substr(starting position,length);|
-|trim()|let str1= str.trim();| 
+|trim()|let str1= str.trim();|
 |charAt()|let c=str.charAt(position);|
 |charCodeAt()|let c=str.charCodAt(position);|
 |split()|let array=str.split("");|
-|length|let vln = str.length()| 
+|length|let vln = str.length()|
 |indexOf()|let index=str.indexOf("sub-string");|
 |lastIndexOf()|let index=str.lastIndexOf("sub-string");|
 |toUpperCase()|let str1=str.toUpperCase();|
 |toLowerCase()|let str1=str.toLowerCase();|
 |replace()|let x=str.replace("string to replace","replacement string")|
-|concat()| let str3=str1.concat(" ",str2);| 
+|concat()| let str3=str1.concat(" ",str2);|
 
 ### Number related Methods
 

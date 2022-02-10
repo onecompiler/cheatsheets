@@ -56,7 +56,7 @@ Multiple ways to declare variables
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , rem, mod,incf,decf|
-| Relational Operator| < , > , <= , >=, /= , ==, max, min| 
+| Relational Operator| < , > , <= , >=, /= , ==, max, min|
 | Logical Operator| and, or, not|
 | Bitwise Operator | logand, logior, lognor, logxor, logeqv|
 
@@ -134,7 +134,7 @@ Multiple ways to declare variables
 |reverse| (reverse '(a b c)) --> (C B A) | used to reverse the list items|
 |sort |(sort '(0 5 1 3 2) #'>) --> (5 3 2 1 0)| used to sort the list items|
 |substitute | (substitute 'y 'x '(x 1 x 2)) --> (Y 1 Y 2) | used to substitute the list items with the given value|
-|length|(length '(1 2 3 4 5)) --> 5 used to find the length of a list|
+|length|(length '(1 2 3 4 5)) --> 5 used to find the length of a list||
 |count |(count '1 '(1 2 1 2 1)) --> 3| to count the occurence of a list item|
 |remove| (remove 'item list) | removes the given item from list|
 

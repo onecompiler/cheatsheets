@@ -33,8 +33,8 @@ variable-name = value
 
 |||||||
 |----|----|----|----|----|----|
-| after | and | catch | do | inbits | true |
-| inlist | nil | else | end | not |  when| 
+| after | and | catch | do | inbits | true|
+| inlist | nil | else | end | not |  when|
 | or| false | fn | in | rescue |   xor |
 
 
@@ -42,8 +42,8 @@ variable-name = value
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , div, rem|
-| comparision Operator| < , > , <= , >=, !=, !==, === , ==| 
-| Bitwise Operator| &&& , ^^^ , \|\|\|, ~~~, <<<, >>>| 
+| comparision Operator| < , > , <= , >=, !=, !==, === , ==|
+| Bitwise Operator| &&& , ^^^ , \|\|\|, ~~~, <<<, >>>|
 | Boolean Operator| and , or, not, &&, \|\|, ! |
 
 ## Conditional Statements

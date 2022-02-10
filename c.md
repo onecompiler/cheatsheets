@@ -145,10 +145,10 @@ int a[2][3] = {
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
-| comparision Operator| < , > , <= , >=, != , ==| 
-| Bitwise Operator| & , ^ , \|| 
-| Logical Operator| && , `||`, ! |
-| Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `|=` |
+| comparision Operator| < , > , <= , >=, != , ==|
+| Bitwise Operator| & , ^ , \||
+| Logical Operator| && , `\|\|`, ! |
+| Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
 | sizeof operator| sizeof() |
 
@@ -350,15 +350,15 @@ fclose(fptr);
 
 |Mode | Description|
 |----|----|
-|r|	Opens for reading.	|
-|rb| Opens for reading in binary mode.	|
-|r+| Opens for both reading and writing.|	
-|w|	Opens for writing. |   			
-|wb| Opens for writing in binary mode.|					
-|a|	Opens for append. |                      				
-|ab| Opens for append in binary mode.|        			
-|w+| Opens for both reading and writing.|					
+|r|	Opens for reading.|
+|rb| Opens for reading in binary mode.|
+|r+| Opens for both reading and writing.|
+|w|	Opens for writing. |
+|wb| Opens for writing in binary mode.|
+|a|	Opens for append. |
+|ab| Opens for append in binary mode.|
+|w+| Opens for both reading and writing.|
 |wb+| Opens for both reading and writing in binary mode.|
 |rb+| Opens for both reading and writing in binary mode.|
-|a+| Opens for both reading and appending.	|
+|a+| Opens for both reading and appending.|
 |ab+| Opens for both reading and appending in binary mode.|

@@ -60,7 +60,7 @@ variable-name := value // It's not mandatory to declare a variable when you use 
 
 #### Float Data types
 
-| Data type | Description | 
+| Data type | Description |
 |-----|-----|
 |float32|32-bit signed floating point number|
 |float|64-bit signed floating point number|
@@ -76,7 +76,7 @@ variable-name := value // It's not mandatory to declare a variable when you use 
 
 
 ### 3. String Data types
-| Data type | Description | 
+| Data type | Description |
 |-----|-----|
 |string|sequence of characters|
 
@@ -95,8 +95,8 @@ var (
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
-| comparision Operator| < , > , <= , >=, != , ==| 
-| Bitwise Operator| & , ^ , \|, &^, <<, >>| 
+| comparision Operator| < , > , <= , >=, != , ==|
+| Bitwise Operator| & , ^ , \|, &^, <<, >>|
 | Logical Operator| && , \|\|, ! |
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, \|= |
 

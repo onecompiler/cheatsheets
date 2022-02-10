@@ -56,7 +56,7 @@ var_raw <- charToRaw("Hello World")  # raw variable
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %%, ^|
-| Relational Operator| < , > , <= , >=, != , ==| 
+| Relational Operator| < , > , <= , >=, != , ==|
 | Logical Operator| &, \|, && , \|\|, ! |
 | Assignment Operator|= , ->, ->>, <-, <<- |
 | Misc Operators| :, %in%, %*%|

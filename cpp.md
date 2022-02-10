@@ -111,10 +111,10 @@ int a[2][3] = {
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
-| comparision Operator| < , > , <= , >=, != , ==| 
-| Bitwise Operator| & , ^ , | 
-| Logical Operator| && , `||`, ! |
-| Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `|=` |
+| comparision Operator| < , > , <= , >=, != , ==|
+| Bitwise Operator| & , ^ , |
+| Logical Operator| && , `\|\|`, ! |
+| Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
 | sizeof operator| sizeof() |
 

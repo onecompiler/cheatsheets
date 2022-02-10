@@ -38,7 +38,7 @@ F# does not have any specific entry point, F# compiler executes all the statemen
 |uint32|32-bit unsigned integer|4 bytes|0 to 4,294,967,295|
 |int64|64-bit signed integer|8 bytes|	-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|
 |uint64|64-bit unsigned integer|8 bytes|0 to 18,446,744,073,709,551,615|
-|bigint|arbitrary precision integer|At least 4 bytes|Integers| 
+|bigint|arbitrary precision integer|At least 4 bytes|Integers|
 
 ### Float Data types
 | Data type | Description | Size|Range|
@@ -69,9 +69,9 @@ let mutable variable_name:data-type = value
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %, **|
-| comparision Operator| < , > , <= , >=, <> , ==| 
-| Bitwise Operator| &&& , ^^^ , \|\|\|, ~~~, <<<, >>>| 
-| Boolean Operator| && , `||`, not |
+| comparision Operator| < , > , <= , >=, <> , ==|
+| Bitwise Operator| &&& , ^^^ , \|\|\|, ~~~, <<<, >>>|
+| Boolean Operator| && , `\|\|`, not |
 
 ## List
 

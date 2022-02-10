@@ -26,9 +26,9 @@ set name onecompiler
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
-| comparision Operator| < , > , <= , >=, != , ==| 
-| Bitwise Operator| & , ^ , \|, <<, >>| 
-| Logical Operator| && , `||`, ! |
+| comparision Operator| < , > , <= , >=, != , ==|
+| Bitwise Operator| & , ^ , \|, <<, >>|
+| Logical Operator| && , `\|\|`, ! |
 | Ternary Operator| ? : |
 
 ## Conditional Statements

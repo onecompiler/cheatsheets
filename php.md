@@ -75,7 +75,7 @@ const MESSAGE = "Happy learning!";
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %, ++, --|
-| comparision Operator| < , > , <= , >=, != , ==| 
+| comparision Operator| < , > , <= , >=, != , ==|
 | Logical Operator| && , \|\|, ! |
 | Assignment Operator|= , += , -= , *= , /= , %= |
 | Conditional Operator| ? : |
