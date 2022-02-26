@@ -130,3 +130,11 @@ curl --location --request POST 'https://onecompiler.com/api/v1/run?access_token=
 }'
 ```
 Note: Replace the `your_access_token` with your account's access token. Reach out to support@onecompiler.com to get your acces token
+
+Following is the pricing for APIs
+
+|Plan Name| P1 | P2 | P3 | P4 | Enterprise |
+|---|---|---|---|---|---|
+|Price|$5 per month | $10 per month | $25 per month | $50 per month | Contact Us|
+|Calls per day| 300| 1,000| 3,000| 10,000| - |
+
