@@ -145,8 +145,7 @@ curl --location --request POST 'https://onecompiler.com/api/v1/run?access_token=
 				"name": "HelloWorld.py",
 				"content": "import sys\nname = sys.stdin.readline()\nprint('Hello '+ name)"
 			}],
-			"stdin": "Peter",
-			"outbound": "outbound_3xunf7j4y_ip-172-26-5-56"
+			"stdin": "Peter"
 		},
 		"jobId": "3xv3z44wz",
 		"_id": "3xv3z44wz"
