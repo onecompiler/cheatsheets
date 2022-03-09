@@ -163,3 +163,4 @@ Following is the pricing for APIs
 |Price|$5 per month | $10 per month | $25 per month | $50 per month | Contact Us|
 |Calls per day| 300| 1,000| 3,000| 10,000| - |
 
+> Note: Get 2 months free when you purchase yearly plans!
