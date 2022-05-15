@@ -299,3 +299,72 @@ int main()
 }
 
 ```
+### stacks 
+
+Stacks are a type of container adaptors with LIFO(Last In First Out) type of working, where a new element is added at one end (top) and an element is removed from that end only.
+
+The functions associated with stack are: 
+empty() – Returns whether the stack is empty – Time Complexity : O(1) 
+size() – Returns the size of the stack – Time Complexity : O(1) 
+top() – Returns a reference to the top most element of the stack – Time Complexity : O(1) 
+push(g) – Adds the element ‘g’ at the top of the stack – Time Complexity : O(1) 
+pop() – Deletes the top most element of the stack – Time Complexity : O(1) 
+
+```c
+
+#include <iostream>
+#include <stack>
+using namespace std;
+int main() {
+	stack<int> stack;
+	stack.push(21);
+	stack.push(22);
+	stack.push(24);
+	stack.push(25);
+	
+		stack.pop();
+	stack.pop();
+
+	while (!stack.empty()) {
+		cout << ' ' << stack.top();
+		stack.pop();
+	}
+}
+
+```
+
+### queue
+
+Queues are a type of container adaptors that operate in a first in first out (FIFO) type of arrangement. Elements are inserted at the back (end) and are deleted from the front
+
+queue::empty()	Returns whether the queue is empty.
+queue::size()	Returns the size of the queue.
+queue::swap()	Exchange the contents of two queues but the queues must be of the same type, although sizes may differ.
+queue::emplace()	Insert a new element into the queue container, the new element is added to the end of the queue.
+queue::front()	Returns a reference to the first element of the queue.
+queue::back()	Returns a reference to the last element of the queue.
+queue::push(g) 	Adds the element ‘g’ at the end of the queue.
+queue::pop() removes the element
+
+```c
+
+#include <iostream>
+#include <queue>
+using namespace std;
+int main() {
+	queue<int> q;
+	q.push(21);
+	q.push(22);
+	q.push(24);
+	q.push(25);
+	
+		q.pop();
+	q.pop();
+
+	while (!q.empty()) {
+		cout << ' ' << q.front();
+		q.pop();
+	}
+}
+
+```
