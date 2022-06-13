@@ -368,3 +368,30 @@ int main() {
 }
 
 ```
+## Sort one-line
+
+Sorting is one of the most basic functions applied to data. It means arranging the data in a particular fashion, which can be increasing or decreasing. There is a builtin function in C++ STL by the name of sort(). 
+This function internally uses IntroSort. In more details it is implemented using hybrid of QuickSort, HeapSort and InsertionSort.
+
+```c
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main(){
+
+int arr[] = {3,2,1};
+int n = 3 ; // size of the array
+
+sort(arr, arr+n); // sorting the array
+
+vector<int> v;
+
+v = {3,2,1};
+
+sort(v.begin(), v.end()); // sorting in the vector
+
+}
+
+```
