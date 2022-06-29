@@ -136,35 +136,6 @@ List the entries like in a dictionary or encyclopedia.
  </dl>
 ```
 
-## CSS
-
-### 1. Inline CSS
-`style` attribute is used to define CSS properties at each HTML element.
-```html
-<h1 style = "color:blue; font-size:40px; font-style: italic;"> One Compiler </h1>
-```
-
-### 2. Internal CSS
-You can define CSS properties using `<style>` tag in `<head>` section.
-
-```html
-<head>
-<style>
-body {background-color: pink;}
-h1   {color: red;}
-h2    {color: green; font-size : 40px; font-style: italic;}
-</style>
-</head>
-```
-
-### 3. External CSS
-
-`<link>` tag is used to refer an external CSS file.
-
-```html
- <link rel="stylesheet" href="styles.css" />
-```
-
 ## Forms
 
 `<form>` element is used to define a form.
