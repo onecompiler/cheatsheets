@@ -362,3 +362,54 @@ fclose(fptr);
 |rb+| Opens for both reading and writing in binary mode.|
 |a+| Opens for both reading and appending.|
 |ab+| Opens for both reading and appending in binary mode.|
+
+## Expressions in C
+An expression is a formula in which operands are linked to each other by 
+the use of operators to compute a value. An operand can be a function 
+reference, a variable, an array element or a constant.
+Let's see an example:
+  a-b;
+In the above expression, minus character (-) is an operator, and a, and b 
+are the two operands.
+There are four types of expressions exist in C:
+o Arithmetic expressions
+o Relational expressions
+o Logical expressions
+o Conditional expressions
+
+Each type of expression takes certain types of operands and uses a specific 
+set of operators. Evaluation of a particular expression produces a specific 
+value.
+For example:
+  x = 9/2 + a-b;
+The entire above line is a statement, not an expression. The portion after 
+the equal is an expression.
+
+## 1) Arithmetic Expressions
+An arithmetic expression is an expression that consists of operands and 
+arithmetic operators. An arithmetic expression computes a value of type 
+int, float or double.
+When an expression contains only integral operands, then it is known as 
+pure integer expression when it contains only real operands, it is known as 
+pure real expression, and when it contains both integral and real operands, 
+it is known as mixed mode expression.
+
+## 2) Relational Expressions
+o A relational expression is an expression used to compare two operands.
+o It is a condition which is used to decide whether the action should be taken or 
+not.
+o In relational expressions, a numeric value cannot be compared with the string 
+value.
+o The result of the relational expression can be either zero or non-zero value. 
+Here, the zero value is equivalent to a false and non-zero value is equivalent 
+to true
+
+## 3) Logical Expressions
+o A logical expression is an expression that computes either a zero or non-zero 
+value.
+o It is a complex test condition to take a decision
+
+## 4) Conditional Expressions
+o A conditional expression is an expression that returns 1 if the condition is true 
+otherwise 0.
+o A conditional operator is also known as a ternary operator.
