@@ -1,3 +1,10 @@
+---
+title: CSS
+description: Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML
+created: 2022-07-02
+updated: 2022-07-02
+---
+
 ## CSS
 
 ### 1. Inline CSS
