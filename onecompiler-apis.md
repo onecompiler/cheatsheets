@@ -54,6 +54,7 @@ Following are the different options available to embed the editor
 | `hideResult=true` |To hide the Result section including STDIN |
 | `hideTitle=true` |To hide the Title/Code ID|
 | `listenToEvents=true`| Editor will keep listening for events like code change/ run from parent website|
+| `theme=dark`| For Darkmode editor|
 
 ## Capturing the code into parent website 
 Add the `codeChangeEvent=true` query param
