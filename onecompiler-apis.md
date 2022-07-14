@@ -110,7 +110,7 @@ iFrame.contentWindow.postMessage({
 Note: Make sure you have enabled `listenToEvents` flag via query parameter
 
 ## Demo
-https://editor-demo.w3spaces.com/
+https://onecompiler.github.io/editor-embed-demo/
 
 ## API to run the code 
 Users can integrate the API from their backend servers and execute the code programatically. 
