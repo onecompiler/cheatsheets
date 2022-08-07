@@ -50,6 +50,8 @@ Following are the different options available to embed the editor
 | `availableLanguages=true`| To limit the languages in the Language selection popup|
 | `hideLanguageSelection=true`   | To hide the language selection button|
 | `hideNew=true` |To hide the 'New' button |
+| `hideNewFileOption=true` |Disables new file creation button|
+| `disableCopyPaste=true` |Disables copy/paste functionality|
 | `hideStdin=true` |To hide the STDIN section |
 | `hideResult=true` |To hide the Result section including STDIN |
 | `hideTitle=true` |To hide the Title/Code ID|
@@ -139,18 +141,6 @@ curl --location --request POST 'https://onecompiler.com/api/v1/run?access_token=
 	"stdout": "Hello Peter\n",
 	"stderr": null,
 	"executionTime": 41,
-	"job": {
-		"properties": {
-			"language": "python",
-			"files": [{
-				"name": "HelloWorld.py",
-				"content": "import sys\nname = sys.stdin.readline()\nprint('Hello '+ name)"
-			}],
-			"stdin": "Peter"
-		},
-		"jobId": "3xv3z44wz",
-		"_id": "3xv3z44wz"
-	},
 	"limitPerMonthRemaining": 74694
 }
 ```
