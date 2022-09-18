@@ -8,10 +8,10 @@ color: #0984e3
 
 OneCompiler challenges code preloads helps populating boilerplate code for the problems so that users don't have to start from scratch. Typically preloads populate code for reading inouts from console. 
 
-### How to add preloads? 
+## How to add preloads? 
 While editing a problem under challenge, click on `Additional options:` in the section you see `code ids` textarea where you can keep comma seperated code ids to preload from different languages. 
 
-### Common preloads
+## Common preloads
 Following are the common preloads for popular languages, these covers basic syntax for reading STDIN. 
 
 ```
