@@ -45,6 +45,8 @@ updated: 2020-06-17
 | `<meta/>`| Used to provide meta data information like description of the web page |`<meta charset="utf-8"/>`|
 | `<a>..</a>`| Used to link external webpages to your web page| `<a href="https://onecompiler.com/" target="_blank"> OneCompiler</a>`|
 | `<img />`| Used to insert an image | `<img src="/sample.jpg" alt="sample image" width="100" height="50" longdesc="image" />`|
+|`<pre/>`| Text in a pre elementis displayed in a fixed-width font, and it preservesboth spaces and line breaks |`<pre> Text in a pre element is displayed in a fixed-width font, and it preserves both      spaces andline breaks </pre>`|
+
 
 
 ## HTML formatting 
