@@ -12,18 +12,18 @@ Javascript is a dynamically typed language and hence though there are data types
 |Data Type | Description |
 |----|----|
 |number| Represents numbers like integers, floating values, etc.|
-|string| Represents one or more characters|
-|bigint| Represents integers of arbitrary length|
-|null| Represents unknown values|
-|undefined| Represents undefined values|
-|object| Represents complex data structures|
-|boolean| Represents either true or false|
+|string| Represents one or more characters.|
+|bigint| Represents integers of arbitrary length.|
+|null| Represents unknown values.|
+|undefined| Represents undefined values.|
+|object| Represents complex data structures.|
+|boolean| Represents either true or false.|
 
 ## Variables
 
 |Keyword|Description|Scope|
 |----|----|----|
-|var| var is used to declare variables (old way of declaring variables) | Function or global scope|
+|var| var is used to declare variables (old way of declaring variables). | Function or global scope|
 |let| let is also used to declare variables (new way). The value of these variables can change after assignment. |Global or block Scope|
 |const| const is used to declare constant values. The value of these variables cannot be changed after assignment. |Global or block Scope|
 
