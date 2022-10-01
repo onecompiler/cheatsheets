@@ -76,6 +76,7 @@ git pull                           # to update the local version of a repository
 git stash push "add style to our site"  # Save your local modifications to a new stash entry
 git stash list                          # List the stash entries that you currently have
 git stash pop stash@{0}                 # Remove a single stashed state from the stash list and apply it on top of the current working tree state
+git stash clear                         # Remove all stashed entries
 ```
 
 ## Rebase main branch into feature branch
