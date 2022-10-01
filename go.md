@@ -136,16 +136,14 @@ arr := [...] int {1,2,3,4,5} //Declaring a integer array of size 5
 
 ### 1. If
 ```go
-if (conditional-expression)
-{
+if (conditional-expression) {
     //code
 }
 ```
 ### 2. If-else
 
 ```go
-if (conditional-expression)
-{
+if (conditional-expression) {
     //code
 } else {
     //code
@@ -154,8 +152,7 @@ if (conditional-expression)
 ### 3. If-else-if ladder
 
 ```go
-if (conditional-expression-1)
-{
+if (conditional-expression-1) {
     //code
 } else if (conditional-expression-2) {
     //code
@@ -207,8 +204,7 @@ Go doesn't have `do...while` you can improvised using for.
 ```go
 for (true) {
     //code
-    if(!conditional-expression)
-    {
+    if(!conditional-expression) {
         break;
     }
 }
