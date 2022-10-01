@@ -50,22 +50,22 @@ j := 99 // short assignment without var declaration
 | Data type | Description | Size|Range|Alias|
 |-----|-----|-----|----|----|
 |uint8|8-bit unsigned integer|1 byte|0 to 255|byte|
-|int8|8-bit signed integer|1 byte|-128 to 127|
-|int16|16-bit signed integer|2 bytes|-32768 to 32767|
-|unit16|16-bit unsigned integer|2 bytes|0 to 65,535|
-|int32|32-bit signed integer|4 bytes|-2,147,483,648 to 2,147,483,647|int (on 32 bit systems), rune
-|uint32|32-bit unsigned integer|4 bytes|0 to 4,294,967,295|uint (on 32 bit systems)
-|int64|64-bit signed integer|8 bytes|	-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|int (on 64 bit systems)
-|uint64|64-bit unsigned integer|8 bytes|0 to 18,446,744,073,709,551,615|uint (on 64 bit systems)
+|int8|8-bit signed integer|1 byte|-128 to 127|*N/A*|
+|int16|16-bit signed integer|2 bytes|-32768 to 32767|*N/A*|
+|unit16|16-bit unsigned integer|2 bytes|0 to 65,535|*N/A*|
+|int32|32-bit signed integer|4 bytes|-2,147,483,648 to 2,147,483,647|int (on 32 bit systems), rune|
+|uint32|32-bit unsigned integer|4 bytes|0 to 4,294,967,295|uint (on 32 bit systems)|
+|int64|64-bit signed integer|8 bytes|	-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807|int (on 64 bit systems)|
+|uint64|64-bit unsigned integer|8 bytes|0 to 18,446,744,073,709,551,615|uint (on 64 bit systems)|
 
 #### Float Data types
 
 | Data type | Description | Size | Alias |
 |-----|-----|-----|-----|
-|float32|32-bit signed floating point number|4 bytes
-|float64|64-bit signed floating point number|8 bytes|float
-|complex64|Number has float32 real and imaginary parts|8 bytes
-|complex128|Number has float64 real and imaginary parts|16 bytes
+|float32|32-bit signed floating point number|4 bytes|*N/A*|
+|float64|64-bit signed floating point number|8 bytes|float|
+|complex64|Number has float32 real and imaginary parts|8 bytes|*N/A*|
+|complex128|Number has float64 real and imaginary parts|16 bytes|*N/A*|
 
 
 ### 2. Boolean Data types
@@ -79,7 +79,7 @@ j := 99 // short assignment without var declaration
 | Data type | Description |
 |-----|-----|
 |string|Sequence of characters|
-|rune|Alias for uint32 but also represent single character in string
+|rune|Alias for uint32 but also represent single character in string|
 
 ### Example
 ```go
