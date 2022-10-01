@@ -5,8 +5,8 @@ created: 2019-10-15
 updated: 2019-10-23
 ---
 
-Arrow Functions helps developers to write code in concise way, it’s introduced in ES6.
-Arrow functions can be written in multiple ways. Below are couple of ways to use arrow function but it can be written in many other ways as well. 
+Arrow functions help developers in writing more concise code, and were introduced in ES6.
+Arrow functions can be written in multiple ways. Below are couple of ways to use arrow functions, although, they can be written in many other ways as well:
 
 ## 1. With no argument
 
