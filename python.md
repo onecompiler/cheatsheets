@@ -58,7 +58,7 @@ In Python, declaring variables is not required. Means you don't need to specify 
 
 ```py
 # declaring a function
-def function-name(parameters) # here parameters are otional
+def function-name(parameters): # here parameters are otional
     pass
 
 function-name(parameters) # calling a function
