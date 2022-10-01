@@ -152,7 +152,7 @@ List the entries like in a dictionary or encyclopedia.
 |Type |	Description|
 |----|----|
 |`<input type="text">` | To define a single-line text input field|
-|`<input type="number">` | To define a single-line number input field
+|`<input type="number">` | To define a single-line number input field |
 |`<input type="password">` | To define a single-line password input field|
 |`<input type="radio">`| To define a radio button |
 |`<input type="submit">`| To define a submit button |
