@@ -1,7 +1,6 @@
 ---
 Title: [VueJS](https://vuejs.org/)
-Description: The Progressive
-JavaScript Framework. An approachable, performant and versatile framework for building web user interfaces.
+Description: The Progressive JavaScript Framework. An approachable, performant and versatile framework for building web user interfaces.
 Created: 2022-10-01
 Updated: 2012-10-01
 ---
