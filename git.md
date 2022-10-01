@@ -76,6 +76,7 @@ git pull                           # to update the local version of a repository
 git stash push "add style to our site"  # Save your local modifications to a new stash entry
 git stash list                          # List the stash entries that you currently have
 git stash pop stash@{0}                 # Remove a single stashed state from the stash list and apply it on top of the current working tree state
+git stash clear                         # Remove all stashed entries
 ```
 
 ## Rebase main branch into feature branch
@@ -84,6 +85,12 @@ git stash pop stash@{0}                 # Remove a single stashed state from the
 git checkout feature
 git fetch origin main
 git rebase origin/main
+```
+
+## Squash multiple commits into one
+```sh
+git rebase -i HEAD~4            # Squash last 4 commits. This command will open up default editor then replace "pick" on the second and subsequent commits with "squash".
+git rebase --root -i            # Squash all commits. This command will open up default editor then replace "pick" on the second and subsequent commits with "squash".
 ```
 
 ## Semantic commit messages
