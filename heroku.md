@@ -1,6 +1,6 @@
 ---
 title: Heroku
-description: [Heroku](https://www.heroku.com/) is a platform as a service based on a managed container system. Heroku started with Ruby support and now we can deploy apps from Java, Node.js, Scala, Clojure, Python, PHP, and Go
+description: Heroku is a platform as a service based on a managed container system. Heroku started with Ruby support and now we can deploy apps from Java, Node.js, Scala, Clojure, Python, PHP, and Go
 created: 2019-08-13
 updated: 2019-08-13
 color: #79589F
