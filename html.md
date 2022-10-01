@@ -46,6 +46,7 @@ updated: 2020-06-17
 | `<a>..</a>`| Used to link external webpages to your web page| `<a href="https://onecompiler.com/" target="_blank"> OneCompiler</a>`|
 | `<img />`| Used to insert an image | `<img src="/sample.jpg" alt="sample image" width="100" height="50" longdesc="image" />`|
 
+
 ## HTML formatting 
 
 |Formatting Elements|Description|
@@ -151,6 +152,7 @@ List the entries like in a dictionary or encyclopedia.
 |Type |	Description|
 |----|----|
 |`<input type="text">` | To define a single-line text input field|
+|`<input type="number">` | To define a single-line number input field
 |`<input type="password">` | To define a single-line password input field|
 |`<input type="radio">`| To define a radio button |
 |`<input type="submit">`| To define a submit button |
