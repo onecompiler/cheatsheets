@@ -65,6 +65,9 @@ updated: 2020-06-17
 |`<sub>..</sub>`| Subscript text|
 |`<sup>..</sup>` | Superscript text|
 
+
+
+
 ## Tables
 
 `<table>` tag is used to create a table and `<tr>` tag is used to create table rows and `<td>` tag is used to create data cells.
@@ -82,6 +85,39 @@ updated: 2020-06-17
          </tr>
          
    </table>
+
+#Table Attributes
+
+Table attributes (only use for email newsletters) 
+
+<table border=?>
+Sets the width of the border around table cells
+<table cellspacing=?>
+Sets amount of space between table cells
+<table cellpadding=?>
+Sets amount of space between a cell's border and
+its contents
+<table width=?>
+Sets width of the table in pixels or as a percentage
+<tr align=?>
+Sets alignment for cells within the row
+(left/center/right)
+<td align=?>
+Sets alignment for cells (left/center/right)
+<tr valign=?>
+Sets vertical alignment for cells within the row
+(top/middle/bottom)
+<td valign=?>
+Sets vertical alignment for cell (top/middle/bottom)
+<td rowspan=?>
+Sets number of rows a cell should span (default=1)
+<td colspan=?>
+Sets number of columns a cell should span
+<td nowrap>
+Prevents lines within a cell from being broken to fit
+
+
+
 ```
 ## Lists
 
