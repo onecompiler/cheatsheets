@@ -1,0 +1,203 @@
+---
+title: HTML 
+description: HTML Cheat Sheet gives you a quick reference of basic HTML tags, codes and attributes and is very handy while coding. 
+created: 2020-06-17
+updated: 2020-06-17
+---
+
+## Sample program
+
+```html
+<!-- Sample program -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello World!</title>
+  </head>
+  <body>
+      <h1>Hello World! </h1>
+      <p> Good Morning!! </p>
+  </body>
+</html>
+```
+
+* **`<!DOCTYPE html>`>** : Specifies document type, here it is an HTML5 document
+* **`<html>`** : root element of an HTML page
+* **`<head>`** : Contains meta information about the HTML page
+* **`<title>`** : Specifies a title for the HTML page to display
+* **`<body>`** : body of the html document which contains headings, paragraphs, images, hyperlinks, tables, lists, etc.
+* **`<h1>`** : defines Large heading
+* **`<p>`** : defines Paragraph
+* **`</body>`** : represents end of body
+* **`</html>`** : represents end of html
+* **`<!-- comment -->`** : comments
+
+## HTML Tags
+
+| HTML Tags | Description| Example|
+|----|----|---|
+| `<h1..h6>Headers </h1..h6>`| `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` are the heading tags, where `<h1>` is most important heading and `<h6>` is least important heading. | `<h1>MY FIRST BLOG</h1>`|
+|`<div>..</div>` | `<div>` is used to wrap a block of code as a single block | `<div> Block of code </div>`|
+|`<span> … </span>` | Used to inject inline elements, like an image, icon etc without disturbing the formatting of the page.| `<span> icon image </span>`|
+|`<p> … </p>`| Contains plain text like a paragraph| `<p> multi line text </p>`|
+|`<br/>`| line break, used to write a new line.| `<br/>`|
+|`<hr/>`| Similar to line break, additionally draws a horizontal bar to indicate the end of the section | `<hr/>`|
+| `<meta/>`| Used to provide meta data information like description of the web page |`<meta charset="utf-8"/>`|
+| `<a>..</a>`| Used to link external webpages to your web page| `<a href="https://onecompiler.com/" target="_blank"> OneCompiler</a>`|
+| `<img />`| Used to insert an image | `<img src="/sample.jpg" alt="sample image" width="100" height="50" longdesc="image" />`|
+
+
+## HTML formatting 
+
+|Formatting Elements|Description|
+|----|----|
+|`<i>..</i>`| Italic |
+|`<u>..</u>`| Underline |
+|`<b>..</b>`| Bold |
+|`<strong>..</strong>`| Important text|
+|`<em>..</em>`| Emphasized text|
+|`<mark>..</mark>`| Marked text|
+|`<small>..</small>`| Smaller text|
+|`<del>..</del>`| Deleted text|
+|`<ins>..</ins>`| Inserted text|
+|`<sub>..</sub>`| Subscript text|
+|`<sup>..</sup>` | Superscript text|
+
+
+
+
+## Tables
+
+`<table>` tag is used to create a table and `<tr>` tag is used to create table rows and `<td>` tag is used to create data cells.
+
+```html
+   <table border = "1">
+         <tr>
+            <td>Row 1, Col 1</td>
+            <td>Row 1, Col 2</td>
+         </tr>
+         
+         <tr>
+            <td>Row 2, Col 1</td>
+            <td>Row 2, Col 2</td>
+         </tr>
+         
+   </table>
+
+#Table Attributes
+
+Table attributes (only use for email newsletters) 
+
+<table border=?>
+Sets the width of the border around table cells
+<table cellspacing=?>
+Sets amount of space between table cells
+<table cellpadding=?>
+Sets amount of space between a cell's border and
+its contents
+<table width=?>
+Sets width of the table in pixels or as a percentage
+<tr align=?>
+Sets alignment for cells within the row
+(left/center/right)
+<td align=?>
+Sets alignment for cells (left/center/right)
+<tr valign=?>
+Sets vertical alignment for cells within the row
+(top/middle/bottom)
+<td valign=?>
+Sets vertical alignment for cell (top/middle/bottom)
+<td rowspan=?>
+Sets number of rows a cell should span (default=1)
+<td colspan=?>
+Sets number of columns a cell should span
+<td nowrap>
+Prevents lines within a cell from being broken to fit
+
+
+
+```
+## Lists
+
+### 1. Ordered Lists
+
+Numbering the list items
+
+```html
+<ol type = "1"> <!-- Numeric numbering, default case-->
+<ol type = "I"> <!-- Uppercase roman numerals-->
+<ol type = "i"> <!-- Lowercase roman numerals-->
+<ol type = "A"> <!-- Uppercase letters-->
+<ol type = "a"> <!-- Lowercase letters-->
+```
+```html
+    <ol type = "1">
+        <li>list item 1</li>
+        <li>list item 2</li>
+        <li>list item 3</li>
+    </ol>
+```
+### 2. Unordered Lists
+
+List items are displayed using bullets
+
+```html
+<ul type = "disc"> <!-- default case-->
+<ul type = "square">
+<ul type = "circle">
+```
+```html
+<ul type= "circle">
+    <li>list item 1</li>
+    <li>list item 2</li>
+    <li>list item 3</li>
+</ul>
+```
+### 3. Definition Lists
+
+List the entries like in a dictionary or encyclopedia.
+
+* `<dl>` : Start of the definition list
+* `<dt>` : Term
+* `<dd>` : Term definition
+* `</dl>` : End of the definition list
+
+```html
+ <dl>
+    <dt><b>OL</b></dt>
+    <dd>Ordered Lists</dd>
+    <dt><b>UL</b></dt>
+    <dd>Unordered Lists</dd>
+    <dt><b>DL</b></dt>
+    <dd>Definition Lists</dd>
+ </dl>
+```
+
+## Forms
+
+`<form>` element is used to define a form.
+
+```html
+<form>
+<!--form elements like input select etc-->
+</form>
+```
+
+### `<input>` element
+
+|Type |	Description|
+|----|----|
+|`<input type="text">` | To define a single-line text input field|
+|`<input type="number">` | To define a single-line number input field |
+|`<input type="password">` | To define a single-line password input field|
+|`<input type="radio">`| To define a radio button |
+|`<input type="submit">`| To define a submit button |
+|`<input type = "checkbox">`| To define a checkbox |
+| `<input type = "file">`| To define a file upload box|
+
+```html
+ <form >
+   ID : <input type = "text" name = "user-id" /> <br> <!-- Single line text input-->
+   Password: <input type = "password" name = "password" /> <br> <!-- Single line password input-->
+ </form>
+```

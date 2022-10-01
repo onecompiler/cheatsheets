@@ -1,5 +1,5 @@
 ---
-title: Python Cheatsheet 
+title: Python
 description: Python cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-04-24
 updated: 2020-04-24
@@ -147,7 +147,7 @@ print(val) # prints iPhone
 |d.clear()| To empty the dictionary items.|
 |del `d[key]`| To remove an item from a dictionary.
 |d.pop(key)|To remove an item from a dictionary.|
-|d.popitem()|
+|d.popitem()|removes the item that was last inserted into the dictionary|
 |d.get(key)| Returns the value of the specified key|
 |d.setdefault(key)|Returns the value of the specified key. If the key does not exist then returns the default value provided|
 

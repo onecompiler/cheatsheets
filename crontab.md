@@ -50,13 +50,13 @@ crontab -u <username> -e # opens crontab file of specified user
 
 |Expression | Description|
 |---|---|
-| */5 * * * * |Every 5 Minutes| 
-| */30 * * * * |Every 30 Minutes| 
-| * */1 * * * |Every 1 Hour| 
+| */5 * * * * |Every 5 Minutes|
+| */30 * * * * |Every 30 Minutes|
+| * */1 * * * |Every 1 Hour|
 | * */3 * * * |Every 3 Hours|
 | 0 0 * * * |Everyday at 00:00|
 | 0 1 * * * | Everyday at 1AM|
-| 0 0 * * SUN | Every Sunday| 
-| 0 0 * * 0 | Every Sunday| 
+| 0 0 * * SUN | Every Sunday|
+| 0 0 * * 0 | Every Sunday|
 | 0 0 1 * * | Every Month 1st day 00:00|
 | 0 0 1 1 * | Every year 1st month 1st day 00:00|

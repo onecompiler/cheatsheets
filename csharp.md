@@ -1,8 +1,8 @@
 ---
-title: C# Cheatsheet 
+title: C#
 description: C# cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-05-19
-updated: 2020-05-19
+updated: 2021-12-19
 ---
 
 ## Basics
@@ -35,18 +35,18 @@ namespace HelloWorld
 
 ## Data types
 
-| Data type | Description | Range | Memory Size|
-|----|----|----|----|----|
-|byte|	used to store unsigned integer|	0 to 255| 1 byte|
-|sbyte|	used to store signed integer|	-128 to 127| 1 byte|
-|short|	used to store signed integers|	-32,768 to 32,767| 2 bytes|
-| int| used to store signed integers|-2,147,483,648 to 2,147,483,647|4 bytes| 
-|long | used to store signed integers|-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807| 8 bytes|
-|float| used to store fractional numbers|6 to 7 decimal digits| 4 bytes|
-|double| used to store fractional numbers|15 decimal digits| 8 bytes|
-|char|used to store a single character enclosed in single quote|one character|2 bytes|
-|bool| Boolean data type|Stores either true or false | 1 bit|
-|String| Stores a sequence of characters enclosed in double quotes| Sequence of Characters|2 bytes per character|
+| Data type | Description                                               | Range                                                   | Memory Size           |
+| ---       | ---                                                       | ---                                                     | ---                   |
+| byte      | used to store unsigned integer                            | 0 to 255                                                | 1 byte                |
+| sbyte     | used to store signed integer                              | -128 to 127                                             | 1 byte                |
+| short     | used to store signed integers                             | -32,768 to 32,767                                       | 2 bytes               |
+| int       | used to store signed integers                             | -2,147,483,648 to 2,147,483,647                         | 4 bytes               |
+| long      | used to store signed integers                             | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 8 bytes               |
+| float     | used to store fractional numbers                          | 6 to 7 decimal digits                                   | 4 bytes               |
+| double    | used to store fractional numbers                          | 15 decimal digits                                       | 8 bytes               |
+| char      | used to store a single character enclosed in single quote | one character                                           | 2 bytes               |
+| bool      | Boolean data type                                         |Stores either true or false                              | 1 bit                 |
+| String    | Stores a sequence of characters enclosed in double quotes | Sequence of Characters                                  | 2 bytes per character |
 
 ## Variables
 

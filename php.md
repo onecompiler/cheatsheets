@@ -1,5 +1,5 @@
 ---
-title: PHP Cheatsheet 
+title: PHP 
 description: PHP cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-05-14
 updated: 2020-05-14
@@ -75,7 +75,7 @@ const MESSAGE = "Happy learning!";
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %, ++, --|
-| comparision Operator| < , > , <= , >=, != , ==| 
+| comparision Operator| < , > , <= , >=, != , ==|
 | Logical Operator| && , \|\|, ! |
 | Assignment Operator|= , += , -= , *= , /= , %= |
 | Conditional Operator| ? : |

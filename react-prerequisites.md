@@ -45,7 +45,7 @@ updated: 2018-11-07
 
 ## Javascript versions
 
-| Version | Year | Version| Features added | 
+| Version | Year | Version| Features added |
 |--------|--------|--------|--------|
 |5|2009|ECMAScript 5|strict mode, JSON support|
 |6|2015|ECMAScript 2015 (ES 6)|let, const, Modules, Promises, Classes & Inheritance, Template Literals, Object destructing, Generators, Map and Set, default parameter values|

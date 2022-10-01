@@ -1,5 +1,5 @@
 ---
-title: Java Programming language Cheatsheet 
+title: Java
 description: Java Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-04-28
 updated: 2020-04-28
@@ -66,13 +66,13 @@ Two groups of data types
 
 ### Examples
 ```java
-int x = 99999; 
-short x = 999; 
-long x = 99999999999L;
-byte x = 99;
-double x = 99.99d;
-boolean isAvailable = true;
-char division = 'A';
+int a = 99999; 
+short b = 999; 
+long c = 99999999999L;
+byte d = 99;
+double e = 99.99d;
+boolean f = true;
+char g = 'A';
 ```
 ### 2. Non-Primitive data types
 
@@ -121,9 +121,9 @@ Class Sum {
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
-| comparision Operator| < , > , <= , >=, != , ==| 
-| Bitwise Operator| & , ^ , \|| 
-| Logical Operator| && , `||`, ! |
+| comparision Operator| < , > , <= , >=, != , ==|
+| Bitwise Operator| & , ^ , \||
+| Logical Operator| && , `\|\|`, ! |
 | Assignment Operator|= , += , -= , *= , /= , %= |
 | Auto-increment and Auto-decrement Operators| ++ , -- |
 | Ternary Operator| ? : |
@@ -241,15 +241,15 @@ do{
 ## String Methods
 | Method| Description| Example|
 |----|----|----|
-|char charAt(int index)|returns char value at the specific index| str.charAt(0) //prints o| 
+|char charAt(int index)|returns char value at the specific index| str.charAt(0) //prints o|
 |int compareTo(String str)| to compare two strings lexicographically | Str1.compareTo(Str2) //returns 0 if str1 and str2 are equal|
-|int length()|returns string length| str.length()| 
+|int length()|returns string length| str.length()|
 |static String format(String format, Object... args)|returns a formatted string.| String.format("String is %s",str); |
-|String substring(int beginIndex, int endIndex)| to return substring from given begin index to end index.| str.substring(0,3) //prints one| 
+|String substring(int beginIndex, int endIndex)| to return substring from given begin index to end index.| str.substring(0,3) //prints one|
 |String substring(int beginIndex)| to return substring from given begin index| str.substring(3) //prints compiler|
 |boolean contains(CharSequence s)|returns true or false after matching the sequence given in the string| str.contains("compiler") // returns true|
 |static String join(CharSequence delimiter, CharSequence... elements)|returns a joined string.| String.join("..","Hello","Happy", "Learning"); //returns Hello..Happy..Learning|
-|boolean equals(Object another)|checks the equality of string with another and returns true if they are equal.| str1.equals(str2);
+|boolean equals(Object another)|checks the equality of string with another and returns true if they are equal.| str1.equals(str2);|
 |boolean isEmpty()|to check if the given string is empty.|  str.isEmpty() // returns false|
 |String concat(String str)|concatenates the provided string with the another string.| str.concat(" is used to compile code online")|
 |String replace(char old, char new)|replaces all occurrences of the specified char value with new char value.|str.replace('r','t');|
@@ -309,4 +309,3 @@ class Child-class extends Parent-Class {
 //code
 }
 ```
-

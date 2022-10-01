@@ -37,6 +37,6 @@ es2csv -a username:password -u http://onecompiler:9001/cars/ -q 'company: volksw
 |-t, --tags|Query tags, can add more than 1 tag| | es2csv -t dev -q 'company: volkswagen' -o cars.csv|
 |-d, --delimiter|Provide delimiter to be used in csv file| , | es2csv -d ':' -q 'company: volkswagen' -o cars.csv|
 |-m, --max|Max results to be written in file| 0 | es2csv -m 100 -q 'company: volkswagen' -o cars.csv|
-|-r, --raw-query|Can write query in Query DSL format|| es2csv -r -q '{"query": {"match": {"company": "volkswagen"}}}' -o cars.csv|
-|--debug|Switches debug mode on|||
-|-h, --help|Shows help message|||
+|-r, --raw-query|Can write query in Query DSL format| | es2csv -r -q '{"query": {"match": {"company": "volkswagen"}}}' -o cars.csv|
+|--debug|Switches debug mode on| | |
+|-h, --help|Shows help message| | |

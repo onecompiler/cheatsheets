@@ -1,5 +1,5 @@
 ---
-title: C++ Programming language Cheatsheet 
+title: C++ Programming language 
 description: C++ Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-04-30
 updated: 2020-04-30
@@ -8,10 +8,10 @@ updated: 2020-04-30
 C++ is a widely used middle-level programming language which is used in developing major operating systems( Windows, Linux, Android, Ubuntu, iOS etc), Games, databases and compilers etc.  
 
 ## Basics
-* `cin` >> x-- read value into the variable x from input stream
-* `cout` << x -- printf value to the output stream
-* `//` -- single line comments
-* `/* */` -- Multi line comments
+* `cin >> x`: read value into the variable x from input stream
+* `cout << x`: printf value to the output stream
+* `//`: single line comments
+* `/* */`: Multi line comments
 
 ### Sample C program
 
@@ -23,11 +23,12 @@ int main() {
     return 0;
 }  
 ```
-* `#include <iostream>` -- iostream is a inbuilt header library which allows you to deal with input and output objects like cout etc.
-* `using namespace std` -- Specifies that the object and variable names can be used from standard library.
-* `cout` -- to print the output.
-* `main()` -- main function is the entry point of any C++ program.
-* `return 0` -- To end the main function
+* `#include <iostream>`: iostream is a inbuilt header library which allows you to deal with input and output objects like cout etc.
+* `using namespace std`: Specifies that the object and variable names can be used from standard library.
+* `cin`: to accept input from standard input device i.e keyboard.
+* `cout`: to print the output.
+* `main()`: main function is the entry point of any C++ program.
+* `return 0`: To end the main function
 
 #### How to compile a program in C++
 
@@ -111,10 +112,10 @@ int a[2][3] = {
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
-| comparision Operator| < , > , <= , >=, != , ==| 
-| Bitwise Operator| & , ^ , | 
-| Logical Operator| && , `||`, ! |
-| Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `|=` |
+| comparision Operator| < , > , <= , >=, != , ==|
+| Bitwise Operator| & , ^ , |
+| Logical Operator| && , `\|\|`, ! |
+| Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
 | sizeof operator| sizeof() |
 
@@ -263,3 +264,135 @@ typedef data-type name;
 typedef unsigned int distance;  // typedef of int 
 ```
 
+## Vectors
+Vectors are same as dynamic arrays. They will be resized on element inseertions & deletions.
+
+Functions associated with the vector are:
+
+Following functions return iterator 
+begin() 
+end() 
+rbegin() 
+rend() 
+cbegin() 
+cend() 
+crbegin() 
+crend() 
+
+```c
+#include <iostream>
+#include <vector>
+  
+using namespace std;
+  
+int main()
+{
+    vector<int> v1;
+  
+    for (int i = 1; i <= 10; i++)
+        v1.push_back(i);
+  
+    cout << "Output of begin and end: ";
+    for (auto i = v1.begin(); i != v1.end(); ++i)
+        cout << *i << " ";
+  
+    return 0;
+}
+
+```
+## Stacks 
+
+Stacks are a type of container adaptors with LIFO(Last In First Out) type of working, where a new element is added at one end (top) and an element is removed from that end only.
+
+The functions associated with stack are: 
+empty() – Returns whether the stack is empty – Time Complexity : O(1) 
+size() – Returns the size of the stack – Time Complexity : O(1) 
+top() – Returns a reference to the top most element of the stack – Time Complexity : O(1) 
+push(g) – Adds the element ‘g’ at the top of the stack – Time Complexity : O(1) 
+pop() – Deletes the top most element of the stack – Time Complexity : O(1) 
+
+```c
+
+#include <iostream>
+#include <stack>
+using namespace std;
+int main() {
+	stack<int> stack;
+	stack.push(21);
+	stack.push(22);
+	stack.push(24);
+	stack.push(25);
+	
+		stack.pop();
+	stack.pop();
+
+	while (!stack.empty()) {
+		cout << ' ' << stack.top();
+		stack.pop();
+	}
+}
+
+```
+
+## Queue
+
+Queues are a type of container adaptors that operate in a first in first out (FIFO) type of arrangement. Elements are inserted at the back (end) and are deleted from the front
+
+queue::empty()	Returns whether the queue is empty.
+queue::size()	Returns the size of the queue.
+queue::swap()	Exchange the contents of two queues but the queues must be of the same type, although sizes may differ.
+queue::emplace()	Insert a new element into the queue container, the new element is added to the end of the queue.
+queue::front()	Returns a reference to the first element of the queue.
+queue::back()	Returns a reference to the last element of the queue.
+queue::push(g) 	Adds the element ‘g’ at the end of the queue.
+queue::pop() removes the element
+
+```c
+
+#include <iostream>
+#include <queue>
+using namespace std;
+int main() {
+	queue<int> q;
+	q.push(21);
+	q.push(22);
+	q.push(24);
+	q.push(25);
+	
+		q.pop();
+	q.pop();
+
+	while (!q.empty()) {
+		cout << ' ' << q.front();
+		q.pop();
+	}
+}
+
+```
+## Sort one-line
+
+Sorting is one of the most basic functions applied to data. It means arranging the data in a particular fashion, which can be increasing or decreasing. There is a builtin function in C++ STL by the name of sort(). 
+This function internally uses IntroSort. In more details it is implemented using hybrid of QuickSort, HeapSort and InsertionSort.
+
+```c
+
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+int main(){
+
+int arr[] = {3,2,1};
+int n = 3 ; // size of the array
+
+sort(arr, arr+n); // sorting the array
+
+vector<int> v;
+
+v = {3,2,1};
+
+sort(v.begin(), v.end()); // sorting in the vector
+
+}
+
+```

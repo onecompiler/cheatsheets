@@ -1,5 +1,5 @@
 ---
-title: R Cheatsheet 
+title: R 
 description: R cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-05-11
 updated: 2020-05-11
@@ -56,7 +56,7 @@ var_raw <- charToRaw("Hello World")  # raw variable
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %%, ^|
-| Relational Operator| < , > , <= , >=, != , ==| 
+| Relational Operator| < , > , <= , >=, != , ==|
 | Logical Operator| &, \|, && , \|\|, ! |
 | Assignment Operator|= , ->, ->>, <-, <<- |
 | Misc Operators| :, %in%, %*%|

@@ -10,9 +10,9 @@ DNS (Domain Name System) takes a human friendly domain names as inout and transl
 
 |Record Type|Description|
 |---|---|
-|A Record|Points to an IP address|
+|A Record|Points to an IPv4 address|
+|AAAA|Similar to `A` but this allows to point to an `IPv6 address`|
 |CNAME (Canonical Name)| Points to another domain name|
 |MX (Mail Exchanger)| Directs email to a mail server|
-|TXT| map domain to text, mostly for information. Often used for verification purpose|
+|TXT| Map domain to text, mostly for information. Often used for verification purpose|
 |SRV|Points to a domain name using a specific destination port|
-|AAAA|similar to `A` but this allows to point to an `ipv6 address`|

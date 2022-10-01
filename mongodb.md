@@ -57,33 +57,34 @@ Lets build a 'Car Information' application which stores all cars with its specif
 
  using `insert` you can either insert one document or array of documents 
  ```json
- db.cars.insert({  "name" : "Volvo xc 60",  "type" : "SUV" });
- db.cars.insert(
+db.cars.insert({  "name" : "Volvo xc 60",  "type" : "SUV" });
+db.cars.insert(
  [
    { "name" : "Volvo xc 60",  "type" : "SUV" },
    { "name" : "Volvo xc 90",  "type" : "SUV" },
    { "name" : "Volvo   S90",  "type" : "SUV" }
  ]
- );
+);
  ```
 
 
 * #### `db.collection.insertOne()`
 
- Inserts one document 
- ```json
-  db.cars.insert({  "name" : "Volvo xc 60",  "type" : "SUV" });
- ```
+Inserts one document 
+```json
+db.cars.insert({  "name" : "Volvo xc 60",  "type" : "SUV" });
+```
 
 * #### `db.collection.insertMany`
 
- Inserts multiple documents
- ```json
- db.cars.insertMany(
+Inserts multiple documents
+```json
+db.cars.insertMany(
   [
     { "name" : "Volvo xc 60",  "type" : "SUV" },
   ]
-  );
+);
+```
 
 * #### `db.collection.save()`
 
@@ -97,58 +98,57 @@ Lets build a 'Car Information' application which stores all cars with its specif
 * #### `db.collection.update()`
  Updates one or more than one document(s) in collection based on matching document and based on `multi` option
 
- Syntax:
- ```json
- db.cars.update(
+Syntax:
+```json
+db.cars.update(
  <query>,
  <update>,
  <options>
- );
- ```
+);
+```
 
- Example: 
+Example: 
 
- ```json
- db.cars.update(
+```json
+db.cars.update(
   { type: "SUV" },
   { $set: { size : 5} },
   { multi: true}
- )
- ```
+)
+```
 
 * #### `db.collection.updateOne()`
 Updates a single document based on matching query
 
 * #### `db.collection.updateMany()`
- Updates multiple documents based on query
+Updates multiple documents based on query
  
 * #### `db.collection.replaceOne()`
- Replaces entire content of document except _id field
+Replaces entire content of document except _id field
 
 * #### `db.collection.findOneAndUpdate(<filter>, <update>, <options>)`
-  Updates a single document. Following are some of the options
+Updates a single document. Following are some of the options
   `upsert` : When true inserts a document.
   `returnNewDocument`: when true returns new document instead original document. When upsert is true and returnNewDocument is false then null will be returned in case of new document insertion.
 
 #### Reading Documents
 
 * #### `db.collection.findOne()`
- Returns one document matching the given query
- ```sh
+Returns one document matching the given query
+```sh
 db.collection.findOne({ _id : 123}); # finding a document with _id
 db.collection.findOne({ type : "SUV"}); # return one SUV
- ```
+```
  findOne with projection (limiting the fields to return)
 
- ```sh
+```sh
 db.collection.findOne({ type : "SUV"}, {name: 1}); # returns _id & name fields only
- ```
+```
 * #### `db.collection.find()`
- Returns a cursor with selected documents
-
- ```sh
+Returns a cursor with selected documents
+```sh
  db.collection.find({ type : "SUV"}); # returns all SUVs
- ```
+```
 
 #### Deleting Documents
 

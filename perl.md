@@ -1,5 +1,5 @@
 ---
-title: Perl 
+title: Perl
 description: Perl Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-05-02
 updated: 2020-05-02
@@ -39,8 +39,8 @@ In Perl, there is no need to explicitly declare variables to reserve memory spac
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %, **|
-| comparision Operator| < , > , <= , >=, != , ==| 
-| Bitwise Operator| & , ^ , \|, ~, <<, >>| 
+| comparision Operator| < , > , <= , >=, != , ==|
+| Bitwise Operator| & , ^ , \|, ~, <<, >>|
 | Logical Operator| && , \|\|, ! |
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, \|= |
 | Quote Operator| q{ }, qq{ }, qx{ } |
@@ -327,5 +327,3 @@ close(FH);
 |-S| checks if the file is a socket.|
 |-b| checks if the file is a block special file.|
 |-c| checks if the file is a character special file.|
-
-
