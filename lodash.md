@@ -61,7 +61,7 @@ _.flatten([0, 1, [2, 3, 4], [5, [6]], 7]) // => [0, 1, 2, 3, 4, 5, 6, 7]
 
 ## String
 
-### 1. Capitalize
+#### 1. Capitalize
 The  _.capitalize() method is used to convert the first character of string to upper case and the remaining to lower case.
 ```javascript
 let str1 = _.capitalize("ONE__COMPILER__CHEATSHEETS");
