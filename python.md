@@ -176,6 +176,40 @@ elif conditional-expression :
 else :
     #code
 ```
+### 4. Try Except
+
+The try block lets you test a block of code for errors. The except block lets you handle the error.
+```py
+try:
+    print(1/0)
+except:
+    print("You can't divide by zero!")
+```
+
+The finally block lets you execute code, regardless of the result of the try- and except blocks.
+```py
+try:
+    print(x)
+except:
+    print("Variable x is not defined")
+finally:
+    print("The program is finished.")
+```
+
+You can define as many exception blocks as you want, e.g. if you want to execute a special block of code for a special kind of error.
+```py
+a = input("Digit a number: ")
+try:
+    b = [i for i in range(int(a))]
+    print(b[3])
+except ValueError:
+    print("You didn't digit a number.")
+except IndexError:
+    print("Your list have less than 4 numbers.")
+finally:
+    print("Python is cool.")
+```
+
 ## Loops
 
 ### 1. For
