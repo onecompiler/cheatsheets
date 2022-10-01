@@ -152,6 +152,6 @@ Following is the pricing for APIs
 |Plan Name| P1 | P2 | P3 | P4 | Enterprise |
 |---|---|---|---|---|---|
 |Price|$5 per month | $10 per month | $25 per month | $50 per month | Contact Us|
-|Calls per day| 300| 1,000| 3,000| 10,000| - |
+|Calls per month| 10,000| 30,000| 100,000| 300,000| Unlimited* |
 
 > Note: Get 2 months free when you purchase yearly plans!
