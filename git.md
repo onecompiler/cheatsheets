@@ -38,6 +38,9 @@ git branch [branch-name]    # creates a new branch with given name
 git checkout [branch-name]  # switch to given branch 
 git merge [branch]          # merge the specified branch’s history into the current one
 git log                     # Shows current branch's commit history
+git log -p                  # Display the full diff of each commit
+git log --stat              # Include which files were altered and the relative number of lines altered
+
 ```
 
 ## Commits 
@@ -48,6 +51,7 @@ git commit -m "commit message"      # commit
 git status                          # Shows the modified files in working directory which are staged for next commit
 git reset [fileName]                # Unstages file while retaining changes in present working directory
 git stash                           # to keep uncommitted changes (both staged and unstaged) for later use
+git reflog                          # Shows a log of changes to the local repository's HEAD
 ```
 
 ## Inspect 
@@ -56,6 +60,8 @@ git stash                           # to keep uncommitted changes (both staged a
 git diff                            # Shows diff of what is changed but not staged
 git diff --staged                   # Shows diff of what is staged but not committed
 git diff branch2...branch1          # Shows diff of what is in branch1 that is not in branch2
+git diff HEAD                       # Shows difference between working directory and last commit
+git diff --cached                   # Shows difference between staged changes and last commit
 ```
 
 ## Update
