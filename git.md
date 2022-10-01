@@ -93,12 +93,6 @@ git rebase -i HEAD~4            # Squash last 4 commits. This command will open 
 git rebase --root -i            # Squash all commits. This command will open up default editor then replace "pick" on the second and subsequent commits with "squash".
 ```
 
-
-```sh
-git checkout feature
-git fetch origin main
-git rebase origin/main
-```
 ## Semantic commit messages
 
 ```sh
