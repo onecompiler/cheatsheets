@@ -299,7 +299,7 @@ int main()
 }
 
 ```
-### stacks 
+## Stacks 
 
 Stacks are a type of container adaptors with LIFO(Last In First Out) type of working, where a new element is added at one end (top) and an element is removed from that end only.
 
@@ -333,7 +333,7 @@ int main() {
 
 ```
 
-### queue
+## Queue
 
 Queues are a type of container adaptors that operate in a first in first out (FIFO) type of arrangement. Elements are inserted at the back (end) and are deleted from the front
 
