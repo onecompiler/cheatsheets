@@ -37,7 +37,8 @@ chown <user>: <group> <fileName>   # change the user as well as group for a file
 ### Syntax
 - tar [flags] destinationFileName sourceFileName
 
-````sh
+```sh
 tar -zcvf foo.txt.tar.gz foo.txt
 tar -xvf foo.txt.tar.gz
+
 ```
