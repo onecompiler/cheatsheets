@@ -67,13 +67,9 @@ or you can use both class based or id base css selection
 The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
 Formally, the display property sets an element's inner and outer display types. 
 
-###Syntax :-
-The CSS display property is specified using keyword values.
-
 ```
-.container{
+.container {
         // various display values 
-        
         display: block;
         display: inline;
         display: inline-block;
@@ -82,9 +78,7 @@ The CSS display property is specified using keyword values.
         display: grid;
         display: inline-grid;
         display: flow-root;
-        
-     }
-
+}
 ```
 
 ### 6. FlexBox
