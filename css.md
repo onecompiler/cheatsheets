@@ -67,7 +67,7 @@ or you can use both class based or id base css selection
 The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
 Formally, the display property sets an element's inner and outer display types. 
 
-```
+```css
 .container {
         // various display values 
         display: block;
@@ -154,5 +154,18 @@ you can use grid using a special unit called  `Fr (fraction)` which means portio
         grid-template-columns:1fr 1fr 1fr;
         // or 
         grid-template-columns: repeat(3,1fr)
+    }
+```
+
+### 8. Variables
+
+Variables are a great way to make your css more manageable, so you're not editing the values you want to be consistent on multiple instances of its usage. It promotes consistency and overall management of the code.
+
+```css
+    :root{
+      --primary-color: #ffffff;
+    }
+    body{
+      background-color: var(--primary-color);
     }
 ```
