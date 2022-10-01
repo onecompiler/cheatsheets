@@ -45,7 +45,40 @@ java example
 
 ### Comments
 
-`//` - single line comment
+##### A. Single-line Comments:
+
+#### Syntax
+
+`//Comments here
+`
+
+##### B. Multi-line Comments:
+
+#### Syntax
+
+`/*Comment starts
+continues
+.
+.
+Comment ends*/
+`
+
+##### C. Documentation Comments:
+
+#### Syntax
+
+`/**Comment start
+*
+*tags in order to specify a parameter
+*or method or heading
+*HTML tags can also be used
+*
+*comment ends*/
+`
+
+#### Note: 
+Usually `//` is used for short comments and `/* */` is used for longer comments.
+
 
 ## Data types
 
