@@ -45,7 +45,22 @@ java example
 
 ### Comments
 
+
 `//` - single line comment
+
+`/*   
+*/  
+` - multi line comment
+
+`/**  
+* 
+*   
+* 
+*/ 
+` - documentation comment
+
+Note: Usually `//` is used for short comments and `/* */` is used for longer comments.
+
 
 ## Data types
 
