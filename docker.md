@@ -2,7 +2,7 @@
 title: Docker
 description: Docker Build, Ship and Run commands
 created: 2018-10-22
-updated: 2018-10-22
+updated: 2022-10-01
 ---
 
 ## Build
@@ -35,6 +35,12 @@ Kill a running container
 
 ```sh
 docker kill container_name/ container_id 
+```
+
+## Prune
+```sh
+docker system prune     # prune all docker resources
+docker system prune -f  # prune all resources with force (without prompt)
 ```
 
 ## Dockerfile syntax

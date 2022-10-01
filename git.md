@@ -2,7 +2,7 @@
 title: Git
 description: Git is a version-control system for tracking changes in computer files and coordinating work on those files among multiple people
 created: 2018-07-18
-updated: 2021-02-02
+updated: 2022-10-01
 ---
 
 
@@ -68,4 +68,54 @@ git fetch [alias]                  # to download contents from a remote reposito
 git push [remote] [branch]         # to upload local repository content to a remote repository
 git push [remote] --force          # to forcefully upload your local repository content to remote, Use only when you are very sure
 git pull                           # to update the local version of a repository from a remote
+```
+
+## Stash
+
+```sh
+git stash push "add style to our site"  # Save your local modifications to a new stash entry
+git stash list                          # List the stash entries that you currently have
+git stash pop stash@{0}                 # Remove a single stashed state from the stash list and apply it on top of the current working tree state
+```
+
+## Rebase main branch into feature branch
+
+```sh
+git checkout feature
+git fetch origin main
+git rebase origin/main
+```
+
+## Semantic commit messages
+
+```sh
+feat: add hat wobble
+^--^  ^------------^
+|     |
+|     +-> Summary in present tense.
+|
++-------> Type: chore, docs, feat, fix, refactor, style, or test.
+
+feat: (new feature for the user, not a new feature for build script)
+fix: (bug fix for the user, not a fix to a build script)
+docs: (changes to the documentation)
+style: (formatting, missing semi colons, etc; no production code change)
+refactor: (refactoring production code, eg. renaming a variable)
+test: (adding missing tests, refactoring tests; no production code change)
+chore: (updating grunt tasks etc; no production code change)
+```
+
+example:
+
+```sh
+feat(dev): prevent racing of requests
+
+Introduce a request id and a reference to latest request. Dismiss
+incoming responses other than from latest request.
+
+Remove timeouts which were used to mitigate the racing issue but are
+obsolete now.
+
+Reviewed-by: Z
+Refs: #123
 ```
