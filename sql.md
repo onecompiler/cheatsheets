@@ -1,7 +1,8 @@
 ---
-Title: SQL Cheatsheet 
-Description: Contains syntaxes & examples to help new comers get comfortable with using SQL.
-Created At: 2022-10-01
+title: SQL Cheatsheet 
+description: Contains syntaxes & examples to help new comers get comfortable with using SQL.
+created: 2022-10-01
+updated: 2022-10-01
 ---
 
 ## Creation & Insertion 
