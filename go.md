@@ -291,3 +291,45 @@ or
 ```go
 channel-name := make(chan Data-Type)
 ```
+## Generics
+
+Generics allow you to declare and use functions or types that are written to work with any of a set of types provided by calling code. *(Generics are only present in **Go 1.18 or later**. Prior versions of Go do not have generics.)* 
+
+```go
+//For a function, you can declare the types you want to work with by the following template:
+//func Signature[MyTypes type1 | type2 | type3...] (value MyTypes) {
+}
+```
+### Example
+```go
+
+func ReverseSlice[GenericTypes int | string | bool](slice []GenericTypes) {
+	leftIndex := 0
+	rightIndex := len(slice) - 1
+	for leftIndex < rightIndex {
+		slice[leftIndex], slice[rightIndex] = slice[rightIndex], slice[leftIndex]
+		leftIndex++
+		rightIndex--
+	}
+}
+
+	stringSlice := []string{"Foo", "Bar", "Baz"}
+	intSlice := []int{1, 2, 3}
+	boolSlice := []bool{true, false, false}
+	
+	ReverseSlice(stringSlice) //[Baz Bar Foo]
+	ReverseSlice(intSlice)    //[3 2 1]
+	ReverseSlice(boolSlice)   //[false false true]
+
+
+```
+You can also declare the types you're working with via an Interface as well! Building off the same example above...
+```go
+type MyTypes interface {
+int | string | bool
+}
+
+func ReverseSlice[GenericTypes MyTypes](slice []GenericTypes) {
+//...
+}
+```
