@@ -407,16 +407,15 @@ sort(v.begin(), v.end()); // sorting in the vector
 
 ```
 
-#Header Files
+##Header Files
 |Name| Use|
 |----|----|
-|#include<stdio.h>   | It is used to perform input and output operations using fu|
-|#include<iostream>  | It is used as a stream of Input and Output using cin and |
-|#include<string.h>  | It is used to perform various functionalities related to |
-|#include<math.h>    | It is used to perform mathematical operations like sqrt()|
-|#include<iomanip.h> | It is used to access set() and setprecision() function t|
+|#include<stdio.h>   | It is used to perform input and output operations|
+|#include<string.h>  | It is used to perform various string operations|
+|#include<math.h>    | It is used to perform mathematical operations|
+|#include<iomanip.h> | It is used to access set() and setprecision()|
 |#include<signal.h>  | It is used to perform signal handling functions like sign|
-|#include<stdarg.h>  | It is used to perform standard argument functions like va|
+|#include<stdarg.h>  | It is used to perform standard argument functions|
 |#include<errno.h>   | It is used to perform error handling operations like errno|
-|#include<fstream.h> | It is used to control the data to read from a file as an|
+|#include<fstream.h> | It is used to control the data to read from a file|
 |#include<time.h>    | It is used to perform functions related to date() and time|
