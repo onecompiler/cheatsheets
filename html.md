@@ -46,7 +46,7 @@ updated: 2020-06-17
 | `<a>..</a>`| Used to link external webpages to your web page| `<a href="https://onecompiler.com/" target="_blank"> OneCompiler</a>`|
 | `<img />`| Used to insert an image | `<img src="/sample.jpg" alt="sample image" width="100" height="50" longdesc="image" />`|
 |`<pre/>`| Text in a pre elementis displayed in a fixed-width font, and it preservesboth spaces and line breaks |`<pre> int i = 0; </pre>`|
-
+|`<span/>`| The <span> tag is an inline container used to mark up a part of a text, or a part of a document.| `<span> This is Span. </span>`|
 
 
 ## HTML formatting 
