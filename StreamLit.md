@@ -1,14 +1,14 @@
-# StreamLit
-
-
-It’s an open source framework that converts Python scripts into interactive apps. Streamlit turns data scripts into shareable web apps in minutes. 
-All in Python. All for free. No front‑end experience required.It is mostly used for Ai/Ml based projects where heavier part is the backend.
+---
+Title: StreamLitCheatsheet 
+Description: Contains important StreamLit commands and features which can be used to convert data scripts into interactive web apps.
+Created At: 2022-10-02
+---
 
 For Documentation you can visit official site:
 -https://docs.streamlit.io/library/cheatsheet
 
 
-### Get started in under a minute
+### How to install
 
 
 ```python
@@ -115,7 +115,9 @@ st.color_picker('Pick a color')
 ```
 ### Control flow
 
+```python 
 st.stop()
+```
 
 ### Lay out your app
 
@@ -193,9 +195,13 @@ if increment:
     st.session_state.count += 1
 st.write('Count = ', st.session_state.count)
 ```
+
 ### Magic commands
 
+
+```python
 # Magic commands implicitly `st.write()`
 ''' _This_ is some __Markdown__ '''
 a=3
 'dataframe:', data
+```
