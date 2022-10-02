@@ -59,6 +59,18 @@ Recursively flattens given array
 _.flatten([0, 1, [2, 3, 4], [5, [6]], 7]) // => [0, 1, 2, 3, 4, 5, 6, 7]
 ```
 
+## String
+
+#### 1. Capitalize
+The  _.capitalize() method is used to convert the first character of string to upper case and the remaining to lower case.
+```javascript
+let str1 = _.capitalize("ONE__COMPILER__CHEATSHEETS");
+console.log(str1);// "One__Compiler__Cheatsheets"
+  
+let str2 = _.capitalize("ONE COMPILER CHEATSHEETS");
+console.log(str2);// "One Compiler Cheatsheets"
+```
+
 ## Collection
 
 #### 1. find

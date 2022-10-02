@@ -62,8 +62,26 @@ or you can use both class based or id based css selection.
         margin:10px;
     }
 ```
+### 5. Display Properites
 
-### 5. FlexBox
+The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
+Formally, the display property sets an element's inner and outer display types. 
+
+```
+.container {
+        // various display values 
+        display: block;
+        display: inline;
+        display: inline-block;
+        display: flex;
+        display: inline-flex;
+        display: grid;
+        display: inline-grid;
+        display: flow-root;
+}
+```
+
+### 6. FlexBox
 
 You can use Flexbox to manage alignment and position of your elements. 
 
@@ -106,8 +124,8 @@ By default, the flex direction is set to row (horizontal). To switch the flex di
     }
 ```
 
-### 6. CSS Grid
-CAA grid is another way to properly align your HTML elements.
+### 7. CSS Grid
+CSS grid is another way to properly align your HTML elements.
 
 to create a new  grid use  
 

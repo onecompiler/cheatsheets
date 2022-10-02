@@ -8,10 +8,10 @@ updated: 2020-04-30
 C++ is a widely used middle-level programming language which is used in developing major operating systems( Windows, Linux, Android, Ubuntu, iOS etc), Games, databases and compilers etc.  
 
 ## Basics
-* `cin` >> x-- read value into the variable x from input stream
-* `cout` << x -- printf value to the output stream
-* `//` -- single line comments
-* `/* */` -- Multi line comments
+* `cin >> x`: read value into the variable x from input stream
+* `cout << x`: printf value to the output stream
+* `//`: single line comments
+* `/* */`: Multi line comments
 
 ### Sample C program
 
@@ -23,11 +23,12 @@ int main() {
     return 0;
 }  
 ```
-* `#include <iostream>` -- iostream is a inbuilt header library which allows you to deal with input and output objects like cout etc.
-* `using namespace std` -- Specifies that the object and variable names can be used from standard library.
-* `cout` -- to print the output.
-* `main()` -- main function is the entry point of any C++ program.
-* `return 0` -- To end the main function
+* `#include <iostream>`: iostream is a inbuilt header library which allows you to deal with input and output objects like cout etc.
+* `using namespace std`: Specifies that the object and variable names can be used from standard library.
+* `cin`: to accept input from standard input device i.e keyboard.
+* `cout`: to print the output.
+* `main()`: main function is the entry point of any C++ program.
+* `return 0`: To end the main function
 
 #### How to compile a program in C++
 
@@ -238,6 +239,18 @@ struct structure_name {
 } [one or more structure variables]; 
 
 struct structure_name variable name; //declaring structure variables
+```
+
+## Classes
+
+A class in C++ is the building block that leads to Object-Oriented programming. It is a user-defined data type, which holds its own data members and member functions, which can be accessed and used by creating an instance of that class. A C++ class is like a blueprint for an object.
+
+```c
+class MyClass {       // The class
+  public:             // Access specifier
+    int myNum;        // Attribute (int variable)
+    string myString;  // Attribute (string variable)
+};
 ```
 
 ## Enum
