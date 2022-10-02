@@ -205,3 +205,70 @@ Variables are a great way to make your css more manageable, so you're not editin
       background-color: var(--primary-color);
     }
 ```
+
+### 9. Animations
+CSS animations allow one to animate transitions or other media files on the web page.
+
+#### Animation-name
+```css
+animation-name: myanimation;
+```
+
+#### Animation-duration
+```css
+animation-duration: 10s;
+```
+
+#### Animation-timing-function
+```css
+animation-timing-function: ease;
+```
+
+### Animation-delay
+```css
+animation-delay: 5ms;
+```
+
+#### Animation-iteration-count
+```css
+animation-iteration-count: 3;
+```
+
+#### Animation-direction
+```css
+animation-direction: normal;
+```
+
+#### Animation-play-state
+```css
+animation-play-state: running;
+```
+
+#### Animation-fill-mode
+```css
+animation-fill-mode: both;
+```
+
+### 10. Transitions
+Transitions let you define the transition between two states of an element.
+
+#### Transition-property
+```css
+    transition-property: none;
+```
+
+#### Transition-duration
+```css
+    transition-duration: 2s;
+```
+
+#### Transition-timing-function
+```css
+    transition-timing-function: ease-in-out;
+```
+
+#### Transition-delay
+```css
+    transition-delay: 20ms;
+```
+
