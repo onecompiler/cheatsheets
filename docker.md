@@ -1,8 +1,8 @@
 ---
 title: Docker
-description: Useful Docker commands and Terms
+description: Docker Build, Ship and Run commands
 created: 2018-10-22
-updated: 2022-10-02
+updated: 2022-10-01
 ---
 
 ## Important Terms
@@ -48,13 +48,13 @@ docker kill container_name/ container_id
 ```
 
 ## Prune
+Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.
+
 ```sh
 docker system prune     # prune all docker resources
 docker system prune -f     # prune all resources with force (without prompt)
 docker image prune      # to clean an unused/dangling image
 docker image prune -a      # to remove an image that is not used in a container
-docker swarm leave      # to leave a swarm
-docker stack rm stack_name # to remove a swarm
 ```
 Remove a swarm
 ```sh
