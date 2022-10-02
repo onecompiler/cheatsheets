@@ -406,8 +406,8 @@ sort(v.begin(), v.end()); // sorting in the vector
 }
 
 ```
+## Header Files
 
-##Header Files
 |Name| Use|
 |----|----|
 |#include<stdio.h>   | It is used to perform input and output operations|
