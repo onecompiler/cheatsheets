@@ -205,3 +205,39 @@ Variables are a great way to make your css more manageable, so you're not editin
       background-color: var(--primary-color);
     }
 ```
+
+### 9. Animations
+CSS animations allow one to animate transitions or other media files on the web page.
+
+
+| Property | Description| Example|
+|----|----|---|
+| Animation | A shorthand property for setting all the animation properties | `animation: example 5s linear 2s infinite alternate;`|
+| Animation-name | Specifies the name of the @keyframes animation | `animation-name: myanimation;`|
+| Animation-duration | Specifies how long time an animation should take to complete one cycle | `animation-duration: 10s;`|
+| Animation-timing-function | Specifies the speed curve of the animation | `animation-timing-function: ease;>`|
+| Animation-delay| Specifies a delay for the start of an animation | `animation-delay: 5ms;`|
+|Animation-iteration-count | Specifies the number of times an animation should be played | `animation-iteration-count: 3;`|
+|Animation-direction | Specifies whether an animation should be played forwards, backwards or in alternate cycles | `animation-direction: normal;`|
+| Animation-play-state | Specifies whether the animation is running or paused |`animation-play-state: running;`|
+| Animation-fill-mode |	Specifies whether the animation is running or paused | `animation-fill-mode: both;`|
+
+
+
+
+### 10. Transitions
+Transitions let you define the transition between two states of an element.
+
+
+| Property | Description| Example|
+|----|----|---|
+| Transition | A shorthand property for setting the four transition properties into a single property | `transition: width 2s linear 1s;`|
+| Transition-property | Specifies the name of the CSS property the transition effect is for | `transition-property: none;`|
+| Transition-duration | Specifies how many seconds or milliseconds a transition effect takes to complete | `transition-duration: 2s;`|
+| Transition-timing-function | Specifies the speed curve of the transition effect | `transition-timing-function: ease-in-out;`|
+| Transition-delay | Specifies a delay (in seconds) for the transition effect | `transition-delay: 20ms;`|
+
+
+
+
+
