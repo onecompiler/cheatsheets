@@ -220,74 +220,16 @@ functionName (parameters); //calling a function
 ## MySQLi Functions
 These functions allow you to access MySQL database server.
 
-### mysqli_connect() Function
 
-It opens a non-persistent MySQL connection
 
-```php
-mysqli_connect()
-```
-
-### mysqli_affected_rows() Function
-
-It returns the number of affected rows
-
-```php
-mysqli_affected_rows()
-```
-
-### mysqli_connect_error() Function
-
-It shows the Error description for the connection error
-
-```php
-mysqli_connect_error()
-```
-
-### mysqli_fetch_all() Function
-
-It fetches all result rows as an array
-
-```php
-mysqli_fetch_all()
-```
-
-### mysqli_fetch_array() Function
-
-It fetches a result row as an associative, a numeric array, or both
-
-```php
-mysqli_fetch_array()
-```
-
-### mysqli_fetch_assoc() Function
-
-It fetches a result row as an associative array
-
-```php
-mysqli_fetch_assoc()
-```
-
-### mysqli_fetch_row() Function
-
-It fetches one row from a result set and returns it as an enumerated array
-
-```php
-mysqli_fetch_row()
-```
-
-### mysqli_kill() Function
-
-It kills a MySQL thread
-
-```php
-mysqli_kill()
-```
-
-### mysqli_close() Function
-
-It closes a database connection
-
-```php
-mysqli_close()
-```
+| Function | Description|
+|----|----|
+| mysqli_connect() | It opens a non-persistent MySQL connection |
+| mysqli_affected_rows() | It returns the number of affected rows |
+| mysqli_connect_error() | It shows the Error description for the connection error | 
+| mysqli_fetch_all() | It fetches all result rows as an array | 
+| mysqli_fetch_array() | It fetches a result row as an associative, a numeric array, or both |
+| mysqli_fetch_assoc() | It fetches a result row as an associative array |
+| mysqli_fetch_row() | It fetches one row from a result set and returns it as an enumerated array | 
+| mysqli_kill() | It kills a MySQL thread | 
+| mysqli_close() | It closes a database connection |
