@@ -13,23 +13,6 @@ C++ is a widely used middle-level programming language which is used in developi
 * `//`: single line comments
 * `/* */`: Multi line comments
 
-## Header Files
-
-```c
-1.#include<stdio.h>: It is used to perform input and output operations using fu>
-2.#include<iostream>: It is used as a stream of Input and Output using cin and >
-3.#include<string.h>: It is used to perform various functionalities related to >
-4.#include<math.h>: It is used to perform mathematical operations like sqrt(), >
-5.#include<iomanip.h>: It is used to access set() and setprecision() function t>
-6.#include<signal.h>: It is used to perform signal handling functions like sign>
-7.#include<stdarg.h>:It is used to perform standard argument functions like va_>
-8.#include<errno.h>: It is used to perform error handling operations like errno>
-9.#include<fstream.h>: It is used to control the data to read from a file as an>
-10.#include<time.h>: It is used to perform functions related to date() and time>
-```
-
-### Sample C program
-
 ```c
 #include <iostream>
 using namespace std;
@@ -423,3 +406,17 @@ sort(v.begin(), v.end()); // sorting in the vector
 }
 
 ```
+
+#Header Files
+|Name| Use|
+|----|----|
+|#include<stdio.h>   | It is used to perform input and output operations using fu|
+|#include<iostream>  | It is used as a stream of Input and Output using cin and |
+|#include<string.h>  | It is used to perform various functionalities related to |
+|#include<math.h>    | It is used to perform mathematical operations like sqrt()|
+|#include<iomanip.h> | It is used to access set() and setprecision() function t|
+|#include<signal.h>  | It is used to perform signal handling functions like sign|
+|#include<stdarg.h>  | It is used to perform standard argument functions like va|
+|#include<errno.h>   | It is used to perform error handling operations like errno|
+|#include<fstream.h> | It is used to control the data to read from a file as an|
+|#include<time.h>    | It is used to perform functions related to date() and time|
