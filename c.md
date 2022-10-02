@@ -182,38 +182,18 @@ Declaration
 ```c
     char str[]="onecompiler";
 ```
-### String Functions
 
-gets() function
-It allows you to enter multi-word string
-```c
-   gets("string");
-```
-puts() function
-It is used to show string output
-```c
-   puts("string");
-```
-String Functions strlen()
-It is used to calculate the length of the string
-```c
-   strlen(string_name);
-```
-strcpy() function
-It is used to copy the content of second-string into the first string passed to it
-```c
-   strcpy(destination, source);
-```
-strcat() function
-It is used to concatenate two strings
-```c
-   strcat(first_string, second_string);
-```
-strcmp() function
-It is used to compare two strings
-```c
-   strcmp(first_string, second_string);
-```
+
+| Function | Description| Example|
+|----|----|---|
+| gets() | It allows you to enter multi-word string | `gets("string")`|
+| puts() | It is used to show string output | `puts("string")`|
+| strlen() | It is used to calculate the length of the string | `strlen(string_name)`|
+| strcpy() | It is used to copy the content of second-string into the first string passed to it | `strcpy(destination, source)`|
+| strcat() |It is used to concatenate two strings | ` strcat(first_string, second_string)`|
+| strcmp() | It is used to compare two strings | `strcmp(first_string, second_string)`|
+
+
 ## Constants
 
 Constants are the fixed values. They can be declared in two ways as shown below:
@@ -401,34 +381,10 @@ fclose(fptr);
 
 A set of functions for dynamic memory allocation from the heap. These methods are used to use the dynamic memory which makes our C programs more efficient
 
-### malloc() function
 
-Stands for 'Memory allocation' and reserves a block of memory with the given amount of bytes.
-
-```c
-   ptr = (castType*) malloc(size);
-```
-
-### calloc() function
-
-Stands for 'Contiguous allocation' and reserves n blocks of memory with the given amount of bytes.
-
-```c
-   ptr = (castType*)calloc(n, size);
-```
-
-### free function
-
-It is used to free the allocated memory.
-
-```c
-   free(ptr);
-```
-
-### realloc() function
-
-If the allocated memory is insufficient, then we can change the size of previously allocated memory using this function for efficiency purposes
-
-```c
-   ptr = realloc(ptr, x);
-```
+| Function | Description| Example|
+|----|----|---|
+| malloc() | Stands for 'Memory allocation' and reserves a block of memory with the given amount of bytes. | `ptr = (castType*) malloc(size)`|
+| calloc() | Stands for 'Contiguous allocation' and reserves n blocks of memory with the given amount of bytes. | `ptr = (castType*)calloc(n, size)`|
+| free | It is used to free the allocated memory. | `free(ptr)`|
+| realloc() | If the allocated memory is insufficient, then we can change the size of previously allocated memory using this function for efficiency purposes | `ptr = realloc(ptr, x)`|
