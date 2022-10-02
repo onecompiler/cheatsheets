@@ -12,7 +12,6 @@ C++ is a widely used middle-level programming language which is used in developi
 * `cout << x`: print value to the output stream
 * `//`: single line comments
 * `/* */`: Multi line comments
-* `endl`: new line
 
 ```c
 #include <iostream>
@@ -28,7 +27,6 @@ int main() {
 * `cout`: to print the output.
 * `main()`: main function is the entry point of any C++ program.
 * `return 0`: To end the main function
-* `endl`: to change line of the output
 
 #### How to compile a program in C++
 
