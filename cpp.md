@@ -408,3 +408,328 @@ sort(v.begin(), v.end()); // sorting in the vector
 }
 
 ```
+## The C++ Standard Template Library (STL)
+
+The Standard Template Library (STL) is a set of C++ template classes to provide common programming data structures and functions such as lists, stacks, arrays, etc. It is a library of container classes, algorithms, and iterators. It is a generalized library and so, its components are parameterized.
+STL has 4 components:
+
+
+
+1.Algorithms
+2.Containers
+3.Functions
+4.Iterators
+
+
+### Algorithms
+
+- The header algorithm defines a collection of functions specially designed to be used on a range of elements. They act on containers and provide means for various --   operations for the contents of the containers.
+
+
+
+
+1. Algorithm
+   - Sorting
+   - Searching
+   - Important STL Algorithms
+   - Useful Array algorithms
+   - Partition Operations
+
+
+2 .Numeric
+   - Valarray class
+   - Containers
+
+
+### Containers
+
+
+- Container classes store objects and data. There are in total seven standards "first-class" container classes and three container adaptor classes and only seven - ---  header files that provide access to these containers or container adaptors.
+
+
+
+1. Sequence Containers:
+ implement data structures that can be accessed in a sequential manner.
+   - vector
+   - list
+   - deque
+   - arrays
+   - forward_list( Introduced in C++11)
+
+
+2.Container Adaptors:
+provide a different interface for sequential containers.
+  
+  - queue
+  - priority_queue
+  - stack
+
+
+3.Associative Containers:
+implement sorted data structures that can be quickly searched (O(log n) complexity).
+   
+  - set
+  - multiset
+  - map
+  - multimap
+
+
+4.Unordered Associative Containers:
+implement unordered data structures that can be quickly searched
+  
+  - unordered_set (Introduced in C++11)
+  - unordered_multiset (Introduced in C++11)
+  - unordered_map (Introduced in C++11)
+  - unordered_multimap (Introduced in C++11)
+ 
+ ![image](https://user-images.githubusercontent.com/75524307/193427187-e93cca0d-4923-4954-a541-b579577eaae2.png)
+
+
+## Most Useful Algorithms Functions
+
+
+### Non-modifying sequence operations 
+
+std :: all_of  : Test condition on all elements in range
+std :: any_of  : Test if any element in range fulfills condition
+std :: none_of : Test if no elements fulfill condition
+std :: for_each : Apply function to range
+std :: find : Find value in range
+std :: find_if : Find element in range
+std :: find_if_not : Find element in range (negative condition)
+std :: find_end : Find last subsequence in range
+std :: find_first_of : Find element from set in range
+std :: adjacent_find : Find equal adjacent elements in range
+std :: count : Count appearances of value in range
+std :: count_if : Return number of elements in range satisfying condition
+std :: mismatch : Return first position where two ranges differ
+std::equal : Test whether the elements in two ranges are equal
+std :: is_permutation : Test whether range is permutation of another
+std :: search : Search range for subsequence
+std :: search_n : Search range for element
+ 
+ ### Modifying sequence operations
+
+- std :: copy :  Copy range of elements
+- std :: copy_n : Copy elements
+- std :: copy_if : Copy certain elements of range
+- std :: copy_backward : Copy range of elements backward
+- std::move : Move range of elements
+- std :: move_backward :  Move range of elements backward
+- std :: swap : Exchange values of two objects
+- std ::swap_ranges : Exchange values of two ranges
+- std :: iter_swap : Exchange values of objects pointed to by two iterators
+- std ::transform : Transform range
+- std ::replace : Replace value in range
+- std ::replace_if : Replace values in range
+- std :: replace_copy : Copy range replacing value
+- std :: replace_copy_if : Copy range replacing value
+- std ::fill : Fill range with value
+- std :: fill_n : Fill sequence with value
+- std ::generate : Generate values for range with function
+- std ::generate_n : Generate values for sequence with function
+- std ::remove : Remove value from range
+- std :: remove_if : Remove elements from range
+- remove_copy : Copy range removing value
+- remove_copy_if : Copy range removing values
+- std ::unique : Remove consecutive duplicates in range
+
+   ### Partition Operations
+
+- std :: is_partitioned : Test whether range is partitioned
+- std :: partition : Partition range in two
+- std :: stable_partition : Partition range in two – stable ordering
+- partition_copy : Partition range into two
+- partition_point : Get partition point
+
+   ### Sorting
+
+
+- std :: sort : Sort elements in range
+- std :: stable_sort : Sort elements preserving order of equivalents
+- std :: partial_sort : Partially sort elements in range
+- std :: partial_sort_copy : Copy and partially sort range
+- std :: is_sorted : Check whether range is sorted
+- std :: is_sorted_until : Find first unsorted element in range
+- std :: nth_element : Sort element in range
+
+### Binary search (operating on partitioned/sorted ranges)
+
+- std :: lower_bound : Return iterator to lower bound
+- std :: upper_bound : Return iterator to upper bound
+- std :: equal_range : Get subrange of equal elements
+- std :: binary_search : Test if value exists in sorted sequence
+
+  ### Merge (operating on sorted ranges)
+
+- std :: merge : Merge sorted ranges
+- std :: inplace_merge : Merge consecutive sorted ranges
+- std :: includes : Test whether the sorted range includes another sorted range
+- std :: set_union : Union of two sorted ranges
+- std :: set_intersection : Intersection of two sorted ranges
+- std :: set_difference : Difference of two sorted ranges
+- std :: set_symmetric_difference : Symmetric difference of two sorted ranges
+
+ ### Heap Operations
+
+- std :: push_heap : Push element into heap range
+- std :: pop_heap : Pop element from heap range
+- std :: make_heap : Make heap from range
+- std :: sort_heap : Sort elements of heap
+- std :: is_heap : Test if range is heap
+- std :: is_heap_until : Find first element not in heap order
+- std :: max : Return the largest
+- std :: minmax : Return smallest and largest elements
+- std :: min_element : Return smallest element in range
+- std :: max_element : Return largest element in range
+- std :: minmax_element : Return smallest and largest elements in range
+
+
+  ### Other Operations
+
+- std :: lexicographical_compare : Lexicographical less-than comparison
+- std :: next_permutation : Transform range to next permutation
+- std :: prev_permutation : Transform range to previous permutation
+
+## Associative Containers
+
+### Set 
+
+- Sets are a type of associative container in which each element has to be unique because the value of the element identifies it. The values are stored in a specific sorted order i.e. either ascending or descending.
+
+- Syntax:
+
+set<datatype> setname;
+Datatype:
+
+-Set can take any data type depending on the values, e.g. int, char, float, etc.
+
+
+-Example:
+
+set<int> val; // defining an empty set
+set<int> val = {6, 10, 5, 1}; // defining a set with values
+Note: set<datatype, greater<datatype>> setname; is used for storing values in a set in descending order.
+	  
+	
+### Properties
+	
+ - Storing order - The set stores the elements in sorted order.
+ - Values Characteristics - All the elements in a set have unique values.
+ - Values Nature - The value of the element cannot be modified once it is added to the set, though it is possible to remove and then add the modified value of that        element. Thus, the values are immutable.
+ - Search Technique - Sets follow the Binary search tree implementation.
+ - Arranging order - The values in a set are unindexed.
+Note: To store the elements in an unsorted(random) order,  unordered_set() can be used.
+
+
+### Some Basic Functions Associated with Set: 
+
+- begin() - Returns an iterator to the first element in the set.
+- end() - Returns an iterator to the theoretical element that follows the last element in the set.
+- size() - Returns the number of elements in the set.
+- max_size() - Returns the maximum number of elements that the set can hold.
+- empty() - Returns whether the set is empty.
+- The time complexities for doing various operations on sets are:
+
+Insertion of Elements - O(log N)
+Deletion of Elements - O(log N)
+	
+### Map
+
+Maps are associative containers that store elements in a mapped fashion. Each element has a key value and a mapped value. No two mapped values can have the same key values.
+
+*Some basic functions associated with Map: 
+
+- begin() - Returns an iterator to the first element in the map.
+- end() - Returns an iterator to the theoretical element that follows the last element in the map.
+- size() - Returns the number of elements in the map.
+- max_size() - Returns the maximum number of elements that the map can hold.
+- empty() - Returns whether the map is empty.
+- pair insert(keyvalue, mapvalue) - Adds a new element to the map.
+- erase(iterator position) - Removes the element at the position pointed by the iterator.
+- erase(const g)- Removes the key-value 'g' from the map.
+- clear() - Removes all the elements from the map.
+	
+	
+ ### Multimap 
+
+It is similar to a map with the addition that multiple elements can have the same keys. Also, it is NOT required that the key-value and mapped value pair have to be unique in this case. One important thing to note about multimap is that multimap keeps all the keys in sorted order always. These properties of multimap make it very much useful in competitive programming.
+	
+*Some Basic Functions associated with multimap: 
+
+- begin() - Returns an iterator to the first element in the multimap
+- end() - Returns an iterator to the theoretical element that follows last element in the multimap
+- size() - Returns the number of elements in the multimap
+- max_size() - Returns the maximum number of elements that the multimap can hold
+- empty() - Returns whether the multimap is empty
+- pair<int,int> insert(keyvalue,multimapvalue) - Adds a new element to the multimap
+
+
+  ### Unordered Sets
+
+
+- An unordered_set is implemented using a hash table where keys are hashed into indices of a hash table so that the insertion is always randomized. All operations on the unordered_set takes constant time O(1) on an average which can go up to linear time O(n) in worst case which depends on the internally used hash function, but practically they perform very well and generally provide a constant time lookup operation. 
+- The unordered_set can contain key of any type – predefined or user-defined data structure but when we define the key of type user define the type, we need to specify our comparison function according to which keys will be compared.
+
+- insert()- Insert a new {element} in the unordered_set container.
+- begin()- Return an iterator pointing to the first element in the unordered_set container.
+- end()- Returns an iterator pointing to the past-the-end-element.
+- count()- Count occurrences of a particular element in an unordered_set container.
+- find()- Search for an element in the container.
+- clear()- Removes all of the elements from an unordered_set and empties it.
+- cbegin()- Return a const_iterator pointing to the first element in the unordered_set container.
+- cend()- Return a const_iterator pointing to past-the-end element in the unordered_set container or in one of it’s bucket.
+- bucket_size()- Returns the total number of elements present in a specific bucket in an unordered_set container.
+- erase()- Remove either a single element or a range of elements ranging from start(inclusive) to end(exclusive).
+- size()- Return the number of elements in the unordered_set container.
+- swap()- Exchange values of two unordered_set containers.
+- emplace()- Insert an element in an unordered_set container.
+- max_size()- Returns maximum number of elements that an unordered_set container can hold.
+- empty()- Check if an unordered_set container is empty or not.
+	
+	
+	
+### Unordered Multiset
+	
+
+-The internal implementation of unordered_multiset is same as that of unordered_set and also uses hash table for searching, just the count value is associated with each value in former one. Due to hashing of elements it has no particular order of storing the elements so all element can come in any order but duplicate element comes together. All operation on unordered_multiset takes constant time on average but can go upto linear in worst case. 
+	
+- insert()- Inserts new elements in the unordered_multiset. Thus increases the container size.
+- begin()- Returns an iterator pointing to the first element in the container or to the first element in one of its bucket.
+- end()- Returns an iterator pointing to the position immediately after the last element in the container or to the position immediately after the last element in one of its bucket.
+- empty()- It returns true if the unordered_multiset container is empty. Otherwise, it returns false.
+- find()- Returns an iterator which points to the position which has the element val.
+- cbegin()- Returns a constant iterator pointing to the first element in the container or to the first element in one of its bucket.
+- cend()- Returns a constant iterator pointing to the position immediately after the last element in the container or to the position immediately after the last element in one of its bucket.
+- equal_range()- Returns the range in which all the elements are equal to a given value.
+- emplace()- Inserts a new element in the unordered_multiset container.
+- clear()- Clears the contents of the unordered_multiset container.
+- count()- Returns the count of elements in the unordered_multiset container which is equal to a given value.
+- size()- The size() method of unordered_multiset is used to count the number of elements of unordered_set it is called with.
+- max_size- The max_size() of unordered_multiset takes the maximum number of elements that the unordered_multiset container is able to hold.
+- swap()- Swaps the contents of two unordered_multiset containers.
+- erase() - Used to remove either a single element or, all elements with a definite value or, a range of elements ranging from start(inclusive) to end(exclusive).
+	
+
+
+
+### Unordered_map 
+
+
+unordered_map is an associated container that stores elements formed by the combination of key-value and a mapped value. The key value is used to uniquely identify the element and the mapped value is the content associated with the key. Both key and value can be of any type predefined or user-defined. 
+
+Internally unordered_map is implemented using Hash Table, the key provided to map are hashed into indices of a hash table that is why the performance of data structure depends on hash function a lot but on an average, the cost of search, insert and delete from the hash table is O(1). 
+	
+### Methods of unordered_map : 
+
+- at(): This function in C++ unordered_map returns the reference to the value with the element as key k.
+- begin(): Returns an iterator pointing to the first element in the container in the unordered_map container
+- end(): Returns an iterator pointing to the position past the last element in the container in the unordered_map container
+- bucket(): Returns the bucket number where the element with the key k is located in the map.
+- bucket_count: bucket_count is used to count the total no. of buckets in the unordered_map. No parameter is required to pass into this function.
+- bucket_size: Returns the number of elements in each bucket of the unordered_map.
+- count(): Count the number of elements present in an unordered_map with a given key.
+- equal_range: Return the bounds of a range that includes all the elements in the container with a key that compares equal to k.
+- find(): Returns iterator to element.
+- empty(): checks whether container is empty in the unordered_map container.
+- erase(): erase elements in the container in the unordered_map container.
