@@ -17,7 +17,7 @@ updated: 2022-07-02
 
 ### 2. Internal CSS
 
-You can define CSS properties using `<style>` tag in `<head>` section.
+You can define CSS properties using the `<style>` tag in the `<head>` section.
 
 ```html
 <head>
@@ -31,7 +31,7 @@ You can define CSS properties using `<style>` tag in `<head>` section.
 
 ### 3. External CSS
 
-`<link>` tag is used to refer an external CSS file.
+`<link>` tag is used to refer to an external CSS file.
 
 ```html
     <link rel="stylesheet" href="styles.css" />
@@ -39,7 +39,7 @@ You can define CSS properties using `<style>` tag in `<head>` section.
 
 ### 4. CSS Selectors
 
-you can select elements based on their name 
+You can select elements based on their name
 
 ```css
     div {
@@ -48,7 +48,7 @@ you can select elements based on their name
     }
 ```
 
-or you can use both class based or id base css selection 
+or you can use both class based or id based css selection. 
 
 ```css
     // classed based 
@@ -83,9 +83,9 @@ Formally, the display property sets an element's inner and outer display types.
 
 ### 6. FlexBox
 
-you can use Flexbox to properly align your elements 
+You can use Flexbox to manage alignment and position of your elements. 
 
-to use Flexbox give this property to the parent element
+To use Flexbox, give this property to the parent element:
 
 ```css
     .parent {
@@ -93,7 +93,7 @@ to use Flexbox give this property to the parent element
     }
 ```
 
-to align the elements towards the main axis By default it's horizontail we use  `justify-content`
+To align the elements towards the main axis (by default it's horizontal), we use  `justify-content`.
 
 | Vlaues | description |
 |---|---|
@@ -104,7 +104,7 @@ to align the elements towards the main axis By default it's horizontail we use  
 | space-between| Items are evenly distributed .first item at the start and last items at the end |
 | space-evenly | Items are evenly spaced with same amount space between them | 
 
-to align the elments towards the cross-axis we use `align-items`
+To align the elements towards the cross-axis, we use `align-items`.
 
 
 | Vlaues | description |
@@ -113,7 +113,7 @@ to align the elments towards the cross-axis we use `align-items`
 | center | Items are packed on the center of cross axis  | 
 | flex-end | Items are packed towards the end of the cross axis  | 
 
-By default flex works in a horizontal way to use flex in a vartical way use
+By default, the flex direction is set to row (horizontal). To switch the flex direction to column (vertical), use:
 
 ### The direction of flex is consider the main axis and the other axis consider as cross axis
 
@@ -125,7 +125,7 @@ By default flex works in a horizontal way to use flex in a vartical way use
 ```
 
 ### 7. CSS Grid
-Css grid is another way to properly align your html elements
+CSS grid is another way to properly align your HTML elements.
 
 to create a new  grid use  
 
@@ -135,7 +135,7 @@ to create a new  grid use
     }
 ```
 
-grid are made of two things columns and rows  using `grid-template-rows` and `grid-template-columns` you can define how many rows and columns you want
+CSS grid is made of two things: columns and rows. Using `grid-template-rows` and `grid-template-columns`, you can define how many rows and columns you want.
 
 ```css 
     .box {
@@ -146,7 +146,7 @@ grid are made of two things columns and rows  using `grid-template-rows` and `gr
 
 ```
 
-you can use grid using a special unit called  `Fr (fraction)` which means portions of remaining space
+You can use grid with a special unit called `Fr (fraction)`, which refers to a portion of remaining space.
 
 ```css 
     .box {
