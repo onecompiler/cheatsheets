@@ -97,8 +97,45 @@ there are also more fun selectors for different use cases that could be helpful 
     }
 ```
 
+### 5. Units
 
-### 5. Display Properites
+Units are used for interpreting length in your css code value. These are used in properties like ```width```, ```height```, ```font-size```, ```margin```, ```padding``` etc.
+
+- #### Absolute units
+    | Units | description |
+    |---|---|
+    | in | used for inches | 
+    | px | used for absolute pixels (usually 1/96th of an inch) |
+    | pt | points, usually 1/72th of an inch |
+    | pc | picas, usally 12 picas |
+    | cm | used for centimeters  | 
+    | mm | used for millimeters  |  
+
+- #### Relative units(preferred)
+    | Units | description |
+    |---|---|
+    | % | relative to the size of the parent for eg. ```100%``` means filling all inside the parent | 
+    | em | relative to the font size of the element  | 
+    | rem | relative to the font size of the root element  | 
+    | vw | relative to the viewport's width, for eg.: ```2vw``` would be ```2% of the width``` of the viewport  |
+    | vh | relative to the viewport's height, for eg.: ```6vh``` would be ```6% of the height``` of the viewport  |
+    | vmax |  relative to the viewport's bigger dimension which could be either the height or the width, for eg.: ```3vmax``` would mean ```3vh``` if the height is more than the width and would mean ```3vw``` otherwise | 
+    | vmin | similar to  vmax, differs because it would consider the smaller dimension of either the height or the width  | 
+
+> relative units are much more preferred nowadays as their are just too many devices with varying screen heights, widths, pixel densities etc.
+
+```css
+    * {
+        background: red;
+        min-height: 100vh;    //relative unit
+    }
+    div,p {
+        background: purple;
+        max-width: 200px      //absolute unit
+    }
+```
+
+### 6. Display Properites
 
 The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
 Formally, the display property sets an element's inner and outer display types. 
@@ -117,7 +154,7 @@ Formally, the display property sets an element's inner and outer display types.
 }
 ```
 
-### 6. FlexBox
+### 7. FlexBox
 
 You can use Flexbox to manage alignment and position of your elements. 
 
@@ -160,7 +197,7 @@ By default, the flex direction is set to row (horizontal). To switch the flex di
     }
 ```
 
-### 7. CSS Grid
+### 8. CSS Grid
 CSS grid is another way to properly align your HTML elements.
 
 to create a new  grid use  
@@ -193,7 +230,7 @@ You can use grid with a special unit called `Fr (fraction)`, which refers to a p
     }
 ```
 
-### 8. Variables
+### 9. Variables
 
 Variables are a great way to make your css more manageable, so you're not editing the values you want to be consistent on multiple instances of its usage. It promotes consistency and overall management of the code.
 
