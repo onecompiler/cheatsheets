@@ -42,3 +42,10 @@ tar -zcvf foo.txt.tar.gz foo.txt
 tar -xvf foo.txt.tar.gz
 
 ```
+## Text Editor Options for Programmers
+
+```c
+Sublime Text     Atom        GNU Emacs 
+Vim              Gedit       Notepadqq
+Nano             VsCode      Brackets
+```
