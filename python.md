@@ -186,7 +186,7 @@ except:
     print("You can't divide by zero!")
 ```
 
-The finally block lets you execute code, regardless of the result of the try- and except blocks.
+The finally block lets you execute code, regardless of the class of the try- and except blocks.
 ```py
 try:
     print(x)
@@ -287,6 +287,75 @@ mycln.update_one({"name" : "foo"}, {"$set":{"age": 23}})
 # to delete a single document
 doc1 = mycln.delete_one({"name" : "foo"})
 ```
+## Python with MySQL
+Install a python driver `mysql-connector` to connect with MySQL. 
+
+### Create Connection
+```py
+import mysql.connector
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="yourusername",
+  password="yourpassword"
+)
+# Cursor objects interact with the MySQL server
+mycursor = mydb.cursor()
+```
+
+### Create Database
+```py
+mycursor.execute("CREATE DATABASE mydb")
+# see all databases
+mycursor.execute("SHOW DATABASES")
+```
+### Create Table
+```py
+mycursor.execute("CREATE TABLE students (name VARCHAR(255), grade CHAR(1))")
+```
+### Insert
+```py
+# insert a single record
+sql = "INSERT INTO students (name, grade) VALUES (%s, %s)"
+val = ("Rahul", "B")
+mycursor.execute(sql, val)
+#insert multiple records
+values = [
+  ('Julie', 'A'),
+  ('Ritesh', 'C'),
+  ('Aabha', 'B'),
+]
+mycursor.executemany(sql, values)
+mydb.commit()
+```
+### Read
+```py
+# Read a single record
+mycursor.execute("SELECT * FROM students")
+student = mycursor.fetchone()
+print(student)
+# Read all records
+mycursor.execute("SELECT * FROM students")
+myclass = mycursor.fetchall()
+for x in myclass:
+  print(x)
+```
+### Update
+```py
+sql = "UPDATE students SET grade = 'A' WHERE name = 'Rahul'"
+mycursor.execute(sql)
+mydb.commit()
+```
+### Delete
+```py
+sql = "DELETE FROM students WHERE grade = 'F'"
+mycursor.execute(sql)
+mydb.commit()
+```
+## Drop Table
+```py
+mycursor.execure("DROP TABLE students")
+```
+
 ## Python with Files
 
 ### Create
