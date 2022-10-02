@@ -351,7 +351,7 @@ sql = "DELETE FROM students WHERE grade = 'F'"
 mycursor.execute(sql)
 mydb.commit()
 ```
-## Drop Table
+### Drop Table
 ```py
 mycursor.execure("DROP TABLE students")
 ```
