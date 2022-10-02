@@ -9,9 +9,10 @@ C++ is a widely used middle-level programming language which is used in developi
 
 ## Basics
 * `cin >> x`: read value into the variable x from input stream
-* `cout << x`: printf value to the output stream
+* `cout << x`: print value to the output stream
 * `//`: single line comments
 * `/* */`: Multi line comments
+* `endl`: new line
 
 ```c
 #include <iostream>
@@ -27,6 +28,7 @@ int main() {
 * `cout`: to print the output.
 * `main()`: main function is the entry point of any C++ program.
 * `return 0`: To end the main function
+* `endl`: to change line of the output
 
 #### How to compile a program in C++
 
@@ -111,7 +113,7 @@ int a[2][3] = {
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
 | comparision Operator| < , > , <= , >=, != , ==|
-| Bitwise Operator| & , ^ , |
+| Bitwise Operator| & , ^ , `\|` |
 | Logical Operator| && , `\|\|`, ! |
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
@@ -248,6 +250,10 @@ class MyClass {       // The class
   public:             // Access specifier
     int myNum;        // Attribute (int variable)
     string myString;  // Attribute (string variable)
+
+    void print() {
+        cout<<myNum;  // Method (function)
+    }
 };
 ```
 
@@ -274,111 +280,6 @@ typedef data-type name;
 typedef unsigned int distance;  // typedef of int 
 ```
 
-## Vectors
-Vectors are same as dynamic arrays. They will be resized on element inseertions & deletions.
-
-Functions associated with the vector are:
-
-Following functions return iterator 
-begin() 
-end() 
-rbegin() 
-rend() 
-cbegin() 
-cend() 
-crbegin() 
-crend() 
-
-```c
-#include <iostream>
-#include <vector>
-  
-using namespace std;
-  
-int main()
-{
-    vector<int> v1;
-  
-    for (int i = 1; i <= 10; i++)
-        v1.push_back(i);
-  
-    cout << "Output of begin and end: ";
-    for (auto i = v1.begin(); i != v1.end(); ++i)
-        cout << *i << " ";
-  
-    return 0;
-}
-
-```
-## Stacks 
-
-Stacks are a type of container adaptors with LIFO(Last In First Out) type of working, where a new element is added at one end (top) and an element is removed from that end only.
-
-The functions associated with stack are: 
-empty() – Returns whether the stack is empty – Time Complexity : O(1) 
-size() – Returns the size of the stack – Time Complexity : O(1) 
-top() – Returns a reference to the top most element of the stack – Time Complexity : O(1) 
-push(g) – Adds the element ‘g’ at the top of the stack – Time Complexity : O(1) 
-pop() – Deletes the top most element of the stack – Time Complexity : O(1) 
-
-```c
-
-#include <iostream>
-#include <stack>
-using namespace std;
-int main() {
-	stack<int> stack;
-	stack.push(21);
-	stack.push(22);
-	stack.push(24);
-	stack.push(25);
-	
-		stack.pop();
-	stack.pop();
-
-	while (!stack.empty()) {
-		cout << ' ' << stack.top();
-		stack.pop();
-	}
-}
-
-```
-
-## Queue
-
-Queues are a type of container adaptors that operate in a first in first out (FIFO) type of arrangement. Elements are inserted at the back (end) and are deleted from the front
-
-queue::empty()	Returns whether the queue is empty.
-queue::size()	Returns the size of the queue.
-queue::swap()	Exchange the contents of two queues but the queues must be of the same type, although sizes may differ.
-queue::emplace()	Insert a new element into the queue container, the new element is added to the end of the queue.
-queue::front()	Returns a reference to the first element of the queue.
-queue::back()	Returns a reference to the last element of the queue.
-queue::push(g) 	Adds the element ‘g’ at the end of the queue.
-queue::pop() removes the element
-
-```c
-
-#include <iostream>
-#include <queue>
-using namespace std;
-int main() {
-	queue<int> q;
-	q.push(21);
-	q.push(22);
-	q.push(24);
-	q.push(25);
-	
-		q.pop();
-	q.pop();
-
-	while (!q.empty()) {
-		cout << ' ' << q.front();
-		q.pop();
-	}
-}
-
-```
 ## Sort one-line
 
 Sorting is one of the most basic functions applied to data. It means arranging the data in a particular fashion, which can be increasing or decreasing. There is a builtin function in C++ STL by the name of sort(). 
@@ -410,6 +311,7 @@ sort(v.begin(), v.end()); // sorting in the vector
 
 |Name| Use|
 |----|----|
+|#include<bits/stdc++.h>   | It contains all the libraries present in C++|
 |#include<stdio.h>   | It is used to perform input and output operations|
 |#include<string.h>  | It is used to perform various string operations|
 |#include<math.h>    | It is used to perform mathematical operations|
@@ -419,3 +321,318 @@ sort(v.begin(), v.end()); // sorting in the vector
 |#include<errno.h>   | It is used to perform error handling operations like errno|
 |#include<fstream.h> | It is used to control the data to read from a file|
 |#include<time.h>    | It is used to perform functions related to date() and time|
+
+## Standard Template Library(STL)
+
+## Containers
+
+Containers store objects and data. There are different type of containers which are used based on the requirement. Some of the commonly used containers are:
+
+## Vector
+Vectors are same as dynamic arrays. They will be resized on element insertions & deletions.
+
+Functions associated with the vector are:
+
+Following functions return iterator 
+begin() 
+end() 
+rbegin() 
+rend() 
+cbegin() 
+cend() 
+crbegin() 
+crend() 
+
+```c
+#include <iostream>
+#include <vector>
+  
+using namespace std;
+  
+int main()
+{
+    vector<int> v1;
+  
+    for (int i = 1; i <= 10; i++)
+        v1.push_back(i);
+  
+    cout << "Output of begin and end: ";
+    for (auto i = v1.begin(); i != v1.end(); ++i)
+        cout << *i << " ";
+
+    for (auto i: v1)
+        cout << i << " ";
+  
+    return 0;
+}
+
+```
+## Stack
+
+Stacks are a type of container adaptors with LIFO(Last In First Out) type of working, where a new element is added at one end (top) and an element is removed from that end only.
+
+The functions associated with stack are: 
+empty() – Returns whether the stack is empty – Time Complexity : O(1) 
+size() – Returns the size of the stack – Time Complexity : O(1) 
+top() – Returns a reference to the top most element of the stack – Time Complexity : O(1) 
+push(g) – Adds the element ‘g’ at the top of the stack – Time Complexity : O(1) 
+pop() – Deletes the top most element of the stack – Time Complexity : O(1) 
+
+```c
+
+#include <iostream>
+#include <stack>
+using namespace std;
+int main() {
+	stack<int> stack;
+	stack.push(21);
+	stack.push(22);
+	stack.push(24);
+	stack.push(25);
+	
+	stack.pop();
+	stack.pop();
+
+	while (!stack.empty()) {
+		cout << ' ' << stack.top();
+		stack.pop();
+	}
+}
+
+```
+
+## Queue
+
+Queues are a type of container adaptors that operate in a first in first out (FIFO) type of arrangement. Elements are inserted at the back (end) and are deleted from the front.
+
+empty() - Returns whether the queue is empty.
+size() - Returns the size of the queue.
+swap() - Exchange the contents of two queues but the queues must be of the same type, although sizes may differ.
+emplace() - Insert a new element into the queue container, the new element is added to the end of the queue.
+front() - Returns a reference to the first element of the queue.
+back() - Returns a reference to the last element of the queue.
+push(g) - Adds the element ‘g’ at the end of the queue.
+pop() removes the element
+
+```c
+
+#include <iostream>
+#include <queue>
+using namespace std;
+int main() {
+	queue<int> q;
+	q.push(21);
+	q.push(22);
+	q.push(24);
+	q.push(25);
+	
+	q.pop();
+	q.pop();
+
+	while (!q.empty()) {
+		cout << ' ' << q.front();
+		q.pop();
+	}
+}
+
+```
+
+## Priority Queue
+
+Priority queues are specifically designed such that the first element of the queue is either the greatest or the smallest of all elements in the queue and elements are in non increasing order.
+
+push(g) - Adds the element ‘g’ at the top of the priority queue.
+pop() - Removes the element from the top.
+empty() - Returns whether the priority_queue is empty.
+size() - Returns the size of the priority_queue.
+top()  - Returns a reference to the top element of the priority_queue.
+
+### Max heap
+
+It contains elements in the priority queue in decreasing order. It means that the maximum element will always be at the top of the priority queue. 
+
+```c
+#include <iostream>
+#include <queue>
+using namespace std;
+int main() {
+	priority_queue<int> pq;
+	pq.push(1);
+	pq.push(2);
+	pq.push(4);
+	pq.push(3);
+	
+	pq.pop();
+	pq.pop();
+
+	while (!pq.empty()) {
+		cout << ' ' << pq.top();
+		pq.pop();
+	}
+}
+
+```
+
+### Min Heap
+
+It contains elements in the priority queue in non-decreasing order. It means that the minimum element will always be at the top of the priority queue. 
+
+```c
+#include <iostream>
+#include <queue>
+using namespace std;
+int main() {
+	priority_queue<int, vector<int>, greater<int>> pq;
+	pq.push(5);
+	pq.push(2);
+	pq.push(4);
+	pq.push(1);
+	
+	pq.pop();
+	pq.pop();
+
+	while (!pq.empty()) {
+		cout << ' ' << pq.top();
+		pq.pop();
+	}
+}
+
+```
+
+### Set
+
+Sets are a type of container in which each element has to be unique. The values are stored in a specific sorted order.
+
+insert(g) - Adds a new element ‘g’ to the set.
+erase(g) - Removes the value ‘g’ from the set.
+size() – Returns the number of elements in the set.
+empty() – Returns whether the set is empty.
+begin() – Returns an iterator to the first element in the set.
+end() – Returns an iterator to the element that follows the last element in the set.
+
+```c
+#include <iostream>
+#include <set>
+using namespace std;
+int main() {
+	set<int> st;
+	st.insert(40);
+    st.insert(30);
+    st.insert(60);
+    st.insert(20);
+    st.insert(50);
+
+    // printing set st
+	for (i = st.begin(); i != st.end(); i++) {
+        cout << *i << " ";
+    }
+
+    //another way to print
+    for (auto i: st) {
+        cout << i << " ";
+    }
+}
+
+```
+
+### Map
+
+Maps are type of containers that store elements in a mapped fashion. Each element has a key value and a mapped value. No two mapped values can have the same key values.
+
+insert(keyvalue, mapvalue) – Adds a new element to the map.
+erase(g)– Removes the key-value ‘g’ from the map.
+begin() – Returns an iterator to the first element in the map.
+end() – Returns an iterator to the element that follows the last element in the map.
+size() – Returns the number of elements in the map.
+empty() – Returns whether the map is empty.
+clear() – Removes all the elements from the map.
+
+```c
+#include <iostream>
+#include <map>
+using namespace std;
+int main() {
+	map<int, int> mp;
+	mp.insert({1, 40});
+    mp.insert({2, 30});
+    mp.insert({3, 60});
+    mp.insert({4, 20});
+    mp.insert({5, 50});
+
+    mp[6] = 10;   // another way of inserting a value in a map
+
+    // printing map mp
+	for (i = mp.begin(); i != mp.end(); i++) {
+        cout << " " << i->first << " " << i->second << endl;
+    }
+
+    for (auto i: mp) {
+        cout << " " << i.first << " " << i.second << endl;
+    }
+}
+
+```
+
+## Algorithms
+
+The header algorithm defines a collection of functions specially designed to be used on a range of elements. They act on containers and provide means for various operations for the contents of the containers. Some of the commonly used algorithms are:
+
+### Sorting
+```c
+sort(start_address, end_address);          //sorts an array/vector in non-decreasing order
+```
+
+### Searching
+```c
+binary_search(start_address, end_address, key);          //returns true if a key is present in an array/vector
+```
+
+### Reverse 
+```c
+reverse(start_address, end_address);          //reverses an array/vector from start addresss to end address     
+```
+
+### Swap
+```c
+swap(first_element, second_element);          //swaps two elements with each other
+```
+
+### Max Element
+```c
+*max_element(start_address, end_address);          //returns the maximum element present in an array/vector
+```
+
+### Min Element
+```c
+*min_element(start_address, end_address);          //returns the minimum element present in an array/vector
+```
+
+### Sum
+```c
+*accumulate(start_address, end_address, initial_sum);          //returns the sum of an array/vector
+```
+
+### Count
+```c
+*count(start_address, end_address, x);          //count the number of times 'x' appear in an array/vector
+```
+
+### Find
+```c
+*find(start_address, end_address, x);          //find the first occurence of 'x' in an array/vector
+```
+
+### Upper Bound
+```c
+*upper_bound(start_address, end_address, x);          //returns iterator pointing to the first element which is not less than 'x'
+```
+
+### Lower Bound
+```c
+*lower_bound(start_address, end_address, x);          //returns iterator pointing to the first element which is just greater than 'x'
+```
+
+### Next Permutation
+```c
+*next_permutation(start_address, end_address);          //returns true if next permuation of an array/string exists
+```
