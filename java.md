@@ -238,6 +238,77 @@ do{
 |Deque| Deque(Double Ended Queue) is used to add or remove elements from both the ends of the Queue(both head and tail)|
 |Map| Map contains key-values pairs which don't have any duplicates. Map is implemented in HashMap, TreeMap etc.|
 
+## ArrayList
+
+The ArrayList class is a resizable array, which can be found in the java.util package.
+
+### Example
+
+```java
+
+    import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<String> cars = new ArrayList<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars);
+  }
+}
+
+```
+
+## HashSet
+
+A HashSet is a collection of items where every item is unique, and it is found in the java.util package:
+ 
+ ###  Example
+ 
+ ```java
+ 
+ import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet<String> cars = new HashSet<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    System.out.println(cars);
+  }
+}
+ 
+ ```
+ 
+ ## HashMap
+ 
+  A HashMap however, store items in "key/value" pairs, and you can access them by an index of another type (e.g. a String).
+  
+  ```java
+  
+  import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    // Create a HashMap object called capitalCities
+    HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+    // Add keys and values (Country, City)
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    System.out.println(capitalCities);
+  }
+}
+  
+  ```
+
 ## String Methods
 | Method| Description| Example|
 |----|----|----|
