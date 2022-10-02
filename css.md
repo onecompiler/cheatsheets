@@ -107,7 +107,7 @@ Units are used for interpreting length in your css code value. These are used in
     | in | used for inches | 
     | px | used for absolute pixels (usually 1/96th of an inch) |
     | pt | points, usually 1/72th of an inch |
-    | pc | picas, usally 12 ponits |
+    | pc | picas, usally 12 points |
     | cm | used for centimeters  | 
     | mm | used for millimeters  |  
 
