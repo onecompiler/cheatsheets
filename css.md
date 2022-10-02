@@ -62,6 +62,42 @@ or you can use both class based or id based css selection.
         margin:10px;
     }
 ```
+
+there are also more fun selectors for different use cases that could be helpful in the long run when you're having a massive project and making tons of classes won't be viable to handle, such as:
+
+| Selector | What it does? |
+|---|---|
+| * | * selector selects and gives you all the elements individually, so you're essentially selecting all the elements one by one rather than having a parent controlling the styling  | 
+| element1,element2 | The example of this syntax could be ```div,p{ ... }``` this allows you to select all element1 and element2 from the html  | 
+| element1 element2 | Replacing the comma(,) with a space helps you in selecting all the element2 which are inside element1, for eg: ```div a{ ... }``` means all the anchor tags(a) which are inside a div | 
+| element1 > element2 | Much like how the space works, it gives the all the element2 who are directly inside element1 for eg.: ```div>p{ ... }``` means all the ```<div><p> .... </p></div>``` will be selected but not ```<div><span><p></p></span></div>``` because p is not the direct child
+| element1 + element2 | Quite rarely used but quite useful in some cases, it selects element2 which is directly after element1 for eg.: ```div+p{ ... }``` means all the ```<div> ... </div><p> ... </p>``` will be selected |
+| element1 ~ element2 | Also quite rarely used but useful in some cases, it selects the same as the + selector but rather than what + does by selecting only a single element, it selects all the elements following |
+
+
+```css 
+    * {
+        background:red;
+        min-height:100vh;
+    }
+    div,p {
+        background:purple;
+    }
+    div p {
+        background:yellow;
+    }
+    div > p {
+        background:green;
+    }
+    div + p {
+        background:blue;
+    }
+    div ~ p {
+        background:white;
+    }
+```
+
+
 ### 5. Display Properites
 
 The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
