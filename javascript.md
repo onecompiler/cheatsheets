@@ -349,3 +349,51 @@ throw "Error message";    // throw error text to user
 |g|	Performs a global match and finds all|
 |i|	Performs case-insensitive matching|
 |m|	Performs multiline matching|
+
+### Javascript DOM
+
+The Javascript DOM (Document Object Model) is an interface that allows developers to manipulate the content, structure and style of a website.The browser creates a representation of the document known as Document Object Model (DOM). This document enables Javascript to access and manipulate the elements and styles of a website. 
+
+### Some examples
+
+### Get element by ID
+
+The getElementById() method is used to get a single element by its id. Let’s look at an example:
+
+```
+var title = document.getElementById(‘header-title’);
+
+```
+
+### Get elements by class name
+
+We can also get more than one object using the getElementsByClassName() method which returns an array of elements.
+
+```
+var items = document.getElementsByClassName(‘list-items’);
+```
+
+### Get element by tag name
+
+we can also get our elements by tag name using the getElementsByTagName() method.
+```
+var listItems = document.getElementsByTagName(‘li’);
+```
+
+### Queryselector
+
+The querySelector() method returns the first element that matches a specified CSS selector. That means that you can get elements by id, class, tag and all other valid CSS selectors. Here I just list a few of the most popular options.
+
+```
+var items = document.querySelector(‘list-items’);
+var header = document.querySelector(‘#header’)
+var listItems = document.querySelector(‘li’);
+```
+
+### Queryselectorall
+
+The querySelectorAll() method is completely the same as the querySelector() except that it returns all elements that fit the CSS Selector.
+
+```
+var heading = document.querySelectorAll(‘h1.heading’);
+```
