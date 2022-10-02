@@ -7,8 +7,8 @@ updated: 2020-04-25
 
 ## Basics
 
-* scanf("%d", &x) -- read value into the variable x from input stream
-* Printf("%d",x) -- printf value to the output stream
+* scanf("%d", &x) -- read integer value into the variable x from input stream
+* printf("%d",x) -- printf value to the output stream
 * gets(str) -- reads a line from input stream into a variable
 ### Sample C program
 
