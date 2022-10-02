@@ -244,7 +244,7 @@ The ArrayList class is a resizable array, which can be found in the java.util pa
 
 ### Example
 
-```c
+```java
 
     import java.util.ArrayList;
 
@@ -267,7 +267,7 @@ A HashSet is a collection of items where every item is unique, and it is found i
  
  ###  Example
  
- ```c
+ ```java
  
  import java.util.HashSet;
 
@@ -289,7 +289,7 @@ public class Main {
  
   A HashMap however, store items in "key/value" pairs, and you can access them by an index of another type (e.g. a String).
   
-  ```c
+  ```java
   
   import java.util.HashMap;
 
