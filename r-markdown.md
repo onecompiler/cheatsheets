@@ -9,12 +9,6 @@ Stable release:	4.2.1 / 23 June 2022
 Introduction to ```r```.<br>
 ```r```  is a language and environment for statistical computing and graphics. It is a GNU project which is similar to the S language and environment which was developed at Bell Laboratories (formerly AT&T, now Lucent Technologies) by John Chambers and colleagues. 
 
-```r``` provides a wide variety of statistical (linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, …) and graphical techniques, and is highly extensible. The S language is often the vehicle of choice for research in statistical methodology, and ```r``` provides an Open Source route to participation in that activity.
-
-One of ```r```’s strengths is the ease with which well-designed publication-quality plots can be produced, including mathematical symbols and formulae where needed. Great care has been taken over the defaults for the minor design choices in graphics, but the user retains full control.
-
-```r``` is available as Free Software under the terms of the Free Software Foundation’s GNU General Public License in source code form. It compiles and runs on a wide variety of UNIX platforms and similar systems (including FreeBSD and Linux), Windows and MacOS.
-  
 ## The ```r``` environment
 ```r``` is an integrated suite of software facilities for data manipulation, calculation and graphical display. It includes an effective data handling and storage facility,
 a suite of operators for calculations on arrays, in particular matrices,
@@ -23,26 +17,222 @@ graphical facilities for data analysis and display either on-screen or on hardco
 a well-developed, simple and effective programming language which includes conditionals, loops, user-defined recursive functions and input and output facilities.
 The term “environment” is intended to characterize it as a fully planned and coherent system, rather than an incremental accretion of very specific and inflexible tools, as is frequently the case with other data analysis software.
 
- ```r``` has its own LaTeX-like documentation format, which is used to supply comprehensive documentation, both on-line in a number of formats and in hardcopy.
+ ## Data types
+
+There are six data types of the atomic vectors:
+
+| Data type | Description | Usage |
+|----|----|----|
+|Numeric|To represent decimal values| x=1.84|
+|Integer| To represent integer values, L tells to store the value as integer| x=10L|
+|Complex| To represent complex values | x = 10+2i|
+|Logical| To represent boolean values, true or false | x = TRUE|
+|Character| To represent string values | x <- "One compiler"|
+| raw | Holds raw bytes||
+
+## Variables
+
+```c
+var-name = value
+var-name <- value
+value -> var-name
+```
+### Example
+```java
+var_logical <- FALSE  # Logical variable
   
-## Sample program Hello World Program in ```r```
+var_numeric -> 797 # Numeric variable
+  
+var_integer = 53L  # integer variable
+  
+var_complex <- 5+2i  # complex variable
+  
+var_char<- "One Compiler"  # character variable
+  
+var_raw <- charToRaw("Hello World")  # raw variable
+```
+## Operators
+| Operator type | Description|
+|----|-----|
+| Arithmetic Operator|+ , - , * , / , %%, ^|
+| Relational Operator| < , > , <= , >=, != , ==|
+| Logical Operator| &, \|, && , \|\|, ! |
+| Assignment Operator|= , ->, ->>, <-, <<- |
+| Misc Operators| :, %in%, %*%|
+
+## Strings
+
+`'` or `"` are used to enclose strings in R.
+
+```java
+str1 <- "Hello World!"
+print(str1)
+str2 <- 'Happy learning!!'
+print(str2)
+```
+|String Function| Description|
+|----|----|
+| paste() | Strings are concatenated using paste() function|
+| format() | This function is used to format Numbers and strings  to a specific style.|
+| nchar() | This function is used to count the number of characters including spaces in the given string.|
+| substring() | This function is used to extract part of a string|
+| toupper() | Converts given string to uppercase|
+| tolower() | Converts given string to lowercase|
+
+## Vectors
+
+Vectors are considered as basic R objects.
+
+### Single Element Vectors
+
+```java
+x <- "s" #Character type atomic vector
+x <- 53.2 #double type atomic vector
+x <- 79L #integer type atomic vector
+x <- TRUE # Logical type atomic vector
+x <- 2+5i# complex type atomic vector
+x <- charToRaw('OneCompiler') #  raw type atomic vector.
+```
+### 2. Multiple Elements vector
+
+```java
+x <- 1:10 # Creating a sequence from 1 to 10 using colon
+x <- 5.5:10.5 # Creating a sequence of decimal values using colon
+x <- seq(1, 5, by = 0.5) # creating sequence using seq()
+x <- c('hello', 0, 3, TRUE) # mixed type vector
+```
+
+## Lists
+List is a R-Object which can contain elements of different types. list() function is used to create a list.  
 
 ```r
-> # We can use the print() function
-> print("Hello World!")
-[1] "Hello World!"
-> # Quotes can be suppressed in the output
-> print("Hello World!", quote = FALSE)
-[1] Hello World!
-> # If there are more than 1 item, we can concatenate using paste()
-> print(paste("How","are","you?"))
-[1] "How are you?"
-```  
+emp_list <- list( c("Foo","Bar", "Alex", "Mark"), c(1,2,3,4)) # creating a list
+names(emp_list) <- c("Names","Id") # assigning name to the list items
+print(emp_list)
+```
+## Arrays
+`array()` function is used to create an array in R.
 
-## There are three important sections of an ```r``` Markdown document. 
+```java
+arrayName <- array(data, dim= (rowSize, columnSize, matrices, dimNames))  
+```
+* **data** : data is an input vector
+* **rowSize** : defines no of row elements array can store
+* **columnSize** : defines no of column elements array can store
+* **dimNames** : specifies row and column names
+* **matrices** : array can consists of multi-dimensional matrices
 
-* **Header:** The first one is the header at the top, bounded by the three dashes. This is where the user specifies the details like the title, name, the date, and what kind of document you want to output. If the user has filled in the blanks in the window earlier, these should be already filled out.
-<br><br>
-* **Text:** Also on this page, one can see text sections, for example, one section starts with “## R Markdown” this section will render as text when the PDF of this file is produced and all of the formattings that the user will learn generally applies to this section.
-<br><br>
-* **Code:** Chunk: And finally, the user will see code chunks. These are bounded by the triple backticks. These are pieces of ```r``` code chunks that can run right from within the document and the output of this code will be included in the PDF when created. The easiest way to see how each of these sections behave is to produce the PDF.
+### Example
+
+```py
+x <- c(1,2,3)
+y <- c(4,5,6,7,8,9)
+arr <- array(c(x,y),dim=c(3,3,3)) # 3 rows, 3 columns and 3 matrices
+print(arr[,,3]) # prints 3rd matrix
+print(arr[2,,2]) # prints 2nd row in second matrix
+print(arr[3,3,1]) # prints 3rd row 3rd column element of 1st matrix
+```
+## Matrix
+
+Matrix is a two-dimensional rectangular data set. Elements of a matric will be of same atomic type. 
+```r
+matrix(data, rowSize, columnSize, byrow, dimnames)
+```
+* **data** : data is an input vector
+* **rowSize** : defines no of row elements array can store
+* **columnSize** : defines no of column elements array can store
+* **byrow** : If it is set to TRUE then the input vector elements are arranged by row.
+* **dimNames** : specifies row and column names
+
+## Factors
+
+Factor is a data object which is used to take a limited number of different values and categorize them into multiple levels.
+
+```py
+factorData<- factor(inputVector) #`factor()` function is used to convert a vector into factor.
+is.factor(factorData) # `is.factor()` is used to check whether the input given is a factor or not.
+```
+## Data Frames
+Data Frame is a data object which has like a 2D array like structure where column contains value of a variable and row contains one set of values from each column.
+
+* Column names should be non-empty.
+* Row names should be unique.
+* Data in a data frame can contain different types of data like a factor, numeric, or character type.
+* Every column will have same number of data items.
+
+`frame()` function is used to create a data frame.
+
+### Example
+```r
+student.data <- data.frame(
+   studentID = c (101:104), 
+   firstName = c("Foo","Bar","Alex","Mark"),
+   marksPercentage = c(97.2,79.2,53.9,87.3), 
+   
+   joiningDate = as.Date(c("2010-06-01", "2010-06-10", "2010-06-04", "2010-06-02")),
+   stringsAsFactors = FALSE
+)
+print(student.data)
+```
+## conditional statements
+### 1. If
+```py
+if(conditional-expression)
+{
+    # code
+}
+```
+### 2. If-else
+
+```py
+if(conditional-expression)
+{
+    # code
+} else {
+    # code
+}
+```
+### 3. Switch
+
+```py
+switch(expression, case-1, case-2, case-3....)   
+```
+
+## Loops
+### 1. For
+
+```py
+for (value in vector) {
+  # code
+}
+```
+### 2. While
+```py
+while(condition){  
+#code
+}  
+```
+### 3. Repeat
+```py
+repeat { 
+   #code
+   if(condition) {
+      break
+   }
+}
+```
+## Functions
+Function is a sub-routine which contains set of statements.
+```py
+function_name <- function(arg1, arg2, ...) { # defining a function
+  #code 
+}
+function_name(arguments) # calling a function
+```
+### Example 
+```py
+sum <- function(x, y) {
+  cat("Sum:", x+y)
+}
+sum(10, 20)
+```
