@@ -333,4 +333,21 @@ When using media queries we can adopt the following approaches
     ```
 
 
+### 12. One method for permanently fixing the footer at the bottom. 
 
+It's always necessary to fix your footer at the bottom permanently without any extra space below it.
+
+```css
+ html {
+  height: 100%;
+}
+ body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+ footer {
+    width:100%
+    margin-top:auto;
+}
+```
