@@ -46,6 +46,8 @@ updated: 2020-06-17
 | `<a>..</a>`| Used to link external webpages to your web page| `<a href="https://onecompiler.com/" target="_blank"> OneCompiler</a>`|
 | `<img />`| Used to insert an image | `<img src="/sample.jpg" alt="sample image" width="100" height="50" longdesc="image" />`|
 |`<pre/>`| Text in a pre elementis displayed in a fixed-width font, and it preservesboth spaces and line breaks |`<pre> int i = 0; </pre>`|
+|`<audio>`| It is used to embed sound content in the document. |` <audio controls> <source src="demo.mp3" type="audio/mpeg"> </audio>`|
+|`<video>`| It is used to embed video in the webpage. |` <video width="480" height="320" controls> <source src="demo_move.mp4" type="video/mp4"> </video>`|
 
 
 
