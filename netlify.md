@@ -1,7 +1,7 @@
 ---
 title: Netlify
 description: Netlify is an all-in-one platform for automating modern web projects. Replace your hosting infrastructure, continuous integration, and deployment pipeline with a single workflow. Integrate dynamic functionality like serverless functions, user authentication, and form handling as your projects grow.
-created:  2014-02-77-02
+created:  2014-02-7
 updated: 2019-08-13
 color: #79589F
 ---
