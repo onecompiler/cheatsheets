@@ -367,4 +367,4 @@ function makeFunc() {
   return displayName;
 }
 const myFunc = makeFunc();
-myFunc();```
+myFunc();
