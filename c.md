@@ -247,7 +247,32 @@ else {
     //code
 }
 ```
-### 4. Switch
+### 4. Nested If-else
+
+```c
+if(conditional-expression-1)
+{
+    //code
+    if(conditional-expression-2) {
+    //code
+    }   
+    else{
+    //code
+    }
+}   
+....
+else {
+    //code
+    if(conditional-expression-3) {
+    //code
+    }   
+    else{
+    //code
+    }
+}
+```
+
+### 5. Switch
 
 ```c
 switch(conditional-expression){    
