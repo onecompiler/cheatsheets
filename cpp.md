@@ -423,5 +423,4 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 |#include<fstream.h> | It is used to control the data to read from a file|
 |#include<time.h>    | It is used to perform functions related to date() and time|
 |#include<graphics.h>    | It is used to include and facilitate graphical operations in program|
-
 |#include<bits/stdc++.h>    |It is used to include all the standard library files|
