@@ -358,7 +358,7 @@ access to an outer function's scope from an inner function. In JavaScript, closu
 created every time a function is created, at function creation time.
 
 ### Example
-```c
+```javascript
 function makeFunc() {
   const name = 'Mozilla';
   function displayName() {
@@ -368,3 +368,5 @@ function makeFunc() {
 }
 const myFunc = makeFunc();
 myFunc();
+```
+
