@@ -435,202 +435,25 @@ int main() {
 
 ```
 
-## Priority Queue
-
-Priority queues are specifically designed such that the first element of the queue is either the greatest or the smallest of all elements in the queue and elements are in non increasing order.
-
-push(g) - Adds the element ‘g’ at the top of the priority queue.
-pop() - Removes the element from the top.
-empty() - Returns whether the priority_queue is empty.
-size() - Returns the size of the priority_queue.
-top()  - Returns a reference to the top element of the priority_queue.
-
-### Max heap
-
-It contains elements in the priority queue in decreasing order. It means that the maximum element will always be at the top of the priority queue. 
-
-```c
-#include <iostream>
-#include <queue>
-using namespace std;
-int main() {
-	priority_queue<int> pq;
-	pq.push(1);
-	pq.push(2);
-	pq.push(4);
-	pq.push(3);
-	
-	pq.pop();
-	pq.pop();
-
-	while (!pq.empty()) {
-		cout << ' ' << pq.top();
-		pq.pop();
-	}
-}
-
-```
-
-### Min Heap
-
-It contains elements in the priority queue in non-decreasing order. It means that the minimum element will always be at the top of the priority queue. 
-
-```c
-#include <iostream>
-#include <queue>
-using namespace std;
-int main() {
-	priority_queue<int, vector<int>, greater<int>> pq;
-	pq.push(5);
-	pq.push(2);
-	pq.push(4);
-	pq.push(1);
-	
-	pq.pop();
-	pq.pop();
-
-	while (!pq.empty()) {
-		cout << ' ' << pq.top();
-		pq.pop();
-	}
-}
-
-```
-
-### Set
-
-Sets are a type of container in which each element has to be unique. The values are stored in a specific sorted order.
-
-insert(g) - Adds a new element ‘g’ to the set.
-erase(g) - Removes the value ‘g’ from the set.
-size() – Returns the number of elements in the set.
-empty() – Returns whether the set is empty.
-begin() – Returns an iterator to the first element in the set.
-end() – Returns an iterator to the element that follows the last element in the set.
-
-```c
-#include <iostream>
-#include <set>
-using namespace std;
-int main() {
-	set<int> st;
-	st.insert(40);
-    st.insert(30);
-    st.insert(60);
-    st.insert(20);
-    st.insert(50);
-
-    // printing set st
-	for (i = st.begin(); i != st.end(); i++) {
-        cout << *i << " ";
-    }
-
-    //another way to print
-    for (auto i: st) {
-        cout << i << " ";
-    }
-}
-
-```
-
-### Map
-
-Maps are type of containers that store elements in a mapped fashion. Each element has a key value and a mapped value. No two mapped values can have the same key values.
-
-insert(keyvalue, mapvalue) – Adds a new element to the map.
-erase(g)– Removes the key-value ‘g’ from the map.
-begin() – Returns an iterator to the first element in the map.
-end() – Returns an iterator to the element that follows the last element in the map.
-size() – Returns the number of elements in the map.
-empty() – Returns whether the map is empty.
-clear() – Removes all the elements from the map.
-
-```c
-#include <iostream>
-#include <map>
-using namespace std;
-int main() {
-	map<int, int> mp;
-	mp.insert({1, 40});
-    mp.insert({2, 30});
-    mp.insert({3, 60});
-    mp.insert({4, 20});
-    mp.insert({5, 50});
-
-    mp[6] = 10;   // another way of inserting a value in a map
-
-    // printing map mp
-	for (i = mp.begin(); i != mp.end(); i++) {
-        cout << " " << i->first << " " << i->second << endl;
-    }
-
-    for (auto i: mp) {
-        cout << " " << i.first << " " << i.second << endl;
-    }
-}
-
-```
-
 ## Algorithms
 
-The header algorithm defines a collection of functions specially designed to be used on a range of elements. They act on containers and provide means for various operations for the contents of the containers. Some of the commonly used algorithms are:
+The header <algorithm> defines a collection of functions especially designed to be used on ranges of elements.
 
-### Sorting
-```c
-sort(start_address, end_address);          //sorts an array/vector in non-decreasing order
-```
+A range is any sequence of objects that can be accessed through iterators or pointers, such as an array or an instance of some of the STL containers.
 
-### Searching
-```c
-binary_search(start_address, end_address, key);          //returns true if a key is present in an array/vector
-```
-
-### Reverse 
-```c
-reverse(start_address, end_address);          //reverses an array/vector from start addresss to end address     
-```
-
-### Swap
-```c
-swap(first_element, second_element);          //swaps two elements with each other
-```
-
-### Max Element
-```c
-*max_element(start_address, end_address);          //returns the maximum element present in an array/vector
-```
-
-### Min Element
-```c
-*min_element(start_address, end_address);          //returns the minimum element present in an array/vector
-```
-
-### Sum
-```c
-*accumulate(start_address, end_address, initial_sum);          //returns the sum of an array/vector
-```
-
-### Count
-```c
-*count(start_address, end_address, x);          //count the number of times 'x' appear in an array/vector
-```
-
-### Find
-```c
-*find(start_address, end_address, x);          //find the first occurence of 'x' in an array/vector
-```
-
-### Upper Bound
-```c
-*upper_bound(start_address, end_address, x);          //returns iterator pointing to the first element which is not less than 'x'
-```
-
-### Lower Bound
-```c
-*lower_bound(start_address, end_address, x);          //returns iterator pointing to the first element which is just greater than 'x'
-```
-
-### Next Permutation
-```c
-*next_permutation(start_address, end_address);          //returns true if next permuation of an array/string exists
-```
+|Algorithm| Use|
+|---------|----|
+|min                | Return the smallest|
+|max	            | Return the largest|
+|sort               | Sort elements in range|
+|binary_search      | Test if key exists in sorted sequence|
+|reverse            | Reverse range|
+|swap               | Exchange values of two objects|
+|min_element        | Returns smallest element in range|
+|max_element        | Returns largest element in range|
+|accumulate         | Returns sum of all values lying in range|
+|count              | Count appearances of 'x' in range|
+|find               | Find 'x in range|
+|upper_bound        | Returns iterator to upper bound of 'x|
+|lower_bound        | Returns iterator to lower bound of 'x|
+|next_permutation   | Transform range to next permutation|
