@@ -166,7 +166,7 @@ if conditional-expression :
 else :
     #code
 ```
-### 3. Nested-If-else
+### 3. If-elif-else Ladder
 
 ```py
 if conditional-expression :
@@ -176,7 +176,33 @@ elif conditional-expression :
 else :
     #code
 ```
-### 4. Try Except
+### 4. Nested-If-else
+
+```py
+if conditional-expression :
+    #code
+    if conditional-expression :
+        #code
+    else :
+        #code
+elif conditional-expression :
+    #code
+    if conditional-expression :
+        #code
+    elif :
+        #code 
+    else :
+        #code
+else :
+    #code
+    if conditional-expression :
+        #code
+    elif :
+        #code 
+    else :
+        #code
+```
+### 5. Try Except
 
 The try block lets you test a block of code for errors. The except block lets you handle the error.
 ```py
