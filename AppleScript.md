@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Add more details about the requested Cheat Sheet like reference links etc.,
+
 Basic concepts
 AppleScript was designed to be used as an accessible end-user scripting language, offering users an intelligent mechanism to control applications, and to access and modify data and documents. AppleScript uses Apple events, a set of standardized data formats that the Macintosh operating system uses to send information to applications, roughly analogous to sending XPath queries over XML-RPC in the world of web services.[3]: xxvi  Apple events allow a script to work with multiple applications simultaneously, passing data between them so that complex tasks can be accomplished without human interaction.[2] For example, an AppleScript to create a simple web gallery might do the following:
 
