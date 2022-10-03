@@ -275,6 +275,62 @@ Transitions let you define the transition between two states of an element.
 | Transition-delay | Specifies a delay (in seconds) for the transition effect | `transition-delay: 20ms;`|
 
 
+### 11. Media queries
+
+CSS media queries empowers you greatly when you're creating and developing sites that are reponsive i.e. look and function well on different screen sizes and pixel densities. 
+
+When using media queries we can adopt the following approaches
+
+- #### Desktop first approach
+    ```css
+    @media all and (min-width: 1024px) and (max-width: 1280px) { 
+        /* Targets desktop screens */
+    }
+    
+    @media all and (min-width: 768px) and (max-width: 1024px) { 
+        /* Targets tablet landscape */
+    }
+    
+    @media all and (min-width: 480px) and (max-width: 768px) { 
+        /* Targets tablet portrait */
+    }
+    
+    @media all and (max-width: 480px) { 
+        /* Targets mobile screens*/
+    }
+    ```
+- #### Mobile first approach
+    ```css
+    @media only screen { 
+        /* Targets mobile screens with width < 641pz */
+    } 
+    
+    @media only screen and (min-width: 641px) {
+        /* Targets tablet screens with width > 641px */
+    }
+    
+    @media only screen and (min-width: 1025px) { 
+        /* Targets large screens(desktop) with width > 1025px */
+    }
+    
+    @media only screen and (min-width: 1441px) { 
+        /* Targets xlarge screens with width > 1441px */
+    }
+    
+    @media only screen and (min-width: 1921px) { 
+        /* Targets xxlarge screens with width > 1921px */
+    } 
+        
+    ```
+- #### Orientation first approach
+    ```css
+    @media screen and (orientation:portrait) { 
+        /* Add portrait styles here */ 
+    }
+    @media screen and (orientation:landscape) { 
+        /* Add landscape styles here */ 
+    }    
+    ```
 
 
 
