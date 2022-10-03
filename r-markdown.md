@@ -1,5 +1,5 @@
 ---
-title:  r  
+title:  R  
 description: r  Cheat Sheet gives you a quick reference of basic r markdown language. 
 First appeared:	August 1993
 Stable release:	4.2.1 / 23 June 2022
