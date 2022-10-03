@@ -1,7 +1,8 @@
 ---
-Title: SQL Cheatsheet 
-Description: Contains syntaxes & examples to help new comers get comfortable with using SQL.
-Created At: 2022-10-01
+title: SQL Cheatsheet 
+description: Contains syntaxes & examples to help new comers get comfortable with using SQL.
+created: 2022-10-01
+updated: 2022-10-01
 ---
 
 ## Creation & Insertion 
@@ -294,3 +295,64 @@ SELECT <column name>, <column name>
 FROM <table name>
 WHERE <column name> IS NOT NULL;
 ```
+## Joins in SQL
+INNER JOIN
+
+This query will return all of the records in the left table (table A) that have a matching record in the right table (table B)
+Example :
+```SQL
+SELECT [select_list]
+FROM Table_A A
+INNER JOIN Table_B B
+ON A.Key = B.Key
+```
+LEFT JOIN
+This query will return all of the records in the left table (table A) regardless if any of those records have a match in the right table (table B). It will also return any matching records from the right table.
+
+Example:
+```SQL
+SELECT [select_list]
+FROM Table_A A
+LEFT JOIN Table_B B
+ON A.Key = B.Key
+```
+RIGHT JOIN
+This query will return all of the records in the right table (table B) regardless if any of those records have a match in the left table (table A). It will also return any matching records from the left table
+
+Example
+```SQL
+SELECT [select_list]
+FROM Table_A A
+RIGHT JOIN Table_B B
+ON A.Key = B.Key
+```
+OUTER JOIN
+This Join can also be referred to as a FULL OUTER JOIN or a FULL JOIN. This query will return all of the records from both tables, joining records from the left table (table A) that match records from the right table (table B)
+Example:
+```SQL
+SELECT [select_list]
+FROM Table_A A
+FULL OUTER JOIN Table_B B
+ON A.Key = B.Key
+```
+LEFT OUTER JOIN
+This query will return all of the records in the left table (table A) that do not match any records in the right table (table B).
+Example:
+```SQL
+SELECT [select_list]
+FROM Table_A A
+LEFT JOIN Table_B B
+ON A.Key = B.Key
+WHERE B.Key IS NULL
+```
+RIGHT OUTER JOIN
+This query will return all of the records in the right table (table B) that do not match any records in the left table (table A).
+Example:
+```SQL
+SELECT [select_list]
+FROM Table_A A
+RIGHT JOIN Table_B B
+ON A.Key = B.Key
+WHERE A.Key IS NULL
+```
+

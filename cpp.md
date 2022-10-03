@@ -319,6 +319,7 @@ sort(v.begin(), v.end()); // sorting in the vector
 |#include<errno.h>   | It is used to perform error handling operations like errno|
 |#include<fstream.h> | It is used to control the data to read from a file|
 |#include<time.h>    | It is used to perform functions related to date() and time|
+<<<<<<< HEAD
 
 ## Standard Template Library(STL)
 
@@ -457,3 +458,6 @@ A range is any sequence of objects that can be accessed through iterators or poi
 |upper_bound        | Returns iterator to upper bound of 'x|
 |lower_bound        | Returns iterator to lower bound of 'x|
 |next_permutation   | Transform range to next permutation|
+=======
+|#include<bits/stdc++.h>    |It is used to include all the standard library files|
+>>>>>>> 89cbdc034185539732951bb64f7e252c318c8513

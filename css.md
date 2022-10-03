@@ -97,8 +97,45 @@ there are also more fun selectors for different use cases that could be helpful 
     }
 ```
 
+### 5. Units
 
-### 5. Display Properites
+Units are used for interpreting length in your css code value. These are used in properties like ```width```, ```height```, ```font-size```, ```margin```, ```padding``` etc.
+
+- #### Absolute units
+    | Units | description |
+    |---|---|
+    | in | used for inches | 
+    | px | used for absolute pixels (usually 1/96th of an inch) |
+    | pt | points, usually 1/72th of an inch |
+    | pc | picas, usally 12 points |
+    | cm | used for centimeters  | 
+    | mm | used for millimeters  |  
+
+- #### Relative units(preferred)
+    | Units | description |
+    |---|---|
+    | % | relative to the size of the parent for eg. ```100%``` means filling all inside the parent | 
+    | em | relative to the font size of the element  | 
+    | rem | relative to the font size of the root element  | 
+    | vw | relative to the viewport's width, for eg.: ```2vw``` would be ```2% of the width``` of the viewport  |
+    | vh | relative to the viewport's height, for eg.: ```6vh``` would be ```6% of the height``` of the viewport  |
+    | vmax |  relative to the viewport's bigger dimension which could be either the height or the width, for eg.: ```3vmax``` would mean ```3vh``` if the height is more than the width and would mean ```3vw``` otherwise | 
+    | vmin | similar to  vmax, differs because it would consider the smaller dimension of either the height or the width  | 
+
+> relative units are much more preferred nowadays as their are just too many devices with varying screen heights, widths, pixel densities etc.
+
+```css
+    * {
+        background: red;
+        min-height: 100vh;    //relative unit
+    }
+    div,p {
+        background: purple;
+        max-width: 200px      //absolute unit
+    }
+```
+
+### 6. Display Properites
 
 The display CSS property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
 Formally, the display property sets an element's inner and outer display types. 
@@ -117,7 +154,7 @@ Formally, the display property sets an element's inner and outer display types.
 }
 ```
 
-### 6. FlexBox
+### 7. FlexBox
 
 You can use Flexbox to manage alignment and position of your elements. 
 
@@ -160,7 +197,7 @@ By default, the flex direction is set to row (horizontal). To switch the flex di
     }
 ```
 
-### 7. CSS Grid
+### 8. CSS Grid
 CSS grid is another way to properly align your HTML elements.
 
 to create a new  grid use  
@@ -193,7 +230,7 @@ You can use grid with a special unit called `Fr (fraction)`, which refers to a p
     }
 ```
 
-### 8. Variables
+### 9. Variables
 
 Variables are a great way to make your css more manageable, so you're not editing the values you want to be consistent on multiple instances of its usage. It promotes consistency and overall management of the code.
 
@@ -205,3 +242,95 @@ Variables are a great way to make your css more manageable, so you're not editin
       background-color: var(--primary-color);
     }
 ```
+
+### 9. Animations
+CSS animations allow one to animate transitions or other media files on the web page.
+
+
+| Property | Description| Example|
+|----|----|---|
+| Animation | A shorthand property for setting all the animation properties | `animation: example 5s linear 2s infinite alternate;`|
+| Animation-name | Specifies the name of the @keyframes animation | `animation-name: myanimation;`|
+| Animation-duration | Specifies how long time an animation should take to complete one cycle | `animation-duration: 10s;`|
+| Animation-timing-function | Specifies the speed curve of the animation | `animation-timing-function: ease;>`|
+| Animation-delay| Specifies a delay for the start of an animation | `animation-delay: 5ms;`|
+|Animation-iteration-count | Specifies the number of times an animation should be played | `animation-iteration-count: 3;`|
+|Animation-direction | Specifies whether an animation should be played forwards, backwards or in alternate cycles | `animation-direction: normal;`|
+| Animation-play-state | Specifies whether the animation is running or paused |`animation-play-state: running;`|
+| Animation-fill-mode |	Specifies whether the animation is running or paused | `animation-fill-mode: both;`|
+
+
+
+
+### 10. Transitions
+Transitions let you define the transition between two states of an element.
+
+
+| Property | Description| Example|
+|----|----|---|
+| Transition | A shorthand property for setting the four transition properties into a single property | `transition: width 2s linear 1s;`|
+| Transition-property | Specifies the name of the CSS property the transition effect is for | `transition-property: none;`|
+| Transition-duration | Specifies how many seconds or milliseconds a transition effect takes to complete | `transition-duration: 2s;`|
+| Transition-timing-function | Specifies the speed curve of the transition effect | `transition-timing-function: ease-in-out;`|
+| Transition-delay | Specifies a delay (in seconds) for the transition effect | `transition-delay: 20ms;`|
+
+
+### 11. Media queries
+
+CSS media queries empowers you greatly when you're creating and developing sites that are reponsive i.e. look and function well on different screen sizes and pixel densities. 
+
+When using media queries we can adopt the following approaches
+
+- #### Desktop first approach
+    ```css
+    @media all and (min-width: 1024px) and (max-width: 1280px) { 
+        /* Targets desktop screens */
+    }
+    
+    @media all and (min-width: 768px) and (max-width: 1024px) { 
+        /* Targets tablet landscape */
+    }
+    
+    @media all and (min-width: 480px) and (max-width: 768px) { 
+        /* Targets tablet portrait */
+    }
+    
+    @media all and (max-width: 480px) { 
+        /* Targets mobile screens*/
+    }
+    ```
+- #### Mobile first approach
+    ```css
+    @media only screen { 
+        /* Targets mobile screens with width < 641pz */
+    } 
+    
+    @media only screen and (min-width: 641px) {
+        /* Targets tablet screens with width > 641px */
+    }
+    
+    @media only screen and (min-width: 1025px) { 
+        /* Targets large screens(desktop) with width > 1025px */
+    }
+    
+    @media only screen and (min-width: 1441px) { 
+        /* Targets xlarge screens with width > 1441px */
+    }
+    
+    @media only screen and (min-width: 1921px) { 
+        /* Targets xxlarge screens with width > 1921px */
+    } 
+        
+    ```
+- #### Orientation first approach
+    ```css
+    @media screen and (orientation:portrait) { 
+        /* Add portrait styles here */ 
+    }
+    @media screen and (orientation:landscape) { 
+        /* Add landscape styles here */ 
+    }    
+    ```
+
+
+
