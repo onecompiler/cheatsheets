@@ -115,6 +115,9 @@ char grade = 'A'; // declaring char variable and assigning value A to it
 |\"	| Double quotation|
 |\0 | Null character|
 |\b	|Back space|
+|\a	|Alarm or Beep|
+|\nnn	|Octal Number|
+|\xhh	|hexadecimal Number|
 
 ## Arrays
 
