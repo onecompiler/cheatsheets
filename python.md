@@ -166,7 +166,7 @@ if conditional-expression :
 else :
     #code
 ```
-### 3. Nested-If-else
+### 3. If-elif-else Ladder
 
 ```py
 if conditional-expression :
