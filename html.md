@@ -46,8 +46,6 @@ updated: 2020-06-17
 | `<a>..</a>`| Used to link external webpages to your web page| `<a href="https://onecompiler.com/" target="_blank"> OneCompiler</a>`|
 | `<img />`| Used to insert an image | `<img src="/sample.jpg" alt="sample image" width="100" height="50" longdesc="image" />`|
 |`<pre/>`| Text in a pre elementis displayed in a fixed-width font, and it preservesboth spaces and line breaks |`<pre> int i = 0; </pre>`|
-|`<form> … </form>`| It is used to create an HTML form for user input. | `<form action="/action_page.php" method="get"> <input type="checkbox" name="vehicle1" value="Bike"> <label for="vehicle1"> I have a bike</label> </form>`|
-|`<table> … </table>`| This tag defines an HTML table.| `<table> <tr> <th>Month</th> <td>January</td> </tr> </table>`|
 
 
 ## HTML formatting 

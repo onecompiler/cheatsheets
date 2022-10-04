@@ -1,6 +1,6 @@
 ---
 title: Java Primitive Data Types
-description:
+description: Primitive Data Types in Java Language
 created: 2018-01-21
 updated: 2018-01-21
 color: #027395

@@ -115,6 +115,9 @@ char grade = 'A'; // declaring char variable and assigning value A to it
 |\"	| Double quotation|
 |\0 | Null character|
 |\b	|Back space|
+|\a	|Alarm or Beep|
+|\nnn	|Octal Number|
+|\xhh	|hexadecimal Number|
 
 ## Arrays
 
@@ -178,9 +181,22 @@ Identifiers are user defined names for variables, functions and arrays.
 
 Strings are an array of characters ended with null character. Enclosed in double quotes.
 
+Declaration
 ```c
     char str[]="onecompiler";
 ```
+
+
+| Function | Description| Example|
+|----|----|---|
+| gets() | It allows you to enter multi-word string | `gets("string")`|
+| puts() | It is used to show string output | `puts("string")`|
+| strlen() | It is used to calculate the length of the string | `strlen(string_name)`|
+| strcpy() | It is used to copy the content of second-string into the first string passed to it | `strcpy(destination, source)`|
+| strcat() |It is used to concatenate two strings | ` strcat(first_string, second_string)`|
+| strcmp() | It is used to compare two strings | `strcmp(first_string, second_string)`|
+
+
 ## Constants
 
 Constants are the fixed values. They can be declared in two ways as shown below:
@@ -362,3 +378,16 @@ fclose(fptr);
 |rb+| Opens for both reading and writing in binary mode.|
 |a+| Opens for both reading and appending.|
 |ab+| Opens for both reading and appending in binary mode.|
+
+
+## Dynamic Memory Allocation
+
+A set of functions for dynamic memory allocation from the heap. These methods are used to use the dynamic memory which makes our C programs more efficient
+
+
+| Function | Description| Example|
+|----|----|---|
+| malloc() | Stands for 'Memory allocation' and reserves a block of memory with the given amount of bytes. | `ptr = (castType*) malloc(size)`|
+| calloc() | Stands for 'Contiguous allocation' and reserves n blocks of memory with the given amount of bytes. | `ptr = (castType*)calloc(n, size)`|
+| free | It is used to free the allocated memory. | `free(ptr)`|
+| realloc() | If the allocated memory is insufficient, then we can change the size of previously allocated memory using this function for efficiency purposes | `ptr = realloc(ptr, x)`|

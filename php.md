@@ -216,3 +216,20 @@ function functionName() { // defining a function
 
 functionName (parameters); //calling a function 
 ```
+
+## MySQLi Functions
+These functions allow you to access MySQL database server.
+
+
+
+| Function | Description|
+|----|----|
+| mysqli_connect() | It opens a non-persistent MySQL connection |
+| mysqli_affected_rows() | It returns the number of affected rows |
+| mysqli_connect_error() | It shows the Error description for the connection error | 
+| mysqli_fetch_all() | It fetches all result rows as an array | 
+| mysqli_fetch_array() | It fetches a result row as an associative, a numeric array, or both |
+| mysqli_fetch_assoc() | It fetches a result row as an associative array |
+| mysqli_fetch_row() | It fetches one row from a result set and returns it as an enumerated array | 
+| mysqli_kill() | It kills a MySQL thread | 
+| mysqli_close() | It closes a database connection |
