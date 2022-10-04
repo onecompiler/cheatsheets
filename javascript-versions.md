@@ -18,3 +18,4 @@ color: #f4de50
 |7|2016|ECMAScript 2016|Array.includes(), `**`|
 |8|2017|ECMAScript 2017|Async Functions, Object.entries|
 |9|2018|ECMAScript 2018|Spread operator, |
+|10|2019|ECMAScript 2019|Optional catch binding |
