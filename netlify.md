@@ -13,38 +13,38 @@ Netlify is a remote-first cloud computing company that offers a development plat
 1. All over the world
 
 
-##Netlify CLI Command List
+## Netlify CLI Command List
 Getting Started
 This guide will walk you through installing and creating your first site with the CLI.
 
 Installation
 Lets get rolling with the Netlify CLI.
 
-1. Install the CLI globally
+1. Install the CLI globally <br>
 `npm install netlify-cli -g`
 
-2. Login to your Netlify Account
+2. Login to your Netlify Account <br>
 `netlify login`
 
-3. Initialize a new site
+3. Initialize a new site <br>
 
-Inside of your sites `cwd`, run the following CLI command:
-
+Inside of your sites `cwd`, run the following CLI command: <br>
 `netlify init`
 
 4. Link an existing site
 If your site is already created inside of Netlify, you can run the link command to connect the CLI to your site.
 
-`netlify link`
+`netlify link` <br>
 
-In order to know more about Cli commands refer to the netlify docs: https://cli.netlify.com/commands/
+In order to know more about Cli commands refer to the netlify <br>
+docs: https://cli.netlify.com/commands/
 
-Deploy cli commands: https://cli.netlify.com/commands/deploy
-Dev: https://cli.netlify.com/commands/dev
+Deploy cli commands: https://cli.netlify.com/commands/deploy <br>
+Dev: https://cli.netlify.com/commands/dev <br>
 
 
 
-##Get started with Netlify
+## Get started with Netlify
 
-Netlify :- https://www.netlify.com/
+Netlify :- https://www.netlify.com/ <br>
 Netlify Docs:- https://docs.netlify.com/?_ga=2.202483029.538701016.1664810155-170702479.1663223359
