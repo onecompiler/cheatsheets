@@ -172,22 +172,57 @@ default:
 
 ### 1. Break
 ```c
-for(i=0; i<5; i++){
-   if(i==4){
+//we are initiating a for loop
+//the loop will run from 0 till 6
+
+for(i=0; i<6; i++){
+
+   if(i==4){ // when the value if i is 4 the loop will terminate
       break;
       }
+      
+   cout << i <<endl;
+   
+   //the loop will just run till the value of i
+   //gets 4 and will terminate after that
+   
 }
+```
+```c
+Output
+0
+1
+2
+3
 ```
 The break statement helps in coming out from the loop when your condition is satisfied.
 
 ### 2. Continue
 ```c
-for(i=0; i<5; i++){
-   if(i==4){
+//we are initiating a for loop 
+//this loop will run from 0 till 6
+
+for(i=0; i<6; i++){
+		
+	     //when the value of i is 4 the the loop will skip that iteration
+             //check the output below where 4 is not printed 
+	     //continue helped us in skipping the iteration where i=4
+   if(i==4){ 
       continue;
       }
+      
+   cout<< i <<endl;
 }
 ```
+```c
+Output
+0
+1
+2
+3
+5
+```
+
 The continue statement skips the iteration where the condition is satisfied and continues the execution of the loop till the end.
 
 ## Loops
