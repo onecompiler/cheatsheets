@@ -89,6 +89,7 @@ int a[2][3] = {
 |Float point Literal|53.0f, 79.02|
 |Character literals| 'a', '1'|
 |String literals| "OneCompiler", "Foo"|
+|Boolean literals| true, false|
 
 ### Escape sequences
 |Escape sequence| Description|
@@ -395,13 +396,15 @@ int main(){
 int arr[] = {3,2,1};
 int n = 3 ; // size of the array
 
-sort(arr, arr+n); // sorting the array
+sort(arr, arr+n); // sorting the array in ascending order
+sort(arr, arr+n, greater<int>()); // sorting the array in descending order
 
 vector<int> v;
 
 v = {3,2,1};
 
-sort(v.begin(), v.end()); // sorting in the vector
+sort(v.begin(), v.end()); // sorting in the vector in ascending order
+sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending order
 
 }
 
@@ -419,4 +422,5 @@ sort(v.begin(), v.end()); // sorting in the vector
 |#include<errno.h>   | It is used to perform error handling operations like errno|
 |#include<fstream.h> | It is used to control the data to read from a file|
 |#include<time.h>    | It is used to perform functions related to date() and time|
+|#include<graphics.h>    | It is used include and facilitate graphical operations in program|
 |#include<bits/stdc++.h>    |It is used to include all the standard library files|
