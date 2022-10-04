@@ -169,3 +169,27 @@ List the entries like in a dictionary or encyclopedia.
    Password: <input type = "password" name = "password" /> <br> <!-- Single line password input-->
  </form>
 ```
+
+## HTML Favicon
+
+A favicon is a small image displayed next to the page title in the browser tab.  <br />
+Add a `<link>` element to your "index.html" file, after the `<title>` element, like this:
+
+### Example
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+
