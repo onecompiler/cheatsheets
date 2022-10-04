@@ -150,6 +150,7 @@ print(val) # prints iPhone
 |d.popitem()|removes the item that was last inserted into the dictionary|
 |d.get(key)| Returns the value of the specified key|
 |d.setdefault(key)|Returns the value of the specified key. If the key does not exist then returns the default value provided|
+|d.fromkeys(key,value)| Returns a dictionary with specified keys and values|
 
 ## Conditional Statements
 
