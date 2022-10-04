@@ -46,5 +46,5 @@ Dev: https://cli.netlify.com/commands/dev <br>
 
 ## Get started with Netlify
 
-Netlify :- https://www.netlify.com/ <br>
-Netlify Docs:- https://docs.netlify.com/?_ga=2.202483029.538701016.1664810155-170702479.1663223359
+Netlify : https://www.netlify.com/ <br>
+Netlify Docs: https://docs.netlify.com/
