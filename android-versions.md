@@ -25,6 +25,6 @@ color: #f4de50
 |8.0|August 21, 2017|Oreo|Notification improvements, Multi-display support, Wi-Fi Assistant |
 |9.0|August 6, 2018|Pie|Rounded corners across the UI, Android Dashboard, Redesigned volume slider |
 |10|September 3, 2019|Q|New safeguards to protect user privacy that need to support in our app. |
-|11|September 8, 2020|R|Conversations, bubbles, device and media controls, 5G, biometric and more.|
+|11|September 8, 2020|Red Velvet Cake|Conversations, bubbles, device and media controls, 5G, biometric and more.|
 |12|October 4, 2021|Snow Cone|A new system UI that's expressive, dynamic, and personal. Extend your apps with redesigned widgets, AppSearch, Game Mode, and new codecs. |
 |13|August 15,2022|Tiramisu|Build for user privacy with photo picker and notification permission. Improve productivity with themed app icons, per-app languages, and clipboard preview. |
