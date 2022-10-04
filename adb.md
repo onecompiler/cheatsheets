@@ -2,7 +2,7 @@
 title: ADB (Android Debug Bridge)
 description: Android Debug Bridge command-line tool helps us to interact with connected Android device/ Emulator. We can install, debug apps using ADB
 created: 2019-06-17
-updated: 2019-06-17
+updated: 2022-10-04
 ---
 
 ## Selecting Device
@@ -51,6 +51,15 @@ updated: 2019-06-17
 |---|---|
 |`screencap -p .png`|Screenshot (saved on device)|
 |`screenrecord .mp4`|Screen capture (path on device)|
+
+## Copy files to/from a device
+|Command|Description|
+|---|---|
+|`adb pull <remote> <local>`|To copy a file or directory and its sub-directories from the device|
+|`adb push <local> <remote>`|To copy a file or directory and its sub-directories to the device|
+
+Replace local and remote with the paths to the target files/directory on your development machine (local) and on the device (remote).For example:<br />
+adb push foo.txt /sdcard/foo.txt
 
 ## ADB daemon
 |Command|Description|
