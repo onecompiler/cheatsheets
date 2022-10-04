@@ -168,6 +168,28 @@ default:
  //code to be executed when all the above cases are not matched;    
 } 
 ```
+## Break and Continue Statements
+
+### 1. Break
+```c
+for(i=0; i<5; i++){
+   if(i==4){
+      break;
+      }
+}
+```
+The break statement helps in coming out from the loop when your condition is satisfied.
+
+### 2. Continue
+```c
+for(i=0; i<5; i++){
+   if(i==4){
+      continue;
+      }
+}
+```
+The continue statement skips the iteration where the condition is satisfied and continues the execution of the loop till the end.
+
 ## Loops
 
 ### 1. For
