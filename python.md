@@ -317,3 +317,59 @@ For deleting files, you must import os module and use `os.remove()` function.
 import os
 os.remove(filename)
 ```
+
+# Python and Databases 
+
+## 1) MongoDB
+
+
+### Step 1: Install Python Driver – PyMongo
+
+PyMongo contains tools for working with MongoDB.
+To install PyMongo in Linux/OS X, use pip as shown below.
+
+```
+pip install pymongo
+```
+![Screenshot from 2022-10-04 22-32-53](https://user-images.githubusercontent.com/91078843/193882087-6b135afd-ed39-4240-bf8d-8873a6ea0324.png)
+
+### Step 2: Import MongoClient from pymongo in a python script 
+
+In you Python Script, import MongoClient that acts as a Client from Python to MongoDB.
+
+```
+from pymongo import MongoClient
+```
+### Step 3: Create a connection to MongoDB Daemon Service using MongoClient
+
+Following is the syntax to create a MongoClient in Python.
+
+'''
+client = MongoClient(URI)
+'''
+
+URI is where the MongoDB instance runs.
+
+Example : mongodb://192.168.1.154:27017
+
+Note : If URI is not specified, it tries to connect to MongoDB instance at localhost on port 27017.
+
+### Step 4: MongoClient is Ready
+
+If there is no exception thrown during MongoClient creation, your MongoClient is successfully connected to MongoDB.
+
+### Step 5: Close connection to MongoDB
+
+Once you are done with the MongoDB Operations, close the connection between MongoClient and MongoDB Daemon Service.
+
+```
+client.close()
+```
+
+### An Example of the python script is given below: 
+
+![Screenshot from 2022-10-04 22-39-41](https://user-images.githubusercontent.com/91078843/193883069-5641f26f-ca5b-4df3-bdd3-4d72ac75183b.png)
+
+
+
+
