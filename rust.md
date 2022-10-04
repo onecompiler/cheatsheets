@@ -23,7 +23,7 @@ Begins with `let`
 ```rust
 let a = "hello";
 ```
-###Mutable
+### Mutable
 ```rust
 fn main() {
     let mut a:i32 = 10;
@@ -43,14 +43,10 @@ const PI:f32 = 3.14;           //Declare a float constant
 ## Operators
 |Type|Operators|
 |----|----|
-| Arithmetic Operators| + , - , * , / , % , ** |
+| Arithmetic Operators| + , - , * , / , %  |
 | Relational Operators| == , != , > , >= , < , <= |
 | Bitwise Operators| & , ^ , \| , << , >> |
 | Logical Operators| && , \|\| , ! |
-| Assignment Operators|= , += , -= , *= , /= , %= , **= |
-| Ternary Operators | ? :|
-| Range Operators | .. , ...|
-| Special Operators | defined?, . , :: |
 
 
 ## Conditional Statements
