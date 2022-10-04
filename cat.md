@@ -55,3 +55,4 @@ $ cat -n file1.txt
 |`-e`|Shows `$` at the end of the content|
 |`-t`|To see tabs in file, this shows tabs with `^I`|
 |`-s`|removes repeated empty lines in content|
+|`cat test > test1`|redirect the standard output of a file into a new file|
