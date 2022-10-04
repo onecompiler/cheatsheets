@@ -1,5 +1,5 @@
 ---
-title: Bash shell
+title: Vyper
 description: Vyper is a contract-oriented, pythonic programming language that targets the Ethereum Virtual Machine (EVM).
 created: 2022-10-04
 updated: 2022-10-04
