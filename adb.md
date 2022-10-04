@@ -11,6 +11,7 @@ updated: 2019-06-17
 |---|---|
 |`adb devices`|This command is used to retrieve all devices by serial number|
 |`adb devices -l`|List of devices by product/model|
+|`adb -s <device> <command>`|Use the -s option followed by a device name to select on which device the adb command should run. The -s options should be first in line, before the command.|
 
 ## App installation & uninstallation
 |Command|Description|
