@@ -9,7 +9,23 @@ updated: 2020-04-25
 
 * scanf("%d", &x) -- read value into the variable x from input stream
 * Printf("%d",x) -- printf value to the output stream
-* gets(str) -- reads a line from input stream into a variable
+* gets(str) -- reads a line from input stream into a variable\
+
+## Header Files
+
+| Header Files | Description|
+|----|----|
+|stdio.h | Input/Output functions|
+|conio.h | Console Input/Output functions|
+|stdlib.h | General utility functions|
+|math.h | Mathematics functions|
+|string.h | String functions|
+|ctype.h | Character handling functions|
+|time.h | Date and time functions|
+|float.h | Limits of float types|
+|limits.h | Size of basic types|
+|wctype.h | Functions to determine the type contained in wide character data|
+
 ### Sample C program
 
 ```c
