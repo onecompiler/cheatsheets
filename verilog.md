@@ -1,8 +1,10 @@
-### Verilog
-- Verilog is a Hardware Description Language (HDL).
-- It is a language used for describing a digital system such as a network switch, a microprocessor, a memory, or a flip-flop.
-- We can describe any digital hardware by using HDL at any level.
-- It is great and specific language for programming spartlet kit extensively used by Design engineers from AMD ,Qualcomm and other industries.
+---
+title: Verilog
+description: Verilog is a Hardware Description Language (HDL).It is a language used for describing a digital system such as a network switch, a microprocessor, a memory, or a flip-flop.
+created: 2022-10-04
+updated: 2022-10-04
+---
+
 
 #### I) Literals
 ```
