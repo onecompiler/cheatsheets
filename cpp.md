@@ -380,6 +380,206 @@ int main() {
 }
 
 ```
+
+## Deque
+
+**Use for**
+* Similar purpose of `std::vector`
+* Basically `std::vector` with efficient `push_front` and `pop_front`
+
+**Do not use for**
+* C-style contiguous storage (not guaranteed)
+
+**Notes**
+* Pronounced 'deck'
+* Stands for **D**ouble **E**nded **Que**ue
+
+**Time Complexity**
+
+| Operation    | Time Complexity |
+|--------------|-----------------|
+| Insert Head  |          `O(1)` 		|
+| Insert Index |          `O(n) or O(1)`|
+| Insert Tail  |          `O(1)` 		|
+| Remove Head  |          `O(1)` 		|
+| Remove Index |          `O(n)` 		|
+| Remove Tail  |          `O(1)` 		|
+| Find Index   |          `O(1)` 		|
+| Find Object  |          `O(n)` 		|
+
+**Example Code**
+```c++
+std::deque<int> d;
+//---------------------------------
+// General Operations
+//---------------------------------
+// Insert head, index, tail
+d.push_front(value);                    // head
+d.insert(d.begin() + index, value);     // index
+d.push_back(value);                     // tail
+// Access head, index, tail
+int head = d.front();       // head
+int value = d.at(index);    // index
+int tail = d.back();        // tail
+// Size
+unsigned int size = d.size();
+// Iterate
+for(std::deque<int>::iterator it = d.begin(); it != d.end(); it++) {
+    std::cout << *it << std::endl;
+}
+// Remove head, index, tail
+d.pop_front();                  // head
+d.erase(d.begin() + index);     // index
+d.pop_back();                   // tail
+// Clear
+d.clear();
+```
+
+## Priority Queue 
+
+**Use for**
+* First-In First-Out operations where **priority** overrides arrival time
+* Ex: CPU scheduling (smallest job first, system/user priority)
+* Ex: Medical emergencies (gunshot wound vs. broken arm)
+
+**Notes**
+* Often implemented as a `std::vector`
+
+**Example Code**
+```c++
+std::priority_queue<int> p;
+//---------------------------------
+// General Operations
+//---------------------------------
+// Insert
+p.push(value);
+// Access
+int top = p.top();  // 'Top' element
+// Size
+unsigned int size = p.size();
+// Remove
+p.pop();
+```
+
+## Set 
+
+**Use for**
+* Removing duplicates
+* Ordered dynamic storage
+
+**Do not use for**
+* Simple storage
+* Direct access by index
+
+**Notes**
+* Sets are often implemented with binary search trees
+
+**Time Complexity**
+
+| Operation    | Time Complexity |
+|--------------|-----------------|
+| Insert       |     `O(log(n))` |
+| Remove       |     `O(log(n))` |
+| Find         |     `O(log(n))` |
+
+**Example Code**
+```c++
+std::set<int> s;
+//---------------------------------
+// General Operations
+//---------------------------------
+// Insert
+s.insert(20);
+// Size
+unsigned int size = s.size();
+// Iterate
+for(std::set<int>::iterator it = s.begin(); it != s.end(); it++) {
+    std::cout << *it << std::endl;
+}
+// Remove
+s.erase(20);
+// Clear
+s.clear();
+//---------------------------------
+// Container-Specific Operations
+//---------------------------------
+// Find if an element exists
+bool exists = (s.find(20) != s.end());
+// Count the number of elements with a certain value
+unsigned int count = s.count(20);
+```
+
+## Map `std::map` and `std::unordered_map`
+
+**Use for**
+* Key-value pairs
+* Constant lookups by key
+* Searching if key/value exists
+* Removing duplicates
+* `std::map`
+    * Ordered map
+* `std::unordered_map`
+    * Hash table
+
+**Do not use for**
+* Sorting
+
+**Notes**
+* Typically ordered maps (`std::map`) are slower than unordered maps (`std::unordered_map`)
+* Maps are typically implemented as *binary search trees*
+
+**Time Complexity**
+
+**`std::map`**
+
+| Operation           | Time Complexity |
+|---------------------|-----------------|
+| Insert              |     `O(log(n))` |
+| Access by Key       |     `O(log(n))` |
+| Remove by Key       |     `O(log(n))` |
+| Find/Remove Value   |     `O(log(n))` |
+
+**`std::unordered_map`**
+
+| Operation           | Time Complexity |
+|---------------------|-----------------|
+| Insert              |          `O(1)` |
+| Access by Key       |          `O(1)` |
+| Remove by Key       |          `O(1)` |
+| Find/Remove Value   |              -- |
+
+**Example Code**
+```c++
+std::map<std::string, std::string> m;
+//---------------------------------
+// General Operations
+//---------------------------------
+// Insert
+m.insert(std::pair<std::string, std::string>("key", "value"));
+// Access by key
+std::string value = m.at("key");
+// Size
+unsigned int size = m.size();
+// Iterate
+for(std::map<std::string, std::string>::iterator it = m.begin(); it != m.end(); it++) {
+    std::cout << *it << std::endl;
+}
+// Remove by key
+m.erase("key");
+// Clear
+m.clear();
+//---------------------------------
+// Container-Specific Operations
+//---------------------------------
+// Find if an element exists by key
+bool exists = (m.find("key") != m.end());
+// Count the number of elements with a certain key
+unsigned int count = m.count("key");
+```
+
+
+
+
 ## Sort one-line
 
 Sorting is one of the most basic functions applied to data. It means arranging the data in a particular fashion, which can be increasing or decreasing. There is a builtin function in C++ STL by the name of sort(). 
