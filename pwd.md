@@ -13,9 +13,21 @@ pwd (print working directory) Linux Command is used to print full directory path
 ```sh
 pwd [Option(s)]
 ```
+## Flags for pwd Command
+
+pwd -L: Prints the symbolic path.
+pwd -P: Prints the actual path.
 
 ## Examples
 
 ```sh
 pwd #=> /Users/experimental
+```
+
+```sh
+pwd -L
+```
+
+```sh
+pwd -P
 ```
