@@ -89,6 +89,7 @@ int a[2][3] = {
 |Float point Literal|53.0f, 79.02|
 |Character literals| 'a', '1'|
 |String literals| "OneCompiler", "Foo"|
+|Boolean literals| true, false|
 
 ### Escape sequences
 |Escape sequence| Description|
@@ -294,13 +295,15 @@ int main(){
 int arr[] = {3,2,1};
 int n = 3 ; // size of the array
 
-sort(arr, arr+n); // sorting the array
+sort(arr, arr+n); // sorting the array in ascending order
+sort(arr, arr+n, greater<int>()); // sorting the array in descending order
 
 vector<int> v;
 
 v = {3,2,1};
 
-sort(v.begin(), v.end()); // sorting in the vector
+sort(v.begin(), v.end()); // sorting in the vector in ascending order
+sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending order
 
 }
 
@@ -309,7 +312,7 @@ sort(v.begin(), v.end()); // sorting in the vector
 
 |Name| Use|
 |----|----|
-|#include<bits/stdc++.h>   | It contains all the libraries present in C++|
+|#include<bits/stdc++.h>   | It is a header file that includes every standard library.|
 |#include<stdio.h>   | It is used to perform input and output operations|
 |#include<string.h>  | It is used to perform various string operations|
 |#include<math.h>    | It is used to perform mathematical operations|
@@ -319,7 +322,7 @@ sort(v.begin(), v.end()); // sorting in the vector
 |#include<errno.h>   | It is used to perform error handling operations like errno|
 |#include<fstream.h> | It is used to control the data to read from a file|
 |#include<time.h>    | It is used to perform functions related to date() and time|
-<<<<<<< HEAD
+|#include<graphics.h>    | It is used to include and facilitate graphical operations in program|
 
 ## Standard Template Library(STL)
 
@@ -446,10 +449,10 @@ A range is any sequence of objects that can be accessed through iterators or poi
 |---------|----|
 |min                | Return the smallest|
 |max	            | Return the largest|
-|sort               | Sort elements in range|
-|binary_search      | Test if key exists in sorted sequence|
-|reverse            | Reverse range|
 |swap               | Exchange values of two objects|
+|sort               | Sort elements in range|
+|reverse            | Reverse range|
+|binary_search      | Test if key exists in sorted sequence|
 |min_element        | Returns smallest element in range|
 |max_element        | Returns largest element in range|
 |accumulate         | Returns sum of all values lying in range|
@@ -458,6 +461,3 @@ A range is any sequence of objects that can be accessed through iterators or poi
 |upper_bound        | Returns iterator to upper bound of 'x|
 |lower_bound        | Returns iterator to lower bound of 'x|
 |next_permutation   | Transform range to next permutation|
-=======
-|#include<bits/stdc++.h>    |It is used to include all the standard library files|
->>>>>>> 89cbdc034185539732951bb64f7e252c318c8513
