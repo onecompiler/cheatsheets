@@ -423,5 +423,23 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 |#include<fstream.h> | It is used to control the data to read from a file|
 |#include<time.h>    | It is used to perform functions related to date() and time|
 |#include<graphics.h> | It is used include and facilitate graphical operations in program|
-|#include<bits/stdc++.h> | It is used to include all the standard library files|
-|#include <bits/stdc++.h> | Inlcude all the headers. A Usefull Hack for Competitive Programming|
+|#include<bits/stdc++.h> | It is a header file that includes every standard library.|
+
+## Algorithms
+
+|Algorithm| Use|
+|---------|----|
+|min                | Return the smallest|
+|max	            | Return the largest|
+|swap               | Exchange values of two objects|
+|sort               | Sort elements in range|
+|reverse            | Reverse range|
+|binary_search      | Test if key exists in sorted sequence|
+|min_element        | Returns smallest element in range|
+|max_element        | Returns largest element in range|
+|accumulate         | Returns sum of all values lying in range|
+|count              | Count appearances of 'x' in range|
+|find               | Find 'x in range|
+|upper_bound        | Returns iterator to upper bound of 'x|
+|lower_bound        | Returns iterator to lower bound of 'x|
+|next_permutation   | Transform range to next permutation|
