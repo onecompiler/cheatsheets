@@ -32,7 +32,7 @@ Http is what protocol ussed by the modern internet, there are multiple codes ret
 
 | Status Code | Meaning                     |
 | ----------- | --------------------------- |
-| 200 OK      |
+| 200         | OK
 | 201         | Created                     |
 | 202         | Accepted                    |
 | 203         | Non-Authoritive Information |
