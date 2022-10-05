@@ -1,5 +1,10 @@
-# What is Markdown Language?
-### Markdown is a lightweight markup language. It is used to create formatted text using simple text editor. 
+---
+title: Markdown
+description: Markdown is a lightweight markup language which is used to create formatted text using simple text editor.
+created: 2022-10-05
+updated: 2022-10-05
+---
+ 
 #### Github supports Markdown and thats why we are going to create this documentation in .md file.
 
 * Content:
