@@ -23,5 +23,5 @@ color: #027395
 |float|32||
 |double|64||
 
-#### Other
-* boolean
+#### Other 
+* boolean|1|true or false|
