@@ -38,7 +38,7 @@ print("hello world")
 |str()|constructs a string from any form of data like string, float or integer|
 
 ## Type Casting
-|-----|----|
+
 In Python, Type casting or type converion is the method to convert one data-type to another data-type.
 Basically there are 2 types of type casting:
 
