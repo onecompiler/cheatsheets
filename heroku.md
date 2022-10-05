@@ -21,7 +21,7 @@ Heroku is a platform as a service based on a managed container system. Heroku st
 6. Heroku Connect
 7. Heroku Elements
 
-## Netlify CLI Command List
+## Heroku CLI Command List
 Get started with <br>
 <br>
 Nodejs:- https://devcenter.heroku.com/articles/getting-started-with-nodejs <br>
