@@ -2,7 +2,7 @@
 title: Rust 
 description: Rust cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2022-10-04
-updated: 2020-10-04
+updated: 2022-10-05
 ---
 
 ## Basics
