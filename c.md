@@ -10,6 +10,7 @@ updated: 2020-04-25
 * scanf("%d", &x) -- read value into the variable x from input stream
 * Printf("%d",x) -- printf value to the output stream
 * gets(str) -- reads a line from input stream into a variable
+
 ### Sample C program
 
 ```c
@@ -391,3 +392,19 @@ A set of functions for dynamic memory allocation from the heap. These methods ar
 | calloc() | Stands for 'Contiguous allocation' and reserves n blocks of memory with the given amount of bytes. | `ptr = (castType*)calloc(n, size)`|
 | free | It is used to free the allocated memory. | `free(ptr)`|
 | realloc() | If the allocated memory is insufficient, then we can change the size of previously allocated memory using this function for efficiency purposes | `ptr = realloc(ptr, x)`|
+
+
+## Header Files
+
+| Header Files | Description|
+|----|----|
+|stdio.h | Input/Output functions|
+|conio.h | Console Input/Output functions|
+|stdlib.h | General utility functions|
+|math.h | Mathematics functions|
+|string.h | String functions|
+|ctype.h | Character handling functions|
+|time.h | Date and time functions|
+|float.h | Limits of float types|
+|limits.h | Size of basic types|
+|wctype.h | Functions to determine the type contained in wide character data|
