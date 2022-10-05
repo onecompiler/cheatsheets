@@ -47,10 +47,6 @@ java example
 
 `//` - single line comment
 
-`/* */` - multi line comment
-
-`/**  *  */` - documentation comment
-
 ## Data types
 
 Two groups of data types
@@ -338,7 +334,7 @@ public class Main {
 
 ## OOPS
 
-### 1. Class
+### Class
 
 Class is the blueprint of an object and `class` keyword is required to create a class.
 
@@ -349,18 +345,25 @@ class class_name {
 }
 ```
 
-### 2. Object
+### Object
 
-Object is a basic unit in OOP, and is an instance of the class.
+Object is an instance of the class.Basically, they are basic unit of OOP. Object is considered as real world entity such as car, train, person, etc. Single class can have more than one Objects.
 
 ```java
 class_name obj_name;
 ```
-### 3. Abstraction
+Oject Oriented Programming (OOPS) basically stands on 4 main principles. All of them are mentioned in detail below:  
 
-Data abstraction is a technique which provides only the required data to be visible or accessible to outside world. 
+
+
+
+### 1. Abstraction
+
+Abstraction is a technique provides that only the required infomation to be visible to outside world, all other are hidden. 
+
+Example : Consider the Paytm app, we don't know how money is being transferred from one account to another within a second, all we know is we can make payment using the app.
+
 `abstract` keyword is used for classes and methods. 
-
 
 ```java
 
@@ -371,16 +374,46 @@ abstract class Mobiles { // abstract class
   }
 }
 ```
-### 4. Encapsulation
+### 2. Encapsulation
 
 Encapsulation is a mechanism to protect private hidden from other users. It wraps the data and methods as a single bundle. `private` is the keyword used to declare the variables or methods as private. You can make public `set` and `get` methods to access private variables.
 
-### 5. Polymorphism
+### 3. Inheritance
 
-Polymorphism gives the meaning many forms, usually it occurs when multiple classes are present and have been inherited.
+It is the mechanism by which one class is allowed to inherit the data(variables and methods) from another class.
+
+`extends` keyword is used to acheive Inheritance. 
 
 ```java
+class base-class {
+    //methods and variables
+}
+class derived-class-name extends base-class-name  {  
+   //methods and variables  
+}  
+```
+
+*Multiple inheritance is not supported in java.*
+
+### 4. Polymorphism
+
+Polymorphism gives the meaning many forms, usually it occurs when multiple classes are present and have been inherited. It is the methodolgy to perform task in diffent ways.
+
+There are 2 types of Polymorphism in java 
+1. Runtime Polymorphism (Method Overriding)
+2. Compile time Polymorphism (Method Overloading)
+
+```java
+class Compile_Time_Polymorphism {
+    public void print() {}
+    public void print(String s) {}
+}
+
+//Rume_Time_Polymorphism
+class Parent-Class {
+    public void print() {}
+}
 class Child-class extends Parent-Class {
-//code
+    public void print() {}
 }
 ```
