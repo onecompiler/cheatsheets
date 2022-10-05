@@ -85,7 +85,7 @@ $ cat -n file1.txt
      4	line-4
 ```
 
-## 5. Display content with More & Less Options
+## 11. Display content with More & Less Options
 If a file having a large number of content that won’t fit in the output terminal and the screen scrolls up very fast, we can use parameters more and less with the cat command as shown below.
 
 ```sh
