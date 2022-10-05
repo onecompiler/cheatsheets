@@ -380,6 +380,40 @@ int main() {
 }
 
 ```
+
+## Deque
+
+Double-ended queues are sequence containers with the feature of expansion and contraction on both ends. They are similar to vectors, but are more efficient in case of insertion and deletion of elements.
+
+deque::push_front()	It is used to push elements into a deque from the front.
+deque::push_back() 	This function is used to push elements into a deque from the back.
+deque::pop_front()	This function is used to pop or remove elements from a deque from the front.
+deque::pop_back() 	This function is used to pop or remove elements from a deque from the back.
+deque::front()  	This function is used to reference the first element of the deque container. 
+deque::back()   	This function is used to reference the last element of the deque container.
+deque::clear() 		This function is used to remove all the elements of the deque container, thus making its size 0. 
+deque::erase() 	 	This function is used to remove elements from a container from the specified position or range.
+
+```c
+
+#include <iostream>
+#include <deque>
+using namespace std;
+int main() {
+	deque<int> q;
+	
+	q.push_back(10);
+    	q.push_front(20);
+    	q.push_back(30);
+    	q.push_front(15);
+	
+	q.pop_front();
+	q.pop_back();
+}
+
+```
+
+
 ## Sort one-line
 
 Sorting is one of the most basic functions applied to data. It means arranging the data in a particular fashion, which can be increasing or decreasing. There is a builtin function in C++ STL by the name of sort(). 
