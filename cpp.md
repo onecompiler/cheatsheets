@@ -349,6 +349,19 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 }
 
 ```
+## C++ Standard Template Library (STL)
+
+|DS Name| Header file name| Use|
+|-------| -----------| ---|
+|Stack     | stack         | Works on LIFO principle, top element accessed first|
+|Queue     | queue         | Works on FIFO princilpe, front element accessed first|
+|Heap      | priority_queue| Creates a max heap, all elements are sorted in decreasing order|
+|Hashset   | set           | Stores unique elements in sorted order|
+|Hashset   | unordered_set | Stores unique elements in random order|
+|Multiset  | set           | Stores non-unique elements in sorted order|
+|Hashmap   | map           | Stores key-value pairs, in sorted order, with unique keys|
+|Hashmap   | unordered_map | Stores key-value pairs, in random order, with unique keys|
+
 ## Header Files
 
 |Name| Use|
