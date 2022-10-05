@@ -172,20 +172,35 @@ default:
 
 ### 1. Break
 ```c
-//we are initiating a for loop
-//the loop will run from 0 till 6
+// program to find the sum of positive numbers
+// if the user enters a negative numbers, break ends the loop
+// the negative number entered is not added to sum
 
-for(i=0; i<6; i++){
+#include <iostream>
+using namespace std;
 
-   if(i==4){ // when the value if i is 4 the loop will terminate
-      break;
-      }
-      
-   cout << i <<endl;
-   
-   //the loop will just run till the value of i
-   //gets 4 and will terminate after that
-   
+int main() {
+    int number;
+    int sum = 0;
+
+    while (true) {
+        // take input from the user
+        cout << "Enter a number: ";
+        cin >> number;
+
+        // break condition
+        if (number < 0) {
+            break;
+        }
+
+        // adding all positive numbers
+        sum += number;
+    }
+
+    // display the sum
+    cout << "The sum is " << sum << endl;
+
+    return 0;
 }
 ```
 ```c
@@ -199,20 +214,46 @@ The break statement helps in coming out from the loop when your condition is sat
 
 ### 2. Continue
 ```c
-//we are initiating a for loop 
-//this loop will run from 0 till 6
+// program to calculate sum of positive numbers till 50 only
+// if the user enters a negative number,
+// that number is skipped from the calculation
 
-for(i=0; i<6; i++){
-		
-	     //when the value of i is 4 the the loop will skip that iteration
-             //check the output below where 4 is not printed 
-	     //continue helped us in skipping the iteration where i=4
-   if(i==4){ 
-      continue;
-      }
-      
-   cout<< i <<endl;
+// negative number -> skip iteration
+// numbers above 50 -> loop terminates
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int sum = 0;
+    int number = 0;
+
+    while (true) {
+        // add all positive numbers
+        sum += number;
+
+        // take input from the user
+        cout << "Enter a number: ";
+        cin >> number;
+	
+	// continue condition
+	if (number < 0) {
+	    cout << "Negative number not allowed" <<endl;
+	    continue;
+	    }
+	   
+        if (number > 50) {
+            cout << "The number is greater than 50 and won't be calculated." << endl;
+            break;
+        }
+    }
+
+    // display the sum
+    cout << "The sum is " << sum << endl;
+
+    return 0;
 }
+
 ```
 ```c
 Output
