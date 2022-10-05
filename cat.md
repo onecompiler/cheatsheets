@@ -2,7 +2,7 @@
 title: cat Linux Command
 description: cat command is used to create, read & concatenate files in Linux/ Unix machines
 created: 2019-08-21
-updated: 2019-08-21
+updated: 2022-10-05
 ---
 
 `cat` command is used to create, read & concatenate files in Linux/ Unix machines. 
@@ -47,6 +47,13 @@ $ cat -n file1.txt
      4	line-4
 ```
 
+## 5. Display content with More & Less Options
+If a file having a large number of content that won’t fit in the output terminal and the screen scrolls up very fast, we can use parameters more and less with the cat command as shown below.
+
+```sh
+cat song.txt | more
+cat song.txt | less
+```
 
 ## More Options
 
