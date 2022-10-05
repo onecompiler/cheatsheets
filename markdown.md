@@ -5,13 +5,6 @@ created: 2022-10-05
 updated: 2022-10-05
 ---
  
-#### Github supports Markdown and thats why we are going to create this documentation in .md file.
-
-* Content:
-  - Basic syntax.
-  - Advanced syntax.
-  
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 # Basic Syntax :
 - ## HEADERS (H1 to H6)
 ```
@@ -23,7 +16,9 @@ updated: 2022-10-05
 #  h1 tag
 ##  h2 tag
 ###  h3 tag
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+---
+
 - ## EMPHASIS 
 ```
 *This is italic*
@@ -39,7 +34,9 @@ _This is also italic_
 **This is bold**
 
 __This is also bold__
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
+---
+
 - ## BLOCKQUOTES
  ```
 > this is a single block quote.
@@ -49,7 +46,7 @@ __This is also bold__
 > this is a single block quote.
 >> this is a nested block quote.
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+---
 
 - ## LIST
 - ### Ordered List :
@@ -72,7 +69,7 @@ __This is also bold__
  - First item
    - Second item
    
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+---
 
 - ## Table 
 ```
@@ -88,7 +85,7 @@ __This is also bold__
 | text1       | Text 2      |
 | text3       | Text 4      |
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+---
 
 - ## Check Box:
 ```
@@ -99,7 +96,8 @@ __This is also bold__
  - [ ] task 1
  - [x] task 2 
  
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png) 
+---
+
 - ## HORIZONTAL RULE 
 ```
 ---
@@ -107,7 +105,7 @@ __This is also bold__
 ```
 ## Output
 ---
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 - ## Code
 ```
   `This is a code`
@@ -157,7 +155,8 @@ Printf("Hello World!");
 </body>
 </html>
   ```
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+---
+
 - ## LINK
 ```
 Normal link Syntax:
@@ -177,19 +176,21 @@ Example:
 
 <xyz@gmail.com>
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+---
+
 - ## IMAGES
 ```
 Syntax:
 ![image name](image address)
 
 Example:
-![github-octocat](https://user-images.githubusercontent.com/87390353/139872522-9706b6aa-06cf-480f-b26d-0b7e0aaa7214.png)
+![unnamed (1)](https://user-images.githubusercontent.com/87390353/194129046-d692bf37-034e-4411-afcd-619585abf2f2.jpg)
 ```
 ## Output :
-![github-octocat](https://user-images.githubusercontent.com/87390353/139872522-9706b6aa-06cf-480f-b26d-0b7e0aaa7214.png)
+![unnamed (1)](https://user-images.githubusercontent.com/87390353/194129046-d692bf37-034e-4411-afcd-619585abf2f2.jpg)
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+---
+
 # Advanced Syntax :
 - ## EMOJI
 ```
@@ -200,7 +201,7 @@ Example : :laughing:
 ## Output :
 :laughing:
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+
 - ## FOOTNOTE
 ```
 Here's a sentence with a footnote. [^1]
@@ -210,7 +211,7 @@ Here's a sentence with a footnote. [^1]
 Here's a sentence with a footnote. [^1]
 [^1]: It is the footnote.
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+---
 
 - ## STRIKE THROUGH
 ```
@@ -224,7 +225,7 @@ Example:
 
 ~~This sentence is incorrect~~
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+---
 
 # Reference:
 [Github Markdown](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
