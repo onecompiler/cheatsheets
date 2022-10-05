@@ -141,7 +141,7 @@ Match the string against a regular expresion:
 
 ### Modifying
 
-Remove the shortest/longest matching pattern from beggining:
+Remove the shortest/longest matching pattern from beginning:
 
 ```bash
 echo ${my_variable#*=}
@@ -238,7 +238,7 @@ my_command | another_command
 
 ### Command substitution
 
-Replace the command invocation with it's stdout output:
+Replace the command invocation with its stdout output:
 
 ```bash
 echo $(expr $my_variable + 1)
