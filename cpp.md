@@ -28,8 +28,6 @@ int main() {
 * `main()`: main function is the entry point of any C++ program.
 * `return 0`: To end the main function
 
-#### A Usefull Hack for Competitive Programming
-* `#include <bits/stdc++.h>`: Instead of including multiple header files just include this file . It will automatically inlcude all the needed Header files by itself. This will save time when doing CP. 
 #### How to compile a program in C++
 
 Open your terminal, Navigate to the directory where you have saved your program. Consider firstprogram.cpp is the name of your program.
@@ -426,3 +424,6 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 |#include<time.h>    | It is used to perform functions related to date() and time|
 |#include<graphics.h>    | It is used include and facilitate graphical operations in program|
 |#include<bits/stdc++.h>    |It is used to include all the standard library files|
+
+#### A Usefull Hack for Competitive Programming
+* `#include <bits/stdc++.h>`: Instead of including multiple header files just include this file . It will automatically inlcude all the needed Header files by itself. This will save time when doing CP. 
