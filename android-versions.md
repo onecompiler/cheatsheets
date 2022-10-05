@@ -2,7 +2,7 @@
 title: Android Versions
 description: Android Versions with release years and features added
 created: 2019-08-19
-updated: 2019-08-19
+updated: 2022-10-04
 color: #f4de50
 ---
 

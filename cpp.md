@@ -112,7 +112,7 @@ int a[2][3] = {
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
 | comparision Operator| < , > , <= , >=, != , ==|
-| Bitwise Operator| & , ^ , |
+| Bitwise Operator| &  , `\|` , ^ , >> , << , ~ |
 | Logical Operator| && , `\|\|`, ! |
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
@@ -742,5 +742,6 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 |#include<errno.h>   | It is used to perform error handling operations like errno|
 |#include<fstream.h> | It is used to control the data to read from a file|
 |#include<time.h>    | It is used to perform functions related to date() and time|
-|#include<graphics.h>    | It is used include and facilitate graphical operations in program|
-|#include<bits/stdc++.h>    |It is used to include all the standard library files|
+|#include<graphics.h> | It is used include and facilitate graphical operations in program|
+|#include<bits/stdc++.h> | It is used to include all the standard library files|
+|#include <bits/stdc++.h> | Inlcude all the headers. A Usefull Hack for Competitive Programming|
