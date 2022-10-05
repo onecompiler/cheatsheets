@@ -21,21 +21,53 @@ Heroku is a platform as a service based on a managed container system. Heroku st
 6. Heroku Connect
 7. Heroku Elements
 
-## Heroku CLI Command List
+## Heroku CLI Command Resources
 Get started with <br>
-<br>
-Nodejs:- https://devcenter.heroku.com/articles/getting-started-with-nodejs <br>
-Ruby :- https://devcenter.heroku.com/articles/getting-started-with-ruby <br>
-Python :- https://devcenter.heroku.com/articles/getting-started-with-python <br>
-Java:- https://devcenter.heroku.com/articles/getting-started-with-java <br>
-PHP :- https://devcenter.heroku.com/articles/getting-started-with-php <br>
-Scala :- https://devcenter.heroku.com/articles/getting-started-with-scala <br>
-Go :- https://devcenter.heroku.com/articles/getting-started-with-go <br>
-Clojure :- https://devcenter.heroku.com/articles/getting-started-with-clojure <br>
+<table>
+  
+  <tr>
+    <th>Programming Languages </th>
+    <th> Resources </th>
+  </tr>
+  
+  <tr>
+    <th>Nodejs</th>
+    <th>https://devcenter.heroku.com/articles/getting-started-with-nodejs</th>
+  </tr>
+  <tr>
+    <th>Ruby</th>
+    <th>https://devcenter.heroku.com/articles/getting-started-with-ruby</th>
+  </tr>
+  <tr>
+    <th>Python</th>
+    <th>https://devcenter.heroku.com/articles/getting-started-with-python</th>
+  </tr>
+  <tr>
+    <th>Java</th>
+    <th>https://devcenter.heroku.com/articles/getting-started-with-java</th>
+  </tr>
+  <tr>
+    <th>PHP</th>
+    <th>https://devcenter.heroku.com/articles/getting-started-with-php</th>
+  </tr>
+  <tr>
+    <th>Scala</th>
+    <th>https://devcenter.heroku.com/articles/getting-started-with-scala</th>
+  </tr>
+  <tr>
+    <th>Go</th>
+    <th>https://devcenter.heroku.com/articles/getting-started-with-go</th>
+  </tr>
+  <tr>
+    <th>Clojure</th>
+    <th>https://devcenter.heroku.com/articles/getting-started-with-clojure</th>
+  </tr>
+</table>
+
 
 ## Get started with Heroku
 
-Heroku: Cloud Application Platform https://www.heroku.com <br>
+Heroku: Cloud Application Platform:- https://www.heroku.com <br>
 Heroku Documentation:- https://devcenter.heroku.com/categories/reference
 
 
