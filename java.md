@@ -47,6 +47,10 @@ java example
 
 `//` - single line comment
 
+`/* */` - multi line comment
+
+`/**  *  */` - documentation comment
+
 ## Data types
 
 Two groups of data types
@@ -353,9 +357,6 @@ Object is an instance of the class.Basically, they are basic unit of OOP. Object
 class_name obj_name;
 ```
 Oject Oriented Programming (OOPS) basically stands on 4 main principles. All of them are mentioned in detail below:  
-
-
-
 
 ### 1. Abstraction
 
