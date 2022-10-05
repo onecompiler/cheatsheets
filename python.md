@@ -37,6 +37,17 @@ print("hello world")
 |float()|constructs a float number from any form of data like string, float or integer|
 |str()|constructs a string from any form of data like string, float or integer|
 
+## Type Casting
+|-----|----|
+In Python, Type casting or type converion is the method to convert one data-type to another data-type.
+Basically there are 2 types of type casting:
+
+1:Implicit
+This method of type casting is performed by the machine or the python interpreter itself. There is no need to define externally.
+
+2:Explicit
+In this method of type casting,the user performs the changes by using the predefined functions externally.There can be a loss of data in this type of type conversion
+
 ## Variables
 
 In Python, declaring variables is not required. Means you don't need to specify whether it is an integer or string etc as Python is a dynamically typed language.
