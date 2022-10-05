@@ -49,19 +49,6 @@ updated: 2020-06-17
 |`<audio>`| It is used to embed sound content in the document. |` <audio controls> <source src="demo.mp3" type="audio/mpeg"> </audio>`|
 |`<video>`| It is used to embed video in the webpage. |` <video width="480" height="320" controls> <source src="demo_move.mp4" type="video/mp4"> </video>`|
 
-## HTML 5 Semantic Tags
-> Semantic tags are used to make the code easier to write and understand for the developer as well as instructs the browser on how to treat them.
-
-| HTML Tags | Description| Example|
-|----|----|---|
-| `<article></article>`| It contains independent content which doesnt require any other context. | `<article>Hey, I'm an article tag!</article>`|
-|`<aside></aside>` | It is used to place content in a sidebar i.e. aside the existing content. It is related to surrounding content. | `<aside>Hey, I'm an aside tag!</aside>`|
-|`<details></details>` | It defines additional details that the user can hide or view. It basically acts as an accordians space. | `<details>Code Block</details>`|
-|`<summary> … </summary>`| It defines a visible heading for a “details” element. It acts as an accordian | `<details> <summary> Hi, I'm a summary tag! </summary> </details>`|
-| `<header></header>`| It is for the header of a section introductory of a page. There can be multiple headers on a page. | `<header>Hi, I'm a header tag!</header>`|
-| `<footer></footer>`| Located at the bottom of any article or document, they can contain contact details, copyright information etc. There can be multiple footers on a page. | `<footer>Hi, I'm a footer tag!</footer>` |
-| `<main></main>`| It defines the main content of the document. | `<main>Hi, I'm a main tag!</main>` |
-| `<nav></nav>`| It defines the navigation bar of the document. | `<nav>Hi, I'm a nav tag!</nav>` |
 
 ## HTML formatting 
 
@@ -91,7 +78,7 @@ updated: 2020-06-17
          </tr>
          
          <tr>
-            <td>Row 2, Col 1</td>
+           <td>Row 2, Col 1</td>
             <td>Row 2, Col 2</td>
          </tr>
          
@@ -112,7 +99,7 @@ Numbering the list items
 ```
 ```html
     <ol type = "1">
-        <li>list item 1</li>
+      <li>list item 1</li>
         <li>list item 2</li>
         <li>list item 3</li>
     </ol>
@@ -124,11 +111,11 @@ List items are displayed using bullets
 ```html
 <ul type = "disc"> <!-- default case-->
 <ul type = "square">
-<ul type = "circle">
-```
+  <ul type = "circle">
+    ```
 ```html
 <ul type= "circle">
-    <li>list item 1</li>
+  <li>list item 1</li>
     <li>list item 2</li>
     <li>list item 3</li>
 </ul>
@@ -144,7 +131,7 @@ List the entries like in a dictionary or encyclopedia.
 
 ```html
  <dl>
-    <dt><b>OL</b></dt>
+   <dt><b>OL</b></dt>
     <dd>Ordered Lists</dd>
     <dt><b>UL</b></dt>
     <dd>Unordered Lists</dd>
@@ -159,7 +146,7 @@ List the entries like in a dictionary or encyclopedia.
 
 ```html
 <form>
-<!--form elements like input select etc-->
+  <!--form elements like input select etc-->
 </form>
 ```
 
@@ -181,3 +168,17 @@ List the entries like in a dictionary or encyclopedia.
    Password: <input type = "password" name = "password" /> <br> <!-- Single line password input-->
  </form>
 ```
+
+## HTML 5 Semantic Tags
+> Semantic tags are used to make the code easier to write and understand for the developer as well as instructs the browser on how to treat them.
+
+| HTML Tags | Description| Example|
+|----|----|---|
+| `<article></article>`| It contains independent content which doesnt require any other context. | `<article>Hey, I'm an article tag!</article>`|
+|`<aside></aside>` | It is used to place content in a sidebar i.e. aside the existing content. It is related to surrounding content. | `<aside>Hey, I'm an aside tag!</aside>`|
+|`<details></details>` | It defines additional details that the user can hide or view. It basically acts as an accordians space. | `<details>Code Block</details>`|
+|`<summary> … </summary>`| It defines a visible heading for a “details” element. It acts as an accordian | `<details> <summary> Hi, I'm a summary tag! </summary> </details>`|
+| `<header></header>`| It is for the header of a section introductory of a page. There can be multiple headers on a page. | `<header>Hi, I'm a header tag!</header>`|
+| `<footer></footer>`| Located at the bottom of any article or document, they can contain contact details, copyright information etc. There can be multiple footers on a page. | `<footer>Hi, I'm a footer tag!</footer>` |
+| `<main></main>`| It defines the main content of the document. | `<main>Hi, I'm a main tag!</main>` |
+| `<nav></nav>`| It defines the navigation bar of the document. | `<nav>Hi, I'm a nav tag!</nav>` |
