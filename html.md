@@ -2,7 +2,7 @@
 title: HTML 
 description: HTML Cheat Sheet gives you a quick reference of basic HTML tags, codes and attributes and is very handy while coding. 
 created: 2020-06-17
-updated: 2020-06-17
+updated: 2022-10-05
 ---
 
 ## Sample program
@@ -168,4 +168,10 @@ List the entries like in a dictionary or encyclopedia.
    ID : <input type = "text" name = "user-id" /> <br> <!-- Single line text input-->
    Password: <input type = "password" name = "password" /> <br> <!-- Single line password input-->
  </form>
+```
+
+## HTML Lazy Loading
+
+```html
+<img loading="lazy" src="url-or-directory.png" alt="lazy-load-images" />
 ```
