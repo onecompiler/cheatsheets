@@ -424,3 +424,6 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 |#include<time.h>    | It is used to perform functions related to date() and time|
 |#include<graphics.h>    | It is used include and facilitate graphical operations in program|
 |#include<bits/stdc++.h>    |It is used to include all the standard library files|
+
+#### A Usefull Hack for Competitive Programming
+* `#include <bits/stdc++.h>`: Instead of including multiple header files just include this file . It will automatically inlcude all the needed Header files by itself. This will save time when doing CP. 
