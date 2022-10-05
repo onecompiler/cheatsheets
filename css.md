@@ -243,7 +243,7 @@ Variables are a great way to make your css more manageable, so you're not editin
     }
 ```
 
-### 9. Animations
+### 10. Animations
 CSS animations allow one to animate transitions or other media files on the web page.
 
 
@@ -262,7 +262,7 @@ CSS animations allow one to animate transitions or other media files on the web 
 
 
 
-### 10. Transitions
+### 11. Transitions
 Transitions let you define the transition between two states of an element.
 
 
@@ -275,7 +275,7 @@ Transitions let you define the transition between two states of an element.
 | Transition-delay | Specifies a delay (in seconds) for the transition effect | `transition-delay: 20ms;`|
 
 
-### 11. Media queries
+### 12. Media queries
 
 CSS media queries empowers you greatly when you're creating and developing sites that are reponsive i.e. look and function well on different screen sizes and pixel densities. 
 

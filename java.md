@@ -47,6 +47,10 @@ java example
 
 `//` - single line comment
 
+`/* */` - multi line comment
+
+`/**  *  */` - documentation comment
+
 ## Data types
 
 Two groups of data types
