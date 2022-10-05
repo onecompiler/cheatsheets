@@ -274,6 +274,22 @@ typedef data-type name;
 ```c
 typedef unsigned int distance;  // typedef of int 
 ```
+## Macros
+Macro is defined by #define directive. Whenever a macro name is encountered by the compiler, it replaces the name with the definition of the macro. Macro definitions need not be terminated by a semi-colon(;).
+
+### Example
+```c
+//Can be writtern before or after
+#inculde<iostream>
+//but should be before the main()
+```
+```c
+#define ll long long //ll is then refrenced as long long in the whole code
+```
+
+* `#define`: this keyword lets the compiler to understand the meaning of the keyword writtern next to it like in the example **ll** whenever written in code automatically expands as **long long**.
+
+Genrally, used in Competetive coding and in big projects where need to write same function is repetetive
 
 ## Vectors
 Vectors are same as dynamic arrays. They will be resized on element inseertions & deletions.
@@ -310,6 +326,16 @@ int main()
     return 0;
 }
 
+```
+
+If we want to initialize 2d vectors or even 3d vectors (i.e. arrays) then we need to embed the vectors inside the vector data structures accordingly i.e. if we want a 2d vector then vector is embedded inside a vector data structure like
+```c
+vector<vector<int>> v2;//
+```
+or we can for 3d vector like
+
+```c
+vector<vector<vector<int>>> v3;
 ```
 ## Stacks 
 
@@ -379,6 +405,78 @@ int main() {
 	}
 }
 
+```
+## Heap
+Heap data structure is a complete binary tree that satisfies the **heap property**, where any given node is
+- Always greater than its child node/s and the key of the root node is the largest among all other nodes. This property is also called **max heap property**.
+- Always smaller than the child node/s and the key of the root node is the smallest among all other nodes. This property is also called **min heap property**.
+
+####  Different types of heap:
+##### 1. Max Heap
+When a element inserted in heap wil be inserted in such position that greatest element will always be at top and will pe popped first.
+
+```c
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    priority_queue<int,vector<int>> maxh;
+    maxh.push(1);
+    maxh.push(2);
+    maxh.push(-1);
+
+    int greatest = maxh.top(); // greatest = 2
+    pq.pop();
+    int second_greatest = maxh.top(); // second_greatest = 1
+    return 0;
+} 
+```
+##### 2. Min Heap
+When a element inserted in heap wil be inserted in such position that smallest element will always be at top and will pe popped first.
+
+```c
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    priority_queue<int,vector<int>,greater<int>> minh;
+    minh.push(1);
+    minh.push(2);
+    minh.push(-1);
+
+    int smallest = minh.top(); // smallest = -1
+    pq.pop();
+    int second_minimum = minh.top(); // second_minimum = 1
+    return 0;
+} 
+```
+## Hash Map
+Hash Map (also, hash table) is a data structure that basically maps keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the corresponding value can be found.
+It can be implemented 
+```c
+unordered_map<int,int> mp; //here first element is the key and second element is the value 
+``` 
+The first element is the key where the second element which is the value is stored and can be serached for in constant time
+
+```c
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    unordered_map<int,int> mp; //
+    mp.insert({1,2}); // key=1, value=2;
+    mp[-1]=1; // key=-1, value=1
+    return 0;
+}
+```
+There can be an ordered map too which stores the keys in order 
+
+```c
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    map<int,int> order_mp; //
+    order_mp.insert({1,2}); // key=1, value=2;
+    order_mp[-1]=1; // key=-1, value=1
+    return 0;
+}
 ```
 ## Sort one-line
 
