@@ -409,6 +409,34 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 }
 
 ```
+## Priority Queue
+
+Priority Queue is an abstract data type that is similar to a queue, and every element has some priority value associated with it. The priority of the elements in a priority queue determines the order in which elements are served (i.e., the order in which they are removed). An element with high priority is dequeued before an element with low priority. If two elements have the same priority, they are served according to their order in the queue.
+
+```c
+
+#include<iostream>
+#include<queue>
+using namespace std;
+
+int main(){
+    priority_queue<int> pq;
+    pq.push(12);
+    pq.push(5);
+    pq.push(7);
+    pq.push(15);
+    pq.push(3);
+
+    cout<< pq.top() << "\n";
+    pq.pop();
+
+    while(!pq.empty()) {
+        cout << pq.top() << " ";
+        pq.pop();
+    }
+}
+
+```
 ## Header Files
 
 |Name| Use|
