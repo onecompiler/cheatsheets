@@ -12,6 +12,9 @@ String string2 = new String("One Compiler");     // Using new Keyword
 
 char[] characters = {'a', 'b', 'c', 'd'};
 String string3 = new String(characters);         //Gives output as "abcd" 
+
+byte[] characters = {65, 66, 67, 68};
+String string3 = new String(characters);         //Gives output as "ABCD" 
 ```
 
 ## String Comparison
