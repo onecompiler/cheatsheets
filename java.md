@@ -137,8 +137,13 @@ Class Sum {
 Array is a collection of similar data which is stored in continuous memory addresses.
 
 ```java
-data-type[] array-name; // one dimensional array
-data-type[][] array-name; // two dimensional array
+// one dimensional array
+data-type[] array-name; 
+    OR
+data-type array-name[];
+
+// two dimensional array
+data-type[][] array-name; 
 ```
 ### Example
 ```java
@@ -147,6 +152,8 @@ for (int i = 0; i < mobiles.length; i++) {
   System.out.println(mobiles[i]);
 }
 mobiles[1] = "Oppo"; // change an array element
+
+
 ```
 ## Conditional Statements
 
