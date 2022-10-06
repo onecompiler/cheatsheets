@@ -389,11 +389,9 @@ Name of the constructor should be the name of the class.
 Constructor has no return type.
 
 ```java
-public class AA
-{
-public void AA()
-{
-//code
-}
-}
-```
+public class AA {   //beg of class
+    public void AA() {  //default constructor
+    //code
+   }
+ }
+ ```
