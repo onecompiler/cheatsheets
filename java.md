@@ -384,3 +384,20 @@ class Child-class extends Parent-Class {
 //code
 }
 ```
+
+### Calling Constructor
+
+Constructor is called automatically. So, we do not need to write the code to call the constructor. It is called each time object from the class is called.
+
+```java
+class AA {
+ public AA() {
+    System.out.println("Constructor Called");
+    }
+  }
+  public class App {
+    public static void main(String [] args) {
+        new AA();
+    }
+  }
+  ```
