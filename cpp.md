@@ -523,3 +523,4 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 |#include<graphics.h> | It is used include and facilitate graphical operations in program|
 |#include<bits/stdc++.h> | It is used to include all the standard library files|
 |#include <bits/stdc++.h> | Inlcude all the headers. A Usefull Hack for Competitive Programming|
+|#include<limits.h> | It determines various properties of the various variable types. The macros defined in this header, limits the values of various variable types like char, int, and long. These limits specify that a variable cannot store any value beyond these limits, for example an unsigned character can store up to a maximum value of 255.|
