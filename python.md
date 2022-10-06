@@ -26,6 +26,7 @@ print("hello world")
 |Set|set, frozenset|
 |Sequence|list, tuple, range|
 |Mapping|dict|
+|None|NoneType|
 
 * type() is used to know the data type of a variable
 
