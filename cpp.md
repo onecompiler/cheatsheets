@@ -478,6 +478,40 @@ int main(){
     return 0;
 }
 ```
+
+## Graphs
+
+A graph is a data structure that consists of the following two components: 
+1. A finite set of vertices also called as nodes. 
+2. A finite set of ordered pair of the form (u, v) called as edge. The pair is ordered because (u, v) is not the same as (v, u) in case of a directed graph(di-graph). The pair of the form (u, v) indicates that there is an edge from vertex u to vertex v. The edges may contain weight/value/cost.
+
+The following two are the most commonly used representations of a graph. 
+1. Adjacency Matrix 
+2. Adjacency List 
+
+```c
+//Implementation of taking input for adjacency matrix
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+    // n is the number of vertices
+    // m is the number of edges
+    int n, m;
+    cin >> n >> m;
+    int adjMat[n + 1][n + 1];
+    for (int i = 0; i < m; i++) {
+        int u, v;
+        cin >> u >> v;
+        adjMat[u][v] = 1;
+        adjMat[v][u] = 1;
+    }
+ 
+    return 0;
+}
+
+```
 ## Sort one-line
 
 Sorting is one of the most basic functions applied to data. It means arranging the data in a particular fashion, which can be increasing or decreasing. There is a builtin function in C++ STL by the name of sort(). 
