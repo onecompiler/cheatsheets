@@ -2,7 +2,7 @@
 title: JavaScript Versions
 description: JavaScript/ ECMAScript Versions with release years and features added
 created: 2018-10-21
-updated: 2018-10-21
+updated: 2022-10-06
 color: #f4de50
 ---
 
