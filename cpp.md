@@ -406,6 +406,27 @@ int main() {
 }
 
 ```
+
+## Linked List
+
+A linked list is a linear data structure, in which the elements are not stored at contiguous memory locations.In simple words, a linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.
+
+The different types of linked list are-
+Singly Linked List
+Circular Linked List
+Doubly Linked List
+Circular doubly linked lists
+
+```c
+//Insertion in linked list
+class Node
+{
+    public:
+    int data;
+    Node *next;
+};
+
+```
 ## Heap
 Heap data structure is a complete binary tree that satisfies the **heap property**, where any given node is
 - Always greater than its child node/s and the key of the root node is the largest among all other nodes. This property is also called **max heap property**.
