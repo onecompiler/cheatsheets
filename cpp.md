@@ -524,3 +524,4 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 |#include<graphics.h> | It is used include and facilitate graphical operations in program|
 |#include<bits/stdc++.h> | It is used to include all the standard library files|
 |#include <bits/stdc++.h> | Inlcude all the headers. A Usefull Hack for Competitive Programming|
+|#include <math.h> | Header defines various mathematical functions and one macro. All the functions available in this library take double as an argument and return double as the result.|
