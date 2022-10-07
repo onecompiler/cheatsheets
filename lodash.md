@@ -71,6 +71,16 @@ let str2 = _.capitalize("ONE COMPILER CHEATSHEETS");
 console.log(str2);// "One Compiler Cheatsheets"
 ```
 
+#### 2. camelCase
+The _.camelCase() method is used to convert a string into a camel case string. The string can be space-separated, dash-separated, or can be separated by underscores.
+```javascript
+let str1 = _.camelCase("ONE__COMPILER__CHEATSHEETS");
+console.log(str1);// "oneCompilerCheatsheets"
+  
+let str2 = _.camelCase("ONE COMPILER CHEATSHEETS");
+console.log(str2);// "oneCompilerCheatsheets"
+```
+
 ## Collection
 
 #### 1. find
