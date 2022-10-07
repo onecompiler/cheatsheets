@@ -362,7 +362,7 @@ Oject Oriented Programming (OOPS) basically stands on 4 main principles. All of 
 
 Abstraction is a technique provides that only the required infomation to be visible to outside world, all other are hidden. 
 
-Example : Consider the Paytm app, we don't know how money is being transferred from one account to another within a second, all we know is we can make payment using the app.
+Example : Driving a car without knowing how the internal combustion engine is working. We get controller to control car's speed, derection, etc. 
 
 `abstract` keyword is used for classes and methods. 
 
