@@ -352,6 +352,16 @@ union union_name {
 
 union union_name variable name; // Declaring Union Variables
 ```
+### Difference between structure and union:
+|BASIS|STRUCTURE|UNION|
+|----|----|----|
+|Memory Sharing|all the members have unique storage.|Shared memory space is allocated i.e equivalent to the size of member having largest memory.|
+|Keyword|To define structure, ‘’struct’’ keyword is used.|To define union, “union’’ keyword is used.|
+|Access Of Members|All the members can be accessed at the same time.|One member whose value recently stored in the memory can be accessed at a time.|
+|Initialization|All members of the structure can be initialized.|Only the first member of union can be initialized.|
+|Declaration|An unknown structure cannot be declared.|An anonymous union can be declared.|
+|Storage Of Value|Structure stores different values for its members.|Union stores the same value as attributed to all members.|
+|Use|Used when programmers need to store distinct values for all the members in distinct memory.|Used when type conversions are needed.|
 
 ## File handling
 
