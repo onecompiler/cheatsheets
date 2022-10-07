@@ -169,6 +169,7 @@ default:
  //code to be executed when all the above cases are not matched;    
 } 
 ```
+
 ## Loops
 
 ### 1. For
