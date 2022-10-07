@@ -384,3 +384,23 @@ class Child-class extends Parent-Class {
 //code
 }
 ```
+### 6. Inheritance
+
+Acquiring the properties of an existing object by new objects is called Inheritance.
+This is achieved at the class level.
+
+```java
+class AA {
+//code
+}
+class BB extends AA {
+//code
+}
+```
+Class BB is inheriting properties from Class AA.
+Class AA is parent of class BB.
+Class BB is child of class AA.
+
+```java
+    Parent --> Base --> Super
+    Child --> Derived --> Sub    
