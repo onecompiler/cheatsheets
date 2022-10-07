@@ -342,6 +342,8 @@ public class Main {
 |String toLowerCase()|returns a string in lowercase.|str.toLowercase();|
 |String toUpperCase()|returns a string in uppercase.|str.toUpperCase();|
 |String trim()|removes beginning and trailing spaces of a given string.|str.trim();|
+|int codePointAt(int index)|Returns the Unicode of the character at the specified index.|str.codePointAt(0)|
+|int codePointBefore(int index)|Returns the Unicode of the character before the specified index.|str.codePointBefore(1)|
 
 ## OOPS
 
