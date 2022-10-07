@@ -139,6 +139,14 @@ if(conditional-expression)
     //code
 }
 ```
+If-else using Ternary Operator
+
+```c
+conditional-expression ? code1 : code2;
+```
+if conditional-expression is true, code1 is executed.
+And, if condition is false, code2 is executed.
+
 ### 3. If-else-if ladder
 
 ```c
