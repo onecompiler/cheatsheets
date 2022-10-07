@@ -192,7 +192,9 @@ Declaration
 | strcpy() | It is used to copy the content of second-string into the first string passed to it | `strcpy(destination, source)`|
 | strcat() |It is used to concatenate two strings | ` strcat(first_string, second_string)`|
 | strcmp() | It is used to compare two strings | `strcmp(first_string, second_string)`|
-
+| strrev() | It is used to return reverse of a string | `strrev("string")` |
+| strupr() | It return string characters in uppercase | `strupr("string")` |
+| strlwr() | It return string characters in lowercase | `strlwr("string")` |
 
 ## Constants
 
