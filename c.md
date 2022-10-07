@@ -20,7 +20,7 @@ printf("Hello World!!");
 return 0;   
 }  
 ```
-* `#include` is a keyword which is used to include the library file `<stdio.h>`. 
+* `#include` is a keyword which is used to include header files like : `<stdlib.h>` and `<stdio.h>`. 
 * `<stdio.h>` library file is used to read the data from terminal and to display the data on terminal. It has several in-built functions like printf(), scanf() etc.
 * `main()` function is the entry point of any C program.
 * `printf and scanf` are inbuilt library functions which are used for input and output in C language. They are defined in `stdio.h` header file.
@@ -150,7 +150,7 @@ int a[2][3] = {
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
 | comparision Operator| < , > , <= , >=, != , ==|
-| Bitwise Operator| & , ^ , \||
+| Bitwise Operator| & , ^ , \|, << |
 | Logical Operator| && , `\|\|`, ! |
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
