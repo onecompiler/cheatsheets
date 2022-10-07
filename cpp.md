@@ -65,6 +65,7 @@ char grade = 'A'; // declaring char variable and assigning value A to it
 * First letter should be either a letter or an underscore(`_`).
 * Variable type can't be changed
 * Case sensitive
+* Keywords cannot be used as variable names
 
 ## Arrays
 
