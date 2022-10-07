@@ -489,6 +489,30 @@ int main(){
     return 0;
 }
 ```
+## Set
+A set is a data structure that maintains a collection of elements. The basic operations of sets are element insertion, search and removal. The C++ standard library contains two set implementations: The structure set is based on a balanced binary tree and its operations work in O(logn) time.
+The structure unordered_set uses hashing, and its operations work in O(1) time on average.
+
+```c
+#include<iostream>
+#include<set>
+using namespace std;
+
+int main(){
+    set<int> s;
+    s.insert(3);
+    s.insert(2);
+    s.insert(5);
+    cout << s.count(3) << "\n"; // 1
+    cout << s.count(4) << "\n"; // 0  
+    s.erase(3);
+    s.insert(4);
+    cout << s.count(3) << "\n"; // 0
+    cout << s.count(4) << "\n"; // 1
+    return 0;
+}
+```
+
 ## Sort one-line
 
 Sorting is one of the most basic functions applied to data. It means arranging the data in a particular fashion, which can be increasing or decreasing. There is a builtin function in C++ STL by the name of sort(). 
@@ -533,4 +557,3 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 |#include<time.h>    | It is used to perform functions related to date() and time|
 |#include<graphics.h> | It is used include and facilitate graphical operations in program|
 |#include<bits/stdc++.h> | It is used to include all the standard library files|
-|#include <bits/stdc++.h> | Inlcude all the headers. A Usefull Hack for Competitive Programming|
