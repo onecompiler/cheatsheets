@@ -117,56 +117,12 @@ int a[2][3] = {
 | Ternary Operator| ? : |
 | sizeof operator| sizeof() |
 
-### 1.Arithmetic Operator
-An operator that performs arithmetic operations on groups and numbers.It takes two operands and return one value of the same data type as the operand by default.
+### Important Note for Bitwise Operator
 ```c
- Syntax : operand1 (operator) operand2 //this returns one value as result
- Example: 5*6    //returns 30
-```
-### 2.Comparison Operator
-An operator used to perform comparison between two operands.It returns a boolean value i.e either true or false.
-```c
-Syntax : operand1 (operator) opearand2 //this operation returns a boolean value
-Example : 5 < 6           //it returns true as comparison is correct
-```
-
-### 3.Bitwise Operator
-These operators are special operators that perform there function on the data at bit level.They take two operand and return one value.These operators can be used only in integers data type such as int,short,long,etc.
-```c
-Syntax : operand1 (operator) operand2
-Example : 5 & 6     //bit value of 5=101 , bit value of 6=110
-         101 & 110  //gives result 100 and therefore returns 4
-```
-### 4.Logical Operator
-These operators are used to combine two expressions or two boolean values logically and it returns a boolean value depending on the fuctionality of the operator and the expressions.
-```c
-Syntax : expression1 (operator) expression2 //this operation returns boolean value         
-Example : (5<6) && (5>4)       //returns true as both condition are true
-```
-
-### 5.Assignment Operator
-These operators are used yo assign a value to the variable by performing a given function based on the funtionality of the operator used.
-```c
-Syntax : operand1 (operator) operand2  //returns the value to operand1 after performing the funtion
-Example : 5+=2                //performs 5=5+2 and returns value 7 and updates the value of 5 as 7
-```
-
-### 6.Ternary Operator
-It is a conditional operator which takes three operand unlike any other operator.Its functionality is just like the if-else block and is used to shorten the if else statements.
-```c
-Syntax : (expression of boolean type)? "true" : "false";   //if the expression is true it prints true otherwise false
-Example : (marks>=90) ? "good" : "bad";   
-         Case 1: let marks 80  //the operation prints bad
-         Case 2: let marks 91  //the operation prints good
- ```
-
- ### 7.sizeof Operator
- The sizeOf Operator is a unary operator which returns the memory size of the operand,basically the size occupied by the data type of the operand in bytes.
- ```c
- Syntax : sizeof(operand)  //returns the memory occupied by the data type of the operand in bytes
- Example : int a;
-           sizeof(a);      //returns 4 as size of 'int' is 4
- ```          
+   It should be noted that bitwise Operator works on the bit value of the given data and perform bit options.
+   Example : (5 & 6)
+   First the 5 and 6 is converted to bit form of the value and then the operation will be performed.
+```   
 
 ## Conditional Statements
 
