@@ -106,6 +106,7 @@ int a[2][3] = {
 |\"	| Double quotation|
 |\0 | Null character|
 |\b	|Back space|
+|\a	| Audible Bell|
 
 ## Operators
 
