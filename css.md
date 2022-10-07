@@ -109,7 +109,8 @@ Units are used for interpreting length in your css code value. These are used in
     | pt | points, usually 1/72th of an inch |
     | pc | picas, usally 12 points |
     | cm | used for centimeters  | 
-    | mm | used for millimeters  |  
+    | mm | used for millimeters  | 
+    | Q | used for Quarter-millimeters,	(Usually 1/40th of 1cm)  | 
 
 - #### Relative units(preferred)
     | Units | description |
