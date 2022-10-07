@@ -1,6 +1,6 @@
 ---
 title: dotenv (Nodejs Library)
-description: dotenv loads environment variables from .env file to process.env
+description: dotenv loads the environment variables from .env file to process.env
 created: 2019-06-21
 updated: 2019-06-21
 ---
@@ -26,4 +26,4 @@ require('dotenv').config()
 APPLICATION_PORT=8080
 ```
 
-once this defined you can access using `process.env.APPLICATION_PORT`
+once this is defined you can access using `process.env.APPLICATION_PORT`

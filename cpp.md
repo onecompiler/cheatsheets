@@ -47,7 +47,7 @@ sudo g++ -o firstprogram firstprogram.cpp
 | Types | Data-type|
 |----|----|
 |Basic | int, char, float, double, short, short int, long int etc |
-|Derived | array, pointer etc |
+|Derived | array, pointer, string, etc |
 |User Defined Data Type | structure, enum, Class, Union, Typedef |
 
 ## Variables
@@ -65,6 +65,7 @@ char grade = 'A'; // declaring char variable and assigning value A to it
 * First letter should be either a letter or an underscore(`_`).
 * Variable type can't be changed
 * Case sensitive
+* Keywords cannot be used as variable names
 
 ## Arrays
 
@@ -89,6 +90,7 @@ int a[2][3] = {
 |Float point Literal|53.0f, 79.02|
 |Character literals| 'a', '1'|
 |String literals| "OneCompiler", "Foo"|
+|Boolean literals| true, false|
 
 ### Escape sequences
 |Escape sequence| Description|
@@ -111,7 +113,7 @@ int a[2][3] = {
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
 | comparision Operator| < , > , <= , >=, != , ==|
-| Bitwise Operator| & , ^ , |
+| Bitwise Operator| &  , `\|` , ^ , >> , << , ~ |
 | Logical Operator| && , `\|\|`, ! |
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
@@ -168,6 +170,7 @@ default:
  //code to be executed when all the above cases are not matched;    
 } 
 ```
+
 ## Loops
 
 ### 1. For
@@ -273,6 +276,22 @@ typedef data-type name;
 ```c
 typedef unsigned int distance;  // typedef of int 
 ```
+## Macros
+Macro is defined by #define directive. Whenever a macro name is encountered by the compiler, it replaces the name with the definition of the macro. Macro definitions need not be terminated by a semi-colon(;).
+
+### Example
+```c
+//Can be writtern before or after
+#inculde<iostream>
+//but should be before the main()
+```
+```c
+#define ll long long //ll is then refrenced as long long in the whole code
+```
+
+* `#define`: this keyword lets the compiler to understand the meaning of the keyword writtern next to it like in the example **ll** whenever written in code automatically expands as **long long**.
+
+Genrally, used in Competetive coding and in big projects where need to write same function is repetetive
 
 ## Vectors
 Vectors are same as dynamic arrays. They will be resized on element inseertions & deletions.
@@ -309,6 +328,16 @@ int main()
     return 0;
 }
 
+```
+
+If we want to initialize 2d vectors or even 3d vectors (i.e. arrays) then we need to embed the vectors inside the vector data structures accordingly i.e. if we want a 2d vector then vector is embedded inside a vector data structure like
+```c
+vector<vector<int>> v2;//
+```
+or we can for 3d vector like
+
+```c
+vector<vector<vector<int>>> v3;
 ```
 ## Stacks 
 
@@ -379,6 +408,78 @@ int main() {
 }
 
 ```
+## Heap
+Heap data structure is a complete binary tree that satisfies the **heap property**, where any given node is
+- Always greater than its child node/s and the key of the root node is the largest among all other nodes. This property is also called **max heap property**.
+- Always smaller than the child node/s and the key of the root node is the smallest among all other nodes. This property is also called **min heap property**.
+
+####  Different types of heap:
+##### 1. Max Heap
+When a element inserted in heap wil be inserted in such position that greatest element will always be at top and will pe popped first.
+
+```c
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    priority_queue<int,vector<int>> maxh;
+    maxh.push(1);
+    maxh.push(2);
+    maxh.push(-1);
+
+    int greatest = maxh.top(); // greatest = 2
+    pq.pop();
+    int second_greatest = maxh.top(); // second_greatest = 1
+    return 0;
+} 
+```
+##### 2. Min Heap
+When a element inserted in heap wil be inserted in such position that smallest element will always be at top and will pe popped first.
+
+```c
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    priority_queue<int,vector<int>,greater<int>> minh;
+    minh.push(1);
+    minh.push(2);
+    minh.push(-1);
+
+    int smallest = minh.top(); // smallest = -1
+    pq.pop();
+    int second_minimum = minh.top(); // second_minimum = 1
+    return 0;
+} 
+```
+## Hash Map
+Hash Map (also, hash table) is a data structure that basically maps keys to values. A hash table uses a hash function to compute an index into an array of buckets or slots, from which the corresponding value can be found.
+It can be implemented 
+```c
+unordered_map<int,int> mp; //here first element is the key and second element is the value 
+``` 
+The first element is the key where the second element which is the value is stored and can be serached for in constant time
+
+```c
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    unordered_map<int,int> mp; //
+    mp.insert({1,2}); // key=1, value=2;
+    mp[-1]=1; // key=-1, value=1
+    return 0;
+}
+```
+There can be an ordered map too which stores the keys in order 
+
+```c
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    map<int,int> order_mp; //
+    order_mp.insert({1,2}); // key=1, value=2;
+    order_mp[-1]=1; // key=-1, value=1
+    return 0;
+}
+```
 ## Sort one-line
 
 Sorting is one of the most basic functions applied to data. It means arranging the data in a particular fashion, which can be increasing or decreasing. There is a builtin function in C++ STL by the name of sort(). 
@@ -395,13 +496,15 @@ int main(){
 int arr[] = {3,2,1};
 int n = 3 ; // size of the array
 
-sort(arr, arr+n); // sorting the array
+sort(arr, arr+n); // sorting the array in ascending order
+sort(arr, arr+n, greater<int>()); // sorting the array in descending order
 
 vector<int> v;
 
 v = {3,2,1};
 
-sort(v.begin(), v.end()); // sorting in the vector
+sort(v.begin(), v.end()); // sorting in the vector in ascending order
+sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending order
 
 }
 
@@ -419,4 +522,6 @@ sort(v.begin(), v.end()); // sorting in the vector
 |#include<errno.h>   | It is used to perform error handling operations like errno|
 |#include<fstream.h> | It is used to control the data to read from a file|
 |#include<time.h>    | It is used to perform functions related to date() and time|
-|#include<bits/stdc++.h>    |It is used to include all the standard library files|
+|#include<graphics.h> | It is used include and facilitate graphical operations in program|
+|#include<bits/stdc++.h> | It is used to include all the standard library files|
+|#include <bits/stdc++.h> | Inlcude all the headers. A Usefull Hack for Competitive Programming|

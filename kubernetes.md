@@ -1,6 +1,6 @@
 ---
-Title: Kubernetes
-Description: Functionalities of Kubernetes
+title: Kubernetes
+description: Functionalities of Kubernetes
 created: 2022-10-03
 updated: 2022-10-03
 ---

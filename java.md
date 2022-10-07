@@ -47,6 +47,10 @@ java example
 
 `//` - single line comment
 
+`/* */` - multi line comment
+
+`/**  *  */` - documentation comment
+
 ## Data types
 
 Two groups of data types
@@ -122,7 +126,7 @@ Class Sum {
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
 | comparision Operator| < , > , <= , >=, != , ==|
-| Bitwise Operator| & , ^ , \||
+| Bitwise Operator| & , ^ , \|, <<, >>, >>>|
 | Logical Operator| && , `\|\|`, ! |
 | Assignment Operator|= , += , -= , *= , /= , %= |
 | Auto-increment and Auto-decrement Operators| ++ , -- |
@@ -133,8 +137,13 @@ Class Sum {
 Array is a collection of similar data which is stored in continuous memory addresses.
 
 ```java
-data-type[] array-name; // one dimensional array
-data-type[][] array-name; // two dimensional array
+// one dimensional array
+data-type[] array-name; 
+    OR
+data-type array-name[];
+
+// two dimensional array
+data-type[][] array-name; 
 ```
 ### Example
 ```java
@@ -143,6 +152,8 @@ for (int i = 0; i < mobiles.length; i++) {
   System.out.println(mobiles[i]);
 }
 mobiles[1] = "Oppo"; // change an array element
+
+
 ```
 ## Conditional Statements
 
@@ -380,3 +391,18 @@ class Child-class extends Parent-Class {
 //code
 }
 ```
+### Constructor
+
+Constructor is a special type of method.
+Every class has atleast one constructor.
+Without Constructor, object from the class cannot be created, that's why constructor is mandatory in every class.
+Name of the constructor should be the name of the class.
+Constructor has no return type.
+
+```java
+public class AA {   //beg of class
+    public void AA() {  //default constructor
+    //code
+   }
+ }
+ ```

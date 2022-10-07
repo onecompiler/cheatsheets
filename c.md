@@ -10,6 +10,7 @@ updated: 2020-04-25
 * scanf("%d", &x) -- read value into the variable x from input stream
 * Printf("%d",x) -- printf value to the output stream
 * gets(str) -- reads a line from input stream into a variable
+
 ### Sample C program
 
 ```c
@@ -19,7 +20,7 @@ printf("Hello World!!");
 return 0;   
 }  
 ```
-* `#include` is a keyword which is used to include the library file `<stdio.h>`. 
+* `#include` is a keyword which is used to include header files like : `<stdlib.h>` and `<stdio.h>`. 
 * `<stdio.h>` library file is used to read the data from terminal and to display the data on terminal. It has several in-built functions like printf(), scanf() etc.
 * `main()` function is the entry point of any C program.
 * `printf and scanf` are inbuilt library functions which are used for input and output in C language. They are defined in `stdio.h` header file.
@@ -115,6 +116,9 @@ char grade = 'A'; // declaring char variable and assigning value A to it
 |\"	| Double quotation|
 |\0 | Null character|
 |\b	|Back space|
+|\a	|Alarm or Beep|
+|\nnn	|Octal Number|
+|\xhh	|hexadecimal Number|
 
 ## Arrays
 
@@ -146,7 +150,7 @@ int a[2][3] = {
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
 | comparision Operator| < , > , <= , >=, != , ==|
-| Bitwise Operator| & , ^ , \||
+| Bitwise Operator| & , ^ , \|, << |
 | Logical Operator| && , `\|\|`, ! |
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
@@ -318,6 +322,17 @@ int x = 10, *ptr;
 ptr = &x; // valid because &x and ptr are addresses
 *ptr = x; // valid because both x and *ptr values 
 ```
+
+## Types of Pointers
+| Serial Number |Pointer|Description|
+|----|----|---|
+| 1 | Null Pointer | `We can create a null pointer by assigning the null value at the time when we are declaring the pointer.It always contains the value 0`|
+| 2 | Void Pointer | `This pointer has no associated data-type with it. A void pointer can hold addresses of any data-type and can be typecasted to another.It is created by using the keyword void`|
+| 3 | Wild Pointer | `They are also called as uninitialised pointers.They are called so because they point to some arbitary memory location that is randomly alloted and the program can misbehave badly.This type of pointer is not efficient.`|
+| 4 | Dangling Pointer | `The pointers that are pointing to deallocated memory or deleted memory block are known as Dangling pointers.They can raise an error because they point to a deallocated memory block.`|
+
+
+
 ## Structures
 
 Structure is a user-defined data type where it allows you to combine data of different data types.
@@ -388,3 +403,19 @@ A set of functions for dynamic memory allocation from the heap. These methods ar
 | calloc() | Stands for 'Contiguous allocation' and reserves n blocks of memory with the given amount of bytes. | `ptr = (castType*)calloc(n, size)`|
 | free | It is used to free the allocated memory. | `free(ptr)`|
 | realloc() | If the allocated memory is insufficient, then we can change the size of previously allocated memory using this function for efficiency purposes | `ptr = realloc(ptr, x)`|
+
+
+## Header Files
+
+| Header Files | Description|
+|----|----|
+|stdio.h | Input/Output functions|
+|conio.h | Console Input/Output functions|
+|stdlib.h | General utility functions|
+|math.h | Mathematics functions|
+|string.h | String functions|
+|ctype.h | Character handling functions|
+|time.h | Date and time functions|
+|float.h | Limits of float types|
+|limits.h | Size of basic types|
+|wctype.h | Functions to determine the type contained in wide character data|
