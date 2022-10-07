@@ -150,7 +150,7 @@ int a[2][3] = {
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
 | comparision Operator| < , > , <= , >=, != , ==|
-| Bitwise Operator| & , ^ , \||
+| Bitwise Operator| & , ^ , \|, << |
 | Logical Operator| && , `\|\|`, ! |
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
