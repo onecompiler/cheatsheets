@@ -397,3 +397,61 @@ The querySelectorAll() method is completely the same as the querySelector() exce
 ```
 var heading = document.querySelectorAll(‘h1.heading’);
 ```
+### What is JSON in javascript:-
+It is a format for storing and transporting data.
+
+It is often used when data is sent from a server to a web page.
+example--in JWT(JSON WEB TOKENS) we use JSON
+
+1. JSON stands for JavaScript Object Notation
+2. JSON is a lightweight data interchange format
+3. JSON is language independent *
+4. JSON is "self-describing" and easy to understand
+
+JSON Example:-
+```javascript
+{
+"employees":[
+  {"fName":"John", "lName":"Doe"},
+  {"fName":"Anna", "lName":"Smith"},
+  {"fName":"Peter", "lName":"Jones"}
+]
+}
+```
+
+## JSON Syntax Rules
+1. Data is in name/value pairs
+2. Data is separated by commas
+3. Curly braces hold objects
+4. Square brackets hold arrays
+
+JSON data is written as name/value pairs, just like JavaScript object properties.
+A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value:
+```javascript
+"fName":"John"
+```
+JSON names require double quotes but JavaScript names do not.
+
+### Objects in JSON format
+JSON objects are written inside curly braces.
+
+Just like in JavaScript, objects can contain multiple name/value pairs:
+```javascript
+{"fName":"Johnny", "lName":"Singh"}
+```
+
+### Arrays in JSON format
+JSON arrays are written inside square brackets.
+
+Just like in JavaScript, an array can contain objects:
+```javascript
+"employees":[
+  {"fName":"John", "lName":"Doe"},
+  {"fName":"Anna", "lName":"Smith"},
+  {"fName":"Peter", "lName":"Jones"}
+]
+```
+In the example above, the object "employees" is an array. It contains three objects.
+
+Each object is a record of a person (with a first name and a last name).
+
