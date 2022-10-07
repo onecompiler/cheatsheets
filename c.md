@@ -10,6 +10,7 @@ updated: 2020-04-25
 * scanf("%d", &x) -- read value into the variable x from input stream
 * Printf("%d",x) -- printf value to the output stream
 * gets(str) -- reads a line from input stream into a variable
+* scanf("%[^\n]",s); --reads a line from input using scanf only
 
 ### Sample C program
 
