@@ -332,6 +332,90 @@ When using media queries we can adopt the following approaches
         /* Add landscape styles here */ 
     }    
     ```
+### 13 css icons
+Adding icons on the website can be done in two ways either 
+we create it from scratch or we can take help of icon libraries
+like font-awesome,Google icons or we can also use bootstrap for this.
+
+For adding icons we need to provide class name in any inline html element.
+ex-```
+      <i>```
+
+## using font-awesome--
+we have to add following link inside head element.
+``` html
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+```
+then we have to add correct class name for correct icons,
+example--
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-github"></i>
+
+</body>
+</html>
+```
+Above will create icons of twitter and github.
+
+
+## using bootstrap--
+Insert folowing link in head element--
+```html
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+```
+then add correct class names.
+
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<i class="glyphicon glyphicon-user"></i>
+<i class="glyphicon glyphicon-thumbs-up"></i>
+
+</body>
+</html>
+```
+
+## using Google icons--
+Insert following link in the header--
+```html
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+```
+then write correct class names for different icons--
+example--
+    
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+
+<i class="material-icons">attachment</i>
+<i class="material-icons">computer</i>
+
+
+</body>
+</html>
+```
+
+
+
 
 
 
