@@ -342,6 +342,7 @@ public class Main {
 |String toLowerCase()|returns a string in lowercase.|str.toLowercase();|
 |String toUpperCase()|returns a string in uppercase.|str.toUpperCase();|
 |String trim()|removes beginning and trailing spaces of a given string.|str.trim();|
+|boolean endsWith(String chars)|Checks whether a string ends with the specified character(s).|str.endsWith("Hel")|
 
 ## OOPS
 
