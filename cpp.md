@@ -47,7 +47,7 @@ sudo g++ -o firstprogram firstprogram.cpp
 | Types | Data-type|
 |----|----|
 |Basic | int, char, float, double, short, short int, long int etc |
-|Derived | array, pointer etc |
+|Derived | array, pointer, string, etc |
 |User Defined Data Type | structure, enum, Class, Union, Typedef |
 
 ## Variables
@@ -65,6 +65,7 @@ char grade = 'A'; // declaring char variable and assigning value A to it
 * First letter should be either a letter or an underscore(`_`).
 * Variable type can't be changed
 * Case sensitive
+* Keywords cannot be used as variable names
 
 ## Arrays
 
@@ -105,6 +106,7 @@ int a[2][3] = {
 |\"	| Double quotation|
 |\0 | Null character|
 |\b	|Back space|
+|\a	| Audible Bell|
 
 ## Operators
 
@@ -169,6 +171,7 @@ default:
  //code to be executed when all the above cases are not matched;    
 } 
 ```
+
 ## Loops
 
 ### 1. For

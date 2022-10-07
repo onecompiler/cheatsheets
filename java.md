@@ -137,8 +137,13 @@ Class Sum {
 Array is a collection of similar data which is stored in continuous memory addresses.
 
 ```java
-data-type[] array-name; // one dimensional array
-data-type[][] array-name; // two dimensional array
+// one dimensional array
+data-type[] array-name; 
+    OR
+data-type array-name[];
+
+// two dimensional array
+data-type[][] array-name; 
 ```
 ### Example
 ```java
@@ -147,6 +152,8 @@ for (int i = 0; i < mobiles.length; i++) {
   System.out.println(mobiles[i]);
 }
 mobiles[1] = "Oppo"; // change an array element
+
+
 ```
 ## Conditional Statements
 
@@ -335,6 +342,7 @@ public class Main {
 |String toLowerCase()|returns a string in lowercase.|str.toLowercase();|
 |String toUpperCase()|returns a string in uppercase.|str.toUpperCase();|
 |String trim()|removes beginning and trailing spaces of a given string.|str.trim();|
+|boolean endsWith(String chars)|Checks whether a string ends with the specified character(s).|str.endsWith("Hel")|
 
 ## OOPS
 
@@ -384,6 +392,7 @@ class Child-class extends Parent-Class {
 //code
 }
 ```
+
 ### 6. Inheritance
 
 Acquiring the properties of an existing object by new objects is called Inheritance.
@@ -404,3 +413,20 @@ Class BB is child of class AA.
 ```java
     Parent --> Base --> Super
     Child --> Derived --> Sub    
+    
+### Constructor
+
+Constructor is a special type of method.
+Every class has atleast one constructor.
+Without Constructor, object from the class cannot be created, that's why constructor is mandatory in every class.
+Name of the constructor should be the name of the class.
+Constructor has no return type.
+
+```java
+public class AA {   //beg of class
+    public void AA() {  //default constructor
+    //code
+   }
+ }
+ ```
+
