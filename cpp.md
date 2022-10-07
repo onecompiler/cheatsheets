@@ -523,3 +523,51 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 |#include<graphics.h> | It is used include and facilitate graphical operations in program|
 |#include<bits/stdc++.h> | It is used to include all the standard library files|
 |#include <bits/stdc++.h> | Inlcude all the headers. A Usefull Hack for Competitive Programming|
+### Array of structures--
+Array of structure is a mixture of two concepts in cpp one array and other structure,
+here we create array of type structure which can store different values and each element of this array 
+is a structure itself,
+example
+```cpp
+#include<iostream>
+using namespace std;
+
+
+ typedef struct student{
+    
+    int roll;
+    int cgpa;
+    char branch[100];
+}s1;
+
+
+int main(){
+    struct student info[3];//array of type structure created(3 structures present)
+    cout<<"ENTER THE DETAILS OF STUDENTS"<<endl;
+   
+ 
+     for(int i=0;i<3;i++){
+        
+          cin>>info[i].roll>>info[i].cgpa>>info[i].branch;//taking input
+        
+     }
+     cout<<"-----------"<<endl;
+     cout<<"-----------"<<endl;
+
+    for(int i=0;i<3;i++){
+        
+        cout<<info[i].roll<<endl;//printing all details
+        cout<<info[i].cgpa<<endl;
+        cout<<info[i].branch<<endl;
+        cout<<"------------------"<<endl;
+        
+    }
+    
+
+    
+    
+   
+    
+    return 0;
+}
+```
