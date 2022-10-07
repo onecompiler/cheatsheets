@@ -47,7 +47,7 @@ sudo g++ -o firstprogram firstprogram.cpp
 | Types | Data-type|
 |----|----|
 |Basic | int, char, float, double, short, short int, long int etc |
-|Derived | array, pointer etc |
+|Derived | array, pointer, string, etc |
 |User Defined Data Type | structure, enum, Class, Union, Typedef |
 
 ## Variables
