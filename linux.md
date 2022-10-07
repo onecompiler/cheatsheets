@@ -56,3 +56,30 @@ Options:
 -W 	# Verify a archive file 
 -r 	# update or add file or directory in already existed .tar file
 ```
+## System Info
+```sh
+date          # Show the current date and time
+cal           # Show this month's calender
+uptime        # Show current uptime
+w             # Display who is on line
+whoami        # Who you are logged in as
+finger user   # Display information about user
+uname -a      # Show kernel information
+man command   # Show the manual for command
+df            # Show the disk usage
+du            # Show directory space usage
+free          # Show memory and swap usage
+```
+
+## Shortcuts
+```sh
+ctrl+c       # Halts the current command
+ctrl+z       # Stops the current command, resume with fg in the foreground or bg in the background
+ctrl+d       # Logout the current session, similar to exit
+ctrl+w       # Erases one word in the current line
+ctrl+u       # Erases the whole line
+ctrl+r       # Type to bring up a recent command
+!!           # Repeats the last command
+exit         # Logout the current session
+```
+
