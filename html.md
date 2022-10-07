@@ -65,6 +65,7 @@ updated: 2022-10-05
 |`<ins>..</ins>`| Inserted text|
 |`<sub>..</sub>`| Subscript text|
 |`<sup>..</sup>` | Superscript text|
+|`<big>..</big>` | Larger text|
 
 ## Tables
 
