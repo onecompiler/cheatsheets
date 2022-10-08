@@ -229,7 +229,7 @@ functionName (parameters); //calling a function
 ## Date
 (PHP 4, PHP 5, PHP 7, PHP 8)
 ```php
-date_default_timezone_set('Asia/Kolkata');// set default time zone( Useful while deploying to server)
+date_default_timezone_set('America/Los_Angeles');// set default time zone( Useful while deploying to server)
 $dateVal=date("F j, Y, g:i a"); // March 10, 2001, 5:16 pm
 
 ```
