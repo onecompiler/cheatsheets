@@ -421,3 +421,22 @@ A set of functions for dynamic memory allocation from the heap. These methods ar
 |float.h | Limits of float types|
 |limits.h | Size of basic types|
 |wctype.h | Functions to determine the type contained in wide character data|
+
+
+## Predefined Function 
+ 
+ Sublist :-It returns a sublist of list. from starting to the ending item positions respectively.
+ 
+ Syntax :- sublist(list, starting, ending);
+```c
+ sublist([1,2,3,4,5,6,7,8], 2, 5);  // output [2,3,4,5]
+
+```
+
+Listcat :- It returns the list of the concatenation of its arguments.
+
+Syntax :- listcat(list,list,...);
+```c
+listcat([1,2,3],[4,5,6]); // output [1,2,3,4,5,6]
+
+```
