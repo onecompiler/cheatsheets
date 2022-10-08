@@ -31,4 +31,27 @@ updated: 2017-11-01
     @tailwind components;
     @tailwind utilities;
 
+## Start the Tailwind CLI build process
+   Run the CLI tool to scan your template files for classes and build your CSS.
 
+   npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+
+
+##  Start using Tailwind in your HTML
+    Add your compiled CSS file to the <head> and start using Tailwind’s utility classes to style your content. 
+    
+      
+--> example
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+</body>
+</html>
