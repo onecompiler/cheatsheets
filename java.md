@@ -296,6 +296,31 @@ public class Main {
  
  ```
  
+## TreeSet
+
+A TreeSet is a collection of items where every item is unique and stores elements in sorted order.
+
+### Example
+
+```java
+import java.util.TreeSet;
+
+public class Main {
+  public static void main(String[] args) {
+    TreeSet<String> Fruit = new TreeSet<String>();
+    Fruit.add("Grapes");
+    Fruit.add("Apple");
+    Fruit.add("Banana");
+    Fruit.add("Dates");
+    Fruit.add("Pineapple");
+    Fruit.add("Coconut");
+    Fruit.add("Mango");
+    System.out.println(Fruit);
+  }
+}
+```
+
+ 
  ## HashMap
  
   A HashMap however, store items in "key/value" pairs, and you can access them by an index of another type (e.g. a String).
