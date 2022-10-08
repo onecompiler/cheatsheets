@@ -15,6 +15,15 @@ print("hello world")
 
 * `#` is used to comment a line in Python
 
+### Example
+```py
+#Commenting single line in Python
+'''Commenting
+multiple
+lines
+in
+Python'''
+```
 ## Data Types
 
 |Category|Data Type|
