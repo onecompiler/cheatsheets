@@ -24,23 +24,50 @@ updated: 2022-10-06
 - Highly secure
 - Runs Faster
 
----
-![linux](https://user-images.githubusercontent.com/87390353/173860442-02a022af-fe38-4fea-8e07-a5e74ed30fd7.jpg)
+## What is LINUX?
 
----
-![kernal](https://user-images.githubusercontent.com/87390353/173860860-6bbaedce-991c-4a2b-8db2-9f4ee1390b1b.jpg)
+Linux is a Unix-like, open source amd community-developed operating system for which is capable of handling activiies from multiple users at the same time.
+
+### Applications⬇️
+
+#### Kernel
+- CPU
+
+- MEMORY
+
+- Devices
+
+## What is a Kernel?
+
+The computer programs that allocate the system resources and coordinate all the details of the computer's internals is called the Operating System or the Kernel.Users communicate with the OS through a program called the Shell.
+
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="3000">
 
-![vg](https://user-images.githubusercontent.com/87390353/175115113-33e276c9-9d11-4b50-b6cb-8353f8ed3efe.jpg)
+# COMMAND LINE ESSENTIALS
 
 At first we are gonna make a txt file with `nano` editor to list all the basic commands.
 ```
 1. Open Git bash
 2. Type "nano [file_name]" eg.(nano anushka.txt)
 3. Now I have created a list of basic commands.
-```
-![shell](https://user-images.githubusercontent.com/87390353/173865406-78b346c7-77b2-4b94-a4b7-aa0d6558daa4.jpg)
+``` 
+
+- cd
+- pwd
+- ls
+- cp
+- mv
+- rm 
+- echo
+- cat
+- less
+- grep
+- mkdir
+- touch
+- chmod
+- man + help
+
 
 4. Now save the file with `[ctrl+x,y,enter]`.
 
@@ -51,51 +78,29 @@ At first we are gonna make a txt file with `nano` editor to list all the basic c
 2. pwd (show the current directory)
 3. ls  (list all files of the directory)
 
-
-
-![command](https://user-images.githubusercontent.com/87390353/174104071-6d8d7ff5-2d31-4a84-840f-24905e63cd39.jpg)
-
----
 4. ls -l (Long list format)
    - It shows more information of the files
 
-    ![command2](https://user-images.githubusercontent.com/87390353/174108134-89c462e8-3dfa-44bc-80a4-641ec8f40bfc.jpg)
-
----
 5. clear (to clear the console)
 6. cp (copy a file)
     - To copy a file, write `cp [file_name] [destination path]`
     - Now if I use "ls" command then we can see if the file is copied or not.
 
-![comm](https://user-images.githubusercontent.com/87390353/174112062-f04efa8e-83c1-4576-8950-b7332585820d.jpg)
-
----
 7. mv (move a file)
     - To move a file, write `mv [file_name] [destination path]`
 8. rm (remove a file)
     - Use `rm [file_name]` to remove a file.
-
-![copy](https://user-images.githubusercontent.com/87390353/174138120-5fcaa0af-93ed-4ab4-9636-4b05f30a935b.jpg)
-
----
+    
 9. echo (print string)
 10. cat (concatenate text file)
 11. less (show the content of text file in a separate window)
 
-![ss1](https://user-images.githubusercontent.com/87390353/174638478-82e965c3-d6ef-4a2d-98a3-c87ac21684b1.jpg)
-
-![ss22](https://user-images.githubusercontent.com/87390353/174638507-7c64e8da-6655-4b68-9389-9533277721aa.jpg)
-
 - Press 'q' to exit from the separate window.
 
----
 12. grep (grab data from a certain file)
 13. mkdir (make a directory)
 14. touch (create files in the current directory)
 
-![polo](https://user-images.githubusercontent.com/87390353/174640294-5ba973ea-f510-42a8-b606-51d85c63281f.jpg)
-
----
 15. chmod (Change Mode)
      - chmod +r [file_name]
      - chmod +w [file_name]
@@ -103,26 +108,40 @@ At first we are gonna make a txt file with `nano` editor to list all the basic c
      
 **Note:** Another form of writing **chmod** is 
 
-   ![Screenshot (221)](https://user-images.githubusercontent.com/91726340/175812601-3ff7843f-7066-450e-83b8-0c3c39f816cd.png)
-     
+## chmod ugo filename
+
+- 0 = 0 = nothing
+- 1 = 1 = execute
+- 2 = 2 = write
+- 3 = 2+1 = w+x
+- 4 = 4 = read
+- 5 = 4+1 = r+x
+- 6 = 4+2 = r+w
+- 7 = 4+2+1 = r+w+x
+
 16. man+help (General Commands Manual)
       - Press 'h' to summary up commands.
       - Press 'q' when you want to exit.
 
 ---
 
-![vg - Copy](https://user-images.githubusercontent.com/87390353/175115412-47b48657-5a6e-43a4-a34c-3e5d7f242bf3.jpg)
+| **Command Line Interface** | **Graphical User Interface** | 
+| :------------------------- | :--------------------------- |
+| 1) Console Representation  | 1) Graphical Representation  |
+| 2) Difficult for Begineers | 2) Ease of Use |
+| 3) Faster OS | 3) OS is slower | 
+| 4) Granular Control | 4) Lesser Control |
 
----
+## What is CLI?
 
-![cf](https://user-images.githubusercontent.com/87390353/175114664-e913df06-f5c0-4236-9bfa-a87f27a1f20c.jpg)
+Command Line Interface is a text-based interface used to interact with software and operating system by typing commands into the interface and receive a response in the same way.
+
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="3000">
 
-![jii](https://user-images.githubusercontent.com/87390353/175563463-9f96ae09-675b-4acf-9fdf-cdcb4f595ed4.jpg)
-
-
+# SHELL SCRIPT BASICS
 ---
+
 # What is Shell?
 - The Shell is a Command Line Interpreter. It translate commands enter by the user and converts them into a language that is understood by kernel.
 
@@ -140,23 +159,10 @@ At first we are gonna make a txt file with `nano` editor to list all the basic c
 |3. Bourne-Again Shell | Z Shell |
 |4. POSIX Shell | |
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
-
-## Example :
-
-- At first we have opened two console side by side to see how it works more clearly.
-
-### Input: 
-![bash](https://user-images.githubusercontent.com/87390353/175571640-2d48644b-e2c9-4210-94b2-f00ba9d3b67d.jpg)
-
-### Output:
-
-![bash2](https://user-images.githubusercontent.com/87390353/175571647-d1faa127-e312-4d13-b0d2-93f2d60f1ae5.jpg)
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="3000">
 
-![kh](https://user-images.githubusercontent.com/87390353/175572512-74d1f6ce-8a9f-4559-a449-2a296fb3efb9.jpg)
-
+# USING VARIABLES 
 
 ---
 # What is Variable?
@@ -176,17 +182,9 @@ At first we are gonna make a txt file with `nano` editor to list all the basic c
 - Scalar Variable:
    - It means you can take only single value in the variable.
 
-![var1](https://user-images.githubusercontent.com/87390353/176923372-b988a8b5-34f8-4045-9de5-5e426d9a93d0.jpg)
-
 - If we use readonly, it will show like this:
 
-![var2](https://user-images.githubusercontent.com/87390353/176923398-76485f57-fa76-4539-a58e-4f4b05090407.jpg)
-
 - If we use unset, it takes the value out of the list.
-
-![var3](https://user-images.githubusercontent.com/87390353/176923437-690a1b2f-9108-406b-9d99-8b799b62bc0e.jpg)
-
----
 
 - Special Variable:
    - #$0
@@ -196,19 +194,13 @@ At first we are gonna make a txt file with `nano` editor to list all the basic c
    - $?
    - $$
 
-- Example:
-
-![special](https://user-images.githubusercontent.com/87390353/176929660-44623106-6c48-41c4-9a40-a8ad98c176b2.jpg)
-
-![sp](https://user-images.githubusercontent.com/87390353/176928438-84130218-b2f5-4207-a5aa-40d8c4f0e5a1.jpg)
-
 - "$?" returns either 0 or 1. If your previous commands run succesfully then it will return 0, otherwise 1.
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="3000">
 
-![basic](https://user-images.githubusercontent.com/87390353/176930799-7d3e24ac-f2e5-40aa-ad70-26a0c00fd4f5.jpg)
-
+# BASIC OPERATORS 
 ---
+
 - Arithmetic Operators
 - Relational Operators
 - Boolean Operators
@@ -218,32 +210,95 @@ At first we are gonna make a txt file with `nano` editor to list all the basic c
 ---
 - # Arithmetic Operators:
 
+The following arithmetic operators are supported by Bourne Shell.
 
-![ap](https://user-images.githubusercontent.com/87390353/176931615-f467a82b-ab3f-495c-9928-be802d247392.jpg)
+Assume variable a holds 10 and variable b holds 20 then-
+
+
+| **Operator** | **Description** | **Example** |
+| :----------- | :-------------- | :---------- |
+| + (Addition) | Adds values on either side of the operator | `expr $a + $b` will give 30 |
+| - (Subtraction) | Subtracts right hand operand from left hand operand | `expr $a - $b` will give -10 |
+| * (Multiplication) | Multiplies values on either side of the operator | `expr $a \* $b` will give 200 |
+| / (Division) | Divides left hand operand by right hand operand | `expr $b / $a` will give 2 |
+| % (Modulus) | Divides left hand operand by right hand operand and returns remainder | `expr $b % $a` will give 0 |
+| = (Assignment)	| Assigns right operand in left operand | a = $b would assign value of b into a |
+| == (Equality) | Compares two numbers, if both are same then returns true. | [ $a == $b ] would return false. |
+| != (Not Equality) | Compares two numbers, if both are different then returns true. | [ $a != $b ] would return true. |
 
 ---
 - # Relational Operators:
 
-![re](https://user-images.githubusercontent.com/87390353/176931840-cf6c3777-80e1-4c5f-8d95-7c65369ebe29.jpg)
+Bourne Shell supports the following relational operators that are specific to numeric values. These operators do not work for string values unless their value is numeric.
+
+For example, following operators will work to check a relation between 10 and 20 as well as in between "10" and "20" but not in between "ten" and "twenty".
+
+Assume variable a holds 10 and variable b holds 20 then 
+
+| **Operator** | **Description** | **Example** |
+| :----------- | :-------------- | :---------- |
+| -eq | Checks if the value of two operands are equal or not; if yes, then the condition becomes true. | [ $a -eq $b ] is not true. |
+| -ne | Checks if the value of two operands are equal or not; if values are not equal, then the condition becomes true | [ $a -ne $b ] is true. |
+| -gt | Checks if the value of left operand is greater than the value of right operand; if yes, then the condition becomes true. | [ $a -gt $b ] is not true. |
+| -lt	| Checks if the value of left operand is less than the value of right operand; if yes, then the condition becomes true.	| [ $a -lt $b ] is true. |
+| -ge | Checks if the value of left operand is greater than or equal to the value of right operand; if yes, then the condition becomes true. | [ $a -ge $b ] is not true. |
+| -le	| Checks if the value of left operand is less than or equal to the value of right operand; if yes, then the condition becomes true. | [ $a -le $b ] is true. |
 
 ---
 - # Boolean Operators:
 
-![bo](https://user-images.githubusercontent.com/87390353/176932256-05a5e909-5e24-439c-8e73-ee8b593f8ad1.jpg)
+The following Boolean operators are supported by the Bourne Shell.
+
+Assume variable a holds 10 and variable b holds 20 then 
+
+| **Operator** | **Description** | **Example** |
+| :----------- | :-------------- | :---------- |
+| !  | This is logical negation. This inverts a true condition into false and vice versa.	 | [ ! false ] is true. | 
+| -o | This is logical OR. If one of the operands is true, then the condition becomes true. | [ $a -lt 20 -o $b -gt 100 ] is true. |
+| -a |	 This is logical AND. If both the operands are true, then the condition becomes true otherwise false.	 | [ $a -lt 20 -a $b -gt 100 ] is false. |
 
 ---
 - # String Operators:
 
-![st](https://user-images.githubusercontent.com/87390353/176932522-4fe7b175-4486-443a-aef0-669d2c6ac3e6.jpg)
+The following string operators are supported by Bourne Shell.
+
+Assume variable a holds "abc" and variable b holds "efg" then −
+
+| **Operator** | **Description** | **Example** |
+| :----------- | :-------------- | :---------- |
+| =  |	Checks if the value of two operands are equal or not; if yes, then the condition becomes true. | [ $a = $b ] is not true.  |
+| != | Checks if the value of two operands are equal or not; if values are not equal then the condition becomes true. | [ $a != $b ] is true.  |
+| -z | Checks if the given string operand size is zero; if it is zero length, then it returns true. | [ -z $a ] is not true.  |
+| -n |	Checks if the given string operand size is non-zero; if it is nonzero length, then it returns true.  | [ -n $a ] is not false.  |
+| str | Checks if str is not the empty string; if it is empty, then it returns false. | [ $a ] is not false.  |
 
 ---
 - # File Test Operators:
 
-![f](https://user-images.githubusercontent.com/87390353/176933236-8e3ca807-b343-46aa-9189-a88a5a5255be.jpg)
+We have a few operators that can be used to test various properties associated with a Unix file.
+
+Assume a variable file holds an existing file name "test" the size of which is 100 bytes and has read, write and execute permission on −
+
+| **Operator** | **Description** | **Example** |
+| :----------- | :-------------- | :---------- |
+| -b file |	Checks if file is a block special file; if yes, then the condition becomes true.	| [ -b $file ] is false.  |
+| -c file |	Checks if file is a character special file; if yes, then the condition becomes true.  |	[ -c $file ] is false.  |
+| -d file |	Checks if file is a directory; if yes, then the condition becomes true.	| [ -d $file ] is not true.  |
+| -f file |	Checks if file is an ordinary file as opposed to a directory or special file; if yes, then the condition becomes true. | [ -f $file ] is true.  |
+| -g file |	Checks if file has its set group ID (SGID) bit set; if yes, then the condition becomes true.  |	[ -g $file ] is false.  |
+| -k file |	Checks if file has its sticky bit set; if yes, then the condition becomes true.  |	[ -k $file ] is false.  |
+| -p file |	Checks if file is a named pipe; if yes, then the condition becomes true. |	[ -p $file ] is false. |
+| -t file |	Checks if file descriptor is open and associated with a terminal; if yes, then the condition becomes true.  | [ -t $file ] is false.  |
+| -u file |	Checks if file has its Set User ID (SUID) bit set; if yes, then the condition becomes true. | [ -u $file ] is false. |
+| -r file |	Checks if file is readable; if yes, then the condition becomes true.	 | [ -r $file ] is true. |
+| -w file |	Checks if file is writable; if yes, then the condition becomes true. | [ -w $file ] is true. |
+| -x file |	Checks if file is executable; if yes, then the condition becomes true. | [ -x $file ] is true. |
+| -s file |	Checks if file has size greater than 0; if yes, then condition becomes true. | [ -s $file ] is true.  | 
+| -e file |	Checks if file exists; is true even if file is a directory but exists.  |  [ -e $file ] is true.  |
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="3000">
 
-![loop](https://user-images.githubusercontent.com/87390353/180616832-6f14d5ee-5b4a-444b-9e24-d6d1e7f07d1d.jpg)
+# SHELL LOOPS
 
 ---
 
@@ -253,25 +308,9 @@ At first we are gonna make a txt file with `nano` editor to list all the basic c
 - Nested Loop
 - Loop Control
 
----
-
-1. For loop example :
-
-![for](https://user-images.githubusercontent.com/87390353/180636578-15091d3e-666e-436d-979a-ef6549f16b74.jpg)
+You will use different loops based on the situation. For example, the while loop executes the given commands until the given condition remains true; the until loop executes until a given condition becomes true.
 
 ---
-
-2. While loop example :
-
-![while](https://user-images.githubusercontent.com/87390353/180636875-9ab1f08d-f6d2-4f4a-8d5f-c4d74baa487e.jpg)
-
----
-
-3. Until loop example :
-
-![until](https://user-images.githubusercontent.com/87390353/180637336-c2ae8a39-275e-42bd-83c2-755c49357120.jpg)
-
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" width="3000">
 
 # Reference
 
