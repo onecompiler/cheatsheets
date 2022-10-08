@@ -132,6 +132,7 @@ s.length();
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
 | sizeof operator| sizeof() |
+| Scope Resolution Operator| :: (used to reference the global variable or member function that is out of scope.) |
 
 ## Conditional Statements
 
