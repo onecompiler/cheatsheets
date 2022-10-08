@@ -2,8 +2,7 @@
 
 Ubuntu is a free and open-source Linux distribution based on Debian. In this section, we will explore new features of Ubuntu 22.04.
 Ubuntu is one of the most popular Linux distributions. The reason being it’s main goal is to be the most user-friendly non-geek Linux operating system out there.
-
-
+- Every software either application or any operating system have its shortcomings but those softwares become best whose features outweighs their shortcomings and same is the case with the all-new Ubuntu 22.04.
 
 | Category  | Requirements, Conventions or Software Version Used     |
 | ------------- | ------------- | 
@@ -41,6 +40,13 @@ Ubuntu is one of the most popular Linux distributions. The reason being it’s m
 |mv	|Move or rename a file or directory |
 |cp	|Copy a file or directory |
 |rsync|	Synchronize the changes of one directory to another |
+
+
+### Community Support in ubuntu-22.04
+
+* https://ubuntu.com/support/community-support
+* https://askubuntu.com/
+
 
 
 
