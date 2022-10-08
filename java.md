@@ -392,7 +392,7 @@ class Child-class extends Parent-Class {
 //code
 }
 ```
-### Constructor
+### 6. Constructor
 
 Constructor is a special type of method.
 Every class has atleast one constructor.
@@ -407,9 +407,7 @@ public class AA {   //beg of class
    }
  }
  ```
- ### Destructor
  
-In Java, when we create an object of the class it occupies some space in the memory (heap). If we do not delete these objects, it remains in the memory and occupies unnecessary space that is not upright from the aspect of programming. To resolve this problem, we use the destructor. It is a special method that automatically gets called when an object is no longer used. When an object completes its life-cycle the garbage collector deletes that object and deallocates or releases the memory occupied by the object.
 
 
  
