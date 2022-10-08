@@ -80,6 +80,19 @@ int a[2][3] = {
                 {4,5,6}
               };
 ```
+## String
+
+It stores a sequence of character and it also functions like a vector.
+It contain many fuctions:
+begin(),end(),sort(),length() and many more
+### Example:
+```c
+string s="abcde";
+cout<<s[2];      //prints c
+sort(s.begin(),s.end());    
+s.length();
+```
+
 ## Literals or Constants
 |Literal | Example|
 |----|----|
@@ -107,6 +120,7 @@ int a[2][3] = {
 |\b	|Back space|
 
 ## Operators
+
 | Operator type | Description|
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
@@ -116,13 +130,6 @@ int a[2][3] = {
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
 | sizeof operator| sizeof() |
-
-### Important Note for Bitwise Operator
-```c
-   It should be noted that bitwise Operator works on the bit value of the given data and perform bit options.
-   Example : (5 & 6)
-   First the 5 and 6 is converted to bit form of the value and then the operation will be performed.
-```   
 
 ## Conditional Statements
 
