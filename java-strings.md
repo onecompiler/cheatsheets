@@ -230,6 +230,18 @@ String string = "  One Compiler";
 string.trim();  //returns One Compiler
 ```
 
+intern(): It ensure that all strings having the same contents share the same memory
+```java
+ 
+        String s1 = new String("Manan"); // S1 refers to Object in the Heap Area 
+        String s2 = s1.intern(); // S2 refers to Object in SCP Area 
+          
+        // Comparing memory locations 
+        System.out.println(s1 == s2); // output false ( s1 is in Heap and s2 is in SCP )
+
+        // Comparing only values 
+        System.out.println(s1.equals(s2)); // output true
+```
 
 ## Java 8 Streams of string join/append 
 
@@ -244,17 +256,6 @@ string = stream.collect(Collectors.joining(","));      //audi,bmw,cadillac,dodge
 string = words.collect(Collectors.joining(",", "{", "}"));    //{audi,bmw,cadillac,dodge} 
 ```
 
-intern(): It ensure that all strings having the same contents share the same memory
-```java
- 
-        String s1 = new String("Manan"); // S1 refers to Object in the Heap Area 
-        String s2 = s1.intern(); // S2 refers to Object in SCP Area 
-          
-        // Comparing memory locations 
 
-        System.out.println(s1 == s2); // output false ( s1 is in Heap and s2 is in SCP )
-        // Comparing only values 
-        System.out.println(s1.equals(s2)); // output true
-```
 
 
