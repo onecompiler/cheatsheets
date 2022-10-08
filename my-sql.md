@@ -205,6 +205,19 @@ trigger_order: { FOLLOWS | PRECEDES } */
 ```sql
 DROP TRIGGER [IF EXISTS] trigger_name;
 ```
+
+### 3. Show a Trigger 
+
+```sql
+SHOW TRIGGERS;
+```
+
+### 4. Show a Trigger using Pattern Matching
+
+```sql
+SHOW TRIGGERS LIKE pattern;
+```
+
 ## Stored Procedures
 
 ### 1. Create a Stored Procedure
