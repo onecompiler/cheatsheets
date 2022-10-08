@@ -118,3 +118,13 @@ Angular is an application-design framework and development platform for creating
 	```
 	ng test | e2e
 	```
+	
+- universal command // This command is used to pass this schematic to the "run" command to set up server-side rendering for an app
+	```
+       ng generate universal [options]  
+       ng g universal [options]  
+	```
+	AND [options]
+	--defaults=true|false: When true, it disables interactive input prompts for options with a default.
+
+        --dryRun=true|false: When true, it runs through and reports activity without writing out results.

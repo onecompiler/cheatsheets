@@ -47,7 +47,7 @@ sudo g++ -o firstprogram firstprogram.cpp
 | Types | Data-type|
 |----|----|
 |Basic | int, char, float, double, short, short int, long int etc |
-|Derived | array, pointer etc |
+|Derived | array, pointer, string, etc |
 |User Defined Data Type | structure, enum, Class, Union, Typedef |
 
 ## Variables
@@ -65,6 +65,7 @@ char grade = 'A'; // declaring char variable and assigning value A to it
 * First letter should be either a letter or an underscore(`_`).
 * Variable type can't be changed
 * Case sensitive
+* Keywords cannot be used as variable names
 
 ## Arrays
 
@@ -80,6 +81,19 @@ int a[2][3] = {
                 {4,5,6}
               };
 ```
+## String
+
+It stores a sequence of character and it also functions like a vector.
+It contain many fuctions:
+begin(),end(),sort(),length() and many more
+### Example:
+```c
+string s="abcde";
+cout<<s[2];      //prints c
+sort(s.begin(),s.end());    
+s.length();
+```
+
 ## Literals or Constants
 |Literal | Example|
 |----|----|
@@ -105,6 +119,7 @@ int a[2][3] = {
 |\"	| Double quotation|
 |\0 | Null character|
 |\b	|Back space|
+|\a	| Audible Bell|
 
 ## Operators
 
@@ -117,6 +132,25 @@ int a[2][3] = {
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
 | sizeof operator| sizeof() |
+| Scope Resolution Operator| :: (used to reference the global variable or member function that is out of scope.) |
+
+
+## Keywords(reserved words)
+
+```c
+auto         double      int        struct
+break        else        long       switch
+case         enum        register   typedef
+char         extern      return     union
+const        float       short      unsigned
+continue     for         signed     void
+default      goto        sizeof     volatile
+do           if          static     while
+try 	     catch	 throw	    asm
+operator     new	 template   this
+public 	     private     protected  inline	
+```
+
 
 ## Conditional Statements
 
@@ -137,6 +171,14 @@ if(conditional-expression)
     //code
 }
 ```
+If-else using Ternary Operator
+
+```c
+conditional-expression ? code1 : code2;
+```
+if conditional-expression is true, code1 is executed.
+And, if condition is false, code2 is executed.
+
 ### 3. If-else-if ladder
 
 ```c
@@ -169,6 +211,7 @@ default:
  //code to be executed when all the above cases are not matched;    
 } 
 ```
+
 ## Loops
 
 ### 1. For
@@ -522,4 +565,3 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 |#include<time.h>    | It is used to perform functions related to date() and time|
 |#include<graphics.h> | It is used include and facilitate graphical operations in program|
 |#include<bits/stdc++.h> | It is used to include all the standard library files|
-|#include <bits/stdc++.h> | Inlcude all the headers. A Usefull Hack for Competitive Programming|

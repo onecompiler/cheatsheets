@@ -246,3 +246,34 @@ SELECT * FROM TABLE1 RIGHT JOIN TABLE2 ON condition;
 SELECT select_list from TABLE1 CROSS JOIN TABLE2;
 ```
 
+
+## Cursors
+
+When an MYSQL statement is processed, a memory area is created known as context area. A cursor is a pointer to this context area.
+
+### There are two types of cursor 
+#### 1. Implict cursor 
+#### 2. Explict cursor
+
+
+### Explict Cursor 
+Explict cursors are used when you are exceuting a SELECT statement query that will return more than one row.
+
+### The cursor works in four stages
+
+### 1. Declaration of cursor:-
+```sql
+DECLARE cursor_name CURSOR FOR SELECT_statement;
+```
+### 2. Open Cusor
+```sql
+OPEN cursor_name;
+```
+### 3. Fetch the cursor
+```sql
+FETCH cursor_name INTO variables list;
+```
+### 4. Close the cursor
+```sql
+CLOSE cursor_name;
+```

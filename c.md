@@ -10,6 +10,7 @@ updated: 2020-04-25
 * scanf("%d", &x) -- read value into the variable x from input stream
 * Printf("%d",x) -- printf value to the output stream
 * gets(str) -- reads a line from input stream into a variable
+* scanf("%[^\n]",s); --reads a line from input using scanf only
 
 ### Sample C program
 
@@ -20,7 +21,7 @@ printf("Hello World!!");
 return 0;   
 }  
 ```
-* `#include` is a keyword which is used to include the library file `<stdio.h>`. 
+* `#include` is a keyword which is used to include header files like : `<stdlib.h>` and `<stdio.h>`. 
 * `<stdio.h>` library file is used to read the data from terminal and to display the data on terminal. It has several in-built functions like printf(), scanf() etc.
 * `main()` function is the entry point of any C program.
 * `printf and scanf` are inbuilt library functions which are used for input and output in C language. They are defined in `stdio.h` header file.
@@ -150,7 +151,7 @@ int a[2][3] = {
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
 | comparision Operator| < , > , <= , >=, != , ==|
-| Bitwise Operator| & , ^ , \||
+| Bitwise Operator| & , ^ , \|, <<, >> |
 | Logical Operator| && , `\|\|`, ! |
 | Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
 | Ternary Operator| ? : |
@@ -196,7 +197,9 @@ Declaration
 | strcpy() | It is used to copy the content of second-string into the first string passed to it | `strcpy(destination, source)`|
 | strcat() |It is used to concatenate two strings | ` strcat(first_string, second_string)`|
 | strcmp() | It is used to compare two strings | `strcmp(first_string, second_string)`|
-
+| strrev() | It is used to return reverse of a string | `strrev("string")` |
+| strupr() | It return string characters in uppercase | `strupr("string")` |
+| strlwr() | It return string characters in lowercase | `strlwr("string")` |
 
 ## Constants
 
@@ -322,6 +325,17 @@ int x = 10, *ptr;
 ptr = &x; // valid because &x and ptr are addresses
 *ptr = x; // valid because both x and *ptr values 
 ```
+
+## Types of Pointers
+| Serial Number |Pointer|Description|
+|----|----|---|
+| 1 | Null Pointer | `We can create a null pointer by assigning the null value at the time when we are declaring the pointer.It always contains the value 0`|
+| 2 | Void Pointer | `This pointer has no associated data-type with it. A void pointer can hold addresses of any data-type and can be typecasted to another.It is created by using the keyword void`|
+| 3 | Wild Pointer | `They are also called as uninitialised pointers.They are called so because they point to some arbitary memory location that is randomly alloted and the program can misbehave badly.This type of pointer is not efficient.`|
+| 4 | Dangling Pointer | `The pointers that are pointing to deallocated memory or deleted memory block are known as Dangling pointers.They can raise an error because they point to a deallocated memory block.`|
+
+
+
 ## Structures
 
 Structure is a user-defined data type where it allows you to combine data of different data types.
