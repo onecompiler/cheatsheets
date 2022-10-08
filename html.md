@@ -49,6 +49,7 @@ updated: 2022-10-05
 |`<audio>`| It is used to embed sound content in the document. |` <audio controls> <source src="demo.mp3" type="audio/mpeg"> </audio>`|
 |`<video>`| It is used to embed video in the webpage. |` <video width="480" height="320" controls> <source src="demo_move.mp4" type="video/mp4"> </video>`|
 |`<source>`| Defines multiple media resources for media elements |` <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> `|
+|`<svg>`| SVG is used to define vector-based graphics for the Web|` <svg width="100" height="100"><circle cx="50" cy="50" r="40" stroke="green"/> </svg> `|
 
 ## HTML formatting 
 
