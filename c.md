@@ -426,8 +426,15 @@ A set of functions for dynamic memory allocation from the heap. These methods ar
 ## Predefined Function 
  
  Sublist :-It returns a sublist of list. from starting to the ending item positions respectively.
- 
- Syntax :- sublist(list, starting, ending);
+
+ Syntax :- 
+
+ ```c
+ sublist(list, starting, ending);
+```
+
+Example :-
+
 ```c
  sublist([1,2,3,4,5,6,7,8], 2, 5);  // output [2,3,4,5]
 
@@ -435,7 +442,14 @@ A set of functions for dynamic memory allocation from the heap. These methods ar
 
 Listcat :- It returns the list of the concatenation of its arguments.
 
-Syntax :- listcat(list,list,...);
+Syntax :-
+
+```c
+ listcat(list,list,...);
+```
+
+Example :-
+
 ```c
 listcat([1,2,3],[4,5,6]); // output [1,2,3,4,5,6]
 
