@@ -55,8 +55,8 @@ define(name, value, case_insensitive)
 * **case_insensitive**: Specifies whether the constant name should be case-insensitive or not. By default it is set to false.
 
 ```php
-define("NAMASTE","Hello, Greetings!");
-echo constant("NAMASTE");
+define("GREETING","Hello you! How are you today?");
+echo constant("GREETING");
 ```
 
 ### Using const keyword
@@ -102,7 +102,7 @@ $directions = array("East", "West", "North", "South");
 
 ### 2. Associative arrays
 ```php
-$capitals = array("Japan" => "Tokyo", "India" => "New Delhi","United Kingdom" => "London","United States" => "Washington, D.C.","China" => "Beijing", "Arijit" => "Student");
+$capitals = array("Japan" => "Tokyo", "India" => "New Delhi","United Kingdom" => "London","United States" => "Washington, D.C.","China" => "Beijing");
 ```
 
 ### 3. Multi dimensional arrays
