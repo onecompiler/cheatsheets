@@ -134,6 +134,24 @@ s.length();
 | sizeof operator| sizeof() |
 | Scope Resolution Operator| :: (used to reference the global variable or member function that is out of scope.) |
 
+
+## Keywords(reserved words)
+
+```c
+auto         double      int        struct
+break        else        long       switch
+case         enum        register   typedef
+char         extern      return     union
+const        float       short      unsigned
+continue     for         signed     void
+default      goto        sizeof     volatile
+do           if          static     while
+try 	     catch	 throw	    asm
+operator     new	 template   this
+public 	     private     protected  inline	
+```
+
+
 ## Conditional Statements
 
 ### 1. If
