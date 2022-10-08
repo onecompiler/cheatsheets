@@ -412,8 +412,6 @@ public class AA {   //beg of class
 
  Inheritance is an important pillar of OOP(Object-Oriented Programming). It is the mechanism in java by which one class is allowed to inherit the features(fields and methods) of another class.
 
-Syntax :-
-
 ```java
 class derived-class extends base-class  
 {  
