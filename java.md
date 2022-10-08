@@ -143,15 +143,15 @@ If any variable is declared with keyword final, then the value of final variable
 
 ```java
 class Student{
-    //final variable
-    final int id=50;
-    void get_id(){
-        id=100;
-    }
-    public static void main(String[] args){
-        Student obj=new Student();
-        obj.get_id();
-    }
+  //final variable
+  final int id=50;
+  void get_id(){
+    id=100;
+  }
+  public static void main(String[] args){
+    Student obj=new Student();
+    obj.get_id();
+  }
 }
 ```
 
@@ -162,19 +162,19 @@ If any method is declared with keyword final, then it can't be overridden.
 
 ```java
 class Fruit{
-    //final method
-    final void run(){
-        System.out.println("Inside Fruit Class");
-    }
+  //final method
+  final void run(){
+    System.out.println("Inside Fruit Class");
+  }
 }
 class Apple extends Fruit{
-    void run(){
-        System.out.println("Inside Apple Class");
-    }
-    public static void main(String[] args){
-        Apple obj=new Apple();
-        obj.run();
-    }
+  void run(){
+    System.out.println("Inside Apple Class");
+  }
+  public static void main(String[] args){
+    Apple obj=new Apple();
+    obj.run();
+  }
 }
 ```
 
@@ -188,13 +188,13 @@ If any class is declared with keyword final, then it can't be inherited.
 final class Fruit{
 }
 class Apple extends Fruit{
-    void run(){
-        System.out.println("Inside Apple Class");
-    }
-    public static void main(String[] args){
-        Apple obj=new Apple();
-        obj.run();
-    }
+  void run(){
+    System.out.println("Inside Apple Class");
+  }
+  public static void main(String[] args){
+    Apple obj=new Apple();
+    obj.run();
+  }
 }
 ```
 
