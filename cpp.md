@@ -81,6 +81,19 @@ int a[2][3] = {
                 {4,5,6}
               };
 ```
+## String
+
+It stores a sequence of character and it also functions like a vector.
+It contain many fuctions:
+begin(),end(),sort(),length() and many more
+### Example:
+```c
+string s="abcde";
+cout<<s[2];      //prints c
+sort(s.begin(),s.end());    
+s.length();
+```
+
 ## Literals or Constants
 |Literal | Example|
 |----|----|
