@@ -79,6 +79,11 @@ const datatype variable-name = value;
 |ToString()| to return instance of a string|
 |Trim()| removes all leading and trailing whitespaces from a given string|
 |Clone()| returns a reference to this instance of String|
+|Format()| it returns a formatted string|
+|LastIndexOf()| it returns the last occurence of the string|
+|Replace()| it replaces the specified string character with new character|
+|Contains()| it checks whether a string contains substring|
+|ToCharArray()| it converts a string to a character(char) array|
 
 
 ## Conditional Statements
