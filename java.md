@@ -132,6 +132,15 @@ Class Sum {
 | Auto-increment and Auto-decrement Operators| ++ , -- |
 | Ternary Operator| ? : |
 
+## Access Modifiers
+
+Access modifiers helps to restrict the scope of a class, constructor, variable, method, or data member. There are four types of access modifiers available in java: 
+
+* **Private** - The access level is only within the class. It cannot be accessed from outside the class.
+* **Default** - The access level is only within the package. It cannot be accessed from outside the package.
+* **Protected** - The access level is within the package and outside the package through child class.
+* **Public** - It can be accessed from within the class, outside the class, within the package and outside the package. There is no restriction on the scope of public data members.
+
 ## Arrays
 
 Array is a collection of similar data which is stored in continuous memory addresses.
