@@ -4,6 +4,11 @@ Ubuntu is a free and open-source Linux distribution based on Debian. In this sec
 Ubuntu is one of the most popular Linux distributions. The reason being it’s main goal is to be the most user-friendly non-geek Linux operating system out there.
 - Every software either application or any operating system have its shortcomings but those softwares become best whose features outweighs their shortcomings and same is the case with the all-new Ubuntu 22.04.
 
+### Ubuntu 22.04 Download
+You can download the iso file of latest version of ubuntu from here - https://ubuntu.com/#download
+
+### Requirements, Conventions or Software Version Used
+
 | Category  | Requirements, Conventions or Software Version Used     |
 | ------------- | ------------- | 
 | System       | 64-bit PC (AMD64), see Ubuntu 22.04 system requirements        | 
@@ -46,9 +51,3 @@ Ubuntu is one of the most popular Linux distributions. The reason being it’s m
 
 * https://ubuntu.com/support/community-support
 * https://askubuntu.com/
-
-
-
-
-
-
