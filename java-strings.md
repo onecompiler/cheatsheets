@@ -232,7 +232,6 @@ string.trim();  //returns One Compiler
 
 intern(): It ensure that all strings having the same contents share the same memory
 ```java
- 
         String s1 = new String("Manan"); // S1 refers to Object in the Heap Area 
         String s2 = s1.intern(); // S2 refers to Object in SCP Area 
           
