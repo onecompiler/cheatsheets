@@ -132,6 +132,73 @@ Class Sum {
 | Auto-increment and Auto-decrement Operators| ++ , -- |
 | Ternary Operator| ? : |
 
+## Final Keyword in JAVA
+
+Final keyword in java is a non-access modifier. It is used to restrict user from making any change in variable, method and classes.
+
+### 1. Final Variable
+If any variable is declared with keyword final, then the value of final variable can't be change, i.e. it becomes constant.
+
+### Example
+
+```java
+class Fruit{
+    //final variable
+    final int price=50;
+    void rate(){
+        price=100;
+    }
+    public static void main(String[] args){
+        Fruit obj=new Fruit();
+        obj.rate();
+    }
+}
+```
+
+### 2. Final Method
+If any method is declared with keyword final, then it can't be overridden.
+
+### Example
+
+```java
+class Fruit{
+    //final method
+    final void rate(){
+        System.out.println("Rate is Rs. 100");
+    }
+}
+class Apple extends Fruit{
+    void rate(){
+        System.out.println("Rate is Rs. 50");
+    }
+    public static void main(String[] args){
+        Apple obj=new Apple();
+        obj.rate();
+    }
+}
+```
+
+### 3. Final Class 
+If any class is declared with keyword final, then it can't be inherited.
+
+### Example
+
+```java
+//final class
+final class Fruit{
+}
+class Apple extends Fruit{
+    void rate(){
+        System.out.println("Rate is Rs. 50");
+    }
+    public static void main(String[] args){
+        Apple obj=new Apple();
+        obj.rate();
+    }
+}
+```
+
+
 ## Arrays
 
 Array is a collection of similar data which is stored in continuous memory addresses.
