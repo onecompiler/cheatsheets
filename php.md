@@ -2,7 +2,7 @@
 title: PHP 
 description: PHP cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-05-14
-updated: 2020-05-14
+updated: 2022-10-08
 ---
 
 ## Basics
@@ -41,18 +41,23 @@ However, below are the different datatypes in PHP.
 ## Variables
 
 ```php
-$variable-name = value;  
+$variable_name = value;  
 ```
 ## Constants
 
 ### Using define()
 
 ```php
-define(name, value, case-insensitive)
+define(name, value, case_insensitive)
 ```
 * **name**: name of the constant
 * **value**: value of the constant
-* **case-insensitive**: Specifies whether the constant name should be case-insensitive or not. By default it is set to false.
+* **case_insensitive**: Specifies whether the constant name should be case-insensitive or not. By default it is set to false.
+
+```php
+define("NAMASTE","Hello, Greetings!");
+echo constant("NAMASTE");
+```
 
 ### Using const keyword
 
@@ -69,6 +74,10 @@ const MESSAGE = "Happy learning!";
 | strrev() | echo strrev("One Compiler"); |
 | str_replace() | echo str_replace("bar", "Foo", "Good morning bar!"); |
 | strpos() |  echo strpos("Hello world! Happy Learning!!", "appy"); |
+| str_repeat() |  echo str_repeat("Hello! Happy Learning!!", 4); |
+| rtrim() |  echo rtrim("  Right space will be trimmed   "); |
+| ltrim() |  echo rtrim("  left space will be trimmed   "); |
+| strcmp() |  echo strcmp($string1,$string2); |
 
 ## Operators
 
@@ -93,7 +102,7 @@ $directions = array("East", "West", "North", "South");
 
 ### 2. Associative arrays
 ```php
-$capitals = array("Japan" => "Tokyo", "India" => "New Delhi","United Kingdom" => "London","United States" => "Washington, D.C.","China" => "Beijing");
+$capitals = array("Japan" => "Tokyo", "India" => "New Delhi","United Kingdom" => "London","United States" => "Washington, D.C.","China" => "Beijing", "Arijit" => "Student");
 ```
 
 ### 3. Multi dimensional arrays
@@ -217,10 +226,24 @@ function functionName() { // defining a function
 functionName (parameters); //calling a function 
 ```
 
+## Date
+(PHP 4, PHP 5, PHP 7, PHP 8)
+```php
+date_default_timezone_set('Asia/Kolkata');// set default time zone( Useful while deploying to server)
+$dateVal=date("F j, Y, g:i a"); // March 10, 2001, 5:16 pm
+
+```
+
+## File
+| Function | Syntax | Description |
+|----|----| ---- | 
+| readfile() | readfile(myfile.txt) |  prints the contents of myfile.txt in browser|
+| fopen(filename, mode) | fopen("myfile.txt", "r") | opens myfile.txt in read mode | 
+| fread(file, length) | fread($fptr, filesize("myfile.txt")) | read file upto length and stores in file pointer | 
+| fclose() | fclose($fptr) | The fclose() function closes an open file pointer |
+
 ## MySQLi Functions
 These functions allow you to access MySQL database server.
-
-
 
 | Function | Description|
 |----|----|
@@ -233,3 +256,5 @@ These functions allow you to access MySQL database server.
 | mysqli_fetch_row() | It fetches one row from a result set and returns it as an enumerated array | 
 | mysqli_kill() | It kills a MySQL thread | 
 | mysqli_close() | It closes a database connection |
+| mysqli_query() | It runs any sql query from database in php 
+| mysqli_num_rows() | It counts number of rows affected after running any sql query 
