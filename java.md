@@ -142,15 +142,15 @@ If any variable is declared with keyword final, then the value of final variable
 ### Example
 
 ```java
-class Fruit{
+class Student{
     //final variable
-    final int price=50;
-    void rate(){
-        price=100;
+    final int id=50;
+    void get_id(){
+        id=100;
     }
     public static void main(String[] args){
-        Fruit obj=new Fruit();
-        obj.rate();
+        Student obj=new Student();
+        obj.get_id();
     }
 }
 ```
@@ -163,17 +163,17 @@ If any method is declared with keyword final, then it can't be overridden.
 ```java
 class Fruit{
     //final method
-    final void rate(){
-        System.out.println("Rate is Rs. 100");
+    final void run(){
+        System.out.println("Inside Fruit Class");
     }
 }
 class Apple extends Fruit{
-    void rate(){
-        System.out.println("Rate is Rs. 50");
+    void run(){
+        System.out.println("Inside Apple Class");
     }
     public static void main(String[] args){
         Apple obj=new Apple();
-        obj.rate();
+        obj.run();
     }
 }
 ```
@@ -188,12 +188,12 @@ If any class is declared with keyword final, then it can't be inherited.
 final class Fruit{
 }
 class Apple extends Fruit{
-    void rate(){
-        System.out.println("Rate is Rs. 50");
+    void run(){
+        System.out.println("Inside Apple Class");
     }
     public static void main(String[] args){
         Apple obj=new Apple();
-        obj.rate();
+        obj.run();
     }
 }
 ```
