@@ -162,6 +162,7 @@ List the entries like in a dictionary or encyclopedia.
 |`<input type="submit">`| To define a submit button |
 |`<input type = "checkbox">`| To define a checkbox |
 | `<input type = "file">`| To define a file upload box|
+| `<input type = "range">`| To define a range slider control|
 
 ```html
  <form >
