@@ -547,3 +547,4 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 |#include<graphics.h> | It is used include and facilitate graphical operations in program|
 |#include<bits/stdc++.h> | It is used to include all the standard library files|
 |#include <bits/stdc++.h> | Inlcude all the headers. A Usefull Hack for Competitive Programming|
+|#include <math.h> | It is used to perform several mathematical functions without the intial boilerplate code, all functions in this library take all arguments as DOUBLE data type and returns them also as a DOUBLE data type.|
