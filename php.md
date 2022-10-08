@@ -256,5 +256,14 @@ These functions allow you to access MySQL database server.
 | mysqli_fetch_row() | It fetches one row from a result set and returns it as an enumerated array | 
 | mysqli_kill() | It kills a MySQL thread | 
 | mysqli_close() | It closes a database connection |
-| mysqli_query() | It runs any sql query from database in php 
-| mysqli_num_rows() | It counts number of rows affected after running any sql query 
+| mysqli_query() | It runs any sql query from database in php |
+| mysqli_num_rows() | It counts number of rows affected after running any sql query |
+
+## Global Variables - Superglobals
+
+| Variables | Usage|
+|----|----|
+| $_SERVER | $_SERVER['REQUEST_METHOD']	Returns the request method used to access the page (such as POST) |
+| $_POST | $name = $_POST['fname'] collects value from a form(name='fname') and stores to $name after submitting an HTML form with method="post" |
+| $_GET | $_GET can also collect data sent in the URL |
+ 
