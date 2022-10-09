@@ -2,7 +2,7 @@
 title: SQL Cheatsheet 
 description: Contains syntaxes & examples to help new comers get comfortable with using SQL.
 created: 2022-10-01
-updated: 2022-10-01
+updated: 2022-10-09
 ---
 
 ## Creation & Insertion 
@@ -67,6 +67,14 @@ This can also be achieved by :
 
 ```SQL
 SELECT ALL <column name> FROM <table name>
+```
+To get used to specify the number of records in return:
+
+```SQL
+SELECT <column_name>
+FROM <table name>
+WHERE condition
+LIMIT number;
 ```
 
 To get all unique values from a column :
