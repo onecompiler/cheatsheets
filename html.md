@@ -2,7 +2,7 @@
 title: HTML 
 description: HTML Cheat Sheet gives you a quick reference of basic HTML tags, codes and attributes and is very handy while coding. 
 created: 2020-06-17
-updated: 2022-10-05
+updated: 2022-10-09
 ---
 
 ## Sample program
@@ -165,6 +165,10 @@ List the entries like in a dictionary or encyclopedia.
 |`<input type = "checkbox">`| To define a checkbox |
 | `<input type = "file">`| To define a file upload box|
 | `<input type = "range">`| To define a range slider control|
+| `<input type = "color">`| To define a color picker interface|
+| `<input type = "reset">`| To define a reset button|
+| `<input type = "email">`| To define a single-line email input field|
+| `<input type = "datetime-local">`| To define a single-line Date and time input field|
 
 ```html
  <form >
