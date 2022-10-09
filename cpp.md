@@ -574,3 +574,6 @@ sort(v.rbegin(),v.rend()); // This will also sort the vector in a descending ord
 |#include<time.h>    | It is used to perform functions related to date() and time|
 |#include<graphics.h> | It is used include and facilitate graphical operations in program|
 |#include<bits/stdc++.h> | It is used to include all the standard library files, this is called a NON-STANDARD header file (it can't be compiled on a compiler other than GCC)|
+|#include<limits.h>| The macros in this header stores the values of variables in various data types|
+|#include<setjmp.h>| It contains function prototypes for functions that allow bypassing of the normal function call and return sequence|
+|#include<assert.h>| It contains information for adding diagnostics that helps in program debugging|
