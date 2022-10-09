@@ -239,10 +239,10 @@ if(conditional-expression)
 }
 ```
 ### 2.1. If-else using Ternary Operator
+
 ```c
-conditional-expression ? code1 : code2;
+bool isEven = (3 % 2 == 0) ? 1 : 0; //isEven = 0 as 3 is not an even number
 ```
-If conditional-expression is true, code1 is executed. And, if condition is false, code2 is executed.
 
 ### 3. If-else-if ladder
 
