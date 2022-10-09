@@ -383,13 +383,15 @@ or we can for 3d vector like
 vector<vector<vector<int>>> v3;
 ```
 Here are some useful vector functions you might need with short descriptions of each of them:  
-size() - Returns the size of the vector (1-based indexing)  
-front() - Returns the first element of the vector  
-back() - Returns the last element of the vector(Useful when you don't know the vector size)
-push_back() - Add element at the end of vector  
-pop_back() - Delete element from the end of vector  
-insert() - Insert any element at any position of your choice (You need to pass the position first as an iterator and then the element)  
-erase() - Remove elements from vector (You can either pass a single iterator denoting the position of the element to be erased or two iterators denoting the range in which you want all elements to be erased)
+ | Title | Description |
+ --------|---------------
+|size()      | Returns the size of the vector (1-based indexing)  
+|front()     | Returns the first element of the vector  
+|back()      | Returns the last element of the vector(Useful when you don't know the vector size)
+|push_back() | Add element at the end of vector  
+|pop_back()  | Delete element from the end of vector  
+|insert()    | Insert any element at any position of your choice (You need to pass the position first as an iterator and then the element)  
+|erase()     | Remove elements from vector (You can either pass a single iterator denoting the position of the element to be erased or two iterators denoting the range in which you want all elements to be erased)
 
 ## Stacks 
 
