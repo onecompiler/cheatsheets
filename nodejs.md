@@ -66,7 +66,7 @@ MongoClient.connect(url, function (err, client) {
 });
 ```
 
-## 5. How to connect to mongodb using mongoose
+## 5. Connect with mongodb using mongoose
 
 ```javascript
 const mongoose = require('mongoose');
