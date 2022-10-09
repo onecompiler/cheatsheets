@@ -297,7 +297,7 @@ Generics allow you to declare and use functions or types that are written to wor
 
 ```go
 //For a function, you can declare the types you want to work with by the following template:
-//func Signature[MyTypes type1 | type2 | type3...] (value MyTypes) {
+//func Signature[MyTypes type1 | type2 | type3...](value MyTypes) {
 }
 ```
 ### Example
