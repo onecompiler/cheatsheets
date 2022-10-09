@@ -2,7 +2,7 @@
 title: NodeJS
 description: Node.js cheatsheet
 created: 2020-01-14
-updated: 2022-10-8
+updated: 2022-10-9
 ---
 
 ## 1. Create a Nodejs project and install dependent packages
@@ -17,7 +17,7 @@ npm install <package-name> // Installs a package from NPM’s own repository.
 npm install <git remote url>
 
 npm update <package-name> // This will update the specified package.
-// If no package name is specified, all packages in the specified location (global or local) will be updated.
+
 
 npm uninstall <package-name> // This uninstalls a package, completely removing everything npm installed on its behalf also removes the package from the dependencies, devDependencies, optionalDependencies, and peerDependencies objects in your package.json.
 
@@ -27,8 +27,8 @@ npm install -D <package-name>
 
 ### Arguments
 
-`--global` or `-g` : to install the package globally
-`--production` : npm will not install modules listed in devDependencies
+`--global` or `-g` : used to install a package globally
+`--production` : This argument will not install modules listed in devDependencies
 
 
 ## 2.  How to execute NodeJS file
@@ -120,6 +120,6 @@ console.warn('warning message'); //same as console.error
 console.count(); //It is used to count the number of times a specific label has been called.
 console.clear(); //It is used to clear the console history.
 console.time(); //It is used to get the starting time of an action.
-console.timeEnd(); //It is used to get the end time of specific action.
+console.timeEnd(); //This function is used to get the end time of specific action.
 console.dir(); //It use util.inspect() on object and prints the resulting string to stdout.
 ```
