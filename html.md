@@ -69,6 +69,7 @@ updated: 2022-10-09
 |`<sub>..</sub>`| Subscript text|
 |`<sup>..</sup>` | Superscript text|
 |`<big>..</big>` | Larger text|
+|`<kbd>..</kbd>` | keyboard input text|
 
 ## Tables
 
