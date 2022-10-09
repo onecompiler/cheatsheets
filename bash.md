@@ -1,9 +1,6 @@
----
-title: Bash shell
-description: Bourne-Again SHell, an `sh`-compatible command-line interpreter.
-created: 2021-12-19
-updated: 2021-12-19
----
+| Title      | Description                                                      | Created    | Updated    |
+| :--------- | :--------------------------------------------------------------- | :--------- | :--------- |
+| Bash shell | Bourne-Again SHell, an `sh`-compatible command-line interpreter. | 2021-12-19 | 2022-10-09 |
 
 ## Sample program
 
