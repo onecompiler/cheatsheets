@@ -92,7 +92,7 @@ const connectDB = async () => {
 module.exports = connectDB;
 ```
 
-## 6. How to create a basic express server
+## 6. Create a basic express server with NodeJs
 
 ```javascript
 const express = require('express')
