@@ -48,7 +48,9 @@ updated: 2022-10-05
 |`<pre/>`| Text in a pre elementis displayed in a fixed-width font, and it preservesboth spaces and line breaks |`<pre> int i = 0; </pre>`|
 |`<audio>`| It is used to embed sound content in the document. |` <audio controls> <source src="demo.mp3" type="audio/mpeg"> </audio>`|
 |`<video>`| It is used to embed video in the webpage. |` <video width="480" height="320" controls> <source src="demo_move.mp4" type="video/mp4"> </video>`|
-
+|`<source>`| Defines multiple media resources for media elements |` <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> `|
+|`<svg>`| SVG is used to define vector-based graphics for the Web|` <svg width="100" height="100"><circle cx="50" cy="50" r="40" stroke="green"/> </svg> `|
+|`<iframe>`| It is used to specifies an inline frame. |` <iframe src=" https://onecompiler.com/" title="iframe element"></iframe> `|
 
 ## HTML formatting 
 
@@ -65,6 +67,7 @@ updated: 2022-10-05
 |`<ins>..</ins>`| Inserted text|
 |`<sub>..</sub>`| Subscript text|
 |`<sup>..</sup>` | Superscript text|
+|`<big>..</big>` | Larger text|
 
 ## Tables
 
@@ -161,6 +164,7 @@ List the entries like in a dictionary or encyclopedia.
 |`<input type="submit">`| To define a submit button |
 |`<input type = "checkbox">`| To define a checkbox |
 | `<input type = "file">`| To define a file upload box|
+| `<input type = "range">`| To define a range slider control|
 
 ```html
  <form >
