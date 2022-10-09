@@ -388,10 +388,59 @@ Encapsulation is a mechanism to protect private hidden from other users. It wrap
 Polymorphism gives the meaning many forms, usually it occurs when multiple classes are present and have been inherited.
 
 ```java
-class Child-class extends Parent-Class {
-//code
+// compile time polymorphism
+class Example {
+  static int exampleFunction(int a, int b) {
+    return a+b;
+  }
+  static double exampleFunction(double a, double b) {
+    return a+b;
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println(Example.exampleFunction(2, 3));
+    System.out.println(Example.exampleFunction(2.82, 3.2225));
+  }
 }
 ```
+
+```java
+// run time polymorphism
+class Parent {
+  public void print() {
+    System.out.println("Parent");
+  }
+}
+
+class Child extends Parent {
+  public void print() {
+    System.out.println("Child");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+
+    Parent p = new Parent();
+    p.print();
+
+    p = new Child();
+    p.print();
+  }
+}
+```
+
+### 6. Inheritance
+Inheritance in Java is a mechanism in which one object `acquires all the properties and behaviors of a parent object`.
+The `extends` keyword indicates that you are making a new class that derives from an existing class.
+```java
+class ChildClass extends ParentClass {
+  //code
+}
+```
+
 ### Constructor
 
 Constructor is a special type of method.

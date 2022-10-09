@@ -256,6 +256,8 @@ Pointer is a variable which holds the memory information(address) of another var
 
 ```c
 datatype *pointername;
+(or)
+datatype* pointername;
 ```
 ### Example
 ```c
@@ -546,6 +548,13 @@ v = {3,2,1};
 
 sort(v.begin(), v.end()); // sorting in the vector in ascending order
 sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending order
+//For sorting the vector in descending order, you could also use the reverse iterator
+//i.e.:
+sort(v.rbegin(),v.rend()); // This will also sort the vector in a descending order
+
+//for sorting only a part of the vector , we can do:
+//sort(v.begin()+start_index,v.begin()+ending_index);
+//This will sort only part of the array from start_index to end_index
 
 }
 
@@ -558,10 +567,10 @@ sort(v.begin(), v.end(), greater<int>()); // sorting in the vector in descending
 |#include<string.h>  | It is used to perform various string operations|
 |#include<math.h>    | It is used to perform mathematical operations|
 |#include<iomanip.h> | It is used to access set() and setprecision()|
-|#include<signal.h>  | It is used to perform signal handling functions like sign|
+|#include<signal.h>  | It is used to perform signal handling functions like signal() and raise()|
 |#include<stdarg.h>  | It is used to perform standard argument functions|
 |#include<errno.h>   | It is used to perform error handling operations like errno|
 |#include<fstream.h> | It is used to control the data to read from a file|
 |#include<time.h>    | It is used to perform functions related to date() and time|
 |#include<graphics.h> | It is used include and facilitate graphical operations in program|
-|#include<bits/stdc++.h> | It is used to include all the standard library files|
+|#include<bits/stdc++.h> | It is used to include all the standard library files, this is called a NON-STANDARD header file (it can't be compiled on a compiler other than GCC)|
