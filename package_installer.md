@@ -1,0 +1,14 @@
+- apt-cache pkgnames: List all available packages
+- apt search <name>: Search for a package and its description
+- apt show <name>: Check detailed description of a package
+- 
+- Install packages
+- apt-get install <name>: Install a package
+- apt-get install <name1> <name2>: Install multiple packages
+- 
+- Update, upgrade & cleanup
+- apt-get update: Update list of available packages
+- apt-get upgrade: Install the newest version of available packages
+- apt-get dist-upgrade: Force upgrade packages.
+- apt-get autoremove: Remove installed packages that are no longer needed
+- apt-get clean: Free up disk space by removing archived packages
