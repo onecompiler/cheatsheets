@@ -2,7 +2,7 @@
 title: HTML 
 description: HTML Cheat Sheet gives you a quick reference of basic HTML tags, codes and attributes and is very handy while coding. 
 created: 2020-06-17
-updated: 2022-10-05
+updated: 2022-10-09
 ---
 
 ## Sample program
@@ -51,6 +51,7 @@ updated: 2022-10-05
 |`<source>`| Defines multiple media resources for media elements |` <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> `|
 |`<svg>`| SVG is used to define vector-based graphics for the Web|` <svg width="100" height="100"><circle cx="50" cy="50" r="40" stroke="green"/> </svg> `|
 |`<iframe>`| It is used to specifies an inline frame. |` <iframe src=" https://onecompiler.com/" title="iframe element"></iframe> `|
+|`<progress>`| It represents the completion progress of a task. |` <progress id="file" value="32" max="100"> 32% </progress> `|
 
 ## HTML formatting 
 
@@ -68,6 +69,7 @@ updated: 2022-10-05
 |`<sub>..</sub>`| Subscript text|
 |`<sup>..</sup>` | Superscript text|
 |`<big>..</big>` | Larger text|
+|`<kbd>..</kbd>` | keyboard input text|
 
 ## Tables
 
@@ -165,6 +167,10 @@ List the entries like in a dictionary or encyclopedia.
 |`<input type = "checkbox">`| To define a checkbox |
 | `<input type = "file">`| To define a file upload box|
 | `<input type = "range">`| To define a range slider control|
+| `<input type = "color">`| To define a color picker interface|
+| `<input type = "reset">`| To define a reset button|
+| `<input type = "email">`| To define a single-line email input field|
+| `<input type = "datetime-local">`| To define a single-line Date and time input field|
 
 ```html
  <form >
