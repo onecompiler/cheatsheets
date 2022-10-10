@@ -456,3 +456,91 @@ public class AA {   //beg of class
    }
  }
  ```
+
+
+### Abstract Class
+
+When we define a class to be “final”, it cannot be extended. In certain situation, we want to properties of classes to be always extended and used. Such classes are called Abstract Classes.
+An Abstract class is a conceptual class.
+An Abstract class cannot be instantiated – objects cannot  be created.
+Abstract classes provides a common root for a group of classes, nicely tied together in a package
+
+```java
+abstract class ClassName {
+    ...
+    …
+    abstract Type MethodName1();
+    …
+    …
+    Type Method2() {
+	  // method body
+    }
+ }
+ ```
+
+
+### Interface
+
+Interface  is a  conceptual entity similar to a Abstract class.
+Can contain only constants (final variables) and abstract method (no implementation) - Different from Abstract classes.
+Use when a  number of classes share a common interface. 
+Each class should implement the interface.
+Interfaces are used like super-classes who properties are inherited by classes. This is achieved by creating a class that implements the given interface
+
+```java
+interface InterfaceName {
+	// Constant/Final Variable Declaration
+	// Methods Declaration – only method body
+ }
+class ClassName implements InterfaceName [, InterfaceName2, …] {
+	// Body of Class
+ }
+ ```
+
+
+### Static Members
+
+Java supports definition of global methods and variables that can be accessed without creating objects of a class. Such members are called Static members.
+Define a variable by marking with the static methods. 
+This feature is useful when we want to create a variable common to all instances of a class.
+One of the most common example is to have a variable that could keep a count of how many objects of a class have been created.
+Note: Java creates only one copy for a static variable which can be used even if the class is never instantiated.
+
+```java
+public class Circle {
+       // class variable, one for the Circle class, how many circles
+	public static int numCircles;
+
+       //instance variables,one for each instance of a Circle 
+	public double x,y,r; 
+      // Constructors...
+ }
+ ```
+Access with the class name (ClassName.StatVarName)
+```java
+nCircles = Circle.numCircles;
+ ```
+
+
+### this Keyword
+
+this keyword can be used to refer to the object itself. 
+It is generally used for accessing class members (from its own methods) when they have the same name as those passed as arguments.
+
+```java
+public class Circle {
+	public double x,y,r;
+     // Constructor
+	public Circle (double x, double y, double r) {
+		this.x = x;
+		this.y = y;
+		this.r = r;
+	}
+         //Methods to return circumference and area
+ }
+ ```
+
+
+
+
+
