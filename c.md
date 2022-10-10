@@ -238,6 +238,12 @@ if(conditional-expression)
     //code
 }
 ```
+### 2.1. If-else using Ternary Operator
+
+```c
+bool isEven = (3 % 2 == 0) ? 1 : 0; //isEven = 0 as 3 is not an even number
+```
+
 ### 3. If-else-if ladder
 
 ```c
