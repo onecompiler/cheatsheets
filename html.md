@@ -192,6 +192,7 @@ List the entries like in a dictionary or encyclopedia.
 | `<footer></footer>`| Located at the bottom of any article or document, they can contain contact details, copyright information etc. There can be multiple footers on a page. | `<footer>Hi, I'm a footer tag!</footer>` |
 | `<main></main>`| It defines the main content of the document. | `<main>Hi, I'm a main tag!</main>` |
 | `<nav></nav>`| It defines the navigation bar of the document. | `<nav>Hi, I'm a nav tag!</nav>` |
+| `<section></section>`| It represents a generic standalone section of a document. | `<section>This is the secton tag!</section>` |
 
 ## HTML Lazy Loading
 
