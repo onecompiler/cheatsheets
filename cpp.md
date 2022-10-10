@@ -310,6 +310,65 @@ int main()
 }
 
 ```
+## linked List
+
+A linked list is an ordered set of data elements, each containing a link to its successor (and sometimes its predecessor)
+
+The basic operations associated with linked list are-:
+Insertion − Adds an element at the beginning of the list.
+Deletion − Deletes an element at the beginning of the list.
+Display − Displays the complete list.
+Search − Searches an element using the given key.
+Delete − Deletes an element using the given key.
+
+```c
+
+#include <bits/stdc++.h>
+using namespace std;
+
+class Node {
+public:
+	int data;
+	Node* next;
+};
+
+// This function prints contents of linked list
+// starting from the given node
+void printList(Node* n)
+{
+	while (n != NULL) {
+		cout << n->data << " ";
+		n = n->next;
+	}
+}
+int main()
+{
+	Node* head = NULL;
+	Node* second = NULL;
+	Node* third = NULL;
+
+      	// allocate 3 nodes in the heap
+	head = new Node();
+	second = new Node();
+	third = new Node();
+
+	head->data = 1;      // assign data in first node
+	head->next = second; // Link first node with second
+
+	second->data = 2;    // assign data to second node
+	second->next = third;
+
+	third->data = 3;     // assign data to third node
+	third->next = NULL;
+
+	// Function call
+	printList(head);
+
+	return 0;
+}
+
+```
+
 ## Stacks 
 
 Stacks are a type of container adaptors with LIFO(Last In First Out) type of working, where a new element is added at one end (top) and an element is removed from that end only.
