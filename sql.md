@@ -304,7 +304,7 @@ FROM <table name>
 WHERE <column name> IS NOT NULL;
 ```
 ## Joins in SQL
-INNER JOIN
+### INNER JOIN
 
 This query will return all of the records in the left table (table A) that have a matching record in the right table (table B)
 Example :
@@ -314,7 +314,7 @@ FROM Table_A A
 INNER JOIN Table_B B
 ON A.Key = B.Key
 ```
-LEFT JOIN
+### LEFT JOIN
 This query will return all of the records in the left table (table A) regardless if any of those records have a match in the right table (table B). It will also return any matching records from the right table.
 
 Example:
@@ -324,7 +324,7 @@ FROM Table_A A
 LEFT JOIN Table_B B
 ON A.Key = B.Key
 ```
-RIGHT JOIN
+### RIGHT JOIN
 This query will return all of the records in the right table (table B) regardless if any of those records have a match in the left table (table A). It will also return any matching records from the left table
 
 Example
@@ -334,7 +334,7 @@ FROM Table_A A
 RIGHT JOIN Table_B B
 ON A.Key = B.Key
 ```
-OUTER JOIN
+### OUTER JOIN
 This Join can also be referred to as a FULL OUTER JOIN or a FULL JOIN. This query will return all of the records from both tables, joining records from the left table (table A) that match records from the right table (table B)
 Example:
 ```SQL
@@ -343,7 +343,7 @@ FROM Table_A A
 FULL OUTER JOIN Table_B B
 ON A.Key = B.Key
 ```
-LEFT OUTER JOIN
+### LEFT OUTER JOIN
 This query will return all of the records in the left table (table A) that do not match any records in the right table (table B).
 Example:
 ```SQL
@@ -353,7 +353,7 @@ LEFT JOIN Table_B B
 ON A.Key = B.Key
 WHERE B.Key IS NULL
 ```
-RIGHT OUTER JOIN
+### RIGHT OUTER JOIN
 This query will return all of the records in the right table (table B) that do not match any records in the left table (table A).
 Example:
 ```SQL
@@ -362,5 +362,79 @@ FROM Table_A A
 RIGHT JOIN Table_B B
 ON A.Key = B.Key
 WHERE A.Key IS NULL
+```
+
+## ASSERTIONS
+An assertion is a predicate expressing a condition that we wish the database always to satisfy. It is usually employed when our predicate/conditon involves multiple tables.
+
+```SQL
+CREATE ASSERTION <assertion-name> CHECK(<predicate>)
+```
+
+When an assertion is made, the system tests it for validity, and tests it again on every update that may violate the assertion. This testing may introduce a significant amount of overhead; hence assertions should be used with great care and only when absolutely needed.
+
+NOTE: Modern database management systems don't allow assertions. A notable example is MySQL doesn't support assertions.
+
+## EXISTS and NOT EXISTS clause
+### EXISTS
+
+An EXISTS condition tests for existence of rows in a subquery. TRUE if the subquery returns at least one row. Very useful to find rows that satisfy a complex condition, usually involving multiple tables.
+
+Example: A query that returns department ids' who have atleast one employee.
+```SQL	
+SELECT department_id
+FROM departments d
+WHERE EXISTS (	SELECT * 
+		FROM employees e
+    		WHERE d.department_id = e.department_id);
+```
+
+### NOT EXISTS
+
+NOT EXISTS is exactly opposite to that of EXISTS. TRUE if the subquery returns no rows. This is especially useful if you wish to check whether all rows of a table satisfy a condition.
+
+Example: An assertion that sum of all account balances is greater than the loan amounts in each branch.
+```SQL
+CREATE ASSERTION sum-constraint CHECK
+(NOT EXISTS (	SELECT *
+		FROM branch b
+		WHERE (	SELECT SUM(amount)
+			FROM loan l
+			WHERE l.branch_name = b.branch_name)>= (SELECT SUM(amount)
+								FROM account a
+								WHERE a.branch-name = b.branch-name)))
+```
+
+## Triggers
+A trigger is a statement that is executed automatically by the system as a side effect of a modification to the database that satisfy a condition. This model of triggers is referred to as the event-condition-action model.
+
+Triggers are often used to:
+  - enforce complex constraints, especially multi-table constraints. Financial posting is an example of this.
+  - implement auditing “logs”.
+  - trigger related actions like updating other tables, etc to imitate the consequences of an action.
+  - pop a sequence when creating token keys.
+
+
+```SQL
+CREATE TRIGGER trigger_name
+{BEFORE | AFTER} {INSERT | UPDATE| DELETE }
+ON table_name FOR EACH ROW
+<trigger-body>;
+```
+
+There are two levels for Triggers:
+  - Row-level trigger : If operation affects multiple rows, trigger fires once for each row affected. Example: 
+  - Statement-level trriger : A statement trigger is fired only once for the triggering statement, regardless of the number of rows affected by the triggering statement
+
+Example: To audit changes made to employees table.
+```SQL
+CREATE TRIGGER before_employee_update 
+    BEFORE UPDATE ON employees
+    FOR EACH ROW 
+INSERT INTO employees_audit
+SET action = 'update',
+     employeeNumber = OLD.employeeNumber,
+     lastname = OLD.lastname,
+     changedat = NOW();
 ```
 
