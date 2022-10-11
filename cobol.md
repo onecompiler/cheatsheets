@@ -33,9 +33,9 @@ STOP RUN
 |Value Clause|Value clause is an optional clause which is used to initialize the data items. The values can be numeric literal, alphanumeric literal, or figurative constant. It can be used with both group and elementary items.|
 
 
-##Basic Verbs
+## Basic Verbs
 
-###1.Accept Verb
+### 1.Accept Verb
 
 *Accept verb is used to get data such as date, time, and day from the operating system or directly from the user.
 
@@ -44,7 +44,7 @@ ACCEPT WS-STUDENT-NAME.
 ACCEPT WS-DATE FROM SYSTEM-DATE.
 ```
 
-###2.Display Verb                                            
+### 2.Display Verb                                            
 
 *Display verb is used to display the output of a COBOL program.
 
@@ -52,7 +52,7 @@ ACCEPT WS-DATE FROM SYSTEM-DATE.
 DISPLAY WS-STUDENT-NAME.
 DISPLAY "System date is : " WS-DATE.
 ```
-###3.Initialize Verb                                            
+### 3.Initialize Verb                                            
 
 *Initialize verb is used to initialize a group item or an elementary item. Data names with RENAME clause cannot be initialized.                                                
 
@@ -61,7 +61,7 @@ DISPLAY WS-STUDENT-NAME.
 DISPLAY "System date is : " WS-DATE.
 ```
 
-###4.Divide Verb                                           
+### 4.Divide Verb                                           
 
 *Divide verb is used for division operations.                                                
 
@@ -72,7 +72,7 @@ DIVIDE A BY B GIVING C REMAINDER R
 ```
 
 
-###5.Multiply Verb                                                 
+### 5.Multiply Verb                                                 
 
 *Multiply verb is used for multiplication operations.                                                                                                                                  
 
@@ -82,7 +82,7 @@ MULTIPLY A BY B C
 MULTIPLY A BY B GIVING E
 ```
 
-###6.Add Verb                                           
+### 6.Add Verb                                           
 
 *Add verb is used to add two or more numbers and store the result in the destination operand.
 
@@ -94,7 +94,7 @@ ADD A B C TO D GIVING E
 ADD CORR WS-GROUP1 TO WS-GROUP2
 ```
 
-###7.Subtract Verb
+### 7.Subtract Verb
 
 *Subtract verb is used for subtraction operations.
 
@@ -106,9 +106,9 @@ SUBTRACT A B C FROM D GIVING E
 SUBTRACT CORR WS-GROUP1 TO WS-GROUP2
 ```
 
-##Conditional statements
+## Conditional statements
 
-###1.IF Condition Statement
+### 1.IF Condition Statement
 
 *Syntax:Following is the syntax of IF condition statements −
 
@@ -120,7 +120,7 @@ ELSE
 END-IF.
 ```
 
-###2.Relation Condition
+### 2.Relation Condition
 
 *Relation condition compares two operands, either of which can be an identifier, literal, or arithmetic expression. Algebraic comparison of numeric fields is done regardless of size and usage clause.
 
@@ -137,7 +137,7 @@ Greater than or Equal (>=), Less than or equal (<=) ]
 
 [Data Name/Arithmetic Operation]
 ```
-###3.Sign Condition
+### 3.Sign Condition
 
 *Sign condition is used to check the sign of a numeric operand. It determines whether a given numeric value is greater than, less than, or equal to ZERO.
 
@@ -151,7 +151,7 @@ Greater than or Equal (>=), Less than or equal (<=) ]
 [Data Name/Arithmetic Operation]
 ```
 
-###4.Class Condition
+### 4.Class Condition
 
 *Class condition is used to check if an operand contains only alphabets or numeric data. Spaces are considered in ALPHABETIC, ALPHABETIC-LOWER, and ALPHABETIC-UPPER.
 
@@ -165,7 +165,7 @@ Greater than or Equal (>=), Less than or equal (<=) ]
 [Data Name/Arithmetic Operation]
 ```
 
-###5.Condition-name Condition
+### 5.Condition-name Condition
 
 *A condition-name is a user-defined name. It contains a set of values specified by the user. It behaves like Boolean variables. They are defined with level number 88. It will not have a PIC clause.
 
@@ -173,7 +173,7 @@ Greater than or Equal (>=), Less than or equal (<=) ]
 88 [Condition-Name] VALUE [IS, ARE] [LITERAL] [THRU LITERAL].
 ```
 
-###6.Negated Condition
+### 6.Negated Condition
 
 *Negated condition is given by using the NOT keyword. If a condition is true and we have given NOT in front of it, then its final value will be false.
 
@@ -183,7 +183,7 @@ IF NOT [CONDITION]
 END-IF.
 ```
 
-###7.Combined Condition
+### 7.Combined Condition
 
 *A combined condition contains two or more conditions connected using logical operators AND or OR.
 
@@ -193,9 +193,9 @@ IF [CONDITION] AND [CONDITION]
 END-IF.
 ````
 
-##Loop Statements
+## Loop Statements
 
-###1.Perform Thru
+### 1.Perform Thru
 
 *Perform Thru is used to execute a series of paragraph by giving the first and last paragraph names in the sequence. After executing the last paragraph, the control is returned back.
 
@@ -205,7 +205,7 @@ PERFORM
 END-PERFORM.
 ```
 
-###2.Perform Until
+### 2.Perform Until
 
 *In ‘perform until’, a paragraph is executed until the given condition becomes true. ‘With test before’ is the default condition and it indicates that the condition is checked before the execution of statements in a paragraph.
 
@@ -217,7 +217,7 @@ PERFORM A-PARA WITH TEST BEFORE UNTIL COUNT=5
 PERFORM A-PARA WITH TEST AFTER UNTIL COUNT=5
 ```
 
-###3.Perform Times
+### 3.Perform Times
 
 *In ‘perform times’, a paragraph will be executed the number of times specified.
 
@@ -225,7 +225,7 @@ PERFORM A-PARA WITH TEST AFTER UNTIL COUNT=5
 PERFORM A-PARA 5 TIMES.
 ```
 
-###4.Perform Varying
+### 4.Perform Varying
 
 *In perform varying, a paragraph will be executed till the condition in Until phrase becomes true.
 
