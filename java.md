@@ -89,6 +89,7 @@ data-type variable-name = value;
 ### Naming convention of variables
 
 * Case sensitive.
+* keywords cannot be used as variable names
 * Must should begin with a `lower case letter`. For second word should be a capital like this: firstName, pinCode etc.
 * Cannot contain white spaces like first name. 
 * special characters like `$` and `_` can be used to begin a variable name.
@@ -348,7 +349,7 @@ public class Main {
 
 ### 1. Class
 
-Class is the blueprint of an object and `class` keyword is required to create a class.
+Class is the blueprint of an object ,`class` keyword is required to create a class and keywords cannot be used as class names.
 
 ```java
 class class_name {  
@@ -359,7 +360,7 @@ class class_name {
 
 ### 2. Object
 
-Object is a basic unit in OOP, and is an instance of the class.
+Object is a basic unit in OOP, and is an instance of the class .  
 
 ```java
 class_name obj_name;
