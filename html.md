@@ -192,6 +192,8 @@ List the entries like in a dictionary or encyclopedia.
 | `<footer></footer>`| Located at the bottom of any article or document, they can contain contact details, copyright information etc. There can be multiple footers on a page. | `<footer>Hi, I'm a footer tag!</footer>` |
 | `<main></main>`| It defines the main content of the document. | `<main>Hi, I'm a main tag!</main>` |
 | `<nav></nav>`| It defines the navigation bar of the document. | `<nav>Hi, I'm a nav tag!</nav>` |
+| `<mark></mark>`| It defines marked/highlighted text | `<mark>Hi, I'm highlighted, Am I?</mark>` |
+| `<time></time>`| It defines a data/time | `<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>` |
 
 ## HTML Lazy Loading
 
