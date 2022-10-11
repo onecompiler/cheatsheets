@@ -187,6 +187,33 @@ Query;
 DROP VIEW View_name;
 ```
 
+## Clauses 
+
+### 1. ORDER BY
+
+```sql
+SELECT column_name1 ,column_name2 
+FROM table_name
+ORDER BY column_name 1,colunm_name2 ASC | DESC;
+```
+### 2. GROUP BY
+
+```sql
+SELECT column_name(s)
+FROM table_name
+WHERE condition 
+GROUP BY column_name(s);
+```
+### 3. HAVING 
+
+```sql
+SELECT column_names
+FROM table_name
+WHERE condition 
+GROUP BY column_names
+HAVING condition;
+```
+
 ## Triggers
 
 ### 1. Create a Trigger
