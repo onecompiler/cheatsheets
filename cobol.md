@@ -1,6 +1,6 @@
 ---
-title:COBOL
-description:COBOL is used for writing application programs and we cannot use it to write system software. The applications like those in defense domain, insurance domain, etc. which require huge data processing make extensive use of COBOL.
+title: COBOL
+description: COBOL is used for writing application programs and we cannot use it to write system software. The applications like those in defense domain,  insurance domain, etc. which require huge data processing make extensive use of COBOL.
 created: 1959-04-25
 updated: 2014-09-30
 ---
