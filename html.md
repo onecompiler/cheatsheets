@@ -70,6 +70,7 @@ updated: 2022-10-09
 |`<sup>..</sup>` | Superscript text|
 |`<big>..</big>` | Larger text|
 |`<kbd>..</kbd>` | keyboard input text|
+|`<bdo>..</bdo>` | bidirectional override text|
 
 ## Tables
 
