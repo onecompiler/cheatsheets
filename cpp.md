@@ -523,6 +523,21 @@ int main(){
     return 0;
 }
 ```
+
+## map
+Maps are part of the C++ STL (Standard Template Library). Maps are the associative containers that store sorted key-value pair, in which each key is unique and it can be inserted or deleted but cannot be altered. Values associated with keys can be changed.
+``` 
+#include <map>
+
+int main(){
+  //new map
+  std::map <int,int> myMap;
+  myMap[0] = 1;
+  myMap[1] = 2;
+  myMap[2] = 3;
+  myMap[3] = 4;
+} 
+```
 ## Sort one-line
 
 Sorting is one of the most basic functions applied to data. It means arranging the data in a particular fashion, which can be increasing or decreasing. There is a builtin function in C++ STL by the name of sort(). 
