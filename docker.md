@@ -37,7 +37,49 @@ Kill a running container
 docker kill container_name/ container_id 
 ```
 
+## Container
+
+List running containers
+
+```
+docker container ls
+```
+
+List all containers even stopped once
+
+```
+docker container ls -a
+```
+
+Start and stop a container
+
+```
+docker start container_name 
+docker stop container_name
+```
+
+Create a image from a running container
+
+```
+docker container commit container_id image_name
+```
+
+Delete all stopped containers
+
+```
+docker container prune
+```
+
+Get all details related to the container
+
+```
+docker inspect container_id
+```
+
+
+
 ## Prune
+
 ```sh
 docker system prune     # prune all docker resources
 docker system prune -f  # prune all resources with force (without prompt)

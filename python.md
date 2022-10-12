@@ -99,6 +99,10 @@ print(mylist[-1]) # prints Samsung
 |lst.pop(`[index]`)→value| remove & return item at index|
 |lst.sort()| sort the given list items|
 |lst.reverse() |reverse the given list items|
+|lst.count() |Returns the number of elements with the specified value|
+|lst.clear() |Removes all the elements from the list|
+|lst.index() |Returns the index of the first element with the specified value|
+|lst.copy() |Returns a copy of the list|
 
 ### 2. Tuple
 
