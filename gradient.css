@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Gradients</title>
+	<style>
+	#main1 {
+		height: 200px;
+		background-color: white;
+		background-image: linear-gradient(white, green);
+	}
+	#main2 {
+		height: 350px;
+		width: 700px;
+		background-color: white;
+		background-image: radial-gradient(#090,
+								#fff, #2a4f32);
+	}
+
+	
+	.gfg {
+		text-align: center;
+		font-size: 40px;
+		font-weight: bold;
+		padding-top: 80px;
+	}
+	
+	.geeks {
+		font-size: 17px;
+		text-align: center;
+	}
+	</style>
+</head>
+
+<body>
+	<!-- Linear gradient -->
+	<div id="main1">
+		<div class="gfg">GeeksforGeeks</div>
+		<div class="geeks">
+		Linear Gradient
+		</div>
+	</div>
+	<br><br>
+	<!-- Radial Gradient -->
+	<div id="main2">
+		<div class="gfg">GeeksforGeeks</div>
+		<div class="geeks">
+		Radial Gradient
+	</div>
+</body>
+</html>
