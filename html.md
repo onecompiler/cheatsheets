@@ -198,3 +198,12 @@ List the entries like in a dictionary or encyclopedia.
 ```html
 <img loading="lazy" src="url-or-directory.png" alt="lazy-load-images" />
 ```
+## Marquee tag
+
+An HTML marquee is a scrolling piece of text displayed either horizontally across or vertically down your webpage depending on the settings. This is created by using HTML <marquees> tag
+  
+>This element should not be used in HTML5. Instead, you can use JavaScript and CSS to create such effects.
+  
+  ```
+  <marquee direction = "right">This text will scroll from left to right</marquee>
+  ```
