@@ -132,3 +132,16 @@ obsolete now.
 Reviewed-by: Z
 Refs: #123
 ```
+
+## Undo changes
+
+```sh
+git revert <commit>                      # Create new commit that undoes all of the changes made in <commit> then apply it to the current branch.
+git reset <file>                         # Remove <file> from the staging area, but leave the working directory unchanged. This unstages a file without overwriting any changes.
+git clean -n                             # Shows which files would be removed from working directory.Use the -f flag in place of the -n flag to execute the clean.
+git checkout <file>                      # Undoing local changes that have not been committed, file has now been reverted to the way it was at the previous commit
+git reset --soft HEAD~                   #Undoing your last commit (That Has Not Been Pushed)
+git reset -hard                          # Any pending work that was hanging out in the Staging Index and Working Directory will be lost/undone.
+git reset --mixed                        # Any changes that have been undone from the Staging Index are moved to the Working Directory.
+git reset HEAD~2                         # Moves the current branch backward by two commits
+```
