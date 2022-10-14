@@ -168,6 +168,27 @@ print(val) # prints iPhone
 |d.setdefault(key)|Returns the value of the specified key. If the key does not exist then returns the default value provided|
 |d.fromkeys(key,value)| Returns a dictionary with specified keys and values|
 
+
+## List Comprehension
+
+List comprehension provides us with a shorter syntax when we want to create a new list based on the values of existing list. It also saves the memory as the line of execution reduces.
+
+```py
+cars=["bmw","audi","ferrari","range rover"]
+newlist=[]
+for i in cars:
+    newlist.append(i)
+print(newlist)
+```
+In the above example we declared a newlist using the traditional method. Now lets see how it can be done using list comprehension.
+
+```py
+cars=["bmw","audi","ferrari","range rover"]
+newlist=[i for i in cars if "a" in i]
+print(newlist)
+```
+So as we can see that this task is performed in less number of lines and thus it saves a bit of memory and the execution time also reduces.
+
 ## Conditional Statements
 
 ### 1. If
