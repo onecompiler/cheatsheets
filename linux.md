@@ -56,3 +56,10 @@ Options:
 -W 	# Verify a archive file 
 -r 	# update or add file or directory in already existed .tar file
 ```
+## Text Editor Options for Programmers
+
+```c
+Sublime Text     Atom        GNU Emacs 
+Vim              Gedit       Notepadqq
+Nano             VsCode      Brackets
+```
