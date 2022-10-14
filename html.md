@@ -199,3 +199,8 @@ List the entries like in a dictionary or encyclopedia.
 ```html
 <img loading="lazy" src="url-or-directory.png" alt="lazy-load-images" />
 ```
+## Html Background with Colors
+```html
+<tagname bgcolor="color_value"...>
+  Ex- <table bgcolor="yellow" width="100%">
+```
