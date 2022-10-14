@@ -1,6 +1,6 @@
 ---
 title: Microsoft Azure Fundamentals Cheatsheet
-description: MySQL cheatsheet contains most commonly used commands which are helpful while working with MySQL.
+description: Azure cheatsheet contains important concepts while working with azure.
 created: 2022-10-14
 updated: 2022-10-14
 ---
