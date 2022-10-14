@@ -52,6 +52,7 @@ updated: 2022-10-09
 |`<svg>`| SVG is used to define vector-based graphics for the Web|` <svg width="100" height="100"><circle cx="50" cy="50" r="40" stroke="green"/> </svg> `|
 |`<iframe>`| It is used to specifies an inline frame. |` <iframe src=" https://onecompiler.com/" title="iframe element"></iframe> `|
 |`<progress>`| It represents the completion progress of a task. |` <progress id="file" value="32" max="100"> 32% </progress> `|
+|`<title>`| This HTML tag is used for specifying the title of the HTML document |`  <title>HTML Title Tag Example</title>   `|
 
 ## HTML formatting 
 
