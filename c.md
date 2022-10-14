@@ -200,6 +200,8 @@ Declaration
 | strrev() | It is used to return reverse of a string | `strrev("string")` |
 | strupr() | It return string characters in uppercase | `strupr("string")` |
 | strlwr() | It return string characters in lowercase | `strlwr("string")` |
+| strcasecmp() | It compares two strings without comparing the sensitivity of the case | `strcasecmp(string1 , string2)` |
+| strncat() | It concatenates n characters of one string to another string | `strncat(destination , source, size)` |
 
 ## Constants
 
