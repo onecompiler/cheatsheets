@@ -270,6 +270,32 @@ int x = 10, *ptr;
 ptr = &x; // valid because &x and ptr are addresses
 *ptr = x; // valid because both x and *ptr values 
 ```
+## References
+
+When a vairable is declared as a reference , it becomes an alternative name for an existing vairable.
+
+```c
+datatype& reference_name;
+```
+### Example
+```c
+#include <iostream>
+using namespace std;
+
+int main(){
+
+    int x = 10;
+    cout<< x ;   // Output is 10.
+    
+    int& xref = x;   // xref is a reference to x.
+
+    xref = 20;  // value of x is modified to 20 using xref reference.
+    cout<< x ;  // Output is 20 ;
+
+    return 0;
+}
+```
+
 ## Structures
 
 Structure is a user-defined data type where it allows you to combine data of different data types.
