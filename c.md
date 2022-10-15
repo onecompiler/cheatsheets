@@ -202,6 +202,7 @@ Declaration
 | strlwr() | It return string characters in lowercase | `strlwr("string")` |
 | strcasecmp() | It compares two strings without comparing the sensitivity of the case | `strcasecmp(string1 , string2)` |
 | strncat() | It concatenates n characters of one string to another string | `strncat(destination , source, size)` |
+| strstr() | It stores the value in a pointer variable and takes two strings as input | `strstr(string1 , string2)` |
 
 ## Constants
 
