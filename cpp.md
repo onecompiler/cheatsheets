@@ -149,6 +149,7 @@ do           if          static     while
 try 	     catch	 throw	    asm
 operator     new	 template   this
 public 	     private     protected  inline	
+alignas      namespace   template   bool
 ```
 
 
