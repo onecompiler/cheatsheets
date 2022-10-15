@@ -171,6 +171,7 @@ List the entries like in a dictionary or encyclopedia.
 | `<input type = "reset">`| To define a reset button|
 | `<input type = "email">`| To define a single-line email input field|
 | `<input type = "datetime-local">`| To define a single-line Date and time input field|
+| `<input type = "url">`| To define a url input column|
 
 ```html
  <form >
