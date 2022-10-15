@@ -1,171 +1,134 @@
-# Plugging redux in
+---
+title: Redux
+description: Redux is an open-source JavaScript library for managing and centralizing application state. It is most commonly used with libraries such as React or Angular for building user interfaces.
+created: 2022-10-15
+updated: 2022-10-15
+---
 
-The most straightforward way to plug in Redux:
-1. Create initial state of your app
-```js
-// initial-state.js
-const initialState = {
-  user: null,
-  todos: {
-    active: [],
-    completed: [],
+## Installation
+
+```sh
+# NPM
+npm install @reduxjs/toolkit
+
+# Yarn
+yarn add @reduxjs/toolkit
+```
+## Types
+
+
+```javascript
+type State = any // typically a primitive, a plain object with nothing complex like Dates, or an Immutable.js object
+
+type Action = {
+    type: string;
+    payload?: object | any;
+    error?: boolean;
+}
+
+// Async action will be transformed by middleware into an action (or series of actions)
+// before being sent to the base dispatch() function
+type AsyncAction = Promise | thunk | any
+
+// Reducers must be pure functions, without API calls
+// For an unrecogized action, it should return the state unmodified (to be compatible with `combineReducers`)
+// If the given state is undefined, it should return an initial state that is not undefined.
+type Reducer<S extends State, A extends Action> = (state: S, Action: A) => S
+
+// Case reducers are functions intended to handle a specific action type. In Redux Toolbox, they can mutate the state rather than simply returning the new state.
+type CaseReducer extends Reducer
+
+// Synchronously sends an action to the store's reducer, along with the previous state
+// returned by the store, to mutate the state. Returns the action it was passed.
+type BaseDispatch = (a: Action) => Action
+
+type Dispatch = (a: Action | AsyncAction) => any
+
+// A store is an object that holds the application's state tree. There should only be a 
+// single store in a Redux app. Instead of multiple stores, you can compose reducers.
+type Store = {
+    // Dispatches an action. This is the only way to trigger a state change.
+    dispatch: BaseDispatch
+
+    // Return the current state.
+    getState: () => State
+
+    // Add a change listener, which will be called every time the state changes.
+    // The function returned unsubscribes the change listener.
+    // Pretty low-level; you probably won't use this.
+    subscribe: (listener: () => void) => () => void
+    
+    // Replaces the reducer used by the store. You probably won't use this.
+    replaceReducer: (reducer: Reducer) => void
+}
+
+// Function that creates an action (and does not dispatch it)
+type ActionCreator<A extends Action, P extends any[] = any[]> = (...args: P) => Action | AsyncAction
+
+type Middleware = (api: { dispatch: Dispatch, getState: () => State }) => (next: Dispatch) => Dispatch
+
+type StoreCreator = (reducer: Reducer, preloadedState: ?State) => Store
+
+type StoreEnhancer = (next: StoreCreator) => StoreCreator
+
+```
+## Redux API
+
+```javascript
+import { createStore, combineReducers, applyMiddleware, bindActionCreators,
+         compose } from 'redux'
+
+// The reducer here should return an initial state if it is passed an undefined state.
+// When a store is created, Redux dispatches a dummy action to your reducer to populate the store with the initial state.
+createStore(reducer: Reducer, preloadedState?: State, enhancer?: StoreEnhancer): Store
+
+// Combines reducers into a single reducer we can pass to `createStore`.
+combineReducers(reducers: { [stateKey: string]: Reducer }): Reducer
+// Example:
+rootReducer = combineReducers({potato: potatoReducer, tomato: tomatoReducer})
+// This would produce the following state object
+{
+  potato: {
+    // ... potatoes, and other state managed by the potatoReducer ...
   },
-};
-
-export default initialState;
-```
-2. Create all action types that will be modifying the state
-```js
-// actions.js
-/**
- * Action creators - functions that will create action object
- * that will have required property `type` and optional property `payload`
- * Input argument of these functions will be the payload
- */
-export const loginUser = (user) => ({
-  type: 'LOGIN_USER',
-  payload: user,
-});
-
-export const addTodo = (todo) => ({
-  type: 'ADD_TODO',
-  payload: todo,
-});
-
-export const completeTodo = (todoId) => ({
-  type: 'COMPLETE_TODO',
-  payload: todoId,
-});
-```
-3. Create reducer, a function that will actually modify the state using given action
-```js
-// reducer.js
-
-import initialState from './initial-state';
-
-// Don't forget to pass initial state we've created in the first step as default parameter
-const reducer = (state = initialState, action) => {
-  switch (action.type) {
-    case 'LOGIN_USER':
-      return {
-        ...state,
-        user: action.payload,
-      };
-
-    case 'ADD_TODO':
-      return {
-        ...state,
-        todos: {
-          ...state.todos,
-          active: state.todos.active.concat(action.payload),
-        },
-      };
-
-    case 'COMPLETE_TODO':
-      const todo = state.todos.active.find((todo) => todo.id === action.payload);
-      if (!todo) return state; // WE ALWAYS HAVE TO RETURN STATE!!!
-      return {
-        ...state,
-        todos: {
-          ...state.todos,
-          active: state.todos.active.filter((activeTodo) => activeTodo !== todo),
-          completed: state.todos.completed.concat(todo),
-        },
-      };
-    // NEVER FORGET ABOUT DEFAULT CASE!!!
-    default:
-      return state;
+  tomato: {
+    // ... tomatoes, and other state managed by the tomatoReducer, maybe some nice sauce? ...
   }
-};
+}
 
-export default reducer;
-```
-4. Create a store using the reducer you've just created
-```js
-// store.js
+applyMiddleware(...middlewares: Middleware[]): StoreEnhancer
 
-import { createStore } from 'redux';
-import reducer from './reducer';
+// Returns a function or object of functions dispatching the given actions from the ActionCreator.
+// Used if you want to pass some action creators to a component not aware of Redux.
+bindActionCreators(actionCreators: ActionCreator | { [key: string]: ActionCreator },
+                   dispatch: Dispatch): Function | { [key: string]: Function }
 
-const store = createStore(reducer);
+// Compose functions from left to right
+compose(...functions: Function[]): Function
+To make your store available to your entire application, wrap it in a <Provider> component:
 
-export default store;
-```
-5. (In React) Create Provider component that will take store as the only prop
-```js
-// provider.js
+const store = createStore(rootReducer)
 
-import { Provider } from 'react-redux';
-import store from './store';
-
-const StateProvider = ({ children }) => (
+ReactDOM.render(
   <Provider store={store}>
-    { children }
-  </Provider>
-);
-
-export default StateProvider;
-```
-6. (In React) Wrap your application with Provider component
-```js
-// App.js
-
-import StateProvider from './store/provider';
-import MyAppRootComponent from './components/my-app-root';
-
-const App = () => (
-  <StateProvider>
-    <MyAppRootComponent />
-  </StateProvider>
-);
-
-export default App;
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
 ```
 
-# Immutable CRUD operations
 
-## Primitives
+**To make your store available to your entire application, wrap it in a <Provider> component:**
+```javascript
+const store = createStore(rootReducer)
 
-Primitives are immutable by default, just re-assign them ;)
-
-## Objects
-
-Follow this order:
-1. Make a clone (using destructuring operator)
-2. Modify property
-
-*To simplify reasoning, put each step on the new line*
-
-```js
-return {
-  ...state, // 1. Make a clone
-  user: action.payload, // 2. Modify property
-};
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
 ```
 
-## Arrays
 
-Modifying arrays in immutable way could be achieved with **3 magic methods**:
-### CREATE (Push into array): `.concat`
-```js
-return {
-  ...state,
-  books: state.books.concat(action.payload)
-};
-```
-### UPDATE (Find and replace something in the array): `.map`
-```js
-return {
-  ...state,
-  books: state.books.map((book) => book.id === action.payload.id ? action.payload : book),
-};
-```
-### DELETE (Find and remove from the array): `.filter`
-```js
-return {
-  ...state,
-  books: state.books.filter((book) => book.id !== action.payload),
-};
-```
 
-Only three methods to remember ;)
