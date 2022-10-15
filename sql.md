@@ -229,7 +229,7 @@ TRUNCATE TABLE <table name>;
 ```
 ## Constraints
 ```SQL
-UNIQUE, PRIMARY KEY, DEFAULT, CHECK, FOREIGN KEY
+UNIQUE, PRIMARY KEY, DEFAULT, CHECK, FOREIGN KEY, NOT NULL
 ```
 Unique → Repetition of values forbidden
 
@@ -240,6 +240,9 @@ Default → sets a pre defined value if value not entered.
 Check → Limits value.
 
 Foreign Key → Is a unique/primary key in a different table, but referenced in another.
+
+Not Null -> It emsures that a column does not have a null value.
+
 
 ## Group By Clause
 Used with different functions like COUNT, AVG, etc..
