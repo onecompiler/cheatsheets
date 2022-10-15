@@ -1,7 +1,7 @@
 ---
-##Flutter Layout Cheat Sheet
+## Flutter Layout Cheat Sheet
 ---
-##Row and Column
+## Row and Column
 
 Row /*or Column*/( 
   mainAxisAlignment: MainAxisAlignment.start,
@@ -54,7 +54,7 @@ Row /*or Column*/(
 
 <br>
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-##IntrinsicWidth and IntrinsicHeight
+## IntrinsicWidth and IntrinsicHeight
 
 Widget build(BuildContext context) {
   return Scaffold(
@@ -82,7 +82,7 @@ Widget build(BuildContext context) {
 
 But you would like to have all buttons as wide as the widest, just use IntrinsicWidth :
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-##ConstrainedBox
+## ConstrainedBox
 By default, most of the widgets will use as little space as possible:
 
 Card(child: const Text('Hello World!'), color: Colors.yellow)
