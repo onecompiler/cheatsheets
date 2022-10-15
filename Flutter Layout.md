@@ -2,7 +2,7 @@
 ## Flutter Layout Cheat Sheet
 ---
 ## Row and Column
-
+```html
 Row /*or Column*/( 
   mainAxisAlignment: MainAxisAlignment.start,
   children: <Widget>[
@@ -51,11 +51,13 @@ Row /*or Column*/(
     Icon(Icons.star, size: 50),
   ],
 ),
-
+```
 <br>
+   
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## IntrinsicWidth and IntrinsicHeight
-
+    
+```html
 Widget build(BuildContext context) {
   return Scaffold(
     appBar: AppBar(title: Text('IntrinsicWidth')),
@@ -79,12 +81,12 @@ Widget build(BuildContext context) {
     ),
   );
 }
-
+```
 But you would like to have all buttons as wide as the widest, just use IntrinsicWidth :
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## ConstrainedBox
 By default, most of the widgets will use as little space as possible:
-
+```html
 Card(child: const Text('Hello World!'), color: Colors.yellow)
 
 ConstrainedBox( 
@@ -94,7 +96,7 @@ ConstrainedBox(
     color: Colors.yellow,
   ), 
 ),
-
+```
 Using BoxConstraints you specify how much space a widget can have — you specify min/max of height/width.
 
 BoxConstraints.expand uses infinite (all the available) amount of space unless specified:
