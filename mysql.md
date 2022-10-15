@@ -50,6 +50,7 @@ SHOW TABLES;
 ##  DDL Commands
 
 ### 1. CREATE 
+* To Create a new Table in database
 
 ```sql
 CREATE TABLE table_name (
@@ -58,14 +59,18 @@ CREATE TABLE table_name (
                 ....);
 ``` 
 ### 2. ALTER
+* ALTER is used to add, delete, or modify columns in an existing table.
 ```sql 
 ALTER TABLE Table_name ADD column_name datatype;
 ```
 ### 3. TRUNCATE
+* TRUNCATE removes all rows from a table
 ```sql
 TRUNCATE table table_name;
 ```
 ### 4. DROP
+* DROP statement destroys the objects like an existing database, table, index, or view.
+
 ```sql 
 DROP TABLE table_name;
 ```
@@ -116,28 +121,29 @@ DELETE FROM table_name where condition;
 ## DCL Commands
 
 ### 1. GRANT
-
+* It is used to give access to users to the database
 ```sql
 GRANT privileges ON object TO user;
 ```
 ### 2. REVOKE
-
+* It is used to remove the granted permissions
 ```sql
 REVOKE privileges ON object FROM user;
 ```
 ## TCL commands
 
 ### 1. COMMIT
-
+* It is used for storing the changes made by the user. 
 ```sql
 COMMIT;
 ```
 ### 2. ROLLBACK  
-
+* Used for reverting changes of the transaction
 ```sql
 ROLLBACK;
 ```
 ## 3. SAVEPOINT
+* Marking a point of transaction to which easy rollback is possible. 
 ```sql
 SAVEPOINT savepoint_name;
 ROLLBACK TO savepoint_name; 
