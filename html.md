@@ -175,6 +175,7 @@ List the entries like in a dictionary or encyclopedia.
 | `<input type="tel">`| To define a telephone number. |
 | `<input type="url">`| To define a URL address. |
 | `<input type="week">`| To define a selection of week & year. |
+| `<input type="image">`| To take image format as an input. |
 
 ```html
  <form >
