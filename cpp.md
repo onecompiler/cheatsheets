@@ -134,6 +134,16 @@ s.length();
 | sizeof operator| sizeof() |
 | Scope Resolution Operator| :: (used to reference the global variable or member function that is out of scope.) |
 
+## Operator Precedence and Associativity
+
+| Category | Operator | Associativity |
+|----|----|----|
+| Postfix|() [] -> . ++ - - | Left to right|
+| Unary| + - ! ~ ++ - - (type)* & sizeof| Right to left|
+| Multiplicative| * / % | Left to right|
+| Additive| + - |  Left to right|
+| Shift| << >>| Left to right|
+| Relational| < <= > >= | Left to right|
 
 ## Keywords(reserved words)
 
