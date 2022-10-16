@@ -120,6 +120,8 @@ s.length();
 |\0 | Null character|
 |\b	|Back space|
 |\a	| Audible Bell|
+|\ooo | Octal|
+|\xhhh | Hexadecimal|
 
 ## Operators
 
