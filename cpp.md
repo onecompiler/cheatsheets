@@ -88,10 +88,19 @@ It contain many fuctions:
 begin(),end(),sort(),length() and many more
 ### Example:
 ```c
-string s="abcde";
-cout<<s[2];      //prints c
-sort(s.begin(),s.end());    
-s.length();
+string s="abcde";               // string declaration
+cout<<s[2];                     // prints c
+sort(s.begin(),s.end());        // sorts the given string
+s.length();                     // returns the length of the string
+#include <string>               // Include string (std namespace)
+s1.size(), s2.size();           // Number of characters: 0, 5
+s1 += s2 + ' ' + "world";       // Concatenation
+s1 == "hello world"             // Comparison, also <, >, !=, etc.
+s1.substr(m, n);                // Substring of size n starting at s1[m]
+s1.c_str();                     // Convert to const char*
+s1 = to_string(12.05);          // Converts number to string
+getline(cin, s);                // Read line ending in '\n'
+string string1.append(string2); // It is used to concatenate two strings(string1 and string2 are two string names)
 ```
 
 ## Literals or Constants
