@@ -40,7 +40,7 @@ String string1 = "One Compiler";
 string.concat(string1) // returns Welcome to One Compiler
 ```
 
-concat(): Checks whether string contains given value or not and return boolean value
+contains(): Checks whether string contains given value or not and return boolean value
 ```java
 String string = "One Compiler"; 
 string.contains("One")  //returns true
@@ -59,25 +59,25 @@ String string = "One Compiler";
 string.length()   //returns 12
 ```
 
-indexOf(): Returns the first occurance of specified character in given string
+indexOf(): Returns the first occurrence of specified character in given string
 ```java
 String string = "One Compiler";
 string.indexOf("C");  //returns 4
 ```
 
-lastIndexOf(): Returns the last occurance of specified character in a given string
+lastIndexOf(): Returns the last occurrence of specified character in a given string
 ```java
 String string = "One Compiler";
 string.lastIndexOf("e");  //returns 10
 ```
 
-replace(): Replaces all the occurances of specified character/charsequence with given character/charsequence.
+replace(): Replaces all the occurrences of specified character/charsequence with given character/charsequence.
 ```java
 String string = "One Compiler";
 string.replace("e", "r");  //returns Onr Compilrr
 ```
 
-replaceAll(): Replaces all the occurances matching specified regex with given string.
+replaceAll(): Replaces all the occurrences matching specified regex with given string.
 ```java
 String string = "One Compiler";
 string.replaceAll("\\s", "");  //returns OneCompiler
@@ -224,7 +224,7 @@ String string = "One Compiler";
 string.toUpperCase();  //returns ONE COMPILER
 ```
 
-trim(): Returns string by removing leading and trailing spaces i.e., It removes unicode value '\u0020' from a begining and ending of a given string 
+trim(): Returns string by removing leading and trailing spaces i.e., It removes unicode value '\u0020' from a beginning and ending of a given string 
 ```java 
 String string = "  One Compiler";
 string.trim();  //returns One Compiler
@@ -233,8 +233,8 @@ string.trim();  //returns One Compiler
 
 ## Java 8 Streams of string join/append 
 
-Collectors.joining(): Returns a concatinated string from stream
-Collectors.joining(CharSequence delimiter): Returns a concatinated string separated by delimiter
+Collectors.joining(): Returns a concatenated string from stream
+Collectors.joining(CharSequence delimiter): Returns a concatenated string separated by delimiter
 Collectors.joining(CharSequence delimiter,  CharSequence prefix, CharSequence suffix ): Returns a concatinated string separated by delimiter as well as appending specified prefix and suffix
 
 ```java
@@ -245,6 +245,40 @@ string = words.collect(Collectors.joining(",", "{", "}"));    //{audi,bmw,cadill
 ```
 
 
+## Java 11 String API Additions
 
+repeat(): Repeats the string content
+```java
+String string = "Ra ".repeat(2) + "Ramone";
+System.out.println(string);
 
+output:
+Ra Ra Ramone
+```
+
+strip(): Returns a string with all leading and trailing whitespaces removed
+```java
+System.out.println(("\n\t  hi   \u2005".strip()));
+
+output:
+hi
+```
+
+isBlank(): Returns true if the string is empty or contains only whitespace. Otherwise, it returns false
+```java
+System.out.println(("\n\t\u2005  ".isBlank()));
+
+output:
+true
+```
+
+lines(): Returns a Stream of lines extracted from the string, separated by line terminators
+```java
+String multilineStr = "This is\n \n a practice\n line.";
+long lineCount = multilineStr.lines().count();
+System.out.println(lineCount);
+
+output:
+4
+```
 

@@ -193,6 +193,32 @@ let arrayName = new Array("value1","value2",..etc);
 |some()| Array.some(callback(element[, index[, array]])[, thisArg])|
 |includes()| arrayName.includes(value-to-be-checked[, starting-search-index])|
 
+## Destructuring Arrays
+
+You can use destructuring to easily store the elements of an array into variables:
+```javascript
+let arr = [3, 4, 5];
+let [a,b,c] = arr;
+console.log(a,b,c);
+//This will print 3, 4 and 5
+let [x,,z] = arr;
+console.log(x,z);
+//This will only print 3 and 5
+//Hence you can skip elements as well
+```
+You can also make a function return multiple values by making it return an array and immediately destructuring the result:
+```javascript
+function calc(x, y)
+  {
+    let sum =x+y;
+    let product = x*y;
+    return [sum, product];
+  }
+let [sum, product] = calc(10, 20);
+console.log(sum, product);
+//This prints 30 and 200
+```
+
 ## Functions
 
 ```javascript
