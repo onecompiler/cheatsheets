@@ -229,7 +229,7 @@ TRUNCATE TABLE <table name>;
 ```
 ## Constraints
 ```SQL
-UNIQUE, PRIMARY KEY, DEFAULT, CHECK, FOREIGN KEY
+UNIQUE, PRIMARY KEY, DEFAULT, CHECK, FOREIGN KEY, CREATE INDEX
 ```
 Unique → Repetition of values forbidden
 
@@ -240,6 +240,9 @@ Default → sets a pre defined value if value not entered.
 Check → Limits value.
 
 Foreign Key → Is a unique/primary key in a different table, but referenced in another.
+
+Create Index → It is used to create and retrieve data from the database very quickly.
+
 
 ## Group By Clause
 Used with different functions like COUNT, AVG, etc..
