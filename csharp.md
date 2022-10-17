@@ -83,9 +83,11 @@ const datatype variable-name = value;
 |LastIndexOf()| it returns the last occurence of the string|
 |Replace()| it replaces the specified string character with new character|
 |Contains()| it checks whether a string contains substring|
-|ToCharArray()| it converts a string to a character(char) array|
-
-
+|ToCharArray()| it converts a string to a character(char) array| 
+|isEmpty()| it checks whether the string is empty or not and return true or false respectively| 
+|startsWith("char")| it checks the string start with given character or not and return true or false respectively|
+|endsWith("char")| it checks the string end with given character or not and return true or false respectively|
+|charAt(int)| it returns the character at the specified index in a string|
 ## Conditional Statements
 
 ### 1. If
