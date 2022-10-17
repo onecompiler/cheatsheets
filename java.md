@@ -458,3 +458,78 @@ public class AA {   //beg of class
    }
  }
  ```
+## Exceptions
+
+An exception is an unexpected event that occurs during program execution. It affects the flow of the program instructions which can cause the program to terminate abnormally.
+
+An exception can occur for many reasons. Some of them are:
+* Invalid user input
+* Device failure
+* Loss of network connection
+* Physical limitations (out of disk memory)
+* Code errors
+* Opening an unavailable file
+
+Exceptions can be caught and handled by the program. When an exception occurs within a method, it creates an object. This object is called the exception object.
+It contains information about the exception such as the name and description of the exception and state of the program when the exception occurred.
+
+Different approaches to handle exceptions in Java:
+* try...catch block
+* finally block
+
+### Java try...catch block
+Here's the syntax of try...catch block:
+```
+try {
+  // code
+}
+catch(Exception e) {
+  // code
+}
+```
+Here, we have placed the code that might generate an exception inside the try block. Every try block is followed by a catch block.
+When an exception occurs, it is caught by the catch block. The catch block cannot be used without the try block.
+
+Example:
+```
+class Main {
+  public static void main(String[] args) {
+
+    try {
+
+      // code that generate exception
+      int divideByZero = 5 / 0;
+      System.out.println("Rest of code in try block");
+    }
+    
+    catch (ArithmeticException e) {
+      System.out.println("ArithmeticException => " + e.getMessage());
+    }
+  }
+}
+```
+Output:
+```
+ArithmeticException => / by zero
+```
+In the example, we are trying to divide a number by 0. Here, this code generates an exception.
+To handle the exception, we have put the code, 5 / 0 inside the try block. Now when an exception occurs, the rest of the code inside the try block is skipped.
+The catch block catches the exception and statements inside the catch block is executed.
+If none of the statements in the try block generates an exception, the catch block is skipped.
+
+### Java finally block
+In Java, the finally block is always executed no matter whether there is an exception or not.
+The finally block is optional. And, for each try block, there can be only one finally block.
+The basic syntax of finally block is:
+```
+try {
+  //code
+}
+catch (ExceptionType1 e1) { 
+  // catch block
+}
+finally {
+  // finally block always executes
+}
+```
+If an exception occurs, the finally block is executed after the try...catch block. Otherwise, it is executed after the try block. For each try block, there can be only one finally block.
