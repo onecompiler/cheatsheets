@@ -169,3 +169,21 @@ When you click a submit button, usually page gets refreshed. You can prevent thi
 ```js
 event.preventDefault();
 ```
+
+# Lists and Keys 
+
+This is the example of how we can use lists and keys in react. 
+We loop through the numbers array using the JavaScript map() function. We return a `<li>` element for each item. Finally, we assign the resulting array of elements to listItems
+
+```js
+const numbers = [10, 20, 30, 40, 50];
+const listItems = numbers.map((number) =>
+  <li>{number}</li>
+);
+```
+
+Then, we can include the entire listItems array inside a `<ul>` element and return it
+
+```js
+return <ul>{listItems}</ul>
+```	
