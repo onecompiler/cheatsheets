@@ -15,6 +15,10 @@ print("hello world")
 
 * `#` is used to comment a line in Python
 
+### Docstrings 
+
+* The docstrings are declared using ”’triple single quotes”’ or “””triple double quotes”””
+
 ## Data Types
 
 |Category|Data Type|
