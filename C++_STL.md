@@ -1,3 +1,10 @@
+---
+title: C++ STL cheatsheet
+description: C++ STL cheatsheet contains useful code syntax with examples which is handy while coding and solving problems .
+created: 2022-10-18
+updated: 2022-10-19
+---
+
 # Standard Template Library and DSA cheat sheet
 
 ## Content

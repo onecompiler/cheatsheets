@@ -1,3 +1,9 @@
+---
+title: Django cheatsheet
+description: Django  cheatsheet contains useful snippets and rules and syntax with examples which is handy while developing web apps .
+created: 2022-10-18
+updated: 2022-10-19
+---
 # :scroll: Django Guide :  A cheat sheet which will increase your productivity as it contains useful syntax and is very handy while coding.Most of the summaries and examples are based on [the official documentation](https://docs.djangoproject.com/en/2.0/) for Django v2.0.
 
 ## Sections
