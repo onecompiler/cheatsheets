@@ -109,6 +109,10 @@ string string1.append(string2); // It is used to concatenate two strings(string1
 |Integer Literal- decimal|255|
 |Integer Literal- octal|0377|
 |Integer Literal- hexadecimal|0xFF|
+|Integer Literal- int|30|
+|Integer Literal- unsigned int|30u|
+|Integer Literal- long|30l|
+|Integer Literal- unsigned long|30ul|
 |Float point Literal|53.0f, 79.02|
 |Character literals| 'a', '1'|
 |String literals| "OneCompiler", "Foo"|
