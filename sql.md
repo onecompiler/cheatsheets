@@ -229,8 +229,9 @@ TRUNCATE TABLE <table name>;
 ```
 ## Constraints
 ```SQL
-UNIQUE, PRIMARY KEY, DEFAULT, CHECK, FOREIGN KEY, CREATE INDEX
+UNIQUE, PRIMARY KEY, DEFAULT, CHECK, FOREIGN KEY, NOT NULL, CREATE INDEX
 ```
+
 Unique → Repetition of values forbidden
 
 Primary Key → same as unique, cannot take NULL value. Only 1 Primary key in a table
@@ -241,7 +242,10 @@ Check → Limits value.
 
 Foreign Key → Is a unique/primary key in a different table, but referenced in another.
 
+Not Null -> It ensures that a column does not have a null value.
+
 Create Index → It is used to create and retrieve data from the database very quickly.
+
 
 
 ## Group By Clause
