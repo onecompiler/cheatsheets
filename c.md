@@ -2,23 +2,23 @@
 title: C Programming language
 description: C Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-04-25
-updated: 2020-04-25
+updated: 2022-10-19
 ---
 
 ## Basics
 
-* scanf("%d", &x) -- read value into the variable x from input stream
-* Printf("%d",x) -- printf value to the output stream
-* gets(str) -- reads a line from input stream into a variable
-* scanf("%[^\n]",s); --reads a line from input using scanf only
+* `scanf("%d", &x);` -- read value into the variable x from input stream
+* `printf("%d",x);` -- printf value to the output stream
+* `gets(str);` -- reads a line from input stream into a variable
+* `scanf("%[^\n]",s);` --reads a line from input using scanf only
 
 ### Sample C program
 
 ```c
 #include <stdio.h>    
-int main(){    
-printf("Hello World!!");    
-return 0;   
+int main() {    
+    printf("Hello World!!");    
+    return 0;   
 }  
 ```
 * `#include` is a keyword which is used to include header files like : `<stdlib.h>` and `<stdio.h>`. 
@@ -33,7 +33,7 @@ return 0;
 
 | Types | Data-type|
 |----|----|
-|Basic | int, char, float, double|
+|Basic | bool, void, int/long, long long, char, float, double|
 |Derived | array, pointer, structure, union|
 |Enumeration | enum|
 |Void |	void|
@@ -41,9 +41,14 @@ return 0;
 ### 1. Basic Data types
 | Data type | Description | Range | Memory Size| Format specifier|
 |----|----|----|----|----|
-| int| used to store whole numbers|-32,768 to 32,767|2 bytes| %d|
+| int| used to store whole numbers|-2,147,483,648 to 2,147,483,647|4 bytes| %d|
+|unsigned int| used to store non-negative whole numbers|0 to 4,294,967,295|4 bytes| %u|
 |short int| used to store whole numbers|-32,768 to 32,767| 2 bytes|%hd|
-|long int| used to store whole numbers|	-2,147,483,648 to 2,147,483,647| 4 bytes|%li|
+|unsigned short int| used to store non-negative whole numbers|0 to 65535| 2 bytes|%hu|
+|long int| used to store whole numbers|	-2,147,483,648 to 2,147,483,647| 4 bytes|%ld|
+|unsigned long int| used to store non-negative whole numbers|0 to 4,294,967,295 | 4 bytes|%lu|
+|long long int| used to store whole numbers | -(2^63) to (2^63)-1 | 8 bytes|%lld|
+|unsigned long long int| used to store non-negative whole numbers|0 to (2^64)| 4 bytes|%llu|
 |float| used to store fractional numbers|6 to 7 decimal digits| 4 bytes|%f|
 |double| used to store fractional numbers|15 decimal digits| 8 bytes|%lf|
 |char|used to store a single character|one character|1 bytes|%c|
@@ -73,7 +78,7 @@ struct structure_name {
 struct structure_name variable name;
 ```
 
-### 3. Enumeration Data types
+### 3. Enumeration Data typesnon-negative
 
 ```c
 enum name{constant1, constant2, constant3, ....... };
@@ -149,13 +154,14 @@ int a[2][3] = {
 
 | Operator type | Description|
 |----|-----|
-| Arithmetic Operator|+ , - , * , / , %|
-| comparision Operator| < , > , <= , >=, != , ==|
-| Bitwise Operator| & , ^ , \|, <<, >> |
-| Logical Operator| && , `\|\|`, ! |
-| Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
-| Ternary Operator| ? : |
-| sizeof operator| sizeof() |
+| Arithmetic Operators|+ , - , * , / , %|
+| Comparison Operators| < , > , <= , >=, != , ==|
+| Bitwise Operators| & , ^ , \|, <<, >> |
+| Logical Operators| && , `\|\|`, ! |
+| Assignment Operators|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
+| Ternary Operators| ? : |
+| sizeof operators| sizeof() |
+
 
 ## Keywords(reserved words)
 
@@ -283,15 +289,15 @@ for(Initialization; Condition; Increment/decrement){
 ```
 ### 2. While
 ```c
-while(condition){  
+while (condition){  
 //code 
 }  
 ```
 ### 3. Do-While
 ```c
-do{  
+do {  
 //code 
-} while(condition); 
+} while (condition); 
 ```
 
 ## Functions
@@ -327,6 +333,10 @@ int x = 10, *ptr;
 
 ptr = &x; // valid because &x and ptr are addresses
 *ptr = x; // valid because both x and *ptr values 
+
+int a[10];
+ptr = a;  // since a is the address of the first element in array (a[0])
+ptr++;    // pointer points to next array element (a[1])
 ```
 
 ## Types of Pointers
@@ -425,3 +435,33 @@ A set of functions for dynamic memory allocation from the heap. These methods ar
 |float.h | Limits of float types|
 |limits.h | Size of basic types|
 |wctype.h | Functions to determine the type contained in wide character data|
+
+## Mathematical Functions
+All functions defined under `<math.h>` header file.
+
+| Function | Description|
+|----|----|
+| sin(a) | Computes sine of the double angle (in radians) |
+| cos(a) | Computes cosine of the double angle (in radians) |
+| tan(a) | Computes tangent of the double angle (in radians) |
+| asine(a) | Computes principle inverse of the sine (in radians) |
+| acos(a) | Computes principle inverse of the cosine (in radians) |
+| atan(a) | Computes principle inverse of the tangent (in radians) |
+| atan2(a) | Computes principle inverse of tan(y/x) in same quadrant as (x,y) |
+| sqrt(x) | Computes square root of x |
+| log(x) | Computes natural logarithm of x (to the base e) |
+| log2(x) | Computes natural logarithm of x (to the base 2) |
+| log10(x) | Computes natural logarithm of x (to the base 10) |
+| exp(p) | Computes e to the power of p |
+| exp2(p) | Computes 2 to the power of p |
+| exp10(p) | Computes 10 to the power of p |
+| pow(x,y) | Computes x to the power of y |
+| ceil(x) | Computes smallest integer (returned as double) no less than x |
+| floor(x) | Computes largest integer (returned as double) no greater than x |
+| abs(x) | Computes the absolute value of x |
+
+## Randomize Functions
+All functions defined under `<stdlib.h>` header file. These randomized functions are pseudo-random (time-based random functions).
+
+* `random()` : returns a random long
+* `srandom(seed)` : seeds the random generator with a new random seed
