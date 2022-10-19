@@ -185,5 +185,5 @@ const listItems = numbers.map((number) =>
 Then, we can include the entire listItems array inside a `<ul>` element and return it
 
 ```js
-return <ul>{listItems}</ul>
+return <ul key={number.toString()}>{listItems}</ul>
 ```	
