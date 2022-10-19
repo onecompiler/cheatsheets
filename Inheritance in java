@@ -1,27 +1,64 @@
-   title	description	created	updated	colour
-Inheritance in Java	Types of Inheritance in Java language	19-10-2022	19-10-2022	-
- 
-Inheritance - It is the property of a child/derived/subclass, allowing it to inherit the properties() and functionalities or data members methods from its parent/base/superclass.  
+   ---
+title: Inheritance in Java
+description: types of inheritance in java with basic definations, syntax.
+created: 2022-10-19
+updated: 2022-10-19
+--- 
+
+## Inheritance  
+It is the property of a child/derived/subclass, allowing it to inherit the properties() and functionalities or data members methods from its parent/base/superclass.  
+
+## Use of Inheritance in Java 
+1. to acheive Runtime Polymorphism.
+2. for code Re-usability.  
+
+## Types of Inheritance
 Java supports 4 types of inheritance: 
 1.	Single Inheritance
 2.	Multi-level Inheritance
 3.	Hierarchical Inheritance
-4.	Hybrid Inheritance 
-Single Inheritance : 
-As the title indicates, just one class is subject to this kind of inheritance. The parent class gives rise to just one child class. 
+4.	Hybrid Inheritance  
 
-Syntax: 
+## Single Inheritance : 
+As the title indicates, just one class is subject to this kind of inheritance. The parent class gives rise to just one child class.  
+
+
+## Syntax:  
+```java
 Class A{
   //your parent class code
 }
 Class B extends A {
    //your child class code
-}
+} 
+``` 
+
+## Example 
+```java  
+class Faculty
+{  
+float salary=30000;  
+}  
+class Science extends Faculty
+{ 
+float bonous=2000;
+public static void main(String args[])
+{
+Science obj=new Science(); 
+System.out.println("Salary is:"+obj.salary);  
+System.out.println("Bonous is:"+obj.bonous);  
+}  
+}  
+Output: 
+Salary is: 30000.0
+Bonous is: 2000.0
+``` 
  
-Multi-Level Inheritance:  
+## Multi-Level Inheritance:  
 In multi-level inheritance, one class has more than one parent class but at different levels of inheritance.  
 
-Syntax: 
+Syntax:  
+```java
 Class A{
   //your parent class code
 }
@@ -30,13 +67,45 @@ Class B extends A {
 }
 Class C extends B {
     //your code 
+} 
+``` 
+## Example: 
+
+```java  
+class Faculty
+{  
+float total_sal=0, salary=30000;  
+}  
+
+class HRA extends Faculty
+{  
+float hra=3000;  
+}  
+
+class DA extends HRA
+{  
+float da=2000;  
+}  
+
+class Science extends DA
+{ 
+float bonous=2000;
+public static void main(String args[])
+{
+Science obj=new Science(); 
+obj.total_sal=obj.salary+obj.hra+obj.da+obj.bonous;
+System.out.println("Total Salary is:"+obj.total_sal);   
+}  
 }
+Output
+Total Salary is: 37000.0
+``` 
  
-Hierarchical Inheritance
+## Hierarchical Inheritance
  In hierarchical inheritance, one parent can have one or more child/sub/derived classes.
       
-Syntax: 
-
+## Syntax: 
+```java
 Class A{
   //your parent class code
 }
@@ -45,13 +114,45 @@ Class B extends A {
 }
 Class C extends A {
     //your child class code 
-}
+} 
+``` 
+## Example: 
+```java  
+class Animal{  
+void eat(){System.out.println("eating...");}  
+}  
+class Dog extends Animal{  
+void bark(){System.out.println("barking...");}  
+}  
+class Cat extends Animal{  
+void meow(){System.out.println("meowing...");}  
+}  
+class TestInheritance3{  
+public static void main(String args[]){  
+Cat c=new Cat();  
+c.meow();  
+c.eat();   
+}}  
+Output:
+
+meowing...
+eating...
+``` 
  
-Hybrid Inheritance: 
+## Hybrid Inheritance: 
 Hybrid Inheritance is the combination of more than one type of inheritance in a single program. 
+  
+  ## Syntax: 
+  
+  ```java  
+  class ClassName-2 extends ClasssName-1
+{
+variable  declaration;
+Method declaration;
+} 
+``` 
  
- 
-NOTE- 
+## NOTE- 
 Multiple inheritance is not supported in Java as it leads to the diamond problem. 
-We can achieve Multiple inheritance in Java by using the concept of Abstraction.
+We can achieve Multiple inheritance in Java by using the concept of interface.
 
