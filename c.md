@@ -82,7 +82,8 @@ enum name{constant1, constant2, constant3, ....... };
 
 Void specifies that there is no return value. Generally used when function returns no value, pointer with type as void represents the address of an object but not it's type.
 
-## Variables
+## Variables 
+
 
 ### Syntax:
 ```c
@@ -91,9 +92,14 @@ data-type variable-name = value;
 ### Example:
 ```c
 int x = 10; // declaring int variable and assigning value 10 to it
-char grade = 'A'; // declaring char variable and assigning value A to it
+char grade = 'A'; // declaring char variable and assigning value A to it 
+
+Based on scope, Variables can be classified into two types: 
+Local Variables 
+Global Variables
 ```
-## Literals
+## Literals 
+Literals are the constant values assigned to the constant variables.
 |Literal | Example|
 |----|----|
 |Integer Literal- decimal|255|
@@ -122,7 +128,7 @@ char grade = 'A'; // declaring char variable and assigning value A to it
 |\xhh	|hexadecimal Number|
 
 ## Arrays
-
+Array in C can be defined as a method of clubbing multiple entities of similar type into a larger group.
 ### One dimentional Array:
 
 ```c
@@ -157,7 +163,9 @@ int a[2][3] = {
 | Ternary Operator| ? : |
 | sizeof operator| sizeof() |
 
-## Keywords(reserved words)
+## Keywords(reserved words) 
+Keywords are words that have special meaning to the C compiler. These words help us to use the functionality of C language.
+There are 32 keywords in C language.
 
 ```c
 auto         double      int        struct
@@ -177,7 +185,8 @@ Identifiers are user defined names for variables, functions and arrays.
 * They must be less than or equal to 31 characters.
 * No special characters.
 * Must start with a letter or under score.
-* Can contain letters, digits, or underscore only.
+* Can contain letters, digits, or underscore only. 
+* We can not use C keywords as a variable name.
 
 ## Strings
 
