@@ -67,6 +67,40 @@ Angular is an application-design framework and development platform for creating
 	<input [value]="student.name"
 	 (input)="student.name=$event.target.value">
 	 ```
+	 
+#### Angular Lifecycle Hooks:
+- ngOnInit()
+	```
+	It get invoked when angular initialize component or directive.
+	```
+- ngOnChanges()
+	```
+	It get invoked when angular sets data bound input property i.e. @Input().
+	```
+- ngDoCheck()
+	```
+	It get invoked for every changes.
+	```
+- ngAfterContentInit()
+	```
+	It get invoked after angular project content in its view.
+	```
+- ngAfterContentChecked()
+	```
+	It get invoked after angular checks the binding of content into view.
+	```
+- ngAfterViewInit()
+	```
+	It get invoked after angular create component view.
+	```
+- ngAfterViewChecked()
+	```
+	It get invoked after angular checks the binding of component view.
+	```
+- ngOnDestroy()
+	```
+	It get invoked before angular destroy component or directives.
+	```
 
 #### Angular CLI commands:
 
