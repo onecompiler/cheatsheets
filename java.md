@@ -458,3 +458,62 @@ public class AA {   //beg of class
    }
  }
  ```
+ 
+ ### this Keyword
+
+this keyword is used to refer to the current instance of an object. 
+It can be used to access instance variables, if both local variables and instance variables have the same name.
+
+```java
+public class Student {
+  private String stuName, address, rollNumber;
+  Student (String stuName, String address, String rollNumber) {
+    this.stuName = stuName;
+    this.address = address;
+    this.rollNumber = rollNumber;
+  }
+}
+ ```
+ 
+ ### Final Keyword
+
+final is a keyword and access modifier for restricting access to a class, method, or variable
+
+* A final variable's value once initialized can't be changed
+```java
+final int value = 0;
+ ```
+
+* A final method cannot be overridden in a subclass
+```java
+final int calculateValue(){    
+    return 0;
+}
+```
+
+* A final class cannot be subclassed. (i.e. you cannot extend the class)
+```java
+public final class ValueCalc {    
+    int num = 0;
+    int calcNum(){
+        return 0;
+    }
+}
+```
+
+### Super Keyword
+
+* Super is used to invoke parent class constructor
+```java
+    super();
+ ```
+ 
+* It is used to access instance variable of parent class
+```java
+    super.variableNameOfParent;
+ ```
+* It is used to access methods of parent class
+```java
+    super.parentMethod();
+ ```
+
