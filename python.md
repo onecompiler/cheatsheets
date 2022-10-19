@@ -2,7 +2,7 @@
 title: Python
 description: Python cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-04-24
-updated: 2020-04-24
+updated: 2022-10-19
 ---
 
 ## Basics
@@ -14,6 +14,8 @@ print("hello world")
 ### comments
 
 * `#` is used to comment a line in Python
+* You can also comment using a docstring format[```Multiline
+                                                comment```]
 
 ## Data Types
 
@@ -79,14 +81,25 @@ function-name(parameters); # calling a function
 
 ### 1. List
 
-List is ordered collection of items and can be changed. `[]` are used to represent lists. 
+List is ordered collection of items and are mutable `[]` are used to represent lists. 
 
 ### Example
 ```py
-mylist=["iPhone","Pixel","Samsung"]
-print(mylist[0]) # prints iPhone
-print(mylist[7]) # throws IndexError : list index out of range
-print(mylist[-1]) # prints Samsung
+mylist1=["iPhone","Pixel","Samsung"]
+print(mylist1[0]) # prints iPhone
+print(mylist1[7]) # throws IndexError : list index out of range
+print(mylist1[-1]) # prints Samsung
+```
+
+Using List() to declare a list.
+```py
+mylist2=list()
+mylist2.append("iPhone") # adds iPhone to the end of list
+mylist2.append("Pixel") # adds Pixel to the end of list
+mylist2.append("Samsung") # adds Samsung to the end of list
+print(mylist2[0]) # prints iPhone
+print(mylist2[7]) # throws IndexError : list index out of range
+print(mylist2[-1]) # prints Samsung
 ```
 ### Operations
 
@@ -106,7 +119,7 @@ print(mylist[-1]) # prints Samsung
 
 ### 2. Tuple
 
-Tuple is ordered collection of items and can't be changed. `()` are used to represent Tuples.
+Tuple is ordered collection of items and are immutable `()` are used to represent Tuples.
 
 ### Example
 
@@ -143,7 +156,7 @@ print(mySet) # prints {'iPhone', 'Samsung', 'OnePlus', 'Pixel'}
 
 ### 4. Dictionary
 Dictionary is a collection of key value pairs which is unordered, can be changed, and indexed. They are written in curly brackets with key - value pairs. 
-
+**Note**- From Python 3.6 new Dict() method implementation had made it possible for maintaining the order of the key-value pairs added in the respective             order.
 ### Example
 ```py
 mydict = {
