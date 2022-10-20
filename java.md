@@ -458,3 +458,145 @@ public class AA {   //beg of class
    }
  }
  ```
+ ### Excpetion Handling
+ 
+ Basically an exception is a runtime  error that causes the program to crash if not handled properly.The mechanism of handling it is known as exception handling.
+ 
+ Basically there are two types of exceptions:
+ 
+ -  **Checked Exception** :- These exceptions are checked at compile time. eg. IOException 
+ -  **Unchecked Exception** :- These are checked at runtime . eg. Logical Exceptions,DividebyZero Exception
+ 
+ #### Excetion Handling
+ 
+ Exception is handled by using try-catch block mechanism:
+ 
+ ##### try-catch-finally block mechanism:
+ 
+- **try block:** It groups a set of suspicious statements where the probability of exception occurence is higher.
+ 
+- **catch block :** It includes a set of code which executes when the exception occurs.
+ 
+-  **finally block(OPTIONAL):** It includes a set of statements that are executed no matter whether exception occurs or not.
+ 
+ 
+ ```
+ try {
+ // statements vulnerable to exception
+ 
+ }
+ catch(<Exception_Type> e)
+ {
+ System.out.println("Exception occured");
+ }
+ 
+ finally
+ {
+ 
+ System.out.println("I am always executed");
+ }
+ 
+ ```
+ 
+ 
+ #### Multiple catch blocks:
+ 
+ One may use multiple catch block in order to segregate a type of exception.
+ 
+ ```
+ try
+ {
+ //statements
+ }
+ catch(IOException e1)
+ {
+ // statements
+ }
+ catch(Exception e2)
+ {
+ // statement
+ }
+ ```
+ 
+ **NOTE: The e1 must be subclass of e2 otherwise it may throw compile time error.**
+ 
+ #### throw vs throws Keyword
+ 
+ - **throw:** Used to mannually create and prompt an exception
+ 
+ ```
+ throw new IOException()
+ ```
+ 
+ - **throws:** Used to declare to programmer that this piece of code contains exception vulnerable code.
+ 
+ ```
+ public void add(int a,int b)throws IOException
+ {
+ // statements
+ }
+ ```
+ 
+ ### Multithreading :
+ 
+ Mutithreading is concept of using multiple threads to execute a set of threads to accomplish a task.
+ 
+ A thread is a lighweight extension of a process.
+ 
+ Advantage of Threads over processes:
+ - They are faster than process
+ - They occupy less memory than process as they use shared resources.
+
+#### Creating a thread:
+
+A thread can be created by using two mechanism:
+
+- Thread class: Extend a thread class to use the rich set of methods provided by it.
+
+```
+class threading extends Thread{  
+public void run(){  
+System.out.println("thread is created and running");  
+}  
+public static void main(String args[]){  
+threading t1=new threading();  
+t1.start();  
+ }  
+}  
+```
+
+- Runnable interface: Implement the runnable interface to use the rich set of methods provided by them.
+
+```
+public class Multi2 implements Runnable  
+{    
+public void run()  
+{    
+System.out.println("Now the thread is started and running ");    
+}    
+    
+public static void main(String argvs[])  
+{   
+  
+Runnable r1 = new Multi2();
+  
+  
+Thread t1 = new Thread(r1, "My new thread");    
+  
+  
+t1.start();   
+  
+ 
+}    
+}  
+```
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
