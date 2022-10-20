@@ -154,6 +154,8 @@ Formally, the display property sets an element's inner and outer display types.
         display: grid;
         display: inline-grid;
         display: flow-root;
+        display: table;
+        display: list-item
 }
 ```
 
