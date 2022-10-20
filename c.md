@@ -174,6 +174,7 @@ const        float       short      unsigned
 continue     for         signed     void
 default      goto        sizeof     volatile
 do           if          static     while
+alignas      nullptr     typeof     alignof
 ```
 ## Identifiers
 
