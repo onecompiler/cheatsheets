@@ -1,4 +1,11 @@
-Basic hello world program<br><br>
+---
+title: Typescript
+description: tells about basic functions, variables and operations in typescript.
+created: 2022-10-20
+---
+<br>
+
+Basic hello world program<br>
 ```typescript
 console.log(‘Hello World’);
 ```
