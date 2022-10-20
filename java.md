@@ -461,14 +461,7 @@ public class AA {   //beg of class
  ### Excpetion Handling
  
  Basically an exception is a runtime  error that causes the program to crash if not handled properly.The mechanism of handling it is known as exception handling.
- 
- Basically there are two types of exceptions:
- 
- -  **Checked Exception** :- These exceptions are checked at compile time. eg. IOException 
- -  **Unchecked Exception** :- These are checked at runtime . eg. Logical Exceptions,DividebyZero Exception
- 
- #### Excetion Handling
- 
+
  Exception is handled by using try-catch block mechanism:
  
  ##### try-catch-finally block mechanism:
@@ -480,7 +473,7 @@ public class AA {   //beg of class
 -  **finally block(OPTIONAL):** It includes a set of statements that are executed no matter whether exception occurs or not.
  
  
- ```
+ ```java
  try {
  // statements vulnerable to exception
  
@@ -499,38 +492,18 @@ public class AA {   //beg of class
  ```
  
  
- #### Multiple catch blocks:
- 
- One may use multiple catch block in order to segregate a type of exception.
- 
- ```
- try
- {
- //statements
- }
- catch(IOException e1)
- {
- // statements
- }
- catch(Exception e2)
- {
- // statement
- }
- ```
- 
- **NOTE: The e1 must be subclass of e2 otherwise it may throw compile time error.**
  
  #### throw vs throws Keyword
  
  - **throw:** Used to mannually create and prompt an exception
  
- ```
+ ```java
  throw new IOException()
  ```
  
  - **throws:** Used to declare to programmer that this piece of code contains exception vulnerable code.
  
- ```
+ ```java
  public void add(int a,int b)throws IOException
  {
  // statements
@@ -541,19 +514,15 @@ public class AA {   //beg of class
  
  Mutithreading is concept of using multiple threads to execute a set of threads to accomplish a task.
  
- A thread is a lighweight extension of a process.
  
- Advantage of Threads over processes:
- - They are faster than process
- - They occupy less memory than process as they use shared resources.
 
 #### Creating a thread:
 
 A thread can be created by using two mechanism:
 
-- Thread class: Extend a thread class to use the rich set of methods provided by it.
+- Thread class:
 
-```
+```java
 class threading extends Thread{  
 public void run(){  
 System.out.println("thread is created and running");  
@@ -565,9 +534,9 @@ t1.start();
 }  
 ```
 
-- Runnable interface: Implement the runnable interface to use the rich set of methods provided by them.
+- Runnable interface:
 
-```
+```java
 public class Multi2 implements Runnable  
 {    
 public void run()  
