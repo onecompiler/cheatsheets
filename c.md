@@ -2,7 +2,7 @@
 title: C Programming language
 description: C Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-04-25
-updated: 2022-10-19
+updated: 2022-10-20
 ---
 
 ## Basics
@@ -465,3 +465,9 @@ All functions defined under `<stdlib.h>` header file. These randomized functions
 
 * `random()` : returns a random long
 * `srandom(seed)` : seeds the random generator with a new random seed
+
+## How To Compile in GCC
+
+* `gcc prog.c` : compiles prog.c into a.out, run result with  `./a.out`.
+* `gcc -o prog prog.c` : compiles prog.c into prog, run result with `./prog`.
+* `gcc -g -o prog prog.c` : as above, but allows for debugging.
