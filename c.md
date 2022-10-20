@@ -78,7 +78,7 @@ struct structure_name {
 struct structure_name variable name;
 ```
 
-### 3. Enumeration Data typesnon-negative
+### 3. Enumeration Data types non-negative
 
 ```c
 enum name{constant1, constant2, constant3, ....... };
