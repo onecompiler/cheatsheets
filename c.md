@@ -473,7 +473,7 @@ All functions defined under `<stdlib.h>` header file. These randomized functions
 * `gcc -o prog prog.c` : compiles prog.c into prog, run result with `./prog`.
 * `gcc -g -o prog prog.c` : as above, but allows for debugging.
 
-##use of fflush()
+## use of fflush()
 
 *used to clear the buffer
 *used to accept the next string
