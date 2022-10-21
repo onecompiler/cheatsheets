@@ -30,6 +30,12 @@ git init hello-world-repo
 git clone [url]
 ```
 
+#### Add upstream repo
+
+```sh
+git remote add upstream [ Upstream Repo Url ]
+```
+
 ## Branches
 
 ```sh
