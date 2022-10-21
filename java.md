@@ -458,3 +458,114 @@ public class AA {   //beg of class
    }
  }
  ```
+ ### Excpetion Handling
+ 
+ Basically an exception is a runtime  error that causes the program to crash if not handled properly.The mechanism of handling it is known as exception handling.
+
+ Exception is handled by using try-catch block mechanism:
+ 
+ ##### try-catch-finally block mechanism:
+ 
+- **try block:** It groups a set of suspicious statements where the probability of exception occurence is higher.
+ 
+- **catch block :** It includes a set of code which executes when the exception occurs.
+ 
+-  **finally block(OPTIONAL):** It includes a set of statements that are executed no matter whether exception occurs or not.
+ 
+ 
+ ```java
+ try {
+ // statements vulnerable to exception
+ 
+ }
+ catch(<Exception_Type> e)
+ {
+ System.out.println("Exception occured");
+ }
+ 
+ finally
+ {
+ 
+ System.out.println("I am always executed");
+ }
+ 
+ ```
+ 
+ 
+ 
+ #### throw vs throws Keyword
+ 
+ - **throw:** Used to mannually create and prompt an exception
+ 
+ ```java
+ throw new IOException()
+ ```
+ 
+ - **throws:** Used to declare to programmer that this piece of code contains exception vulnerable code.
+ 
+ ```java
+ public void add(int a,int b)throws IOException
+ {
+ // statements
+ }
+ ```
+ 
+ ### Multithreading :
+ 
+ Mutithreading is concept of using multiple threads to execute a set of threads to accomplish a task.
+ 
+ 
+
+#### Creating a thread:
+
+A thread can be created by using two mechanism:
+
+- Thread class:
+
+```java
+class threading extends Thread{  
+public void run(){  
+System.out.println("thread is created and running");  
+}  
+public static void main(String args[]){  
+threading t1=new threading();  
+t1.start();  
+ }  
+}  
+```
+
+- Runnable interface:
+
+```java
+public class Multi2 implements Runnable  
+{    
+public void run()  
+{    
+System.out.println("Now the thread is started and running ");    
+}    
+    
+public static void main(String argvs[])  
+{   
+  
+Runnable r1 = new Multi2();
+  
+  
+Thread t1 = new Thread(r1, "My new thread");    
+  
+  
+t1.start();   
+  
+ 
+}    
+}  
+```
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
