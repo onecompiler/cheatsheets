@@ -33,7 +33,7 @@ git clone [url]
 #### Add upstream repo
 
 ```sh
-git remote add upstream [ Upstream Repo Url ]
+git remote add upstream [ Upstream Repo Url ]  # Add upstream repository 
 ```
 
 ## Branches
