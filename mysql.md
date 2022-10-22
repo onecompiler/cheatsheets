@@ -50,6 +50,7 @@ SHOW TABLES;
 ##  DDL Commands
 
 ### 1. CREATE 
+* To Create a new Table in database
 
 ```sql
 CREATE TABLE table_name (
@@ -58,14 +59,18 @@ CREATE TABLE table_name (
                 ....);
 ``` 
 ### 2. ALTER
+* ALTER is used to add, delete, or modify columns in an existing table.
 ```sql 
 ALTER TABLE Table_name ADD column_name datatype;
 ```
 ### 3. TRUNCATE
+* TRUNCATE removes all rows from a table
 ```sql
 TRUNCATE table table_name;
 ```
 ### 4. DROP
+* DROP statement destroys the objects like an existing database, table, index, or view.
+
 ```sql 
 DROP TABLE table_name;
 ```
@@ -116,28 +121,29 @@ DELETE FROM table_name where condition;
 ## DCL Commands
 
 ### 1. GRANT
-
+* It is used to give access to users to the database
 ```sql
 GRANT privileges ON object TO user;
 ```
 ### 2. REVOKE
-
+* It is used to remove the granted permissions
 ```sql
 REVOKE privileges ON object FROM user;
 ```
 ## TCL commands
 
 ### 1. COMMIT
-
+* It is used for storing the changes made by the user. 
 ```sql
 COMMIT;
 ```
 ### 2. ROLLBACK  
-
+* Used for reverting changes of the transaction
 ```sql
 ROLLBACK;
 ```
 ## 3. SAVEPOINT
+* Marking a point of transaction to which easy rollback is possible. 
 ```sql
 SAVEPOINT savepoint_name;
 ROLLBACK TO savepoint_name; 
@@ -205,6 +211,19 @@ trigger_order: { FOLLOWS | PRECEDES } */
 ```sql
 DROP TRIGGER [IF EXISTS] trigger_name;
 ```
+
+### 3. Show a Trigger 
+
+```sql
+SHOW TRIGGERS;
+```
+
+### 4. Show a Trigger using Pattern Matching
+
+```sql
+SHOW TRIGGERS LIKE pattern;
+```
+
 ## Stored Procedures
 
 ### 1. Create a Stored Procedure
@@ -246,3 +265,34 @@ SELECT * FROM TABLE1 RIGHT JOIN TABLE2 ON condition;
 SELECT select_list from TABLE1 CROSS JOIN TABLE2;
 ```
 
+
+## Cursors
+
+When an MYSQL statement is processed, a memory area is created known as context area. A cursor is a pointer to this context area.
+
+### There are two types of cursor 
+#### 1. Implict cursor 
+#### 2. Explict cursor
+
+
+### Explict Cursor 
+Explict cursors are used when you are exceuting a SELECT statement query that will return more than one row.
+
+### The cursor works in four stages
+
+### 1. Declaration of cursor:-
+```sql
+DECLARE cursor_name CURSOR FOR SELECT_statement;
+```
+### 2. Open Cusor
+```sql
+OPEN cursor_name;
+```
+### 3. Fetch the cursor
+```sql
+FETCH cursor_name INTO variables list;
+```
+### 4. Close the cursor
+```sql
+CLOSE cursor_name;
+```

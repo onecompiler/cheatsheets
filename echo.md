@@ -48,3 +48,15 @@ echo * #=> Prints files and folders of current directory
 ```sh
 echo *.txt #=> Prints all .txt files from current directory
 ```
+
+- Using option new Line ‘\n‘ and horizontal tab ‘\t‘ simultaneously.
+```sh
+$ echo -e "\n\Onecompiler \n\tis \n\ta \n\tcommunity \n\tof \n\tNerds" 
+
+	Onecompiler
+	is 
+	a 
+	community 
+	of
+	Nerds 
+```

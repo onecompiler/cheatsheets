@@ -109,7 +109,8 @@ Units are used for interpreting length in your css code value. These are used in
     | pt | points, usually 1/72th of an inch |
     | pc | picas, usally 12 points |
     | cm | used for centimeters  | 
-    | mm | used for millimeters  |  
+    | mm | used for millimeters  | 
+    | Q | used for Quarter-millimeters,	(Usually 1/40th of 1cm)  | 
 
 - #### Relative units(preferred)
     | Units | description |
@@ -121,6 +122,8 @@ Units are used for interpreting length in your css code value. These are used in
     | vh | relative to the viewport's height, for eg.: ```6vh``` would be ```6% of the height``` of the viewport  |
     | vmax |  relative to the viewport's bigger dimension which could be either the height or the width, for eg.: ```3vmax``` would mean ```3vh``` if the height is more than the width and would mean ```3vw``` otherwise | 
     | vmin | similar to  vmax, differs because it would consider the smaller dimension of either the height or the width  | 
+    | ch | it is relative to the width of zero (0) |
+    | ex | it is relative to the x height of the current font |
 
 > relative units are much more preferred nowadays as their are just too many devices with varying screen heights, widths, pixel densities etc.
 
@@ -151,6 +154,8 @@ Formally, the display property sets an element's inner and outer display types.
         display: grid;
         display: inline-grid;
         display: flow-root;
+        display: table;
+        display: list-item
 }
 ```
 

@@ -2,7 +2,7 @@
 title: HTML 
 description: HTML Cheat Sheet gives you a quick reference of basic HTML tags, codes and attributes and is very handy while coding. 
 created: 2020-06-17
-updated: 2022-10-05
+updated: 2022-10-09
 ---
 
 ## Sample program
@@ -48,7 +48,11 @@ updated: 2022-10-05
 |`<pre/>`| Text in a pre elementis displayed in a fixed-width font, and it preservesboth spaces and line breaks |`<pre> int i = 0; </pre>`|
 |`<audio>`| It is used to embed sound content in the document. |` <audio controls> <source src="demo.mp3" type="audio/mpeg"> </audio>`|
 |`<video>`| It is used to embed video in the webpage. |` <video width="480" height="320" controls> <source src="demo_move.mp4" type="video/mp4"> </video>`|
-
+|`<source>`| Defines multiple media resources for media elements |` <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> `|
+|`<svg>`| SVG is used to define vector-based graphics for the Web|` <svg width="100" height="100"><circle cx="50" cy="50" r="40" stroke="green"/> </svg> `|
+|`<iframe>`| It is used to specifies an inline frame. |` <iframe src=" https://onecompiler.com/" title="iframe element"></iframe> `|
+|`<progress>`| It represents the completion progress of a task. |` <progress id="file" value="32" max="100"> 32% </progress> `|
+|`<address>`| It defines contact information for the author/owner of a document. |` <address> You can contact us at: 123 Somewhere St. City, State</address> `|
 
 ## HTML formatting 
 
@@ -65,6 +69,9 @@ updated: 2022-10-05
 |`<ins>..</ins>`| Inserted text|
 |`<sub>..</sub>`| Subscript text|
 |`<sup>..</sup>` | Superscript text|
+|`<big>..</big>` | Larger text|
+|`<kbd>..</kbd>` | keyboard input text|
+|`<bdo>..</bdo>` | bidirectional override text|
 
 ## Tables
 
@@ -161,6 +168,15 @@ List the entries like in a dictionary or encyclopedia.
 |`<input type="submit">`| To define a submit button |
 |`<input type = "checkbox">`| To define a checkbox |
 | `<input type = "file">`| To define a file upload box|
+| `<input type = "range">`| To define a range slider control|
+| `<input type = "color">`| To define a color picker interface|
+| `<input type = "reset">`| To define a reset button|
+| `<input type = "email">`| To define a single-line email input field|
+| `<input type = "datetime-local">`| To define a single-line Date and time input field|
+| `<input type="tel">`| To define a telephone number. |
+| `<input type="url">`| To define a URL address. |
+| `<input type="week">`| To define a selection of week & year. |
+| `<input type="image">`| To take image format as an input. |
 
 ```html
  <form >

@@ -57,6 +57,20 @@ Remove the variable:
 unset my_variable
 ```
 
+Define Variables using export
+
+```
+export my_variable='Hello from Bash!'
+```
+
+Remove variable defined by export
+
+```
+export -n my_variable
+```
+
+
+
 ### Slicing
 
 Slice the variable:
