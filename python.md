@@ -347,3 +347,9 @@ For deleting files, you must import os module and use `os.remove()` function.
 import os
 os.remove(filename)
 ```
+### nested list --list within list
+<!-- easily accessible elements using indexes -->
+L=['a',['bb','cc'],'d']
+L[1][1]=0
+print(L)
+<!-- prints  ['a',['bb',0],'d'] -->
