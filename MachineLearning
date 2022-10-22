@@ -1,0 +1,112 @@
+Machine Learning Tutorial
+Machine Learning Tutorial
+Machine Learning tutorial provides basic and advanced concepts of machine learning. Our machine learning tutorial is designed for students and working professionals.
+
+Machine learning is a growing technology which enables computers to learn automatically from past data. Machine learning uses various algorithms for building mathematical models and making predictions using historical data or information. Currently, it is being used for various tasks such as image recognition, speech recognition, email filtering, Facebook auto-tagging, recommender system, and many more.
+
+This machine learning tutorial gives you an introduction to machine learning along with the wide range of machine learning techniques such as Supervised, Unsupervised, and Reinforcement learning. You will learn about regression and classification models, clustering methods, hidden Markov models, and various sequential models.
+
+What is Machine Learning
+In the real world, we are surrounded by humans who can learn everything from their experiences with their learning capability, and we have computers or machines which work on our instructions. But can a machine also learn from experiences or past data like a human does? So here comes the role of Machine Learning.
+
+Introduction to Machine Learning
+Machine Learning is said as a subset of artificial intelligence that is mainly concerned with the development of algorithms which allow a computer to learn from the data and past experiences on their own. The term machine learning was first introduced by Arthur Samuel in 1959. We can define it in a summarized way as:
+
+Machine learning enables a machine to automatically learn from data, improve performance from experiences, and predict things without being explicitly programmed.
+With the help of sample historical data, which is known as training data, machine learning algorithms build a mathematical model that helps in making predictions or decisions without being explicitly programmed. Machine learning brings computer science and statistics together for creating predictive models. Machine learning constructs or uses the algorithms that learn from historical data. The more we will provide the information, the higher will be the performance.
+
+A machine has the ability to learn if it can improve its performance by gaining more data.
+
+How does Machine Learning work
+A Machine Learning system learns from historical data, builds the prediction models, and whenever it receives new data, predicts the output for it. The accuracy of predicted output depends upon the amount of data, as the huge amount of data helps to build a better model which predicts the output more accurately.
+
+Suppose we have a complex problem, where we need to perform some predictions, so instead of writing a code for it, we just need to feed the data to generic algorithms, and with the help of these algorithms, machine builds the logic as per the data and predict the output. Machine learning has changed our way of thinking about the problem. The below block diagram explains the working of Machine Learning algorithm:
+
+Introduction to Machine Learning
+Features of Machine Learning:
+Machine learning uses data to detect various patterns in a given dataset.
+It can learn from past data and improve automatically.
+It is a data-driven technology.
+Machine learning is much similar to data mining as it also deals with the huge amount of the data.
+AD
+Need for Machine Learning
+The need for machine learning is increasing day by day. The reason behind the need for machine learning is that it is capable of doing tasks that are too complex for a person to implement directly. As a human, we have some limitations as we cannot access the huge amount of data manually, so for this, we need some computer systems and here comes the machine learning to make things easy for us.
+
+We can train machine learning algorithms by providing them the huge amount of data and let them explore the data, construct the models, and predict the required output automatically. The performance of the machine learning algorithm depends on the amount of data, and it can be determined by the cost function. With the help of machine learning, we can save both time and money.
+
+The importance of machine learning can be easily understood by its uses cases, Currently, machine learning is used in self-driving cars, cyber fraud detection, face recognition, and friend suggestion by Facebook, etc. Various top companies such as Netflix and Amazon have build machine learning models that are using a vast amount of data to analyze the user interest and recommend product accordingly.
+
+Following are some key points which show the importance of Machine Learning:
+
+Rapid increment in the production of data
+Solving complex problems, which are difficult for a human
+Decision making in various sector including finance
+Finding hidden patterns and extracting useful information from data.
+AD
+Classification of Machine Learning
+At a broad level, machine learning can be classified into three types:
+
+Supervised learning
+Unsupervised learning
+Reinforcement learning
+Introduction to Machine Learning
+1) Supervised Learning
+Supervised learning is a type of machine learning method in which we provide sample labeled data to the machine learning system in order to train it, and on that basis, it predicts the output.
+
+The system creates a model using labeled data to understand the datasets and learn about each data, once the training and processing are done then we test the model by providing a sample data to check whether it is predicting the exact output or not.
+
+The goal of supervised learning is to map input data with the output data. The supervised learning is based on supervision, and it is the same as when a student learns things in the supervision of the teacher. The example of supervised learning is spam filtering.
+
+Supervised learning can be grouped further in two categories of algorithms:
+
+Classification
+Regression
+2) Unsupervised Learning
+Unsupervised learning is a learning method in which a machine learns without any supervision.
+
+The training is provided to the machine with the set of data that has not been labeled, classified, or categorized, and the algorithm needs to act on that data without any supervision. The goal of unsupervised learning is to restructure the input data into new features or a group of objects with similar patterns.
+
+In unsupervised learning, we don't have a predetermined result. The machine tries to find useful insights from the huge amount of data. It can be further classifieds into two categories of algorithms:
+
+Clustering
+Association
+3) Reinforcement Learning
+Reinforcement learning is a feedback-based learning method, in which a learning agent gets a reward for each right action and gets a penalty for each wrong action. The agent learns automatically with these feedbacks and improves its performance. In reinforcement learning, the agent interacts with the environment and explores it. The goal of an agent is to get the most reward points, and hence, it improves its performance.
+AD
+
+The robotic dog, which automatically learns the movement of his arms, is an example of Reinforcement learning.
+
+Note: We will learn about the above types of machine learning in detail in later chapters.
+History of Machine Learning
+Before some years (about 40-50 years), machine learning was science fiction, but today it is the part of our daily life. Machine learning is making our day to day life easy from self-driving cars to Amazon virtual assistant "Alexa". However, the idea behind machine learning is so old and has a long history. Below some milestones are given which have occurred in the history of machine learning:
+
+History of Machine Learning
+The early history of Machine Learning (Pre-1940):
+1834: In 1834, Charles Babbage, the father of the computer, conceived a device that could be programmed with punch cards. However, the machine was never built, but all modern computers rely on its logical structure.
+1936: In 1936, Alan Turing gave a theory that how a machine can determine and execute a set of instructions.
+The era of stored program computers:
+1940: In 1940, the first manually operated computer, "ENIAC" was invented, which was the first electronic general-purpose computer. After that stored program computer such as EDSAC in 1949 and EDVAC in 1951 were invented.
+1943: In 1943, a human neural network was modeled with an electrical circuit. In 1950, the scientists started applying their idea to work and analyzed how human neurons might work.
+Computer machinery and intelligence:
+1950: In 1950, Alan Turing published a seminal paper, "Computer Machinery and Intelligence," on the topic of artificial intelligence. In his paper, he asked, "Can machines think?"
+Machine intelligence in Games:
+1952: Arthur Samuel, who was the pioneer of machine learning, created a program that helped an IBM computer to play a checkers game. It performed better more it played.
+1959: In 1959, the term "Machine Learning" was first coined by Arthur Samuel.
+The first "AI" winter:
+The duration of 1974 to 1980 was the tough time for AI and ML researchers, and this duration was called as AI winter.
+In this duration, failure of machine translation occurred, and people had reduced their interest from AI, which led to reduced funding by the government to the researches.
+Machine Learning from theory to reality
+1959: In 1959, the first neural network was applied to a real-world problem to remove echoes over phone lines using an adaptive filter.
+1985: In 1985, Terry Sejnowski and Charles Rosenberg invented a neural network NETtalk, which was able to teach itself how to correctly pronounce 20,000 words in one week.
+1997: The IBM's Deep blue intelligent computer won the chess game against the chess expert Garry Kasparov, and it became the first computer which had beaten a human chess expert.
+Machine Learning at 21st century
+2006: In the year 2006, computer scientist Geoffrey Hinton has given a new name to neural net research as "deep learning," and nowadays, it has become one of the most trending technologies.
+2012: In 2012, Google created a deep neural network which learned to recognize the image of humans and cats in YouTube videos.
+2014: In 2014, the Chabot "Eugen Goostman" cleared the Turing Test. It was the first Chabot who convinced the 33% of human judges that it was not a machine.
+2014: DeepFace was a deep neural network created by Facebook, and they claimed that it could recognize a person with the same precision as a human can do.
+2016: AlphaGo beat the world's number second player Lee sedol at Go game. In 2017 it beat the number one player of this game Ke Jie.
+2017: In 2017, the Alphabet's Jigsaw team built an intelligent system that was able to learn the online trolling. It used to read millions of comments of different websites to learn to stop online trolling.
+Machine Learning at present:
+Now machine learning has got a great advancement in its research, and it is present everywhere around us, such as self-driving cars, Amazon Alexa, Catboats, recommender system, and many more. It includes Supervised, unsupervised, and reinforcement learning with clustering, classification, decision tree, SVM algorithms, etc.
+
+Modern machine learning models can be used for making various predictions, including weather prediction, disease prediction, stock market analysis, etc.
