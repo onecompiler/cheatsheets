@@ -325,6 +325,7 @@ ON A.Key = B.Key
 SELECT [select_list]
 FROM Table_A A,Table_B B
 ON A.Key = B.Key
+-- , basically means cross product and if condition given as per condition
 ```
 LEFT JOIN
 This query will return all of the records in the left table (table A) regardless if any of those records have a match in the right table (table B). It will also return any matching records from the right table.
