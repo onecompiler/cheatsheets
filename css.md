@@ -337,5 +337,40 @@ When using media queries we can adopt the following approaches
     }    
     ```
 
+### 13 Pseudo - Class
+
+A pseudo-class is used to define a special state of an element.
+
+* For example :
+```css
+ a:link {
+  color: #FF0000;
+}
+
+a:visited {
+  color: #00FF00;
+}
+
+a:hover {
+  color: #FF00FF;
+}
+
+a:active {
+  color: #0000FF;
+}
+```
+
+| Property | Description|
+|----|----|
+| `:active` | an activated element |
+| `:focus` | an element while the element has focus |
+| `:visited` | a visted link |
+| `:hover` | an element when you mouse over it |
+| `:link` | an unvisited link |
+| `:disabled` | an element while the element is disabled |
+| `:enabled` | an element while the element is enabled |
+| `:nth-child(n)` | an element that is the n-th sibling |
+| `:nth-last-child(n)` | an element that is the n-th sibling counting from the last sibling |
+
 
 
