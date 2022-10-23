@@ -295,6 +295,21 @@ int x = 10, *ptr;
 ptr = &x; // valid because &x and ptr are addresses
 *ptr = x; // valid because both x and *ptr values 
 ```
+
+## 'this' keyword
+
+The this keyword is used to refer to that instance of the class which is under function for the present situation.
+
+### Example
+```c
+class student
+{
+    student(int marks)
+    this->marks=marks;
+    void print()
+    cout<<this->marks;  //this will print marks of the called instance of the class
+}
+```
 ## References
 
 When a vairable is declared as a reference , it becomes an alternative name for an existing vairable.
@@ -320,7 +335,6 @@ int main(){
     return 0;
 }
 ```
-
 ## Structures
 
 Structure is a user-defined data type where it allows you to combine data of different data types.
