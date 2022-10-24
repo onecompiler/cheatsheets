@@ -353,3 +353,34 @@ L=['a',['bb','cc'],'d']
 L[1][1]=0
 print(L)
 <!-- prints  ['a',['bb',0],'d'] -->
+
+### Printing patterns in python.
+<!-- learn basic patterns and how they are printed -->
+
+## Simple pyramid
+```py 
+n = int(input("Enter the number of rows"))  
+# outer loop to handle number of rows  
+for i in range(0, n):  
+    # inner loop to handle number of columns  
+    # values is changing according to outer loop  
+        for j in range(0, i + 1):  
+            # printing stars  
+            print("* ", end="")       
+  
+        # ending line after each row  
+        print()
+```
+## Printing Triangle Pyramid
+```py 
+n = int(input("Enter the number of rows: "))  
+m = (2 * n) - 2  
+for i in range(0, n):  
+    for j in range(0, m):  
+        print(end=" ")  
+    m = m - 1  # decrementing m after each loop  
+    for j in range(0, i + 1):  
+        # printing full Triangle pyramid using stars  
+        print("* ", end=' ')  
+    print(" ")  
+```
