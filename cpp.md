@@ -654,3 +654,6 @@ sort(v.rbegin(),v.rend()); // This will also sort the vector in a descending ord
 |#include<limits.h>| The macros in this header stores the values of variables in various data types|
 |#include<setjmp.h>| It contains function prototypes for functions that allow bypassing of the normal function call and return sequence|
 |#include<assert.h>| It contains information for adding diagnostics that helps in program debugging|
+|#include<float.h>| It contains a set of various platform-dependent constants related to floating point values| 
+|#include<ctype.h>| It contains function prototypes for functions that test characters for certain properties , and also function prototypes for functions that can be used to convert uppercase letters to lowercase letters and vice versa| 
+ |#include<iostream>| It provides basic input and output services for C++ programs|
