@@ -215,10 +215,6 @@ On failure MongoDB does not rollback the data, data may eventually get stored
 * #### MongoDB Shell Help
 
 ```json
-help
+mongo --help
 ``` 
-* #### Database Help
 
-```json
-show dbs
-```
