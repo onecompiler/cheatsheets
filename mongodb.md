@@ -212,3 +212,7 @@ On failure MongoDB does not rollback the data, data may eventually get stored
  ##### 2. Map-Reduce
  ##### 3. Single Purpose
  
+#### 10. MongoDB Shell Help
+```json
+help
+``` 
