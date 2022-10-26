@@ -262,9 +262,7 @@ do{
 ```c
 double prices[5] = {4.99, 10.99, 6.87, 7.99, 8.49};
 for (double x : prices)
-cout << x << std::endl;  /*Here x initially represents the first member of the prices array.After displaying the
-first element, the loop then cycles x to represent the remaining elements of the array in
-turn, so this code would print all five members. */
+cout << x << std::endl;  
 ```
 
 ## Functions
