@@ -445,6 +445,7 @@ A set of functions for dynamic memory allocation from the heap. These methods ar
 |float.h | Limits of float types|
 |limits.h | Size of basic types|
 |wctype.h | Functions to determine the type contained in wide character data|
+|assert.h |Contain macro used to assist with detecting logical error|    
 
 ## Mathematical Functions
 All functions defined under `<math.h>` header file.

@@ -285,3 +285,23 @@ unset my_function
 ```
 
 - [Bash Functions](https://linuxize.com/post/bash-functions/)
+
+### Arrays
+
+Defining arrays:
+```
+Fruits=('Apple' 'Banana' 'Orange')
+```
+
+```
+Fruits[0]="Apple"
+Fruits[1]="Banana"
+Fruits[2]="Orange"
+```
+
+Iteration:
+```
+for i in "${arrayName[@]}"; do
+  echo $i
+done
+```
