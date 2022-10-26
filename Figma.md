@@ -1,6 +1,6 @@
 ---
 title: figma (design tool)
-description: Figma is a cloud-based design tool that is similar to Sketch in functionality and features, but with big differences that make Figma better for team collaboration.Figma works on any operating system that runs a web browser. Macs, Windows PCs, Linux machines, and even Chromebooks can be used with Figma. It is the only design tool of its type that does this, and in shops that use hardware running different operating systems, everyone can still share, open, and edit Figma files.
+description: figma is a cloud-based design tool that is similar to Sketch in functionality and features, but with big differences that make figma better for team collaboration.figma works on any operating system that runs a web browser. Macs, Windows PCs, Linux machines, and even Chromebooks can be used with figma. It is the only design tool of its type that does this, and in shops that use hardware running different operating systems, everyone can still share, open, and edit figma files.
 created: 2022-10-26
 updated: 2022-10-26
 
