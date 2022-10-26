@@ -258,6 +258,12 @@ do{
 //code 
 } while(condition); 
 ```
+### 4. Range based for loop
+```c
+double prices[5] = {4.99, 10.99, 6.87, 7.99, 8.49};
+for (double x : prices)
+cout << x << std::endl;  
+```
 
 ## Functions
 
