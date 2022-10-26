@@ -305,4 +305,3 @@ for i in "${arrayName[@]}"; do
   echo $i
 done
 ```
-- [Bash Arrays](https://linuxize.com/post/bash-arrays/)
