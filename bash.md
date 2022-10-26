@@ -283,5 +283,3 @@ Remove the function:
 ```bash
 unset my_function
 ```
-
-- [Bash Functions](https://linuxize.com/post/bash-functions/)
