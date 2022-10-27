@@ -464,6 +464,7 @@ Here are some useful vector functions you might need with short descriptions of 
 |pop_back()  | Delete element from the end of vector  
 |insert()    | Insert any element at any position of your choice (You need to pass the position first as an iterator and then the element)  
 |erase()     | Remove elements from vector (You can either pass a single iterator denoting the position of the element to be erased or two iterators denoting the range in which you want all elements to be erased)
+|empty()     |Returns whether the container is empty( equivalent to size()==0 but faster)
 
 ## Stacks 
 
