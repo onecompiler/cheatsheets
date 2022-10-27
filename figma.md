@@ -64,6 +64,7 @@ updated: 2022-10-26
 ***
 
 
+<<<<<<< HEAD:Figma.md
  ### 5. MY FAVS
  ---
 
@@ -75,3 +76,11 @@ updated: 2022-10-26
 |Command UI|                ctrl+/|
 |Add Auto Layout|           Shift+A|
 ***
+=======
+4. ## MY FAVS
+Collapse all layers       Alt+L
+Switch to layers Panel    Alt+1
+Switch to Assets Panel    Alt+2
+Command UI                ctrl+/
+Add Auto Layout           Shift+A
+>>>>>>> 228f6353a0dc50864ca67a661c3c656108be9781:figma.md
