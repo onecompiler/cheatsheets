@@ -18,6 +18,7 @@ cat > <fileName> # creates a new file
 rm <fileName>    # removes file with given name
 du -sh *         # list directories with their total sizes 
 df -h            # to see free disk space
+touch <fileName> # creates a file with given name
 
 ```
 
@@ -29,7 +30,8 @@ w                                  	# write permission (2)
 x                                  	# execute permission (1)
 chown <user>                       	# for changing the ownership of a file/directory
 chown <user>: <group> <fileName>   	# change the user as well as group for a file or directory
-chmod <mode> <filename>				# change the permissions of a file/directory
+chmod <mode> <filename>				      # change the permissions of a file/directory
+
 ```
 
 ## tar/zip
@@ -55,4 +57,29 @@ Options:
 -j 	# filter archive tar file using tbzip 
 -W 	# Verify a archive file 
 -r 	# update or add file or directory in already existed .tar file
+```
+
+### Process Management
+```sh
+ps                # Show snapshot of processes
+top               # Show real time processes
+kill <pid>        # Kill process with id pid
+pkill <name>      # Kill process with name name
+killall <name>    # Kill all processes with names beginning name
+```
+
+### Bash Shortcuts
+```sh
+CTRL-c          # Stop current command
+CTRL-z          # Sleep program
+CTRL-a          # Go to start of line
+CTRL-e          # Go to end of line
+CTRL-u          # Cut from start of line
+CTRL-k          # Cut to end of line
+CTRL-r          # Search history
+!!              # Repeat last command
+!abc            # Run last command starting with abc
+!abc:p          # Print last command starting with abc
+!$              # Last argument of previous command
+!*              # All arguments of previous command
 ```
