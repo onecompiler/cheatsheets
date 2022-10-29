@@ -13,7 +13,7 @@ updated: 2022-10-26
 | ---------------|----------|
 | Rectangle tool |        R |
 | Ellipse tool   |       O  |
-| Line tool      |        L |   |
+| Line tool      |        L |
 | Pen tool       |        P |
 | Frame tool     |        F |
 | Copy           |      ctrl+c |
@@ -64,8 +64,7 @@ updated: 2022-10-26
 ***
 
 
-<<<<<<< HEAD:Figma.md
- ### 5. MY FAVS
+ ### 5. Frequently Used
  ---
 
  |PROPERTIES|              SHORTCUT|
@@ -75,12 +74,3 @@ updated: 2022-10-26
 |Switch to Assets Panel|    Alt+2|
 |Command UI|                ctrl+/|
 |Add Auto Layout|           Shift+A|
-***
-=======
-4. ## MY FAVS
-Collapse all layers       Alt+L
-Switch to layers Panel    Alt+1
-Switch to Assets Panel    Alt+2
-Command UI                ctrl+/
-Add Auto Layout           Shift+A
->>>>>>> 228f6353a0dc50864ca67a661c3c656108be9781:figma.md
