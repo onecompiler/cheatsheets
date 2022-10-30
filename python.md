@@ -2,7 +2,7 @@
 title: Python
 description: Python cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-04-24
-updated: 2022-10-19
+updated: 2022-10-30
 ---
 
 ## Basics
@@ -133,6 +133,7 @@ print(myTuple[-1]) # prints Samsung
 ### 3. Set
 
 Set is unordered collection of items and it is unindexed. `{}` are used to represent sets.
+**Note**- to create an empty set use the built-in set() function. If we write new_set = {} this will create a dictionary instead of a set.
 
 ### Example
 
