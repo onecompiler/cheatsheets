@@ -52,6 +52,8 @@ git status                          # Shows the modified files in working direct
 git reset [fileName]                # Unstages file while retaining changes in present working directory
 git stash                           # to keep uncommitted changes (both staged and unstaged) for later use
 git reflog                          # Shows a log of changes to the local repository's HEAD
+git show [commit]                   # Shows the metadata and content changes of the specified commit.
+git tag [commitID]                  # Used to give tags to the specified commit.
 ```
 
 ## Inspect 
@@ -79,10 +81,12 @@ git pull                           # to update the local version of a repository
 ## Stash
 
 ```sh
+git stash save                          # Temporarily stores all the modified tracked files.
 git stash push "add style to our site"  # Save your local modifications to a new stash entry
 git stash list                          # List the stash entries that you currently have
 git stash pop stash@{0}                 # Remove a single stashed state from the stash list and apply it on top of the current working tree state
 git stash clear                         # Remove all stashed entries
+git stash drop                          # Discards the most recently stashed changeset.
 ```
 
 ## Rebase main branch into feature branch
