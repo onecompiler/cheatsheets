@@ -155,3 +155,10 @@ Following is the pricing for APIs
 |Calls per month| 10,000| 30,000| 100,000| 300,000| Unlimited* |
 
 > Note: Get 2 months free when you purchase yearly plans!
+
+
+Support Details: 
+
+Plans P1, P2, P3 & P4 comes with `Email Only` support. Enterprise plans comes with additional Zoom call support. 
+
+Zoom call support costs $20 per hour for non Enterprise plans.
