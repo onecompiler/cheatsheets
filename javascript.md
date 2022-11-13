@@ -32,6 +32,14 @@ let variable-name; // Just declaration
 let variable-name = value; // declaring variable and assigning it with some value
 let var1 = value1, var2 = value2, var3 = value3; // multiple variables declaration with their assigned values
 ```
+
+### Escape Sequences in String 
+|Code|Output| 
+|----|----| 
+|`\'`| Single Quote | 
+|`\"`| Double Quote | 
+|`\\`| Backslash | 
+|`\n`| New Line |
 ## Basics
 
 ### On page script
