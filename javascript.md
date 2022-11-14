@@ -40,6 +40,11 @@ let var1 = value1, var2 = value2, var3 = value3; // multiple variables declarati
 |`\"`| Double Quote | 
 |`\\`| Backslash | 
 |`\n`| New Line |
+|`\t`| Tab Space |
+|`\r`| Carriage Return |
+|`\b`| Word Boundary |
+|`\f`| Form Feed |
+
 ## Basics
 
 ### On page script
