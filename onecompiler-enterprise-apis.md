@@ -54,11 +54,11 @@ Example URL: https://onecompiler.com/embed/challenges/3w7dby3mt/beginners-coding
 |Plan Name| E1 | E2  | E3 | More/Custom |
 |---|---|---|---|---|
 |Price|$1,000 per month | $2,000 per month | $3,000 per month | Contact Us|
-|Calls per month| 10M| 20M| 30M|  Unlimited* |
-|Internet Permission| No| Yes| Yes| Yes| 
-|Priority Execution| Yes| Yes| Yes| Yes| 
-|Write Access| Yes| Yes| Yes| Yes| 
-|Max runtime| 10s| 20s| 30s| Custom| 
+|Calls per month| 10M| 30,000| 100,000|  Unlimited* |
+|Internet Permission| No| Yes| Yes| Yes|
+|Priority Execution| Yes| Yes| Yes| Yes|
+|Write Access| Yes| Yes| Yes| Yes|
+|Max runtime| 10s| 20s| 30s| Custom|
 
 
 > Note: Get 2 months free when you purchase yearly plans!
