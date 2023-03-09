@@ -161,4 +161,4 @@ Support Details:
 
 Plans P1, P2, P3 & P4 comes with `Email Only` support. Enterprise plans comes with additional Zoom call support. 
 
-Zoom call support costs $20 per hour for non Enterprise plans.
+Zoom call support costs $50 per hour for non Enterprise plans.
