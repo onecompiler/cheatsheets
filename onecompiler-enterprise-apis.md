@@ -7,6 +7,20 @@ updated: 2022-11-01
 
 If you are looking for basic code execution APIs or Editor embedding check details here https://onecompiler.com/cheatsheets/onecompiler-apis
 
+## Pricing
+
+|Plan Name| E1 | E2  | E3 | More/Custom |
+|---|---|---|---|---|
+|Price|$1,000 per month | $2,000 per month | $3,000 per month | Contact Us|
+|Calls per month| 10M| 20M| 30M|  Unlimited* |
+|Internet Permission| No| Yes| Yes| Yes|
+|Priority Execution| Yes| Yes| Yes| Yes|
+|Write Access| Yes| Yes| Yes| Yes|
+|Max runtime| 10s| 20s| 30s| Custom|
+
+
+> Note: Get 2 months free when you purchase yearly plans!
+
 ## User Creation
 Following is the sample cURL request to create new user programatically 
 
@@ -48,17 +62,3 @@ To make a user login automatically for a session. Add the following query parame
 2. `userApiToken`
 
 Example URL: https://onecompiler.com/embed/challenges/3w7dby3mt/beginners-coding-challenge?apiKey=your_api_id&userApiToken=user_specific_token
-
-## Pricing
-
-|Plan Name| E1 | E2  | E3 | More/Custom |
-|---|---|---|---|---|
-|Price|$1,000 per month | $2,000 per month | $3,000 per month | Contact Us|
-|Calls per month| 10M| 20M| 30M|  Unlimited* |
-|Internet Permission| No| Yes| Yes| Yes|
-|Priority Execution| Yes| Yes| Yes| Yes|
-|Write Access| Yes| Yes| Yes| Yes|
-|Max runtime| 10s| 20s| 30s| Custom|
-
-
-> Note: Get 2 months free when you purchase yearly plans!
