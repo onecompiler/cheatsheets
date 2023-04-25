@@ -14,6 +14,7 @@ If you are looking for basic code execution APIs or Editor embedding check detai
 |Price|$1,000 per month | $2,000 per month | $3,000 per month | Contact Us|
 |Calls per month| 10M| 20M| 30M|  Unlimited* |
 |Internet Permission| No| Yes| Yes| Yes|
+|Isolated Runs| No| Yes| Yes| Yes|
 |Priority Execution| Yes| Yes| Yes| Yes|
 |Write Access| Yes| Yes| Yes| Yes|
 |Max runtime| 10s| 20s| 30s| Custom|
