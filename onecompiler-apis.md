@@ -156,6 +156,7 @@ Following is the pricing for APIs
 
 > Note: Get 2 months free when you purchase yearly plans!
 
+You can also purchase the APIs online here at https://rapidapi.com/onecompiler-onecompiler-default/api/onecompiler-apis/pricing
 
 Support Details: 
 
