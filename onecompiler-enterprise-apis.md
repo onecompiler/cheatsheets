@@ -85,7 +85,7 @@ curl --location 'https://onecompiler.com/api/v1/challenges/create?access_token=y
   "problems": [
     {
       "title": "Print Hello World",
-      "markdown": "print the work '\''Hello World'\''",
+      "markdown": "print the word, Hello World",
       "properties": {
         "problemType": "code",
         "score": 2,
