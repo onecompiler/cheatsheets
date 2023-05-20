@@ -63,3 +63,78 @@ To make a user login automatically for a session. Add the following query parame
 2. `userApiToken`
 
 Example URL: https://onecompiler.com/embed/challenges/3w7dby3mt/beginners-coding-challenge?apiKey=your_api_id&userApiToken=user_specific_token
+
+## Creating challenges programatically 
+Following is the sample cURL shows creating challenges programatically
+
+```sh
+tech@goodtalent.io
+
+
+curl --location 'https://onecompiler.com/api/v1/challenges/create?access_token=your_token' \
+--header 'Content-Type: application/json' \
+--data '{
+  "challenge": {
+    "title": "Demo challenge created using API",
+    "markdown": "Description of the challenge - created using API",
+    "tags": [],
+    "visibility": "unlisted",
+    "properties": {
+      "challengeType": "code",
+      "captureUser": "yes",
+      "captureTabChanges": "yes"
+    }
+  },
+  "problems": [
+    {
+      "title": "Print Hello World",
+      "markdown": "print the work '\''Hello World'\''",
+      "properties": {
+        "problemType": "code",
+        "score": 2,
+        "options": {
+          "code": {
+            "supportedLanguages": null,
+            "validations": [
+              {
+                "id": 1,
+                "input": "NA",
+                "output": "Hello World",
+                "label": ""
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "title": "Even or Odd",
+      "markdown": "Read the number as inout and print it'\''s even or odd",
+      "properties": {
+        "problemType": "code",
+        "score": 2,
+        "options": {
+          "code": {
+            "supportedLanguages": [
+              "java",
+              "python"
+            ],
+            "validations": [
+              {
+                "id": 1,
+                "input": "6",
+                "output": "even"
+              },
+              {
+                "id": 2,
+                "input": "5",
+                "output": "odd"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}'
+```
