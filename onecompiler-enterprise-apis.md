@@ -68,9 +68,6 @@ Example URL: https://onecompiler.com/embed/challenges/3w7dby3mt/beginners-coding
 Following is the sample cURL shows creating challenges programatically
 
 ```sh
-tech@goodtalent.io
-
-
 curl --location 'https://onecompiler.com/api/v1/challenges/create?access_token=your_token' \
 --header 'Content-Type: application/json' \
 --data '{
@@ -109,7 +106,7 @@ curl --location 'https://onecompiler.com/api/v1/challenges/create?access_token=y
     },
     {
       "title": "Even or Odd",
-      "markdown": "Read the number as inout and print it'\''s even or odd",
+      "markdown": "Read the number as input and print even or odd",
       "properties": {
         "problemType": "code",
         "score": 2,
