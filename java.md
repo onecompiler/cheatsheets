@@ -42,7 +42,12 @@ javac example.java
 ```cmd
 java example 
 ```
+### To View all the Properties of a Class under a Package
 
+```cmd
+javap java.util.Scanner
+javap java.lang.Integer
+```
 ### Comments
 
 `//` - single line comment
