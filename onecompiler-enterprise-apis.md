@@ -77,9 +77,23 @@ curl --location 'https://onecompiler.com/api/v1/challenges/create?access_token=y
     "tags": [],
     "visibility": "unlisted",
     "properties": {
-      "challengeType": "code",
-      "captureUser": "yes",
-      "captureTabChanges": "yes"
+      "challengeType" : "code",
+        "captureUser" : "yes",
+        "captureTabChanges" : "yes",
+        "startDate" : "2023-07-04T10:09:00.000Z",
+        "endDate" : "2023-07-29T10:09:00.000Z",
+        "enableFinish" : "yes",
+        "enableTimeTracking" : "yes",
+        "timeLimit" : 60,
+        "disableCopyPaste" : true,
+        "showInstructionsOnStart" : true,
+        "hideScoreAfterProblemTitle" : true,
+        "hideChallengeEndTime" : true,
+        "showNextChallengeOnLastProblemOnly" : true,
+        "showTabChangeWarning" : true,
+        "showReportAfterFinish" : true,
+        "closeAfterTabSwitches" : true,
+        "maxTabSwitches" : 3
     }
   },
   "problems": [
@@ -99,7 +113,14 @@ curl --location 'https://onecompiler.com/api/v1/challenges/create?access_token=y
                 "output": "Hello World",
                 "label": ""
               }
-            ]
+            ],
+            "preloads" : "3ygcd9fxd, 3ygcdatnw, 3ygcdcmfr, 3ygcdense",
+            "preloadsParsed" : {
+                "java" : "3ygcd9fxd",
+                "python" : "3ygcdatnw",
+                "c" : "3ygcdcmfr",
+                "cpp" : "3ygcdense"
+            }
           }
         }
       }
