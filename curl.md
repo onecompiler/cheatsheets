@@ -27,7 +27,7 @@ curl https://onecompiler.com/
 |`-X`|To specify request method|`curl -X POST https://httpbin.org/post`|
 
 
-## Fequently used Headers
+## Frequently used Headers
 Following are some of the commonly used headers with examples
 
 1. User-Agent

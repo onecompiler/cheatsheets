@@ -1,6 +1,6 @@
 ---
 title: Java Primitive Data Types
-description:
+description: Primitive Data Types in Java Language
 created: 2018-01-21
 updated: 2018-01-21
 color: #027395
@@ -20,8 +20,8 @@ color: #027395
 
 | Data Type | Size (bits)| Range |
 |--------|--------|--------|
-|float|32||
-|double|64||
+|float|32| 3.40282347*10^38 to 1.40239846*10^(-45)          |
+|double|64| 1.7976931348*10^308 to 4.946564584*10^(-324)    |
 
 #### Other
 * boolean

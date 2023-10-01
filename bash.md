@@ -57,6 +57,20 @@ Remove the variable:
 unset my_variable
 ```
 
+Define Variables using export
+
+```
+export my_variable='Hello from Bash!'
+```
+
+Remove variable defined by export
+
+```
+export -n my_variable
+```
+
+
+
 ### Slicing
 
 Slice the variable:
@@ -141,7 +155,7 @@ Match the string against a regular expresion:
 
 ### Modifying
 
-Remove the shortest/longest matching pattern from beggining:
+Remove the shortest/longest matching pattern from beginning:
 
 ```bash
 echo ${my_variable#*=}
@@ -238,7 +252,7 @@ my_command | another_command
 
 ### Command substitution
 
-Replace the command invocation with it's stdout output:
+Replace the command invocation with its stdout output:
 
 ```bash
 echo $(expr $my_variable + 1)
@@ -271,3 +285,23 @@ unset my_function
 ```
 
 - [Bash Functions](https://linuxize.com/post/bash-functions/)
+
+### Arrays
+
+Defining arrays:
+```
+Fruits=('Apple' 'Banana' 'Orange')
+```
+
+```
+Fruits[0]="Apple"
+Fruits[1]="Banana"
+Fruits[2]="Orange"
+```
+
+Iteration:
+```
+for i in "${arrayName[@]}"; do
+  echo $i
+done
+```

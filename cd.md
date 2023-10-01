@@ -13,10 +13,19 @@ updated: 2019-08-21
 cd /path/to/new/directory
 ```
 
+## change directory to the root directory
+
+```sh
+ cd /
+ ```
+ 
 ## Change to current logged in user's home directory
 
 ```sh
 cd ~
+```
+```sh
+cd
 ```
 
 ## Change to a directory whih is an immediatsub directy to you rcurrent directory
@@ -36,8 +45,19 @@ and let's say you are in movies currently, so to go to action you can simply run
 cd action
 ```
 
+```
+├── images
+├── 'My movies'
+│   ├── action
+│   └── comedy
+└── music
+```
+
+```sh
+cd My\ movies
+```
 ## Going back to immediate parent directoty of current directoty 
 
 ```sh
-cd..
+cd ..
 ```

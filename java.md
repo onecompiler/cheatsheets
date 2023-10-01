@@ -47,6 +47,10 @@ java example
 
 `//` - single line comment
 
+`/* */` - multi line comment
+
+`/**  *  */` - documentation comment
+
 ## Data types
 
 Two groups of data types
@@ -85,6 +89,7 @@ data-type variable-name = value;
 ### Naming convention of variables
 
 * Case sensitive.
+* keywords cannot be used as variable names
 * Must should begin with a `lower case letter`. For second word should be a capital like this: firstName, pinCode etc.
 * Cannot contain white spaces like first name. 
 * special characters like `$` and `_` can be used to begin a variable name.
@@ -122,7 +127,7 @@ Class Sum {
 |----|-----|
 | Arithmetic Operator|+ , - , * , / , %|
 | comparision Operator| < , > , <= , >=, != , ==|
-| Bitwise Operator| & , ^ , \||
+| Bitwise Operator| & , ^ , \|, <<, >>, >>>|
 | Logical Operator| && , `\|\|`, ! |
 | Assignment Operator|= , += , -= , *= , /= , %= |
 | Auto-increment and Auto-decrement Operators| ++ , -- |
@@ -133,8 +138,13 @@ Class Sum {
 Array is a collection of similar data which is stored in continuous memory addresses.
 
 ```java
-data-type[] array-name; // one dimensional array
-data-type[][] array-name; // two dimensional array
+// one dimensional array
+data-type[] array-name; 
+    OR
+data-type array-name[];
+
+// two dimensional array
+data-type[][] array-name; 
 ```
 ### Example
 ```java
@@ -143,6 +153,8 @@ for (int i = 0; i < mobiles.length; i++) {
   System.out.println(mobiles[i]);
 }
 mobiles[1] = "Oppo"; // change an array element
+
+
 ```
 ## Conditional Statements
 
@@ -235,8 +247,80 @@ do{
 |Set| Set is a collection of elements which can not contain duplicate values. Set is implemented in HashSets, LinkedHashSets, TreeSet etc|
 |List| List is a ordered collection of elements which can have duplicates. Lists are classified into ArrayList, LinkedList, Vectors|
 |Queue| FIFO approach, while instantiating Queue interface you can either choose LinkedList or PriorityQueue.|
+|Stack| LIFO approach, last in first out structutre, stack is a sub ordinate of vector which helps in performing different functions.|
 |Deque| Deque(Double Ended Queue) is used to add or remove elements from both the ends of the Queue(both head and tail)|
 |Map| Map contains key-values pairs which don't have any duplicates. Map is implemented in HashMap, TreeMap etc.|
+
+## ArrayList
+
+The ArrayList class is a resizable array, which can be found in the java.util package.
+
+### Example
+
+```java
+
+    import java.util.ArrayList;
+
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<String> cars = new ArrayList<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("Mazda");
+    System.out.println(cars);
+  }
+}
+
+```
+
+## HashSet
+
+A HashSet is a collection of items where every item is unique, and it is found in the java.util package:
+ 
+ ###  Example
+ 
+ ```java
+ 
+ import java.util.HashSet;
+
+public class Main {
+  public static void main(String[] args) {
+    HashSet<String> cars = new HashSet<String>();
+    cars.add("Volvo");
+    cars.add("BMW");
+    cars.add("Ford");
+    cars.add("BMW");
+    cars.add("Mazda");
+    System.out.println(cars);
+  }
+}
+ 
+ ```
+ 
+ ## HashMap
+ 
+  A HashMap however, store items in "key/value" pairs, and you can access them by an index of another type (e.g. a String).
+  
+  ```java
+  
+  import java.util.HashMap;
+
+public class Main {
+  public static void main(String[] args) {
+    // Create a HashMap object called capitalCities
+    HashMap<String, String> capitalCities = new HashMap<String, String>();
+
+    // Add keys and values (Country, City)
+    capitalCities.put("England", "London");
+    capitalCities.put("Germany", "Berlin");
+    capitalCities.put("Norway", "Oslo");
+    capitalCities.put("USA", "Washington DC");
+    System.out.println(capitalCities);
+  }
+}
+  
+  ```
 
 ## String Methods
 | Method| Description| Example|
@@ -260,12 +344,13 @@ do{
 |String toLowerCase()|returns a string in lowercase.|str.toLowercase();|
 |String toUpperCase()|returns a string in uppercase.|str.toUpperCase();|
 |String trim()|removes beginning and trailing spaces of a given string.|str.trim();|
+|boolean endsWith(String chars)|Checks whether a string ends with the specified character(s).|str.endsWith("Hel")|
 
 ## OOPS
 
 ### 1. Class
 
-Class is the blueprint of an object and `class` keyword is required to create a class.
+Class is the blueprint of an object ,`class` keyword is required to create a class and keywords cannot be used as class names.
 
 ```java
 class class_name {  
@@ -276,7 +361,7 @@ class class_name {
 
 ### 2. Object
 
-Object is a basic unit in OOP, and is an instance of the class.
+Object is a basic unit in OOP, and is an instance of the class .  
 
 ```java
 class_name obj_name;
@@ -305,7 +390,182 @@ Encapsulation is a mechanism to protect private hidden from other users. It wrap
 Polymorphism gives the meaning many forms, usually it occurs when multiple classes are present and have been inherited.
 
 ```java
-class Child-class extends Parent-Class {
-//code
+// compile time polymorphism
+class Example {
+  static int exampleFunction(int a, int b) {
+    return a+b;
+  }
+  static double exampleFunction(double a, double b) {
+    return a+b;
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println(Example.exampleFunction(2, 3));
+    System.out.println(Example.exampleFunction(2.82, 3.2225));
+  }
 }
 ```
+
+```java
+// run time polymorphism
+class Parent {
+  public void print() {
+    System.out.println("Parent");
+  }
+}
+
+class Child extends Parent {
+  public void print() {
+    System.out.println("Child");
+  }
+}
+
+class Main {
+  public static void main(String[] args) {
+
+    Parent p = new Parent();
+    p.print();
+
+    p = new Child();
+    p.print();
+  }
+}
+```
+
+### 6. Inheritance
+Inheritance in Java is a mechanism in which one object `acquires all the properties and behaviors of a parent object`.
+The `extends` keyword indicates that you are making a new class that derives from an existing class.
+```java
+class ChildClass extends ParentClass {
+  //code
+}
+```
+
+### Constructor
+
+Constructor is a special type of method.
+Every class has atleast one constructor.
+Without Constructor, object from the class cannot be created, that's why constructor is mandatory in every class.
+Name of the constructor should be the name of the class.
+Constructor has no return type.
+
+```java
+public class AA {   //beg of class
+    public void AA() {  //default constructor
+    //code
+   }
+ }
+ ```
+ ### Excpetion Handling
+ 
+ Basically an exception is a runtime  error that causes the program to crash if not handled properly.The mechanism of handling it is known as exception handling.
+
+ Exception is handled by using try-catch block mechanism:
+ 
+ ##### try-catch-finally block mechanism:
+ 
+- **try block:** It groups a set of suspicious statements where the probability of exception occurence is higher.
+ 
+- **catch block :** It includes a set of code which executes when the exception occurs.
+ 
+-  **finally block(OPTIONAL):** It includes a set of statements that are executed no matter whether exception occurs or not.
+ 
+ 
+ ```java
+ try {
+ // statements vulnerable to exception
+ 
+ }
+ catch(<Exception_Type> e)
+ {
+ System.out.println("Exception occured");
+ }
+ 
+ finally
+ {
+ 
+ System.out.println("I am always executed");
+ }
+ 
+ ```
+ 
+ 
+ 
+ #### throw vs throws Keyword
+ 
+ - **throw:** Used to mannually create and prompt an exception
+ 
+ ```java
+ throw new IOException()
+ ```
+ 
+ - **throws:** Used to declare to programmer that this piece of code contains exception vulnerable code.
+ 
+ ```java
+ public void add(int a,int b)throws IOException
+ {
+ // statements
+ }
+ ```
+ 
+ ### Multithreading :
+ 
+ Mutithreading is concept of using multiple threads to execute a set of threads to accomplish a task.
+ 
+ 
+
+#### Creating a thread:
+
+A thread can be created by using two mechanism:
+
+- Thread class:
+
+```java
+class threading extends Thread{  
+public void run(){  
+System.out.println("thread is created and running");  
+}  
+public static void main(String args[]){  
+threading t1=new threading();  
+t1.start();  
+ }  
+}  
+```
+
+- Runnable interface:
+
+```java
+public class Multi2 implements Runnable  
+{    
+public void run()  
+{    
+System.out.println("Now the thread is started and running ");    
+}    
+    
+public static void main(String argvs[])  
+{   
+  
+Runnable r1 = new Multi2();
+  
+  
+Thread t1 = new Thread(r1, "My new thread");    
+  
+  
+t1.start();   
+  
+ 
+}    
+}  
+```
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

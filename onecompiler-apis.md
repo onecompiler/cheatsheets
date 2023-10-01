@@ -50,10 +50,13 @@ Following are the different options available to embed the editor
 | `availableLanguages=true`| To limit the languages in the Language selection popup|
 | `hideLanguageSelection=true`   | To hide the language selection button|
 | `hideNew=true` |To hide the 'New' button |
+| `hideNewFileOption=true` |Disables new file creation button|
+| `disableCopyPaste=true` |Disables copy/paste functionality|
 | `hideStdin=true` |To hide the STDIN section |
 | `hideResult=true` |To hide the Result section including STDIN |
 | `hideTitle=true` |To hide the Title/Code ID|
 | `listenToEvents=true`| Editor will keep listening for events like code change/ run from parent website|
+| `theme=dark`| For Darkmode editor|
 
 ## Capturing the code into parent website 
 Add the `codeChangeEvent=true` query param
@@ -109,7 +112,7 @@ iFrame.contentWindow.postMessage({
 Note: Make sure you have enabled `listenToEvents` flag via query parameter
 
 ## Demo
-https://editor-demo.w3spaces.com/
+https://onecompiler.github.io/editor-embed-demo/
 
 ## API to run the code 
 Users can integrate the API from their backend servers and execute the code programatically. 
@@ -138,18 +141,6 @@ curl --location --request POST 'https://onecompiler.com/api/v1/run?access_token=
 	"stdout": "Hello Peter\n",
 	"stderr": null,
 	"executionTime": 41,
-	"job": {
-		"properties": {
-			"language": "python",
-			"files": [{
-				"name": "HelloWorld.py",
-				"content": "import sys\nname = sys.stdin.readline()\nprint('Hello '+ name)"
-			}],
-			"stdin": "Peter"
-		},
-		"jobId": "3xv3z44wz",
-		"_id": "3xv3z44wz"
-	},
 	"limitPerMonthRemaining": 74694
 }
 ```
@@ -161,6 +152,14 @@ Following is the pricing for APIs
 |Plan Name| P1 | P2 | P3 | P4 | Enterprise |
 |---|---|---|---|---|---|
 |Price|$5 per month | $10 per month | $25 per month | $50 per month | Contact Us|
-|Calls per day| 300| 1,000| 3,000| 10,000| - |
+|Calls per month| 10,000| 30,000| 100,000| 300,000| Unlimited* |
 
 > Note: Get 2 months free when you purchase yearly plans!
+
+You can also purchase the APIs online here at https://rapidapi.com/onecompiler-onecompiler-default/api/onecompiler-apis/pricing
+
+Support Details: 
+
+Plans P1, P2, P3 & P4 comes with `Email Only` support. Enterprise plans comes with additional Zoom call support. 
+
+Zoom call support costs $50 per hour for non Enterprise plans.

@@ -2,7 +2,7 @@
 title: HTML 
 description: HTML Cheat Sheet gives you a quick reference of basic HTML tags, codes and attributes and is very handy while coding. 
 created: 2020-06-17
-updated: 2020-06-17
+updated: 2022-10-09
 ---
 
 ## Sample program
@@ -45,6 +45,14 @@ updated: 2020-06-17
 | `<meta/>`| Used to provide meta data information like description of the web page |`<meta charset="utf-8"/>`|
 | `<a>..</a>`| Used to link external webpages to your web page| `<a href="https://onecompiler.com/" target="_blank"> OneCompiler</a>`|
 | `<img />`| Used to insert an image | `<img src="/sample.jpg" alt="sample image" width="100" height="50" longdesc="image" />`|
+|`<pre/>`| Text in a pre elementis displayed in a fixed-width font, and it preservesboth spaces and line breaks |`<pre> int i = 0; </pre>`|
+|`<audio>`| It is used to embed sound content in the document. |` <audio controls> <source src="demo.mp3" type="audio/mpeg"> </audio>`|
+|`<video>`| It is used to embed video in the webpage. |` <video width="480" height="320" controls> <source src="demo_move.mp4" type="video/mp4"> </video>`|
+|`<source>`| Defines multiple media resources for media elements |` <source media="(min-width:650px)" srcset="img_pink_flowers.jpg"> `|
+|`<svg>`| SVG is used to define vector-based graphics for the Web|` <svg width="100" height="100"><circle cx="50" cy="50" r="40" stroke="green"/> </svg> `|
+|`<iframe>`| It is used to specifies an inline frame. |` <iframe src=" https://onecompiler.com/" title="iframe element"></iframe> `|
+|`<progress>`| It represents the completion progress of a task. |` <progress id="file" value="32" max="100"> 32% </progress> `|
+|`<address>`| It defines contact information for the author/owner of a document. |` <address> You can contact us at: 123 Somewhere St. City, State</address> `|
 
 ## HTML formatting 
 
@@ -61,6 +69,9 @@ updated: 2020-06-17
 |`<ins>..</ins>`| Inserted text|
 |`<sub>..</sub>`| Subscript text|
 |`<sup>..</sup>` | Superscript text|
+|`<big>..</big>` | Larger text|
+|`<kbd>..</kbd>` | keyboard input text|
+|`<bdo>..</bdo>` | bidirectional override text|
 
 ## Tables
 
@@ -74,7 +85,7 @@ updated: 2020-06-17
          </tr>
          
          <tr>
-            <td>Row 2, Col 1</td>
+           <td>Row 2, Col 1</td>
             <td>Row 2, Col 2</td>
          </tr>
          
@@ -107,11 +118,11 @@ List items are displayed using bullets
 ```html
 <ul type = "disc"> <!-- default case-->
 <ul type = "square">
-<ul type = "circle">
-```
+  <ul type = "circle">
+    ```
 ```html
 <ul type= "circle">
-    <li>list item 1</li>
+  <li>list item 1</li>
     <li>list item 2</li>
     <li>list item 3</li>
 </ul>
@@ -127,7 +138,7 @@ List the entries like in a dictionary or encyclopedia.
 
 ```html
  <dl>
-    <dt><b>OL</b></dt>
+   <dt><b>OL</b></dt>
     <dd>Ordered Lists</dd>
     <dt><b>UL</b></dt>
     <dd>Unordered Lists</dd>
@@ -136,42 +147,13 @@ List the entries like in a dictionary or encyclopedia.
  </dl>
 ```
 
-## CSS
-
-### 1. Inline CSS
-`style` attribute is used to define CSS properties at each HTML element.
-```html
-<h1 style = "color:blue; font-size:40px; font-style: italic;"> One Compiler </h1>
-```
-
-### 2. Internal CSS
-You can define CSS properties using `<style>` tag in `<head>` section.
-
-```html
-<head>
-<style>
-body {background-color: pink;}
-h1   {color: red;}
-h2    {color: green; font-size : 40px; font-style: italic;}
-</style>
-</head>
-```
-
-### 3. External CSS
-
-`<link>` tag is used to refer an external CSS file.
-
-```html
- <link rel="stylesheet" href="styles.css" />
-```
-
 ## Forms
 
 `<form>` element is used to define a form.
 
 ```html
 <form>
-<!--form elements like input select etc-->
+  <!--form elements like input select etc-->
 </form>
 ```
 
@@ -180,15 +162,45 @@ h2    {color: green; font-size : 40px; font-style: italic;}
 |Type |	Description|
 |----|----|
 |`<input type="text">` | To define a single-line text input field|
+|`<input type="number">` | To define a single-line number input field |
 |`<input type="password">` | To define a single-line password input field|
 |`<input type="radio">`| To define a radio button |
 |`<input type="submit">`| To define a submit button |
 |`<input type = "checkbox">`| To define a checkbox |
 | `<input type = "file">`| To define a file upload box|
+| `<input type = "range">`| To define a range slider control|
+| `<input type = "color">`| To define a color picker interface|
+| `<input type = "reset">`| To define a reset button|
+| `<input type = "email">`| To define a single-line email input field|
+| `<input type = "datetime-local">`| To define a single-line Date and time input field|
+| `<input type="tel">`| To define a telephone number. |
+| `<input type="url">`| To define a URL address. |
+| `<input type="week">`| To define a selection of week & year. |
+| `<input type="image">`| To take image format as an input. |
 
 ```html
  <form >
    ID : <input type = "text" name = "user-id" /> <br> <!-- Single line text input-->
    Password: <input type = "password" name = "password" /> <br> <!-- Single line password input-->
  </form>
+```
+
+## HTML 5 Semantic Tags
+> Semantic tags are used to make the code easier to write and understand for the developer as well as instructs the browser on how to treat them.
+
+| HTML Tags | Description| Example|
+|----|----|---|
+| `<article></article>`| It contains independent content which doesnt require any other context. | `<article>Hey, I'm an article tag!</article>`|
+|`<aside></aside>` | It is used to place content in a sidebar i.e. aside the existing content. It is related to surrounding content. | `<aside>Hey, I'm an aside tag!</aside>`|
+|`<details></details>` | It defines additional details that the user can hide or view. It basically acts as an accordians space. | `<details>Code Block</details>`|
+|`<summary> … </summary>`| It defines a visible heading for a “details” element. It acts as an accordian | `<details> <summary> Hi, I'm a summary tag! </summary> </details>`|
+| `<header></header>`| It is for the header of a section introductory of a page. There can be multiple headers on a page. | `<header>Hi, I'm a header tag!</header>`|
+| `<footer></footer>`| Located at the bottom of any article or document, they can contain contact details, copyright information etc. There can be multiple footers on a page. | `<footer>Hi, I'm a footer tag!</footer>` |
+| `<main></main>`| It defines the main content of the document. | `<main>Hi, I'm a main tag!</main>` |
+| `<nav></nav>`| It defines the navigation bar of the document. | `<nav>Hi, I'm a nav tag!</nav>` |
+
+## HTML Lazy Loading
+
+```html
+<img loading="lazy" src="url-or-directory.png" alt="lazy-load-images" />
 ```
