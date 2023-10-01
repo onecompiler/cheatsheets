@@ -2,12 +2,12 @@
 title: express (Javascript Library)
 description: Express is a minimal and flexible NodeJS web application framework. Express is the most popular web application framework in the NodeJS echosystem.
 created: 2019-06-24
-updated: 2019-06-24
+updated: 2022-10-01
 color: #636e72
 ---
 
 
-Axios is promise based HTTP client for both clientside and server side
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
 
 ## Installation
 

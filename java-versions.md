@@ -2,7 +2,7 @@
 title: Java Versions
 description: Java Versions with release years and features added
 created: 2019-08-19
-updated: 2019-08-19
+updated: 2022-10-01
 color: #f4de50
 ---
 
@@ -22,3 +22,10 @@ color: #f4de50
 |Java SE 10|March 2018|Local-variable type inference, Java-based JIT compiler, Parallel full GC for G1, Thread-local handshakes, Heap allocation on alternative memory devices|
 |Java SE 11|September 2018|Dynamic class-file constants, Epsilon: a no-op garbage collector, Local-variable syntax for lambda parameters, HTTP client|
 |Java SE 12|March 2019|Switch Expressions, Default CDS archives, Microbenchmark, |
+|Java SE 13|September 2019|FileSystems.newFileSystem() Method, DOM and SAX Factories with Namespace Support, Text Blocks, Switch Expressions Enhancements|
+|Java SE 14|March 20202|Switch Expressions, Helpful NullPointerExceptions, JFR Event Streaming, Remove the Pack200 Tools and API |
+|Java SE 15|September 2020|EdDSA Algorithm, Hidden classes, Removed Nashorn JS engine|
+|Java SE 16|March 2021|Records, Vector API, Alpine Linux Port|
+|Java SE 17 (LTS)|September 2021|Deprecate the Security Manager for Removal, Sealed Classes, Strongly Encapsulate JDK Internals|
+|Java SE 18|March 2022|UTF-8 By Default, Simple Web Server, Deprecate Finalization for Removal|
+|Java SE 19|September 2022|New System Properties for System.out and System, New Methods to Create Preallocated HashMaps|

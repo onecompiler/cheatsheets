@@ -2,7 +2,7 @@
 title: Python
 description: Python cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-04-24
-updated: 2020-04-24
+updated: 2022-10-30
 ---
 
 ## Basics
@@ -14,6 +14,8 @@ print("hello world")
 ### comments
 
 * `#` is used to comment a line in Python
+* You can also comment using a docstring format[```Multiline
+                                                comment```]
 
 ## Data Types
 
@@ -26,6 +28,7 @@ print("hello world")
 |Set|set, frozenset|
 |Sequence|list, tuple, range|
 |Mapping|dict|
+|None|NoneType|
 
 * type() is used to know the data type of a variable
 
@@ -36,6 +39,17 @@ print("hello world")
 |int()| constructs an integer from any form of data like string, float or integer|
 |float()|constructs a float number from any form of data like string, float or integer|
 |str()|constructs a string from any form of data like string, float or integer|
+
+## Type Casting
+
+In Python, Type casting or type converion is the method to convert one data-type to another data-type.
+Basically there are 2 types of type casting:
+
+1:Implicit
+This method of type casting is performed by the machine or the python interpreter itself. There is no need to define externally.
+
+2:Explicit
+In this method of type casting,the user performs the changes by using the predefined functions externally.There can be a loss of data in this type of type conversion
 
 ## Variables
 
@@ -67,14 +81,25 @@ function-name(parameters); # calling a function
 
 ### 1. List
 
-List is ordered collection of items and can be changed. `[]` are used to represent lists. 
+List is ordered collection of items and are mutable `[]` are used to represent lists. 
 
 ### Example
 ```py
-mylist=["iPhone","Pixel","Samsung"]
-print(mylist[0]) # prints iPhone
-print(mylist[7]) # throws IndexError : list index out of range
-print(mylist[-1]) # prints Samsung
+mylist1=["iPhone","Pixel","Samsung"]
+print(mylist1[0]) # prints iPhone
+print(mylist1[7]) # throws IndexError : list index out of range
+print(mylist1[-1]) # prints Samsung
+```
+
+Using List() to declare a list.
+```py
+mylist2=list()
+mylist2.append("iPhone") # adds iPhone to the end of list
+mylist2.append("Pixel") # adds Pixel to the end of list
+mylist2.append("Samsung") # adds Samsung to the end of list
+print(mylist2[0]) # prints iPhone
+print(mylist2[7]) # throws IndexError : list index out of range
+print(mylist2[-1]) # prints Samsung
 ```
 ### Operations
 
@@ -87,10 +112,14 @@ print(mylist[-1]) # prints Samsung
 |lst.pop(`[index]`)→value| remove & return item at index|
 |lst.sort()| sort the given list items|
 |lst.reverse() |reverse the given list items|
+|lst.count() |Returns the number of elements with the specified value|
+|lst.clear() |Removes all the elements from the list|
+|lst.index() |Returns the index of the first element with the specified value|
+|lst.copy() |Returns a copy of the list|
 
 ### 2. Tuple
 
-Tuple is ordered collection of items and can't be changed. `()` are used to represent Tuples.
+Tuple is ordered collection of items and are immutable `()` are used to represent Tuples.
 
 ### Example
 
@@ -104,6 +133,7 @@ print(myTuple[-1]) # prints Samsung
 ### 3. Set
 
 Set is unordered collection of items and it is unindexed. `{}` are used to represent sets.
+**Note**- to create an empty set use the built-in set() function. If we write new_set = {} this will create a dictionary instead of a set.
 
 ### Example
 
@@ -127,7 +157,7 @@ print(mySet) # prints {'iPhone', 'Samsung', 'OnePlus', 'Pixel'}
 
 ### 4. Dictionary
 Dictionary is a collection of key value pairs which is unordered, can be changed, and indexed. They are written in curly brackets with key - value pairs. 
-
+**Note**- From Python 3.6 new Dict() method implementation had made it possible for maintaining the order of the key-value pairs added in the respective             order.
 ### Example
 ```py
 mydict = {
@@ -150,6 +180,7 @@ print(val) # prints iPhone
 |d.popitem()|removes the item that was last inserted into the dictionary|
 |d.get(key)| Returns the value of the specified key|
 |d.setdefault(key)|Returns the value of the specified key. If the key does not exist then returns the default value provided|
+|d.fromkeys(key,value)| Returns a dictionary with specified keys and values|
 
 ## Conditional Statements
 
@@ -166,7 +197,7 @@ if conditional-expression :
 else :
     #code
 ```
-### 3. Nested-If-else
+### 3. If-elif-else Ladder
 
 ```py
 if conditional-expression :
@@ -176,6 +207,40 @@ elif conditional-expression :
 else :
     #code
 ```
+### 4. Try Except
+
+The try block lets you test a block of code for errors. The except block lets you handle the error.
+```py
+try:
+    print(1/0)
+except:
+    print("You can't divide by zero!")
+```
+
+The finally block lets you execute code, regardless of the result of the try- and except blocks.
+```py
+try:
+    print(x)
+except:
+    print("Variable x is not defined")
+finally:
+    print("The program is finished.")
+```
+
+You can define as many exception blocks as you want, e.g. if you want to execute a special block of code for a special kind of error.
+```py
+a = input("Digit a number: ")
+try:
+    b = [i for i in range(int(a))]
+    print(b[3])
+except ValueError:
+    print("You didn't digit a number.")
+except IndexError:
+    print("Your list have less than 4 numbers.")
+finally:
+    print("Python is cool.")
+```
+
 ## Loops
 
 ### 1. For
@@ -283,3 +348,9 @@ For deleting files, you must import os module and use `os.remove()` function.
 import os
 os.remove(filename)
 ```
+### nested list --list within list
+<!-- easily accessible elements using indexes -->
+L=['a',['bb','cc'],'d']
+L[1][1]=0
+print(L)
+<!-- prints  ['a',['bb',0],'d'] -->

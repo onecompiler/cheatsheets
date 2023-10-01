@@ -2,7 +2,7 @@
 title: R 
 description: R cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-05-11
-updated: 2020-05-11
+updated: 2022-10-09
 ---
 
 R is very popular for data analytics which was created by Ross Ihaka and Robert Gentleman in 1993. Many big companies like Google, Facebook, Airbnb etc uses this language for data analytics.
@@ -249,3 +249,115 @@ sum <- function(x, y) {
 
 sum(10, 20)
 ```
+## Matrix operations 
+
+### 1. Is Something a Matrix
+```py
+is.matrix(A)               # Returns a boolean value 
+```
+
+### 2. Addition of two matrices 
+```py
+A <- matrix(c(2,3,-2,1,2,2),3,2)
+B <- matrix(c(1,4,-2,1,2,1),3,2)
+C <- A + B                # Returns a sum matrix
+```
+
+### 3. Subtraction of two matrices 
+```py
+A <- matrix(c(2,3,-2,1,2,2),3,2)
+B <- matrix(c(1,4,-2,1,2,1),3,2)
+D <- A - B                # Returns a difference matrix
+```
+
+### 4. Matrix multiplication 
+```py
+A <- matrix(c(2,3,-2,1,2,2),3,2)
+B <- matrix(c(1,4,-2,1,2,1),2,3)
+C <- A %*% B            # Returns a multiplied matrix
+```
+
+### 5. Multiplication by a scalar
+```py
+c <- 3
+c*A                     # Returns a matrix multiplied with a constant
+```
+
+### 6. Transpose of a Matrix 
+```py
+AT <- t(A)              # Returns a transosed matrix
+```
+
+### 7. Inverse of a Matrix 
+```py
+AI <- solve(A)          # Returns a inverse of a matrix
+```
+
+### 8. Determinant of a Matrix
+```py
+v <- det(A)             # Returns a determinant value of matrix
+```
+
+### 9. Dimension of a Matrix 
+```py
+dim(A)                  # Returns the dimension of matrix
+```
+
+### 10. Number of rows
+```py
+nrow(A)                 # Return number of rows of matrix 'A'
+```
+
+### 11. Number of columns
+```py
+ncol(A)                 # Returns number of columns of matrix 'A'
+```
+
+### 12. Horizontal concatnation
+```py
+A <- matrix(c(2,3,-2,1,2,2),3,2)
+B <- matrix(c(1,3,2,1,4,2),3,2)
+C <- cbind(A,B)        # Returns concatenated matrix
+```
+
+### 13. Vertical concatenation
+```py
+A <- matrix(c(2,3,-2,1,2,2),3,2)
+B <- matrix(c(1,3,2,1,4,2),3,2)
+C <- rbind(A,B)        # Returns concatenated matrix
+```
+
+## Apply functions
+
+Apply functions are a family of functions in base R which allow you to repetitively perform an action on multiple chunks of data. 
+
+### 1. apply function 
+```py
+apply(X, MARGIN, FUNCTION)
+```
+- **X** : Array of matrix
+- **MARGIN** : Where to apply (row = 1, col = 2)
+- **FUNCTION** : Function you want to use
+
+### 2. lapply function 
+```py
+lapply(X, FUNCTION, …)
+```
+- **X** : Vector or a list
+- **FUNCTION** : Function to use
+
+### 3. sapply function 
+```py
+sapply(X, FUNCTION, …, simplify = TRUE, USE.NAMES = TRUE)
+```
+- **X** : Vector or a list
+- **FUNCTION** : Function to use
+- Extra arguments have default values
+
+### 4. vapply function 
+```py
+vapply(X, FUNCTION, FUNCTION.VALUE, …, USE.NAMES = TRUE)
+```
+- **X** : Vector or a list
+- **FUNCTION** : Function to use
+- Extra arguments have default values

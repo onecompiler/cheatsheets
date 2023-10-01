@@ -2,24 +2,26 @@
 title: C Programming language
 description: C Programming language cheatsheet contains useful code syntax with examples which is handy while coding.
 created: 2020-04-25
-updated: 2020-04-25
+updated: 2022-10-20
 ---
 
 ## Basics
 
-* scanf("%d", &x) -- read value into the variable x from input stream
-* Printf("%d",x) -- printf value to the output stream
-* gets(str) -- reads a line from input stream into a variable
+* `scanf("%d", &x);` -- read value into the variable x from input stream
+* `printf("%d",x);` -- printf value to the output stream
+* `gets(str);` -- reads a line from input stream into a variable
+* `scanf("%[^\n]",s);` --reads a line from input using scanf only
+
 ### Sample C program
 
 ```c
 #include <stdio.h>    
-int main(){    
-printf("Hello World!!");    
-return 0;   
+int main() {    
+    printf("Hello World!!");    
+    return 0;   
 }  
 ```
-* `#include` is a keyword which is used to include the library file `<stdio.h>`. 
+* `#include` is a keyword which is used to include header files like : `<stdlib.h>` and `<stdio.h>`. 
 * `<stdio.h>` library file is used to read the data from terminal and to display the data on terminal. It has several in-built functions like printf(), scanf() etc.
 * `main()` function is the entry point of any C program.
 * `printf and scanf` are inbuilt library functions which are used for input and output in C language. They are defined in `stdio.h` header file.
@@ -31,7 +33,7 @@ return 0;
 
 | Types | Data-type|
 |----|----|
-|Basic | int, char, float, double|
+|Basic | bool, void, int/long, long long, char, float, double|
 |Derived | array, pointer, structure, union|
 |Enumeration | enum|
 |Void |	void|
@@ -39,9 +41,14 @@ return 0;
 ### 1. Basic Data types
 | Data type | Description | Range | Memory Size| Format specifier|
 |----|----|----|----|----|
-| int| used to store whole numbers|-32,768 to 32,767|2 bytes| %d|
+| int| used to store whole numbers|-2,147,483,648 to 2,147,483,647|4 bytes| %d|
+|unsigned int| used to store non-negative whole numbers|0 to 4,294,967,295|4 bytes| %u|
 |short int| used to store whole numbers|-32,768 to 32,767| 2 bytes|%hd|
-|long int| used to store whole numbers|	-2,147,483,648 to 2,147,483,647| 4 bytes|%li|
+|unsigned short int| used to store non-negative whole numbers|0 to 65535| 2 bytes|%hu|
+|long int| used to store whole numbers|	-2,147,483,648 to 2,147,483,647| 4 bytes|%ld|
+|unsigned long int| used to store non-negative whole numbers|0 to 4,294,967,295 | 4 bytes|%lu|
+|long long int| used to store whole numbers | -(2^63) to (2^63)-1 | 8 bytes|%lld|
+|unsigned long long int| used to store non-negative whole numbers|0 to (2^64)| 4 bytes|%llu|
 |float| used to store fractional numbers|6 to 7 decimal digits| 4 bytes|%f|
 |double| used to store fractional numbers|15 decimal digits| 8 bytes|%lf|
 |char|used to store a single character|one character|1 bytes|%c|
@@ -71,7 +78,7 @@ struct structure_name {
 struct structure_name variable name;
 ```
 
-### 3. Enumeration Data types
+### 3. Enumeration Data types non-negative
 
 ```c
 enum name{constant1, constant2, constant3, ....... };
@@ -80,7 +87,8 @@ enum name{constant1, constant2, constant3, ....... };
 
 Void specifies that there is no return value. Generally used when function returns no value, pointer with type as void represents the address of an object but not it's type.
 
-## Variables
+## Variables 
+
 
 ### Syntax:
 ```c
@@ -89,9 +97,14 @@ data-type variable-name = value;
 ### Example:
 ```c
 int x = 10; // declaring int variable and assigning value 10 to it
-char grade = 'A'; // declaring char variable and assigning value A to it
+char grade = 'A'; // declaring char variable and assigning value A to it 
+
+Based on scope, Variables can be classified into two types: 
+Local Variables 
+Global Variables
 ```
-## Literals
+## Literals 
+Literals are the constant values assigned to the constant variables.
 |Literal | Example|
 |----|----|
 |Integer Literal- decimal|255|
@@ -115,9 +128,12 @@ char grade = 'A'; // declaring char variable and assigning value A to it
 |\"	| Double quotation|
 |\0 | Null character|
 |\b	|Back space|
+|\a	|Alarm or Beep|
+|\nnn	|Octal Number|
+|\xhh	|hexadecimal Number|
 
 ## Arrays
-
+Array in C can be defined as a method of clubbing multiple entities of similar type into a larger group.
 ### One dimentional Array:
 
 ```c
@@ -144,15 +160,18 @@ int a[2][3] = {
 
 | Operator type | Description|
 |----|-----|
-| Arithmetic Operator|+ , - , * , / , %|
-| comparision Operator| < , > , <= , >=, != , ==|
-| Bitwise Operator| & , ^ , \||
-| Logical Operator| && , `\|\|`, ! |
-| Assignment Operator|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
-| Ternary Operator| ? : |
-| sizeof operator| sizeof() |
+| Arithmetic Operators|+ , - , * , / , %|
+| Comparison Operators| < , > , <= , >=, != , ==|
+| Bitwise Operators| & , ^ , \|, <<, >> |
+| Logical Operators| && , `\|\|`, ! |
+| Assignment Operators|= , += , -= , *= , /= , %=, <<=, >>=, &=, ^=, `\|=` |
+| Ternary Operators| ? : |
+| sizeof operators| sizeof() |
 
-## Keywords(reserved words)
+
+## Keywords(reserved words) 
+Keywords are words that have special meaning to the C compiler. These words help us to use the functionality of C language.
+There are 32 keywords in C language.
 
 ```c
 auto         double      int        struct
@@ -163,6 +182,7 @@ const        float       short      unsigned
 continue     for         signed     void
 default      goto        sizeof     volatile
 do           if          static     while
+alignas      nullptr     typeof     alignof
 ```
 ## Identifiers
 
@@ -172,15 +192,34 @@ Identifiers are user defined names for variables, functions and arrays.
 * They must be less than or equal to 31 characters.
 * No special characters.
 * Must start with a letter or under score.
-* Can contain letters, digits, or underscore only.
+* Can contain letters, digits, or underscore only. 
+* We can not use C keywords as a variable name.
 
 ## Strings
 
 Strings are an array of characters ended with null character. Enclosed in double quotes.
 
+Declaration
 ```c
     char str[]="onecompiler";
 ```
+
+
+| Function | Description| Example|
+|----|----|---|
+| gets() | It allows you to enter multi-word string | `gets("string")`|
+| puts() | It is used to show string output | `puts("string")`|
+| strlen() | It is used to calculate the length of the string | `strlen(string_name)`|
+| strcpy() | It is used to copy the content of second-string into the first string passed to it | `strcpy(destination, source)`|
+| strcat() |It is used to concatenate two strings | ` strcat(first_string, second_string)`|
+| strcmp() | It is used to compare two strings | `strcmp(first_string, second_string)`|
+| strrev() | It is used to return reverse of a string | `strrev("string")` |
+| strupr() | It return string characters in uppercase | `strupr("string")` |
+| strlwr() | It return string characters in lowercase | `strlwr("string")` |
+| strcasecmp() | It compares two strings without comparing the sensitivity of the case | `strcasecmp(string1 , string2)` |
+| strncat() | It concatenates n characters of one string to another string | `strncat(destination , source, size)` |
+| strstr() | It stores the value in a pointer variable and takes two strings as input | `strstr(string1 , string2)` |
+
 ## Constants
 
 Constants are the fixed values. They can be declared in two ways as shown below:
@@ -260,15 +299,15 @@ for(Initialization; Condition; Increment/decrement){
 ```
 ### 2. While
 ```c
-while(condition){  
+while (condition){  
 //code 
 }  
 ```
 ### 3. Do-While
 ```c
-do{  
+do {  
 //code 
-} while(condition); 
+} while (condition); 
 ```
 
 ## Functions
@@ -304,7 +343,22 @@ int x = 10, *ptr;
 
 ptr = &x; // valid because &x and ptr are addresses
 *ptr = x; // valid because both x and *ptr values 
+
+int a[10];
+ptr = a;  // since a is the address of the first element in array (a[0])
+ptr++;    // pointer points to next array element (a[1])
 ```
+
+## Types of Pointers
+| Serial Number |Pointer|Description|
+|----|----|---|
+| 1 | Null Pointer | `We can create a null pointer by assigning the null value at the time when we are declaring the pointer.It always contains the value 0`|
+| 2 | Void Pointer | `This pointer has no associated data-type with it. A void pointer can hold addresses of any data-type and can be typecasted to another.It is created by using the keyword void`|
+| 3 | Wild Pointer | `They are also called as uninitialised pointers.They are called so because they point to some arbitary memory location that is randomly alloted and the program can misbehave badly.This type of pointer is not efficient.`|
+| 4 | Dangling Pointer | `The pointers that are pointing to deallocated memory or deleted memory block are known as Dangling pointers.They can raise an error because they point to a deallocated memory block.`|
+
+
+
 ## Structures
 
 Structure is a user-defined data type where it allows you to combine data of different data types.
@@ -362,3 +416,74 @@ fclose(fptr);
 |rb+| Opens for both reading and writing in binary mode.|
 |a+| Opens for both reading and appending.|
 |ab+| Opens for both reading and appending in binary mode.|
+
+
+## Dynamic Memory Allocation
+
+A set of functions for dynamic memory allocation from the heap. These methods are used to use the dynamic memory which makes our C programs more efficient
+
+
+| Function | Description| Example|
+|----|----|---|
+| malloc() | Stands for 'Memory allocation' and reserves a block of memory with the given amount of bytes. | `ptr = (castType*) malloc(size)`|
+| calloc() | Stands for 'Contiguous allocation' and reserves n blocks of memory with the given amount of bytes. | `ptr = (castType*)calloc(n, size)`|
+| free | It is used to free the allocated memory. | `free(ptr)`|
+| realloc() | If the allocated memory is insufficient, then we can change the size of previously allocated memory using this function for efficiency purposes | `ptr = realloc(ptr, x)`|
+
+
+## Header Files
+
+| Header Files | Description|
+|----|----|
+|stdio.h | Input/Output functions|
+|conio.h | Console Input/Output functions|
+|stdlib.h | General utility functions|
+|math.h | Mathematics functions|
+|string.h | String functions|
+|ctype.h | Character handling functions|
+|time.h | Date and time functions|
+|float.h | Limits of float types|
+|limits.h | Size of basic types|
+|wctype.h | Functions to determine the type contained in wide character data|
+|assert.h |Contain macro used to assist with detecting logical error|    
+
+## Mathematical Functions
+All functions defined under `<math.h>` header file.
+
+| Function | Description|
+|----|----|
+| sin(a) | Computes sine of the double angle (in radians) |
+| cos(a) | Computes cosine of the double angle (in radians) |
+| tan(a) | Computes tangent of the double angle (in radians) |
+| asine(a) | Computes principle inverse of the sine (in radians) |
+| acos(a) | Computes principle inverse of the cosine (in radians) |
+| atan(a) | Computes principle inverse of the tangent (in radians) |
+| atan2(a) | Computes principle inverse of tan(y/x) in same quadrant as (x,y) |
+| sqrt(x) | Computes square root of x |
+| log(x) | Computes natural logarithm of x (to the base e) |
+| log2(x) | Computes natural logarithm of x (to the base 2) |
+| log10(x) | Computes natural logarithm of x (to the base 10) |
+| exp(p) | Computes e to the power of p |
+| exp2(p) | Computes 2 to the power of p |
+| exp10(p) | Computes 10 to the power of p |
+| pow(x,y) | Computes x to the power of y |
+| ceil(x) | Computes smallest integer (returned as double) no less than x |
+| floor(x) | Computes largest integer (returned as double) no greater than x |
+| abs(x) | Computes the absolute value of x |
+
+## Randomize Functions
+All functions defined under `<stdlib.h>` header file. These randomized functions are pseudo-random (time-based random functions).
+
+* `random()` : returns a random long
+* `srandom(seed)` : seeds the random generator with a new random seed
+
+## How To Compile in GCC
+
+* `gcc prog.c` : compiles prog.c into a.out, run result with  `./a.out`.
+* `gcc -o prog prog.c` : compiles prog.c into prog, run result with `./prog`.
+* `gcc -g -o prog prog.c` : as above, but allows for debugging.
+
+## use of fflush()
+
+*used to clear the buffer
+*used to accept the next string

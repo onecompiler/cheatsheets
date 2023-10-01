@@ -83,6 +83,32 @@ function App() {
 
 export default App;
 ```
+useEffect()-
+The next most useful Hook you will encounter is the useEffect Hook. It performs a function whenever a specified state has changed.
+
+```js
+function House() {
+  const [color, setColor] = useState("white");
+  const [door, setDoor] = useState(0); //initialize door as 0
+
+//add 1 to the current value of door on every button click
+  const addDoor = () => {
+    setDoor(door + 1);
+  };
+
+//finally, trigger the function to print the door value whenever door is updated
+  useEffect(() => {
+    console.log(`Door count: ${door}`)
+  }, [door]);
+
+  return (
+    <div>
+      <h2>This is a {color} house</h2>
+      <button onClick={addDoor}>Add a Door</button>
+    </div>
+  );
+}
+```
 
 ## Conditional Rendering
 
