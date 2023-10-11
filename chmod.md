@@ -2,7 +2,7 @@
 title: chmod Linux Command
 description: chmod stands for "change mode". It is used to change the permissions to files/ directories
 created: 2019-08-24
-updated: 2019-08-24
+updated: 2023-10-12
 ---
 
 chmod stands for "change mode". It is used to change the permissions to files/ directories
