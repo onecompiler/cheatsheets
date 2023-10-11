@@ -11,6 +11,15 @@ chmod stands for "change mode". It is used to change the permissions to files/ d
 ```sh
 chmod [options] <permissions> <file_name> 
 ```
+# Options
+
+|Option|Description|
+|---|---|
+|-R|change permissions for files and directories recursively|
+|-v|Verbose(this display all the files that the command is processing)|
+|-c|Change (this will display only the files it is changing the permission for)|
+|-f|silent mode (this will supress errors)|
+|-h|this change the permission of the symbolic link instead of the main file|
 
 ### Example 
 ```sh
