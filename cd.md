@@ -61,3 +61,8 @@ cd My\ movies
 ```sh
 cd ..
 ```
+## change directory to the last working directory
+
+```sh
+ cd -
+ ```
