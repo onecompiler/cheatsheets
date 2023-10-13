@@ -2,7 +2,7 @@
 title: ADB (Android Debug Bridge)
 description: Android Debug Bridge command-line tool helps us to interact with connected Android device/ Emulator. We can install, debug apps using ADB
 created: 2019-06-17
-updated: 2022-10-04
+updated: 2023-10-12
 ---
 
 ## Selecting Device
@@ -69,5 +69,8 @@ adb push foo.txt /sdcard/foo.txt
 |`adb start-server`|Ensure that there is a server running|
 |`adb root`|Restarts the adbd with root permissions|
 
-
-
+## Steps to pair and connect to adb over wifi [Android 11+]
+1. On device, go to developer settings and enable wireless debugging
+1. Type `adb pair [ip]:[port]` and replace [ip] and [port] with the ip and port shown on the device
+2. Then you will be asked for a pairing code.Enter that as shown on the device.
+3. Now to connect type `adb connect [ip]:[port]` and replace [ip] and [port] with the the ip and port seen on the Wireless debugging page after closing the pairing dialog.
