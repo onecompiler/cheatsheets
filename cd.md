@@ -2,7 +2,7 @@
 title: cd Linux Command
 description: cd command is used to change the current working directory
 created: 2019-08-21
-updated: 2019-08-21
+updated: 2023-10-12
 ---
 
 `cd` command is used to change the current working directory
@@ -61,3 +61,8 @@ cd My\ movies
 ```sh
 cd ..
 ```
+## change directory to the last working directory
+
+```sh
+ cd -
+ ```
