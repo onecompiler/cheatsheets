@@ -30,3 +30,6 @@ mkdir d1 # creates directory with name d1
 ```sh
 mkdir d2 d3 d4 # creates directories d2, d3 and d4
 ```
+```sh
+mkdir d1/d2/d3 # creates folder d1, then d2 inside d1 and then finally d3 inside d2
+```
