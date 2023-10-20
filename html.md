@@ -2,7 +2,7 @@
 title: HTML 
 description: HTML Cheat Sheet gives you a quick reference of basic HTML tags, codes and attributes and is very handy while coding. 
 created: 2020-06-17
-updated: 2022-10-09
+updated: 2023-10-20
 ---
 
 ## Sample program
@@ -204,3 +204,24 @@ List the entries like in a dictionary or encyclopedia.
 ```html
 <img loading="lazy" src="url-or-directory.png" alt="lazy-load-images" />
 ```
+# Useful HTML Character Entities
+
+|Character|Description|Name|Unicode|
+|:---:|---|:---:  |:---:|
+| |Blank Space|`&nbsp;`|`&#160;`|
+|<|Less than|`&lt;`|`&#60;`|
+|>|Greater than|`&gt;`|`&#62;`|
+|&|Ampersand|`&amp;`|`&#38;`|
+|"|Double quotation mark|`&quot;`|`&#34;`|	
+|'|Single quotation mark|`&apos;`|`&#39;`|
+|~|Tilde|`&tilde;`|-|
+|%|Percent|`&percnt;`|`&#37;`|
+|₹|Indian Rupee|`&#x20B9;`|`&#x20B9;`|
+|$|Dollar|`&dollar;`|`&#36;`|
+|¢|Cent|`&cent;`|	`&#162;`|	
+|£|Pound|`&pound;`|`&#163;`|	
+|¥|Yen|`&yen;`|`&#165;`|
+|€|Euro|`&euro;`|`&#8364;`|
+|©|Copyright|`&copy;`|`&#169;`|	
+|®|Registered|`&reg;`|`&#174;`|
+|™|Trademark|`&trade;`|`&#8482;`|
