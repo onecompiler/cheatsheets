@@ -83,3 +83,10 @@ CTRL-r          # Search history
 !$              # Last argument of previous command
 !*              # All arguments of previous command
 ```
+## Text Editor Options for Programmers
+
+```c
+Sublime Text     Atom        GNU Emacs 
+Vim              Gedit       Notepadqq
+Nano             VsCode      Brackets
+```
