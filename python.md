@@ -72,10 +72,10 @@ In Python, declaring variables is not required. Means you don't need to specify 
 
 ```py
 # declaring a function
-def function-name(parameters){ # here parameters are optional
-    #code
-}
-function-name(parameters); # calling a function
+def function-name(parameters): # here parameters are otional
+    pass
+
+function-name(parameters) # calling a function
 ```
 ## Collections
 
@@ -116,6 +116,45 @@ print(mylist2[-1]) # prints Samsung
 |lst.clear() |Removes all the elements from the list|
 |lst.index() |Returns the index of the first element with the specified value|
 |lst.copy() |Returns a copy of the list|
+
+#### list comprehension
+```py
+# instead of populating list like this
+l = list()
+for i in range(100):
+    l.append(i)
+# you can do this in one liner
+l = [x for x in range(100)]
+# one more example
+# suppose you want to create a list of even numbers from
+# 1 to 100
+evennums = [x if x%2==0 for x in range(100)]
+```
+#### list slicing 
+```py
+# suppose there is a list and you wanna access only 
+# certain subarray
+subarr = arr[2:5]
+# subarr is the subarray of arr from 2 to 4 considering 0 based index
+subarr1 = arr[:5]
+subarr2 = arr[2:]
+# if nothing is given in the left of colon , the default accepted is 0
+# if nothing is given in right , the default is accepted as len(arr)-1
+
+
+# accessing from backword
+# let n be an natural number
+# where n can't be 0
+ele = arr[-n]
+# ele is the element in the arr[len(arr)-n] 
+ele = arr[-x:-n]
+# ele is the subarray of arr from arr[len(arr)-x] to arr[len(arr)-n]
+
+# suppose you wanna access some perticular indexes
+
+ele = arr[2:8:2]
+# ele gives the subsequence of arr starting from index 2 to index 7 but only iterates over even position
+```
 
 ### 2. Tuple
 
