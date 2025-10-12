@@ -408,6 +408,22 @@ Macro is defined by #define directive. Whenever a macro name is encountered by t
 
 Genrally, used in Competetive coding and in big projects where need to write same function is repetetive
 
+Can also redefine int as long long to handle large integer values in Competitive Programming by simply replacing int main() with signed main().
+
+### Example
+```c
+#define int long long
+
+#include <bits/stdc++.h>
+using namespace std;
+
+signed main() {
+    int a = 1000000000;
+    int b = 1000000000;
+    cout << a * b; // Output: 1000000000000000000
+    return 0;
+}
+```
 ## Vectors
 Vectors are same as dynamic arrays. They will be resized on element inseertions & deletions.
 
