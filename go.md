@@ -291,6 +291,12 @@ or
 ```go
 channel-name := make(chan Data-Type)
 ```
+
+>  **Tip:** Always close channels when done to avoid goroutine leaks.  
+> ```go
+> defer close(channel-name)
+> ```
+> 
 ## Generics
 
 Generics allow you to declare and use functions or types that are written to work with any of a set of types provided by calling code. *(Generics are only present in **Go 1.18 or later**. Prior versions of Go do not have generics.)* 
