@@ -419,16 +419,6 @@ we can also get our elements by tag name using the getElementsByTagName() method
 var listItems = document.getElementsByTagName(‘li’);
 ```
 
-### Local Storage
-
-Used to store key–value data in the browser that persists even after reloading or closing the tab.
-
-```
-localStorage.setItem("username", "Alice");   // Save data
-let user = localStorage.getItem("username"); // Retrieve data
-localStorage.removeItem("username");         // Delete data
-```
-
 ### Queryselector
 
 The querySelector() method returns the first element that matches a specified CSS selector. That means that you can get elements by id, class, tag and all other valid CSS selectors. Here I just list a few of the most popular options.
@@ -445,4 +435,15 @@ The querySelectorAll() method is completely the same as the querySelector() exce
 
 ```
 var heading = document.querySelectorAll(‘h1.heading’);
+```
+
+
+### Local Storage
+
+Used to store key–value data in the browser that persists even after reloading or closing the tab.
+
+```
+localStorage.setItem("username", "Alice");   // Save data
+let user = localStorage.getItem("username"); // Retrieve data
+localStorage.removeItem("username");         // Delete data
 ```
