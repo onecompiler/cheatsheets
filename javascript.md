@@ -437,7 +437,6 @@ The querySelectorAll() method is completely the same as the querySelector() exce
 var heading = document.querySelectorAll(‘h1.heading’);
 ```
 
-
 ### Local Storage
 
 Used to store key–value data in the browser that persists even after reloading or closing the tab.
