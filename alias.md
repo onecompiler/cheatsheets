@@ -14,14 +14,14 @@ Following is the syntax for creating an `alias`
 alias name=value
 ```
 where the `name` is the new name you want to assign and `value` is the actual command.
-Lets take a realtime usecase so that we can understand easily. 
-We will type `ls -al` frequently to list all files in a directory. Lets assign an alias `files` to the command so that you can simply type `files` instead typing `ls -al`. Following command creats the alias with name `files` for `ls- al`
+Lets take a real world use case so that we can understand easily. 
+We will type `ls -al` frequently to list all files in a directory. Lets assign an alias `files` to the command so that you can simply type `files` instead typing `ls -al`. Following command creats the alias with name `files` for `ls -al`
 
 ```sh
 alias files='ls -al'
 ```
 
-After runnng the about command we can simply type `files` to list all files & directories, instead typing `ls -al`
+After runnng the above command we can simply type `files` to list all files & directories, instead typing `ls -al`
 
 # Listing all created aliases 
 
@@ -41,7 +41,7 @@ alias files='ls -al'
 We can delete an alias with name using following command
 
 ```sh
-unalias <alians_name>
+unalias <alias_name>
 ```
 
 # Deleting all aliases
